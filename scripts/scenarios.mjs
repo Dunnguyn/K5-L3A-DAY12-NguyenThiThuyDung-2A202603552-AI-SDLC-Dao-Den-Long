@@ -1,13 +1,10 @@
-import assert from 'node:assert/strict';
+﻿import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { writeFileSync,mkdirSync } from 'node:fs';
-import { createGame,step,distance } from '../src/core/game.js';
-import { runScenario } from '../src/headless/adapter.js';
-const dir=process.env.PROOF_DIR || 'docs/proof/phase-1';mkdirSync(dir,{recursive:true});
-const s=createGame(),actions=[];
-function advance(a){actions.push({ticks:1,...a});step(s,a);}
-function go(p){let budget=1000;while(distance(s.player,p)>.18&&s.status==='playing'&&budget--){let dx=p.x-s.player.x,dz=p.z-s.player.z,n=Math.hypot(dx,dz);advance({moveX:dx/n,moveZ:dz/n});}assert.ok(budget>0,'route timeout');}
-for(const l of s.lanterns){for(const f of s.fireflies.filter(f=>Math.floor(f.id/8)===l.id).slice(0,6))go(f);go(l);advance({interact:true});}
-assert.equal(s.status,'won');
-const win={version:'internal-draft-1',actions};const loss={version:'internal-draft-1',actions:[{ticks:3600}]};
-for(const [name,input,status] of [['win',win,'won'],['loss',loss,'lost']]){const a=runScenario(input),b=runScenario(input);assert.deepEqual(a,b);assert.equal(a.state.status,status);writeFileSync(`${dir}/${name}.input.json`,JSON.stringify(input));writeFileSync(`${dir}/${name}.actual.json`,JSON.stringify(a,null,2));writeFileSync(`${dir}/${name}.expected.json`,JSON.stringify({status,deterministic:true}));}
-console.log('PASS: default-world win route and idle loss, deterministic replay; no teleport or config overrides.');
+import { createGame,step,gameSnapshot } from '../src/core/game.js';
+import { getWorld } from '../src/data/worlds.js';
+const dir=process.env.PROOF_DIR||'docs/proof/phase-2/core';mkdirSync(dir,{recursive:true});
+const evidence={scope:'Phase 2 Core/World/Headless smoke; internal adapter, official v1.0 base NOT VERIFIED',node:process.version,platform:process.platform,checks:[]};
+for(let night=1;night<=3;night++){const a=createGame({night,seed:1122}),b=createGame({night,seed:1122});for(let i=0;i<600;i++){step(a,{moveX:i%120<60?1:-1,dash:i%180===0});step(b,{moveX:i%120<60?1:-1,dash:i%180===0});}assert.deepEqual(gameSnapshot(a),gameSnapshot(b));assert.equal(a.lanterns.length,[0,5,6,7][night]);assert.equal(getWorld(night).motePoints.length,[0,24,24,30][night]);const input={version:'internal-draft-1',seed:1122,scenario:{player:{invuln_ticks:720}},actions:[{ticks:600,moveX:1}]};const inPath=`${dir}/night-${night}.input.json`;writeFileSync(inPath,JSON.stringify(input,null,2)+'\n');const runs=[];for(let i=0;i<2;i++){const r=spawnSync(process.execPath,['scripts/headless.mjs','--night',String(night),inPath],{encoding:'utf8',timeout:30000});assert.equal(r.status,0,r.stderr);assert.equal(r.stderr,'');const o=JSON.parse(r.stdout);assert.equal(o.state.night,night);assert.equal(o.state.sim_tick,600);runs.push(o);}assert.deepEqual(runs[0],runs[1]);writeFileSync(`${dir}/night-${night}.actual.json`,JSON.stringify(runs[0],null,2)+'\n');evidence.checks.push({night,seed:1122,ticks:600,deterministic:true,cliExitCode:0,stdoutPureJson:true,lamps:a.lanterns.length,motes:getWorld(night).motePoints.length});}
+const bad=spawnSync(process.execPath,['scripts/headless.mjs','--night','2','package.json'],{encoding:'utf8'});assert.equal(bad.status,1);assert.equal(bad.stdout,'');assert.equal(typeof JSON.parse(bad.stderr).error,'string');evidence.checks.push({cliInvalidInput:true,exitCode:bad.status,jsonStderr:true,stdoutEmpty:true});
+writeFileSync(`${dir}/core-smoke.json`,JSON.stringify(evidence,null,2)+'\n');console.log('PASS: canonical worlds, deterministic CLI replay on nights 1-3, invalid CLI handling');

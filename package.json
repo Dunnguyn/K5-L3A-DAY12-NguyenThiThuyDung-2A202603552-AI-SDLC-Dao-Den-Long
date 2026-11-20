@@ -1,28 +1,30 @@
-{
-  "name": "dao-den-long",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "packageManager": "npm@11.19.1",
-  "engines": {
-    "node": ">=24 <25"
-  },
-  "scripts": {
-    "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run",
-    "headless": "node scripts/headless.mjs",
-    "test:browser": "node scripts/browser-check.mjs",
-    "smoke:headless": "node scripts/smoke-headless.mjs",
-    "verify": "node scripts/verify.mjs"
-  },
-  "dependencies": {
-    "three": "^0.187.0"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.65.1",
-    "vite": "^8.3.8",
-    "vitest": "^5.1.1"
-  }
+﻿{
+    "name":  "dao-den-long",
+    "version":  "0.0.0",
+    "private":  true,
+    "type":  "module",
+    "packageManager":  "npm@11.19.1",
+    "engines":  {
+                    "node":  "\u003e=24 \u003c25"
+                },
+    "scripts":  {
+                    "dev":  "vite --host 127.0.0.1",
+                    "build":  "vite build",
+                    "preview":  "vite preview --host 127.0.0.1",
+                    "test":  "vitest run",
+                    "headless":  "node scripts/headless.mjs",
+                    "test:browser":  "node scripts/phase2-browser.mjs",
+                    "smoke:headless":  "node scripts/smoke-headless.mjs",
+                    "verify":  "node scripts/verify.mjs",
+                    "bench:headless":  "node scripts/bench-headless.mjs",
+                    "test:independent":  "node scripts/independent-core.mjs"
+                },
+    "dependencies":  {
+                         "three":  "^0.187.0"
+                     },
+    "devDependencies":  {
+                            "@playwright/test":  "^1.65.1",
+                            "vite":  "^8.3.8",
+                            "vitest":  "^5.1.1"
+                        }
 }

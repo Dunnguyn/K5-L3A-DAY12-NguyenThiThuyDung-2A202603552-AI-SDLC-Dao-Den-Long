@@ -159,3 +159,4 @@ Các thông tin sau là khái niệm nghiệp vụ cần quan sát trong test, k
 - [Repository chính thức](https://github.com/VinUni-AI20k/K5-L3-LAB-Day12-AI-SDLC)
 - [GUIDE.md — mục Headless và Test Contract](https://github.com/VinUni-AI20k/K5-L3-LAB-Day12-AI-SDLC/blob/main/GUIDE.md)
 - [Lab Board — cần đối chiếu Test Contract v1.0](https://claude.ai/artifact/Q1RYyv1dxjUczzCbd2ZnoW)
+

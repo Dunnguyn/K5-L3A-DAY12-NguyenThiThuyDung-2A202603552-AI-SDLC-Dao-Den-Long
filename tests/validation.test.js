@@ -1,21 +1,6 @@
-import {test,expect} from 'vitest';
+﻿import {test,expect} from 'vitest';
 import {runScenario,validateOutput,validate} from '../src/headless/adapter.js';
-const output=()=>runScenario({version:'internal-draft-1',actions:[]});
-test('FIX-01 entity records reject null/primitives/arrays/missing and invalid fields',()=>{
- for(const list of ['lanterns','enemies','fireflies']){
-  for(const bad of [null,1,'entity',true,[],{}]){const o=output();o.state[list][0]=bad;expect(()=>validateOutput(o)).toThrow();}
-  for(const key of Object.keys(output().state[list][0])){
-   const o=output();delete o.state[list][0][key];expect(()=>validateOutput(o)).toThrow();
-   for(const value of [null,NaN,Infinity,-Infinity,'0',{},[]]){const o=output();o.state[list][0][key]=value;expect(()=>validateOutput(o)).toThrow();}
-  }
-  const o=output();delete o.state[list][0];expect(()=>validateOutput(o)).toThrow();
- }
-});
-test('FIX-01 wrapper, player, timers and array shape validation',()=>{
- for(const key of Object.keys(output().state)){const o=output();delete o.state[key];expect(()=>validateOutput(o)).toThrow();}
- for(const key of Object.keys(output().state.player))for(const value of [undefined,null,NaN,Infinity,'1',[]]){const o=output();o.state.player[key]=value;expect(()=>validateOutput(o)).toThrow();}
- for(const [key,value] of [['health',-1],['health',101],['light',-.1],['light',1.5],['y',-1]]){const o=output();o.state.player[key]=value;expect(()=>validateOutput(o)).toThrow();}
- for(const key of ['tick','score','damageAt','glowAt','glowUntil'])for(const value of [-1,1.5,NaN,Infinity,'1']){const o=output();o.state[key]=value;expect(()=>validateOutput(o)).toThrow();}
- expect(validateOutput(output())).toEqual(output());
-});
-test('FIX-01 input null records and invalid field types',()=>{for(const a of [null,[],1,{ticks:NaN},{ticks:1,glow:null},{ticks:1,moveX:null}])expect(()=>validate({version:'internal-draft-1',actions:[a]})).toThrow();});
+const output=()=>runScenario({actions:[]});
+test('required output records reject null, primitives, missing fields and invalid types',()=>{for(const key of ['lanterns','shades','motes','drifters','charms']){const baseline=output();const malformed=[null,1,'x',true,[],{}];for(const item of malformed){const o=structuredClone(baseline);o.state[key]=[item];expect(()=>validateOutput(o)).toThrow();}const o=structuredClone(baseline);delete o.state[key];expect(()=>validateOutput(o)).toThrow();}});
+test('nested vectors, timer values, enum values and state ranges are validated',()=>{const tests=[o=>o.state.player.vel=null,o=>o.state.player.flames=-1,o=>o.state.player.light=11,o=>o.state.shades=[{id:'S1',pos:{x:0,y:0,z:0},state:'idle',state_ticks_left:0}],o=>o.state.motes=[{id:'M',pos:{x:0,y:0,z:0},kind:'other',ttl_s:null}],o=>o.state.charms=[{id:'C',available:true,respawn_s:NaN}]];for(const mutate of tests){const o=structuredClone(output());mutate(o);expect(()=>validateOutput(o)).toThrow();}expect(validateOutput(output())).toEqual(output());});
+test('invalid input rejects nulls, unknown keys including night override, NaN, and bad scenario arrays',()=>{for(const a of [null,[],1,{ticks:NaN},{ticks:1,moveX:null},{ticks:1,pause:0},{ticks:1,teleport:true}])expect(()=>validate({actions:[a]})).toThrow();expect(()=>validate(null)).toThrow();expect(()=>validate({actions:[],oops:true})).toThrow();expect(()=>validate({actions:[],night:2})).toThrow();expect(()=>runScenario({actions:[],scenario:{drifters:[null]}})).toThrow();});

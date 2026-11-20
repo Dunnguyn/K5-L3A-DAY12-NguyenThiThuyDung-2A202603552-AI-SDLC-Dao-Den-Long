@@ -1,0 +1,303 @@
+{
+  "scope": "Phase 2 browser E2E (real Playwright inputs + read-only Core snapshots); not full campaign E2E",
+  "startedAt": "2026-11-20T19:04:41.720Z",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "node": "v24.13.0",
+  "browser": "Chromium",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": [
+    {
+      "id": "E2E-01 menu and WebGL2",
+      "status": "PASS"
+    },
+    {
+      "id": "E2E-01 start campaign and enter Night 1",
+      "status": "PASS",
+      "tick": 43
+    },
+    {
+      "id": "E2E-09 movement input",
+      "status": "PASS",
+      "deltaZ": 4.1
+    },
+    {
+      "id": "E2E-09 jump input",
+      "status": "PASS"
+    },
+    {
+      "id": "E2E-09 dash rising-edge input",
+      "status": "PASS"
+    },
+    {
+      "id": "E2E-09 collect motes and pulse through gameplay input",
+      "status": "PASS",
+      "lightAfter": 0
+    },
+    {
+      "id": "E2E-10 camera drag",
+      "status": "PASS"
+    },
+    {
+      "id": "E2E-07 pause freezes sim/time while UI remains active",
+      "status": "PASS",
+      "wallTickAdvanced": true
+    },
+    {
+      "id": "E2E-08 settings persistence after reload",
+      "status": "PASS"
+    }
+  ],
+  "measurements": {
+    "night1": {
+      "averageFps": 13.34,
+      "durationMs": 2549,
+      "metrics": {
+        "calls": 44,
+        "triangles": 7172,
+        "geometries": 44,
+        "textures": 1
+      }
+    }
+  },
+  "inputSequence": [
+    {
+      "screen": "menu",
+      "click": "Bắt đầu hành trình"
+    },
+    {
+      "screen": "intro",
+      "click": "Bước vào Đêm 1"
+    },
+    {
+      "screen": "play",
+      "hold": "W",
+      "durationMs": 600
+    },
+    {
+      "screen": "play",
+      "press": "Space"
+    },
+    {
+      "screen": "play",
+      "press": "Shift"
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M240",
+      "pos": {
+        "x": 7.347880794884119e-16,
+        "y": 0,
+        "z": 12
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M240",
+      "pos": {
+        "x": 7.347880794884119e-16,
+        "y": 0,
+        "z": 12
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M240",
+      "pos": {
+        "x": 7.347880794884119e-16,
+        "y": 0,
+        "z": 12
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M14",
+      "pos": {
+        "x": -8.48528137423857,
+        "y": 0,
+        "z": 8.485281374238571
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "navigateToward": "M9",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 1.4695761589768238e-15
+      }
+    },
+    {
+      "screen": "play",
+      "press": "Q",
+      "precondition": "light=3"
+    },
+    {
+      "screen": "play",
+      "press": "Escape"
+    }
+  ],
+  "unverified": [
+    {
+      "id": "E2E-02/05 full Night 1 and three-night campaign victory",
+      "status": "NOT VERIFIED",
+      "reason": "A complete default-state victory route has not been demonstrated; browser state was not edited to force completion."
+    },
+    {
+      "id": "E2E-03/04 other-night traversal, charm/drifter/gust and tier transitions",
+      "status": "NOT VERIFIED",
+      "reason": "Requires campaign progression and real-play route; no state override used."
+    },
+    {
+      "id": "E2E-06 loss/retry and fall/respawn",
+      "status": "NOT VERIFIED",
+      "reason": "No complete natural browser route exercised in this smoke session."
+    },
+    {
+      "id": "E2E-09 damage and all gameplay reactions",
+      "status": "PARTIAL",
+      "reason": "Movement/jump/dash and pulse are exercised when sufficient motes are collected; damage/fall route remains pending."
+    },
+    {
+      "id": "E2E-10 audio event listening, exact palette visual audit, all HUD boundaries",
+      "status": "PARTIAL",
+      "reason": "Rendered UI/WebGL captured; no complete event/audio palette audit."
+    }
+  ],
+  "consoleErrors": [],
+  "consoleWarnings": [
+    "[.WebGL-0x636c00624e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x636c00624e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x636c00624e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x636c00624e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "webgl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "passed": true,
+  "finishedAt": "2026-11-20T19:05:42.911Z"
+}

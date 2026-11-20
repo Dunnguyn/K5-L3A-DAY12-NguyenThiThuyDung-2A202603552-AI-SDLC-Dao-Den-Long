@@ -1,38 +1,50 @@
 # Day 12 — AI SDLC: Đảo Đèn Lồng
 
-## Chơi Phase 1
+## Phase 2 status
 
-Game 3D dùng chung core với headless. Phiên bản bàn giao Phase 1 theo deadline, với các giới hạn đã được người thực hiện chấp nhận. Headless là **schema nội bộ DRAFT**, chưa xác minh tương thích Test Contract v1.0 chính thức. Phân tích và kết quả: [phase-1.md](docs/notes/phase-1.md).
+Ticket-02 Core, shared world/terrain descriptors, fixed-tick gameplay and an internal headless adapter are implemented. Browser rendering, three-night UI, audio, settings and full browser acceptance remain for the next workstream. The current browser remains a minimal legacy view and is not evidence that all three nights are playable.
 
-Yêu cầu Node.js 24.x, npm. Sau khi clone và mở thư mục repo, chạy trên Windows/macOS/Linux:
+Test Contract v1.0 base is **NOT VERIFIED**. The adapter keeps the local `internal-draft-1` envelope while implementing the known v1.1 additions; this does not establish official contract compliance. Phase 1 notes/evidence remain under [docs/notes/phase-1.md](docs/notes/phase-1.md) and [docs/proof/phase-1](docs/proof/phase-1).
+
+## Run
+
+Requires Node.js 24.x and npm 11.19.1. From the repository root:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Mở URL local Vite hiển thị. WASD/mũi tên di chuyển, Space nhảy, E thắp đèn khi ở gần và có 5 ánh sáng, Q tỏa sáng tốn 2 ánh sáng, kéo chuột xoay camera. R hoặc nút Chơi lại sau khi kết thúc. Thắp 5 đèn để thắng, HP=0 để thua. Vùng đèn sáng bảo vệ Mây; đom đóm hồi sinh sau 15 giây.
+Open the local Vite URL. Current browser controls: WASD/arrows move, Space jumps, E charges a nearby lantern, Q pulses, mouse drag rotates camera, R restarts after an ending. Dash and pause are available in the shared core/headless; their browser bindings are pending browser integration.
 
-Điểm: 10 mỗi lần nhặt đom đóm hợp lệ, 100 mỗi đèn mới, 500 khi thắng một lần. Đom đóm hồi sinh có thể tiếp tục cho điểm; không có bảng xếp hạng.
+## Phase 2 gameplay and scoring
 
-Kiểm chứng: `npm test`, `npm run build`, `npm run verify`. Browser: `npx playwright install chromium` rồi `npm run test:browser`. Bằng chứng ở [docs/proof/phase-1](docs/proof/phase-1).
+Three canonical nights use 60 fixed ticks per second. Mây runs at 6 m/s, jumps at 7 m/s, dashes at 14 m/s for 12 ticks with a 90-tick cooldown. Fireflies fill a 10-unit bag; lanterns cost 10 and retain partial charge. Pulse costs 3. Night duration is 300/330/360 seconds; each starts with 3 Flames.
 
-Headless (JSON thuần cho máy đọc): `node scripts/headless.mjs docs/proof/phase-1/win.input.json`. Tương đương: `npm --silent run headless -- docs/proof/phase-1/win.input.json`. `npm run headless` thông thường có banner npm, không dùng stdout đó làm JSON. CLI ghi JSON `{version,state}` vào stdout, lỗi JSON vào stderr/exit 1. Input ví dụ: `{"version":"internal-draft-1","actions":[{"ticks":60,"moveX":1,"jump":true}]}`. `ticks` lặp chuyển động; nút chỉ kích hoạt tick đầu mỗi action. Unknown keys bị từ chối. Quy cách nội bộ và config: [game.contract.json](game.contract.json); tạo từ config qua script để tránh lệch giá trị. Không phải schema chính thức của giảng viên.
+Score: +10 for each firefly deposited into a lantern, +100 for each lantern lit, +5 for each Shade hit by a pulse, and on victory `floor(seconds remaining) × 2 + 50 × remaining Flames`. Campaign score includes won nights only.
 
-Source: `src/core` luật thuần, `src/config` thông số, `src/data` layout, `src/headless` adapter, `src/browser` rendering/input/HUD. Không cần server backend. Tài liệu lab gốc tiếp tục bên dưới; phần hướng dẫn sản phẩm ở trên là trạng thái hiện tại.
+## Headless and checks
+
+```sh
+node scripts/headless.mjs --night 2 docs/proof/phase-2/core/night-2.input.json
+npm test
+npm run verify
+```
+
+The CLI writes a single JSON document to stdout and JSON errors to stderr. `npm run test:independent` runs the separate agent-authored acceptance cross-check. `npm run bench:headless` measures a full 21,600-tick run. The headless adapter and manifest are internal draft artifacts; consult [game.contract.json](game.contract.json) and [Phase 2 notes](docs/notes/phase-2.md).
+
+## Known limitations
+
+- Official Test Contract v1.0 has not been obtained or checked; the official v1.0 base and unspecified v1.1 shapes remain NOT VERIFIED.
+- Browser menu/HUD/rendering for all three nights, settings, audio and browser gameplay are not implemented or verified in this workstream.
+- Ubuntu/Linux/macOS after these Phase 2 edits and real-GPU performance are NOT VERIFIED.
+- Headless timing is measured locally on Windows/Node; it is not a browser FPS result.
 
 ### Sáng tạo của tôi
 
-Chưa bổ sung tính năng sáng tạo. Nội dung hướng dẫn lab gốc được giữ bên dưới.
+Chưa bổ sung tính năng sáng tạo ngoài Ticket-02.
 
-### Known Limitations
-
-- Test Contract v1.0 chính thức chưa được đối chiếu; headless hiện tuân theo `internal-draft-1`.
-- Linux/macOS đang chờ xác minh thực thi; xem GitHub Actions cho kết quả Ubuntu sau push, không suy ra macOS PASS.
-- Số đo SwiftShader không đại diện GPU thực; GPU thực chưa được kiểm chứng.
-- Occlusion nhỏ có thể xuất hiện khi camera ở sát cột đèn.
-
-Nghiệm thu baseline: RTM 27 PASS / 1 PARTIAL / 0 FAIL / 4 NOT VERIFIED; unit 18/18, independent 21/21; browser win/lose/glow/camera/restart PASS. Báo cáo và bằng chứng lịch sử: [QA remediation](docs/proof/phase-1/remediation/report.md). Quyết định bàn giao không đồng nghĩa xác nhận tuân thủ contract chính thức.
+---
 
 > **Cá nhân** (1 người / 1 MSSV) · Áp dụng SDLC cùng AI để xây một **game 3D** qua **4 phase**, từ yêu cầu ban đầu tới bản phát hành.
 > **Lab board + trợ giảng:** **[Đảo Đèn Lồng Lab](https://claude.ai/artifact/Q1RYyv1dxjUczzCbd2ZnoW)**

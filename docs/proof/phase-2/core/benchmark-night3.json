@@ -1,0 +1,34 @@
+{
+  "node": "v24.13.0",
+  "npm": "11.6.2",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "scenario": "night 3 full 21600 ticks; invulnerability scenario override prevents early loss",
+  "ticks": 21600,
+  "replays": [
+    {
+      "elapsedMs": 6211.04,
+      "exitCode": 0,
+      "state": "lost",
+      "end_reason": "dawn",
+      "finalSimTick": 21600,
+      "stdoutJson": true,
+      "stderr": ""
+    },
+    {
+      "elapsedMs": 6418.09,
+      "exitCode": 0,
+      "state": "lost",
+      "end_reason": "dawn",
+      "finalSimTick": 21600,
+      "stdoutJson": true,
+      "stderr": ""
+    }
+  ],
+  "startedAt": "2026-11-20T18:22:22.613Z",
+  "deterministic": true,
+  "elapsedWithin30s": true
+}

@@ -1,0 +1,15 @@
+{
+  "version": "internal-draft-1",
+  "seed": 1122,
+  "scenario": {
+    "player": {
+      "invuln_ticks": 720
+    }
+  },
+  "actions": [
+    {
+      "ticks": 600,
+      "moveX": 1
+    }
+  ]
+}
