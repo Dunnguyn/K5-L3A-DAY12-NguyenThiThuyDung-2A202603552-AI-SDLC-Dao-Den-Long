@@ -1,0 +1,6 @@
+2026-11-20T09:33:21.5380798Z node: v24.22.2
+2026-11-20T09:33:21.5381881Z npm: 11.19.1
+2026-11-20T09:33:22.6160076Z npm error code EUSAGE
+2026-11-20T09:33:22.6184746Z npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+2026-11-20T09:33:22.6186292Z npm error Missing: @emnapi/core@2.0.0-beta.2 from lock file
+2026-11-20T09:33:22.6186949Z npm error Missing: @emnapi/runtime@2.0.0-beta.2 from lock file

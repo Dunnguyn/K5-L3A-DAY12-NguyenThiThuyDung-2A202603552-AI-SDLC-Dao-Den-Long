@@ -1,0 +1,7 @@
+{
+  "cwd": "C:\\Users\\Admin\\AppData\\Local\\Temp\\dao-lock-repair-OiB5cr",
+  "command": "npx --yes npm@11.19.1 install --package-lock-only --ignore-scripts --no-audit --no-fund",
+  "exitCode": 0,
+  "stdout": "\nup to date in 3s\n",
+  "stderr": ""
+}

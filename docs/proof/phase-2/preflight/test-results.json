@@ -1,0 +1,193 @@
+{
+  "timestamp": "2026-11-20T09:49:05.133Z",
+  "method": "Independent core fixtures for edge cases; fixture state edits are unit tests only, never browser acceptance.",
+  "results": [
+    {
+      "id": "movement 1,0",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": 23.499999999999915,
+        "y": 0,
+        "z": 0,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement -1,0",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": -23.499999999999915,
+        "y": 0,
+        "z": 0,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement 0,1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "z": 23.499999999999915,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement 0,-1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "z": -23.499999999999915,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement 1,1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": 16.617009357883873,
+        "y": 0,
+        "z": 16.617009357883873,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement -1,-1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": -16.617009357883873,
+        "y": 0,
+        "z": -16.617009357883873,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement 1,-1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": 16.617009357883873,
+        "y": 0,
+        "z": -16.617009357883873,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "movement -1,1",
+      "expected": "distance 6 after 60 ticks; inward escape from boundary",
+      "actual": {
+        "x": -16.617009357883873,
+        "y": 0,
+        "z": 16.617009357883873,
+        "vy": 0,
+        "health": 100,
+        "light": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "jump airborne retrigger",
+      "expected": "second jump ignored; landing y/vy zero",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "pickup exact boundary lifecycle",
+      "expected": "+1/+10 once, respawn at tick+900, restart no retained timer",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "pickup just outside",
+      "expected": "distance 1.00001 no pickup",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "lantern boundaries and duplicate",
+      "expected": "4 insufficient, outside 2 rejected, exact 2 accepted, no repeat points",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "lantern airborne",
+      "expected": "cannot charge while jumping",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "chase simultaneous damage cooldown",
+      "expected": "four contacts deal only 10; next damage exactly 60 ticks later",
+      "actual": {
+        "hp": 80,
+        "tick": 61
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "unlit vs lit sanctuary",
+      "expected": "unlit damages; lit repels and protects",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "glow cost cooldown and radius",
+      "expected": "cost 2; in radius repelled; outside chases; cooldown 60 ticks",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "victory and terminal freeze",
+      "expected": "fifth lamp wins, score 1000 once, all state frozen then pristine reset",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "death tie and freeze",
+      "expected": "lethal contact preempts fifth lamp; HP zero, frozen, pristine reset",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "invalid input matrix",
+      "expected": "reject all malformed draft inputs",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "CLI missing file and arguments",
+      "expected": "exit 1 empty stdout JSON stderr",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    },
+    {
+      "id": "output validator rejects malformed entities",
+      "expected": "malformed enemy/firefly records must be rejected",
+      "actual": "assertions satisfied",
+      "status": "PASS"
+    }
+  ],
+  "passed": 21,
+  "failed": 0
+}

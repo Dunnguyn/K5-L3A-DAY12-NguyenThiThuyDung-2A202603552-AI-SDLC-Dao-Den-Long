@@ -7,15 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 24.13.0
           cache: npm
+      - run: npm install --global npm@11.19.1
+      - run: node --version && npm --version
       - run: npm ci
-      - run: npm run verify
-      - run: node docs/proof/phase-1/remediation/independent.mjs
+      - run: node scripts/preflight-ci.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+        env:
+          PROOF_DIR: docs/proof/phase-2/preflight/ci-browser
       - name: Internal CLI JSON smoke
         run: |
           node scripts/headless.mjs docs/proof/phase-1/loss.input.json > /tmp/headless.json
@@ -23,5 +28,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: phase-1-evidence
-          path: docs/proof/phase-1/
+          name: cross-platform-preflight
+          path: docs/proof/phase-2/preflight/
