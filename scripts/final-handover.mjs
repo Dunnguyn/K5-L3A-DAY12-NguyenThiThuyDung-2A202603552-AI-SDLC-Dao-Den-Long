@@ -1,0 +1,15 @@
+import {spawnSync} from 'node:child_process';
+import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const dir='docs/proof/phase-1/final-handover';mkdirSync(dir,{recursive:true});process.env.PROOF_DIR=dir;
+const report={timestamp:new Date().toISOString(),platform:process.platform,node:process.version,scope:'final handover; no source gameplay changes; previous evidence preserved',commands:[]};
+const run=(name,exe,args)=>{const r=spawnSync(exe,args,{encoding:'utf8',timeout:180000,maxBuffer:8e6});report.commands.push({name,command:[exe,...args],exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message});writeFileSync(`${dir}/commands.json`,JSON.stringify(report,null,2));console.log(name,r.status);assert.equal(r.status,0);return r;};
+const npm=args=>process.platform==='win32'?run(`npm ${args.join(' ')}`,'cmd.exe',['/d','/s','/c',`npm.cmd ${args.join(' ')}`]):run(`npm ${args.join(' ')}`,'npm',args);
+writeFileSync(`${dir}/independent.mjs`,readFileSync('docs/proof/phase-1/qa/independent.mjs','utf8').replaceAll('docs/proof/phase-1/qa',dir));
+npm(['test']);run('independent QA tests',process.execPath,[`${dir}/independent.mjs`]);npm(['run','build']);npm(['run','verify']);run('git diff check','git',['diff','--check']);
+const hashes=JSON.parse(readFileSync('docs/proof/phase-1/remediation/qa-original-hashes.json'));assert.ok(Object.entries(hashes).every(([p,h])=>createHash('sha256').update(readFileSync(p)).digest('hex')===h));
+const prd=createHash('sha256').update(readFileSync('docs/requirements/PRD-0.md')).digest('hex');assert.equal(prd,'11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b');
+for(const file of ['README.md','AGENTS.md','game.contract.json','package-lock.json','LICENSE','CREDITS.md','.github/workflows/verify.yml','docs/notes/phase-1.md','docs/notes/AI_USAGE.md'])assert.ok(existsSync(file));
+const pkg=JSON.parse(readFileSync('package.json')),lock=JSON.parse(readFileSync('package-lock.json'));assert.deepEqual(lock.packages[''].dependencies,pkg.dependencies);assert.deepEqual(lock.packages[''].devDependencies,pkg.devDependencies);
+writeFileSync(`${dir}/audit.json`,JSON.stringify({qaOriginalUnchanged:true,qaFiles:Object.keys(hashes).length,prdSha256:prd,lockfileMatchesPackage:true,requiredFilesPresent:true,officialContract:'NOT VERIFIED',targetOS:'await actual CI result; macOS NOT VERIFIED',hardwareGPU:'NOT VERIFIED'},null,2));

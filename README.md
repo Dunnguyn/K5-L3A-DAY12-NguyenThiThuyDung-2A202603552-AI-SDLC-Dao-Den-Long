@@ -1,5 +1,39 @@
 # Day 12 — AI SDLC: Đảo Đèn Lồng
 
+## Chơi Phase 1
+
+Game 3D dùng chung core với headless. Phiên bản bàn giao Phase 1 theo deadline, với các giới hạn đã được người thực hiện chấp nhận. Headless là **schema nội bộ DRAFT**, chưa xác minh tương thích Test Contract v1.0 chính thức. Phân tích và kết quả: [phase-1.md](docs/notes/phase-1.md).
+
+Yêu cầu Node.js 24.x, npm. Sau khi clone và mở thư mục repo, chạy trên Windows/macOS/Linux:
+
+```sh
+npm ci
+npm run dev
+```
+
+Mở URL local Vite hiển thị. WASD/mũi tên di chuyển, Space nhảy, E thắp đèn khi ở gần và có 5 ánh sáng, Q tỏa sáng tốn 2 ánh sáng, kéo chuột xoay camera. R hoặc nút Chơi lại sau khi kết thúc. Thắp 5 đèn để thắng, HP=0 để thua. Vùng đèn sáng bảo vệ Mây; đom đóm hồi sinh sau 15 giây.
+
+Điểm: 10 mỗi lần nhặt đom đóm hợp lệ, 100 mỗi đèn mới, 500 khi thắng một lần. Đom đóm hồi sinh có thể tiếp tục cho điểm; không có bảng xếp hạng.
+
+Kiểm chứng: `npm test`, `npm run build`, `npm run verify`. Browser: `npx playwright install chromium` rồi `npm run test:browser`. Bằng chứng ở [docs/proof/phase-1](docs/proof/phase-1).
+
+Headless (JSON thuần cho máy đọc): `node scripts/headless.mjs docs/proof/phase-1/win.input.json`. Tương đương: `npm --silent run headless -- docs/proof/phase-1/win.input.json`. `npm run headless` thông thường có banner npm, không dùng stdout đó làm JSON. CLI ghi JSON `{version,state}` vào stdout, lỗi JSON vào stderr/exit 1. Input ví dụ: `{"version":"internal-draft-1","actions":[{"ticks":60,"moveX":1,"jump":true}]}`. `ticks` lặp chuyển động; nút chỉ kích hoạt tick đầu mỗi action. Unknown keys bị từ chối. Quy cách nội bộ và config: [game.contract.json](game.contract.json); tạo từ config qua script để tránh lệch giá trị. Không phải schema chính thức của giảng viên.
+
+Source: `src/core` luật thuần, `src/config` thông số, `src/data` layout, `src/headless` adapter, `src/browser` rendering/input/HUD. Không cần server backend. Tài liệu lab gốc tiếp tục bên dưới; phần hướng dẫn sản phẩm ở trên là trạng thái hiện tại.
+
+### Sáng tạo của tôi
+
+Chưa bổ sung tính năng sáng tạo. Nội dung hướng dẫn lab gốc được giữ bên dưới.
+
+### Known Limitations
+
+- Test Contract v1.0 chính thức chưa được đối chiếu; headless hiện tuân theo `internal-draft-1`.
+- Linux/macOS đang chờ xác minh thực thi; xem GitHub Actions cho kết quả Ubuntu sau push, không suy ra macOS PASS.
+- Số đo SwiftShader không đại diện GPU thực; GPU thực chưa được kiểm chứng.
+- Occlusion nhỏ có thể xuất hiện khi camera ở sát cột đèn.
+
+Nghiệm thu baseline: RTM 27 PASS / 1 PARTIAL / 0 FAIL / 4 NOT VERIFIED; unit 18/18, independent 21/21; browser win/lose/glow/camera/restart PASS. Báo cáo và bằng chứng lịch sử: [QA remediation](docs/proof/phase-1/remediation/report.md). Quyết định bàn giao không đồng nghĩa xác nhận tuân thủ contract chính thức.
+
 > **Cá nhân** (1 người / 1 MSSV) · Áp dụng SDLC cùng AI để xây một **game 3D** qua **4 phase**, từ yêu cầu ban đầu tới bản phát hành.
 > **Lab board + trợ giảng:** **[Đảo Đèn Lồng Lab](https://claude.ai/artifact/Q1RYyv1dxjUczzCbd2ZnoW)**
 

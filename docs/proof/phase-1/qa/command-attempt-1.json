@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-11-20T08:21:55.599Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "cpu": "AMD Ryzen AI 7 H 350 w/ Radeon 860M",
+  "memory": 33598853120,
+  "commands": [
+    {
+      "name": "clean npm ci",
+      "command": [
+        "npm.cmd",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "cwd": "C:\\Users\\Admin\\AppData\\Local\\Temp\\dao-qa-clean-kXeVIt",
+      "exitCode": null,
+      "error": "spawnSync npm.cmd EINVAL"
+    },
+    {
+      "name": "npm test",
+      "command": [
+        "npm.cmd",
+        "test"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": null,
+      "error": "spawnSync npm.cmd EINVAL"
+    },
+    {
+      "name": "npm run build",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": null,
+      "error": "spawnSync npm.cmd EINVAL"
+    },
+    {
+      "name": "npm run verify",
+      "command": [
+        "npm.cmd",
+        "run",
+        "verify"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": null,
+      "error": "spawnSync npm.cmd EINVAL"
+    },
+    {
+      "name": "npm run test:browser",
+      "command": [
+        "npm.cmd",
+        "run",
+        "test:browser"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": null,
+      "error": "spawnSync npm.cmd EINVAL"
+    },
+    {
+      "name": "CLI win",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/headless.mjs",
+        "docs/proof/phase-1/win.input.json"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": 0,
+      "stdout": "{\"version\":\"internal-draft-1\",\"state\":{\"level\":\"Đêm 1 – Đảo Bến\",\"status\":\"won\",\"tick\":1740,\"score\":1310,\"player\":{\"x\":5.462442104961144,\"y\":0,\"z\":-17.208935267363636,\"vy\":0,\"health\":80,\"light\":6},\"damageAt\":711,\"glowAt\":0,\"glowUntil\":0,\"message\":\"Một ngọn đèn đã bừng sáng!\",\"lanterns\":[{\"id\":0,\"x\":18,\"z\":0,\"lit\":true},{\"id\":1,\"x\":5.562305898749054,\"z\":17.119017293312762,\"lit\":true},{\"id\":2,\"x\":-14.562305898749052,\"z\":10.580134541264519,\"lit\":true},{\"id\":3,\"x\":-14.562305898749054,\"z\":-10.580134541264515,\"lit\":true},{\"id\":4,\"x\":5.562305898749051,\"z\":-17.119017293312766,\"lit\":true}],\"fireflies\":[{\"id\":0,\"x\":21,\"z\":0,\"available\":true,\"respawnAt\":1100},{\"id\":1,\"x\":20.121320343559642,\"z\":2.1213203435596424,\"available\":true,\"respawnAt\":1122},{\"id\":2,\"x\":18,\"z\":3,\"available\":true,\"respawnAt\":1145},{\"id\":3,\"x\":15.878679656440358,\"z\":2.121320343559643,\"available\":true,\"respawnAt\":1167},{\"id\":4,\"x\":15,\"z\":3.6739403974420594e-16,\"available\":true,\"respawnAt\":1041},{\"id\":5,\"x\":15.878679656440358,\"z\":-2.1213203435596424,\"available\":true,\"respawnAt\":1212},{\"id\":6,\"x\":18,\"z\":-3,\"available\":true,\"respawnAt\":0},{\"id\":7,\"x\":20.121320343559642,\"z\":-2.121320343559643,\"available\":true,\"respawnAt\":0},{\"id\":8,\"x\":8.562305898749054,\"z\":17.119017293312762,\"available\":true,\"respawnAt\":1435},{\"id\":9,\"x\":7.683626242308697,\"z\":19.240337636872404,\"available\":true,\"respawnAt\":1458},{\"id\":10,\"x\":5.562305898749054,\"z\":20.119017293312762,\"available\":true,\"respawnAt\":1481},{\"id\":11,\"x\":3.4409855551894117,\"z\":19.240337636872404,\"available\":true,\"respawnAt\":1503},{\"id\":12,\"x\":2.562305898749054,\"z\":17.119017293312762,\"available\":true,\"respawnAt\":1526},{\"id\":13,\"x\":3.4409855551894113,\"z\":14.99769694975312,\"available\":true,\"respawnAt\":1549},{\"id\":14,\"x\":5.562305898749053,\"z\":14.119017293312762,\"available\":true,\"respawnAt\":0},{\"id\":15,\"x\":7.683626242308696,\"z\":14.99769694975312,\"available\":true,\"respawnAt\":0},{\"id\":16,\"x\":-11.562305898749052,\"z\":10.580134541264519,\"available\":false,\"respawnAt\":1758},{\"id\":17,\"x\":-12.44098555518941,\"z\":12.70145488482416,\"available\":false,\"respawnAt\":1781},{\"id\":18,\"x\":-14.562305898749052,\"z\":13.580134541264519,\"available\":false,\"respawnAt\":1803},{\"id\":19,\"x\":-16.683626242308694,\"z\":12.701454884824162,\"available\":false,\"respawnAt\":1826},{\"id\":20,\"x\":-17.562305898749052,\"z\":10.580134541264519,\"available\":false,\"respawnAt\":1848},{\"id\":21,\"x\":-16.683626242308694,\"z\":8.458814197704877,\"available\":false,\"respawnAt\":1871},{\"id\":22,\"x\":-14.562305898749052,\"z\":7.580134541264519,\"available\":false,\"respawnAt\":1928},{\"id\":23,\"x\":-12.44098555518941,\"z\":8.458814197704875,\"available\":true,\"respawnAt\":0},{\"id\":24,\"x\":-11.562305898749054,\"z\":-10.580134541264515,\"available\":false,\"respawnAt\":2111},{\"id\":25,\"x\":-12.44098555518941,\"z\":-8.458814197704873,\"available\":false,\"respawnAt\":2091},{\"id\":26,\"x\":-14.562305898749054,\"z\":-7.580134541264515,\"available\":false,\"respawnAt\":2155},{\"id\":27,\"x\":-16.683626242308698,\"z\":-8.458814197704871,\"available\":false,\"respawnAt\":2178},{\"id\":28,\"x\":-17.562305898749052,\"z\":-10.580134541264515,\"available\":false,\"respawnAt\":2200},{\"id\":29,\"x\":-16.683626242308698,\"z\":-12.701454884824157,\"available\":false,\"respawnAt\":2223},{\"id\":30,\"x\":-14.562305898749054,\"z\":-13.580134541264515,\"available\":true,\"respawnAt\":0},{\"id\":31,\"x\":-12.440985555189412,\"z\":-12.701454884824159,\"available\":true,\"respawnAt\":0},{\"id\":32,\"x\":8.56230589874905,\"z\":-17.119017293312766,\"available\":false,\"respawnAt\":2492},{\"id\":33,\"x\":7.683626242308693,\"z\":-14.997696949753124,\"available\":false,\"respawnAt\":2513},{\"id\":34,\"x\":5.562305898749051,\"z\":-14.119017293312766,\"available\":false,\"respawnAt\":2535},{\"id\":35,\"x\":3.440985555189408,\"z\":-14.997696949753124,\"available\":false,\"respawnAt\":2439},{\"id\":36,\"x\":2.5623058987490506,\"z\":-17.119017293312766,\"available\":false,\"respawnAt\":2581},{\"id\":37,\"x\":3.4409855551894077,\"z\":-19.240337636872408,\"available\":false,\"respawnAt\":2603},{\"id\":38,\"x\":5.56230589874905,\"z\":-20.119017293312766,\"available\":true,\"respawnAt\":0},{\"id\":39,\"x\":7.6836262423086925,\"z\":-19.240337636872408,\"available\":true,\"respawnAt\":0}],\"enemies\":[{\"id\":0,\"x\":-1.3818003976785405,\"z\":-11.426573569138636,\"fleeUntil\":0},{\"id\":1,\"x\":-2.358205495424546,\"z\":-11.309287862152836,\"fleeUntil\":0},{\"id\":2,\"x\":-1.922936837456431,\"z\":-12.692918843479305,\"fleeUntil\":0},{\"id\":3,\"x\":-0.958436035453408,\"z\":-12.499788902978182,\"fleeUntil\":0}]}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "CLI loss",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/headless.mjs",
+        "docs/proof/phase-1/loss.input.json"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": 0,
+      "stdout": "{\"version\":\"internal-draft-1\",\"state\":{\"level\":\"Đêm 1 – Đảo Bến\",\"status\":\"lost\",\"tick\":1114,\"score\":0,\"player\":{\"x\":0,\"y\":0,\"z\":0,\"vy\":0,\"health\":0,\"light\":0},\"damageAt\":1174,\"glowAt\":0,\"glowUntil\":0,\"message\":\"Bóng Mực chạm vào Mây!\",\"lanterns\":[{\"id\":0,\"x\":18,\"z\":0,\"lit\":false},{\"id\":1,\"x\":5.562305898749054,\"z\":17.119017293312762,\"lit\":false},{\"id\":2,\"x\":-14.562305898749052,\"z\":10.580134541264519,\"lit\":false},{\"id\":3,\"x\":-14.562305898749054,\"z\":-10.580134541264515,\"lit\":false},{\"id\":4,\"x\":5.562305898749051,\"z\":-17.119017293312766,\"lit\":false}],\"fireflies\":[{\"id\":0,\"x\":21,\"z\":0,\"available\":true,\"respawnAt\":0},{\"id\":1,\"x\":20.121320343559642,\"z\":2.1213203435596424,\"available\":true,\"respawnAt\":0},{\"id\":2,\"x\":18,\"z\":3,\"available\":true,\"respawnAt\":0},{\"id\":3,\"x\":15.878679656440358,\"z\":2.121320343559643,\"available\":true,\"respawnAt\":0},{\"id\":4,\"x\":15,\"z\":3.6739403974420594e-16,\"available\":true,\"respawnAt\":0},{\"id\":5,\"x\":15.878679656440358,\"z\":-2.1213203435596424,\"available\":true,\"respawnAt\":0},{\"id\":6,\"x\":18,\"z\":-3,\"available\":true,\"respawnAt\":0},{\"id\":7,\"x\":20.121320343559642,\"z\":-2.121320343559643,\"available\":true,\"respawnAt\":0},{\"id\":8,\"x\":8.562305898749054,\"z\":17.119017293312762,\"available\":true,\"respawnAt\":0},{\"id\":9,\"x\":7.683626242308697,\"z\":19.240337636872404,\"available\":true,\"respawnAt\":0},{\"id\":10,\"x\":5.562305898749054,\"z\":20.119017293312762,\"available\":true,\"respawnAt\":0},{\"id\":11,\"x\":3.4409855551894117,\"z\":19.240337636872404,\"available\":true,\"respawnAt\":0},{\"id\":12,\"x\":2.562305898749054,\"z\":17.119017293312762,\"available\":true,\"respawnAt\":0},{\"id\":13,\"x\":3.4409855551894113,\"z\":14.99769694975312,\"available\":true,\"respawnAt\":0},{\"id\":14,\"x\":5.562305898749053,\"z\":14.119017293312762,\"available\":true,\"respawnAt\":0},{\"id\":15,\"x\":7.683626242308696,\"z\":14.99769694975312,\"available\":true,\"respawnAt\":0},{\"id\":16,\"x\":-11.562305898749052,\"z\":10.580134541264519,\"available\":true,\"respawnAt\":0},{\"id\":17,\"x\":-12.44098555518941,\"z\":12.70145488482416,\"available\":true,\"respawnAt\":0},{\"id\":18,\"x\":-14.562305898749052,\"z\":13.580134541264519,\"available\":true,\"respawnAt\":0},{\"id\":19,\"x\":-16.683626242308694,\"z\":12.701454884824162,\"available\":true,\"respawnAt\":0},{\"id\":20,\"x\":-17.562305898749052,\"z\":10.580134541264519,\"available\":true,\"respawnAt\":0},{\"id\":21,\"x\":-16.683626242308694,\"z\":8.458814197704877,\"available\":true,\"respawnAt\":0},{\"id\":22,\"x\":-14.562305898749052,\"z\":7.580134541264519,\"available\":true,\"respawnAt\":0},{\"id\":23,\"x\":-12.44098555518941,\"z\":8.458814197704875,\"available\":true,\"respawnAt\":0},{\"id\":24,\"x\":-11.562305898749054,\"z\":-10.580134541264515,\"available\":true,\"respawnAt\":0},{\"id\":25,\"x\":-12.44098555518941,\"z\":-8.458814197704873,\"available\":true,\"respawnAt\":0},{\"id\":26,\"x\":-14.562305898749054,\"z\":-7.580134541264515,\"available\":true,\"respawnAt\":0},{\"id\":27,\"x\":-16.683626242308698,\"z\":-8.458814197704871,\"available\":true,\"respawnAt\":0},{\"id\":28,\"x\":-17.562305898749052,\"z\":-10.580134541264515,\"available\":true,\"respawnAt\":0},{\"id\":29,\"x\":-16.683626242308698,\"z\":-12.701454884824157,\"available\":true,\"respawnAt\":0},{\"id\":30,\"x\":-14.562305898749054,\"z\":-13.580134541264515,\"available\":true,\"respawnAt\":0},{\"id\":31,\"x\":-12.440985555189412,\"z\":-12.701454884824159,\"available\":true,\"respawnAt\":0},{\"id\":32,\"x\":8.56230589874905,\"z\":-17.119017293312766,\"available\":true,\"respawnAt\":0},{\"id\":33,\"x\":7.683626242308693,\"z\":-14.997696949753124,\"available\":true,\"respawnAt\":0},{\"id\":34,\"x\":5.562305898749051,\"z\":-14.119017293312766,\"available\":true,\"respawnAt\":0},{\"id\":35,\"x\":3.440985555189408,\"z\":-14.997696949753124,\"available\":true,\"respawnAt\":0},{\"id\":36,\"x\":2.5623058987490506,\"z\":-17.119017293312766,\"available\":true,\"respawnAt\":0},{\"id\":37,\"x\":3.4409855551894077,\"z\":-19.240337636872408,\"available\":true,\"respawnAt\":0},{\"id\":38,\"x\":5.56230589874905,\"z\":-20.119017293312766,\"available\":true,\"respawnAt\":0},{\"id\":39,\"x\":7.6836262423086925,\"z\":-19.240337636872408,\"available\":true,\"respawnAt\":0}],\"enemies\":[{\"id\":0,\"x\":5.4990734188464785e-15,\"z\":8.56259507742152e-15,\"fleeUntil\":0},{\"id\":1,\"x\":-4.5276282722994665e-15,\"z\":9.894862706971708e-15,\"fleeUntil\":0},{\"id\":2,\"x\":-7.889522368742519e-15,\"z\":1.124100812432971e-15,\"fleeUntil\":0},{\"id\":3,\"x\":-2.671474153004283e-15,\"z\":-3.094746681142624e-15,\"fleeUntil\":0}]}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "git diff check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "git tracked files",
+      "command": [
+        "git",
+        "ls-files"
+      ],
+      "cwd": "E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long",
+      "exitCode": 0,
+      "stdout": "CHECKPOINTS.md\nGUIDE.md\nREADME.md\nRUBRIC.md\nRULES.md\nSUBMISSION.md\n",
+      "stderr": ""
+    }
+  ]
+}

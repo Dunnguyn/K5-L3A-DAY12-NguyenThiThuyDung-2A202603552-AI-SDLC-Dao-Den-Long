@@ -1,0 +1,10 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const files=[];function visit(p){for(const e of readdirSync(p,{withFileTypes:true})){const f=`${p}/${e.name}`;if(e.isDirectory())visit(f);else files.push(f);}}visit('src');
+const git=args=>{const r=spawnSync('git',args,{encoding:'utf8'});return {command:['git',...args],exitCode:r.status,stdout:r.stdout,stderr:r.stderr};};
+const args=['-l','--hidden','-g','!node_modules/**','-g','!.git/**','-g','!dist/**','-g','!docs/proof/**','(sk-[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH )?PRIVATE KEY|ghp_[A-Za-z0-9]{20,})','.'];
+const scan=spawnSync('rg',args,{encoding:'utf8'});
+const result={timestamp:new Date().toISOString(),scope:'Source hashes at independent QA; pattern scan is limited, file paths only, not a security audit.',prdSha256:hash('docs/requirements/PRD-0.md'),sourceSha256:Object.fromEntries(files.map(f=>[f,hash(f)])),head:git(['rev-parse','HEAD']),status:git(['status','--short']),tags:git(['tag','--list']),trackedFiles:git(['ls-files']),whitespace:git(['diff','--check']),secretPatternScan:{command:['rg',...args],exitCode:scan.status,matchingPaths:scan.stdout,stderr:scan.stderr}};
+writeFileSync('docs/proof/phase-1/qa/provenance.json',JSON.stringify(result,null,2));console.log(JSON.stringify({prdSha256:result.prdSha256,sourceFiles:files.length,scanExit:scan.status,matchingPaths:scan.stdout,whitespace:result.whitespace.exitCode}));

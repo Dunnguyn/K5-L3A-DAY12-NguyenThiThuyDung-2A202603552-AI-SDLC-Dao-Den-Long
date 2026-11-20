@@ -1,0 +1,266 @@
+{
+  "counts": {
+    "PASS": 24,
+    "NOT VERIFIED": 4,
+    "PARTIAL": 3,
+    "FAIL": 1
+  },
+  "rows": [
+    {
+      "id": "BR-01",
+      "expected": "Một màn Đêm 1 – Đảo Bến; đảo tròn; đúng 5 đèn",
+      "actual": "Đúng layout 5 đèn, mesh tròn, tên đúng",
+      "evidence": "src/data/night-1.js; browser-start.png; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-02",
+      "expected": "Di chuyển/chéo/nhảy/tiếp đất/biên",
+      "actual": "8 hướng đúng tốc độ, không tăng tốc chéo, nhảy lại trên không bị từ chối, rời biên được",
+      "evidence": "independent.mjs; test-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-03",
+      "expected": "Thu đom đóm; không trùng; respawn/reset",
+      "actual": "+1 light/+10; ngưỡng 1; respawn đúng tick+900, reset sạch",
+      "evidence": "test-results.json; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-04",
+      "expected": "Nạp đủ/thiếu/xa/đã sáng/đang nhảy",
+      "actual": "Chi phí 5, phạm vi 2, không trừ/cộng trùng; đủ 5 đèn trong browser",
+      "evidence": "test-results.json; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-05",
+      "expected": "Bóng Mực xuất hiện và đuổi",
+      "actual": "4 enemy mặc định; chase giảm khoảng cách",
+      "evidence": "src/core/game.js; test-results.json; browser-loss.png",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-06",
+      "expected": "Tiếp xúc gây mất HP",
+      "actual": "10 damage; cooldown toàn cục 60 tick; nhiều quái một hit",
+      "evidence": "test-results.json; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-07",
+      "expected": "Tỏa sáng tiêu tài nguyên và xua quái",
+      "actual": "Chi phí 2, radius 6, cooldown 60 tick; input Q thành công",
+      "evidence": "test-results.json; browser-glow.png; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-08",
+      "expected": "Quái sợ đèn đã sáng",
+      "actual": "Đèn sáng xua, bảo vệ Mây; đèn tắt không bảo vệ",
+      "evidence": "test-results.json; src/core/game.js",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-09",
+      "expected": "Đèn thứ 5 kích hoạt thắng",
+      "actual": "Browser thắng hợp lệ; 5/5, điểm 1330 ở route nghiệm thu",
+      "evidence": "browser-win.png; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-10",
+      "expected": "HP hết thì thua; ưu tiên tie đã chốt",
+      "actual": "HP chặn 0; lethal contact trước đèn cuối; màn thua",
+      "evidence": "test-results.json; browser-loss.png; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-11",
+      "expected": "Điểm đúng, không cộng trùng",
+      "actual": "10/pickup +100/lamp +500/win; route thắng kiểm công thức bảo toàn light",
+      "evidence": "test-results.json; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "BR-12",
+      "expected": "Restart sau thắng và thua",
+      "actual": "Reset HP/light/score/lamps/flies/timers/enemies; state còn tick di chuyển hợp lệ sau restart",
+      "evidence": "browser-restart.png; browser-results.json; test-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "UI-01",
+      "expected": "Camera 3D điều khiển được",
+      "actual": "Camera kéo chuột đổi yaw; góc thứ ba rõ ở ảnh",
+      "evidence": "src/browser/main.js; browser-camera.png; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "UI-02",
+      "expected": "HUD/thông báo/hướng dẫn/start/end",
+      "actual": "HUD rõ HP/light/đèn/điểm; nút start/win/loss/restart hoạt động",
+      "evidence": "browser-start.png; browser-win.png; browser-loss.png; browser-restart.png",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ART-01",
+      "expected": "Mây nón lá treo đèn nhỏ",
+      "actual": "Ảnh xác nhận nón hình nón và đèn nhỏ bên phải",
+      "evidence": "browser-restart.png; src/browser/main.js",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ART-02",
+      "expected": "Đêm cổ tích, ánh vàng cam, nguy hiểm tím đen",
+      "actual": "Màu sắc và biển mây phù hợp; hình procedural đơn giản",
+      "evidence": "browser-one-lantern.png; browser-glow.png",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ART-03",
+      "expected": "Đảo sáng dần",
+      "actual": "Ambient tăng 1.3 → 2.3, bước .2; màu nền và đèn thay đổi; chụp mốc 1 đèn và thắng",
+      "evidence": "browser-results.json E2E-01 progress; src/browser/main.js",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ART-04",
+      "expected": "Không máu me/bạo lực",
+      "actual": "Quái tròn stylized, phản hồi HP bằng chữ; không thấy máu me",
+      "evidence": "source review; browser screenshots",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ENV-01",
+      "expected": "Chạy laptop macOS/Linux",
+      "actual": "Có web build và workflow Ubuntu; chưa chạy OS mục tiêu",
+      "evidence": "README.md; .github/workflows/verify.yml",
+      "severity": "—",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "id": "DOC-01",
+      "expected": "README chạy <=3 lệnh, điều khiển và điểm",
+      "actual": "Chạy 2 lệnh; có controls/score. Headless wrapper stdout cần chú thích (QA-03)",
+      "evidence": "README.md; npm-headless.stdout.txt",
+      "severity": "MINOR",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "CON-01",
+      "expected": "game.contract theo official v1.0",
+      "actual": "Chỉ internal-draft-1; nguồn official chưa truy cập",
+      "evidence": "contract-audit.md",
+      "severity": "BLOCKER (acceptance dependency)",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "id": "CON-02",
+      "expected": "Headless theo official v1.0",
+      "actual": "CLI nội bộ chạy đúng; không có schema official để đối chiếu",
+      "evidence": "contract-audit.md; command-results.json",
+      "severity": "BLOCKER (acceptance dependency)",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "id": "EVI-01",
+      "expected": "Evidence gameplay thật",
+      "actual": "Unit + route headless + browser input win/loss/glow/reset; giữ attempts lỗi",
+      "evidence": "test-results.json; command-results.json; browser-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "NOT-01",
+      "expected": "Ghi giả định và AI usage minh bạch",
+      "actual": "Notes ghi draft, giả định, token ước tính không phải telemetry; QA log bổ sung",
+      "evidence": "docs/notes/phase-1.md; docs/notes/AI_USAGE.md",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "HAR-01",
+      "expected": "AGENTS và skill dùng thực tế",
+      "actual": "Đã đọc skill và chạy verify; 5 checks PASS",
+      "evidence": "command-results.json; ../verification.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "REL-01",
+      "expected": "Repo public/tag tương ứng code",
+      "actual": "Chưa commit/tag/push theo lệnh; public repo cá nhân chưa xác minh",
+      "evidence": "command-results.json git tracked files; git status",
+      "severity": "—",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "id": "ARCH-01",
+      "expected": "Plain ESM shared core",
+      "actual": "Browser/headless import cùng core; chỉ config/layout imports trong core",
+      "evidence": "src/core/game.js; src/headless/adapter.js; src/browser/main.js",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "ARCH-02",
+      "expected": "Gameplay constants một config",
+      "actual": "Browser lặp 1/60, island mesh 30, HUD health 100; core glow feedback 30 tick. Nguy cơ lệch khi đổi config",
+      "evidence": "src/browser/main.js; src/core/game.js; src/config/game.js",
+      "severity": "MINOR",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "QA-OUT",
+      "expected": "Internal output validate đầy đủ shape được công bố",
+      "actual": "Chấp nhận enemies:[null], fireflies:[null]; không phải yêu cầu official suy diễn",
+      "evidence": "test-results.json output validator rejects malformed entities",
+      "severity": "MINOR",
+      "status": "FAIL"
+    },
+    {
+      "id": "OPS-01",
+      "expected": "Install/tests/build/verify/browser/CLI",
+      "actual": "Clean dependency npm ci + suite workspace đều exit 0; CI chưa chạy",
+      "evidence": "command-results.json",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "LEGAL-01",
+      "expected": "LICENSE/CREDITS; không secret/build thừa trong Git",
+      "actual": "MIT/CREDITS có mặt; git tracked chỉ 6 tài liệu; quét pattern thông dụng không match",
+      "evidence": "LICENSE; CREDITS.md; command-results.json git tracked files",
+      "severity": "—",
+      "status": "PASS"
+    },
+    {
+      "id": "PERF-01",
+      "expected": "Số đo FPS/load/errors/restart memory thực",
+      "actual": "Có đo Chromium software rendering; chưa đo GPU máy người dùng; xem performance.json",
+      "evidence": "performance.json",
+      "severity": "OBSERVATION",
+      "status": "PARTIAL"
+    }
+  ]
+}

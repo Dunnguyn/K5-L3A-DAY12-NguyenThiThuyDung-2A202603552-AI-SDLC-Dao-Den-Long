@@ -1,0 +1,27 @@
+{
+  "name": "dao-den-long",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "headless": "node scripts/headless.mjs",
+    "test:browser": "node scripts/browser-check.mjs",
+    "smoke:headless": "node scripts/smoke-headless.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

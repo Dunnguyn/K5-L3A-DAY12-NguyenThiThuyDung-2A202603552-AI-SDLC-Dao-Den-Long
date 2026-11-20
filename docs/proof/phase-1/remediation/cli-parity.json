@@ -1,0 +1,30 @@
+{
+  "cli": [
+    {
+      "name": "win",
+      "mode": "node",
+      "parse": true,
+      "baselineEqual": true
+    },
+    {
+      "name": "win",
+      "mode": "npm-silent",
+      "parse": true,
+      "baselineEqual": true
+    },
+    {
+      "name": "loss",
+      "mode": "node",
+      "parse": true,
+      "baselineEqual": true
+    },
+    {
+      "name": "loss",
+      "mode": "npm-silent",
+      "parse": true,
+      "baselineEqual": true
+    }
+  ],
+  "fullSnapshotBaselineEqual": true,
+  "seed": "none: fixed layout; exact original action streams"
+}

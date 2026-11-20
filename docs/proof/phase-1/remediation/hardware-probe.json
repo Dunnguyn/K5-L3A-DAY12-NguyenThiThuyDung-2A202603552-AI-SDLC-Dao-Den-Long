@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-20T09:07:57.795Z",
+  "method": "Chromium default headless GPU selection; no SwiftShader flag, no GPU override",
+  "errors": [],
+  "browser": "159.0.8154.6",
+  "loadMs": 5789,
+  "gpu": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "vendor": "Google Inc. (Google)",
+    "error": 0
+  },
+  "hardwareVerified": false,
+  "status": "NOT VERIFIED: hardware acceleration not available in tested runtime; retain QA software-only performance sample"
+}

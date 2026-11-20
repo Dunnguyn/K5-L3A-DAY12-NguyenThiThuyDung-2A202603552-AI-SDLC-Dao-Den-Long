@@ -1,0 +1,64 @@
+{
+  "scope": "shared gameplay core + internal draft headless + build; official contract NOT VERIFIED; browser evidence separate",
+  "timestamp": "2026-11-20T09:29:32.892Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "commit": "9818fc13d8908680bb15b739f07ad6dab3ef6c6a",
+  "workingTree": " M README.md\n?? .agents/\n?? .github/\n?? .gitignore\n?? AGENTS.md\n?? CREDITS.md\n?? LICENSE\n?? docs/\n?? game.contract.json\n?? index.html\n?? package-lock.json\n?? package.json\n?? scripts/\n?? src/\n?? tests/\n",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "checks": [
+    {
+      "name": "contract-generation",
+      "command": [
+        "node",
+        "scripts/write-contract.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "headless-scenarios",
+      "command": [
+        "node",
+        "scripts/scenarios.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: default-world win route and idle loss, deterministic replay; no teleport or config overrides.\n",
+      "stderr": ""
+    },
+    {
+      "name": "headless-import",
+      "command": [
+        "node",
+        "scripts/smoke-headless.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: Node ESM imports core without DOM. Infrastructure only; no contract runner.\n",
+      "stderr": ""
+    },
+    {
+      "name": "vitest",
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run"
+      ],
+      "exitCode": 0,
+      "stdout": "\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n\n Test Files  4 passed (4)\n      Tests  18 passed (18)\n   Start at  16:29:34\n   Duration  698ms (tests 55%, import 29%, transform 10%, worker 6%)\n\n",
+      "stderr": ""
+    },
+    {
+      "name": "vite-build",
+      "command": [
+        "node",
+        "node_modules/vite/bin/vite.js",
+        "build"
+      ],
+      "exitCode": 0,
+      "stdout": "vite v8.3.8 building client environment for production...\ntransforming...\n✓ 10 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.38 kB │ gzip:   0.30 kB\ndist/assets/index-CJRzL0_m.css    1.39 kB │ gzip:   0.68 kB\ndist/assets/index-DdRgnyGj.js   550.56 kB │ gzip: 138.39 kB\n\n✓ built in 581ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    }
+  ],
+  "passed": true
+}

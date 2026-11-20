@@ -1,0 +1,4 @@
+# Preserve byte-level provenance of requirements and historical evidence.
+# Upstream CRLF and Markdown hard breaks are immutable, not local lint errors.
+docs/requirements/PRD-0.md -text -whitespace
+docs/proof/** -text

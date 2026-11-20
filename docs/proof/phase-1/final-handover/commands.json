@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-20T09:29:26.125Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "scope": "final handover; no source gameplay changes; previous evidence preserved",
+  "commands": [
+    {
+      "name": "npm test",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/s",
+        "/c",
+        "npm.cmd test"
+      ],
+      "exitCode": 0,
+      "stdout": "\n> dao-den-long@0.0.0 test\n> vitest run\n\n\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n\n Test Files  4 passed (4)\n      Tests  18 passed (18)\n   Start at  16:29:27\n   Duration  739ms (tests 55%, import 30%, transform 8%, worker 7%)\n\n",
+      "stderr": ""
+    },
+    {
+      "name": "independent QA tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "docs/proof/phase-1/final-handover/independent.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "[{\"id\":\"movement 1,0\",\"status\":\"PASS\"},{\"id\":\"movement -1,0\",\"status\":\"PASS\"},{\"id\":\"movement 0,1\",\"status\":\"PASS\"},{\"id\":\"movement 0,-1\",\"status\":\"PASS\"},{\"id\":\"movement 1,1\",\"status\":\"PASS\"},{\"id\":\"movement -1,-1\",\"status\":\"PASS\"},{\"id\":\"movement 1,-1\",\"status\":\"PASS\"},{\"id\":\"movement -1,1\",\"status\":\"PASS\"},{\"id\":\"jump airborne retrigger\",\"status\":\"PASS\"},{\"id\":\"pickup exact boundary lifecycle\",\"status\":\"PASS\"},{\"id\":\"pickup just outside\",\"status\":\"PASS\"},{\"id\":\"lantern boundaries and duplicate\",\"status\":\"PASS\"},{\"id\":\"lantern airborne\",\"status\":\"PASS\"},{\"id\":\"chase simultaneous damage cooldown\",\"status\":\"PASS\"},{\"id\":\"unlit vs lit sanctuary\",\"status\":\"PASS\"},{\"id\":\"glow cost cooldown and radius\",\"status\":\"PASS\"},{\"id\":\"victory and terminal freeze\",\"status\":\"PASS\"},{\"id\":\"death tie and freeze\",\"status\":\"PASS\"},{\"id\":\"invalid input matrix\",\"status\":\"PASS\"},{\"id\":\"CLI missing file and arguments\",\"status\":\"PASS\"},{\"id\":\"output validator rejects malformed entities\",\"status\":\"PASS\"}]\n",
+      "stderr": ""
+    },
+    {
+      "name": "npm run build",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/s",
+        "/c",
+        "npm.cmd run build"
+      ],
+      "exitCode": 0,
+      "stdout": "\n> dao-den-long@0.0.0 build\n> vite build\n\nvite v8.3.8 building client environment for production...\ntransforming...\n✓ 10 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.38 kB │ gzip:   0.30 kB\ndist/assets/index-CJRzL0_m.css    1.39 kB │ gzip:   0.68 kB\ndist/assets/index-DdRgnyGj.js   550.56 kB │ gzip: 138.39 kB\n\n✓ built in 581ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    },
+    {
+      "name": "npm run verify",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/s",
+        "/c",
+        "npm.cmd run verify"
+      ],
+      "exitCode": 0,
+      "stdout": "\n> dao-den-long@0.0.0 verify\n> node scripts/verify.mjs\n\ncontract-generation: PASS\nheadless-scenarios: PASS\nheadless-import: PASS\nvitest: PASS\nvite-build: PASS\n",
+      "stderr": ""
+    },
+    {
+      "name": "git diff check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

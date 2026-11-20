@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-11-20T08:55:02.130Z",
+  "scope": "Source hashes at independent QA; pattern scan is limited, file paths only, not a security audit.",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "sourceSha256": {
+    "src/browser/main.js": "42fe54352fdd47ae96677355a824b328759416c18b7cad72415cecae3a4af6b5",
+    "src/browser/style.css": "50c770b28197f5c07d454ac472f5936bfac37d0a8f62cf42bc868e04a28f7e01",
+    "src/config/game.js": "a161f69a2d6454ca29028f19ccf0da642d7078ffd14397ac5c25a8078ac0f9c5",
+    "src/core/environment.js": "e19bc23412d68a9e0bf7e6e96417e9f362c38bac1313785c8e3381a2b610a3c9",
+    "src/core/game.js": "f512fe7c09a8b6d56c18d870e3de04302479428d3ac12aafe5f7639ec4e13ea6",
+    "src/data/night-1.js": "f136493a5cd13abeb33eab7383a8e06ac764b58175da590f5f9ce09db84c2b43",
+    "src/headless/adapter.js": "56c47200fee27ffcc3df68780d192722f7c4c466c7047faca05f29c1b2bdc109"
+  },
+  "head": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "9818fc13d8908680bb15b739f07ad6dab3ef6c6a\n",
+    "stderr": ""
+  },
+  "status": {
+    "command": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exitCode": 0,
+    "stdout": " M README.md\n?? .agents/\n?? .github/\n?? .gitignore\n?? AGENTS.md\n?? CREDITS.md\n?? LICENSE\n?? docs/\n?? game.contract.json\n?? index.html\n?? package-lock.json\n?? package.json\n?? scripts/\n?? src/\n?? tests/\n",
+    "stderr": ""
+  },
+  "tags": {
+    "command": [
+      "git",
+      "tag",
+      "--list"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "trackedFiles": {
+    "command": [
+      "git",
+      "ls-files"
+    ],
+    "exitCode": 0,
+    "stdout": "CHECKPOINTS.md\nGUIDE.md\nREADME.md\nRUBRIC.md\nRULES.md\nSUBMISSION.md\n",
+    "stderr": ""
+  },
+  "whitespace": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "secretPatternScan": {
+    "command": [
+      "rg",
+      "-l",
+      "--hidden",
+      "-g",
+      "!node_modules/**",
+      "-g",
+      "!.git/**",
+      "-g",
+      "!dist/**",
+      "-g",
+      "!docs/proof/**",
+      "(sk-[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH )?PRIVATE KEY|ghp_[A-Za-z0-9]{20,})",
+      "."
+    ],
+    "exitCode": 1,
+    "matchingPaths": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "qaOriginalUnchanged": true,
+  "qaFiles": 39,
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "lockfileMatchesPackage": true,
+  "requiredFilesPresent": true,
+  "officialContract": "NOT VERIFIED",
+  "targetOS": "await actual CI result; macOS NOT VERIFIED",
+  "hardwareGPU": "NOT VERIFIED"
+}

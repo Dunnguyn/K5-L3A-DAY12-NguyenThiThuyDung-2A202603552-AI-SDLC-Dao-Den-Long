@@ -1,0 +1,17 @@
+{
+  "scope": "real Chromium WebGL + user input smoke; not full browser win route",
+  "checks": [
+    "WebGL2 context available",
+    "start, move, jump, interaction and glow key events delivered",
+    "camera drag and gameplay screenshot",
+    "real-time loss and restart reset HUD"
+  ],
+  "errors": [],
+  "warnings": [
+    "[.WebGL-0x7d7c003f6000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x7d7c003f6000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x7d7c003f6000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x7d7c003f6000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "passed": true
+}

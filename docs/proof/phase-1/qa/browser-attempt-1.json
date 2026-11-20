@@ -1,0 +1,1583 @@
+{
+  "timestamp": "2026-11-20T08:24:56.135Z",
+  "method": "Chromium headless SwiftShader; actual Playwright keyboard/mouse inputs. Test-only response appends read-only snapshot closure to main.js; no state writes. Playwright virtual browser clock for acceptance routes; real wall clock for performance.",
+  "scenarios": [
+    {
+      "id": "E2E-01 win and restart",
+      "status": "FAIL",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'lost' !== 'playing'\n\n    at go (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-1/qa/browser-acceptance.mjs:19:88)\n    at async file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-1/qa/browser-acceptance.mjs:20:224\n    at async scenario (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-1/qa/browser-acceptance.mjs:11:49)\n    at async file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-1/qa/browser-acceptance.mjs:20:2"
+    },
+    {
+      "id": "E2E-02 loss and restart",
+      "status": "PASS",
+      "actual": {
+        "history": [
+          {
+            "tick": 29,
+            "hp": 100
+          },
+          {
+            "tick": 67,
+            "hp": 100
+          },
+          {
+            "tick": 100,
+            "hp": 100
+          },
+          {
+            "tick": 158,
+            "hp": 100
+          },
+          {
+            "tick": 208,
+            "hp": 100
+          },
+          {
+            "tick": 247,
+            "hp": 100
+          },
+          {
+            "tick": 284,
+            "hp": 100
+          },
+          {
+            "tick": 321,
+            "hp": 100
+          },
+          {
+            "tick": 402,
+            "hp": 100
+          },
+          {
+            "tick": 467,
+            "hp": 100
+          },
+          {
+            "tick": 554,
+            "hp": 100
+          },
+          {
+            "tick": 600,
+            "hp": 90
+          },
+          {
+            "tick": 643,
+            "hp": 80
+          },
+          {
+            "tick": 680,
+            "hp": 80
+          },
+          {
+            "tick": 756,
+            "hp": 60
+          },
+          {
+            "tick": 804,
+            "hp": 60
+          },
+          {
+            "tick": 841,
+            "hp": 50
+          },
+          {
+            "tick": 878,
+            "hp": 40
+          },
+          {
+            "tick": 908,
+            "hp": 40
+          },
+          {
+            "tick": 939,
+            "hp": 30
+          },
+          {
+            "tick": 970,
+            "hp": 30
+          },
+          {
+            "tick": 1006,
+            "hp": 20
+          },
+          {
+            "tick": 1044,
+            "hp": 20
+          },
+          {
+            "tick": 1079,
+            "hp": 10
+          },
+          {
+            "tick": 1114,
+            "hp": 0
+          }
+        ],
+        "end": {
+          "level": "Đêm 1 – Đảo Bến",
+          "status": "lost",
+          "tick": 1114,
+          "score": 0,
+          "player": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "vy": 0,
+            "health": 0,
+            "light": 0
+          },
+          "damageAt": 1174,
+          "glowAt": 0,
+          "glowUntil": 0,
+          "message": "Bóng Mực chạm vào Mây!",
+          "lanterns": [
+            {
+              "id": 0,
+              "x": 18,
+              "z": 0,
+              "lit": false
+            },
+            {
+              "id": 1,
+              "x": 5.562305898749054,
+              "z": 17.119017293312762,
+              "lit": false
+            },
+            {
+              "id": 2,
+              "x": -14.562305898749052,
+              "z": 10.580134541264519,
+              "lit": false
+            },
+            {
+              "id": 3,
+              "x": -14.562305898749056,
+              "z": -10.580134541264515,
+              "lit": false
+            },
+            {
+              "id": 4,
+              "x": 5.562305898749051,
+              "z": -17.119017293312766,
+              "lit": false
+            }
+          ],
+          "fireflies": [
+            {
+              "id": 0,
+              "x": 21,
+              "z": 0,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 1,
+              "x": 20.121320343559642,
+              "z": 2.1213203435596424,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 2,
+              "x": 18,
+              "z": 3,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 3,
+              "x": 15.878679656440358,
+              "z": 2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 4,
+              "x": 15,
+              "z": 3.6739403974420594e-16,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 5,
+              "x": 15.878679656440358,
+              "z": -2.1213203435596424,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 6,
+              "x": 18,
+              "z": -3,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 7,
+              "x": 20.121320343559642,
+              "z": -2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 8,
+              "x": 8.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 9,
+              "x": 7.683626242308697,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 10,
+              "x": 5.562305898749054,
+              "z": 20.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 11,
+              "x": 3.4409855551894117,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 12,
+              "x": 2.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 13,
+              "x": 3.4409855551894113,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 14,
+              "x": 5.562305898749053,
+              "z": 14.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 15,
+              "x": 7.683626242308696,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 16,
+              "x": -11.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 17,
+              "x": -12.44098555518941,
+              "z": 12.70145488482416,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 18,
+              "x": -14.562305898749052,
+              "z": 13.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 19,
+              "x": -16.683626242308694,
+              "z": 12.701454884824162,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 20,
+              "x": -17.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 21,
+              "x": -16.683626242308694,
+              "z": 8.458814197704877,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 22,
+              "x": -14.562305898749052,
+              "z": 7.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 23,
+              "x": -12.44098555518941,
+              "z": 8.458814197704875,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 24,
+              "x": -11.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 25,
+              "x": -12.440985555189414,
+              "z": -8.458814197704873,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 26,
+              "x": -14.562305898749056,
+              "z": -7.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 27,
+              "x": -16.683626242308698,
+              "z": -8.458814197704871,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 28,
+              "x": -17.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 29,
+              "x": -16.683626242308698,
+              "z": -12.701454884824157,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 30,
+              "x": -14.562305898749056,
+              "z": -13.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 31,
+              "x": -12.440985555189414,
+              "z": -12.701454884824159,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 32,
+              "x": 8.56230589874905,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 33,
+              "x": 7.683626242308693,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 34,
+              "x": 5.562305898749051,
+              "z": -14.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 35,
+              "x": 3.440985555189408,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 36,
+              "x": 2.5623058987490506,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 37,
+              "x": 3.4409855551894077,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 38,
+              "x": 5.56230589874905,
+              "z": -20.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 39,
+              "x": 7.6836262423086925,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            }
+          ],
+          "enemies": [
+            {
+              "id": 0,
+              "x": 5.4990734188464785e-15,
+              "z": 8.56259507742152e-15,
+              "fleeUntil": 0
+            },
+            {
+              "id": 1,
+              "x": -4.5276282722994665e-15,
+              "z": 9.894862706971708e-15,
+              "fleeUntil": 0
+            },
+            {
+              "id": 2,
+              "x": -7.889522368742519e-15,
+              "z": 1.124100812432971e-15,
+              "fleeUntil": 0
+            },
+            {
+              "id": 3,
+              "x": -2.671474153004283e-15,
+              "z": -3.094746681142624e-15,
+              "fleeUntil": 0
+            }
+          ]
+        },
+        "reset": {
+          "level": "Đêm 1 – Đảo Bến",
+          "status": "playing",
+          "tick": 2,
+          "score": 0,
+          "player": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "vy": 0,
+            "health": 100,
+            "light": 0
+          },
+          "damageAt": 0,
+          "glowAt": 0,
+          "glowUntil": 0,
+          "message": "Thu đom đóm và mang ánh sáng về đèn.",
+          "lanterns": [
+            {
+              "id": 0,
+              "x": 18,
+              "z": 0,
+              "lit": false
+            },
+            {
+              "id": 1,
+              "x": 5.562305898749054,
+              "z": 17.119017293312762,
+              "lit": false
+            },
+            {
+              "id": 2,
+              "x": -14.562305898749052,
+              "z": 10.580134541264519,
+              "lit": false
+            },
+            {
+              "id": 3,
+              "x": -14.562305898749056,
+              "z": -10.580134541264515,
+              "lit": false
+            },
+            {
+              "id": 4,
+              "x": 5.562305898749051,
+              "z": -17.119017293312766,
+              "lit": false
+            }
+          ],
+          "fireflies": [
+            {
+              "id": 0,
+              "x": 21,
+              "z": 0,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 1,
+              "x": 20.121320343559642,
+              "z": 2.1213203435596424,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 2,
+              "x": 18,
+              "z": 3,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 3,
+              "x": 15.878679656440358,
+              "z": 2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 4,
+              "x": 15,
+              "z": 3.6739403974420594e-16,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 5,
+              "x": 15.878679656440358,
+              "z": -2.1213203435596424,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 6,
+              "x": 18,
+              "z": -3,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 7,
+              "x": 20.121320343559642,
+              "z": -2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 8,
+              "x": 8.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 9,
+              "x": 7.683626242308697,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 10,
+              "x": 5.562305898749054,
+              "z": 20.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 11,
+              "x": 3.4409855551894117,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 12,
+              "x": 2.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 13,
+              "x": 3.4409855551894113,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 14,
+              "x": 5.562305898749053,
+              "z": 14.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 15,
+              "x": 7.683626242308696,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 16,
+              "x": -11.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 17,
+              "x": -12.44098555518941,
+              "z": 12.70145488482416,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 18,
+              "x": -14.562305898749052,
+              "z": 13.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 19,
+              "x": -16.683626242308694,
+              "z": 12.701454884824162,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 20,
+              "x": -17.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 21,
+              "x": -16.683626242308694,
+              "z": 8.458814197704877,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 22,
+              "x": -14.562305898749052,
+              "z": 7.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 23,
+              "x": -12.44098555518941,
+              "z": 8.458814197704875,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 24,
+              "x": -11.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 25,
+              "x": -12.440985555189414,
+              "z": -8.458814197704873,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 26,
+              "x": -14.562305898749056,
+              "z": -7.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 27,
+              "x": -16.683626242308698,
+              "z": -8.458814197704871,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 28,
+              "x": -17.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 29,
+              "x": -16.683626242308698,
+              "z": -12.701454884824157,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 30,
+              "x": -14.562305898749056,
+              "z": -13.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 31,
+              "x": -12.440985555189414,
+              "z": -12.701454884824159,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 32,
+              "x": 8.56230589874905,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 33,
+              "x": 7.683626242308693,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 34,
+              "x": 5.562305898749051,
+              "z": -14.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 35,
+              "x": 3.440985555189408,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 36,
+              "x": 2.5623058987490506,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 37,
+              "x": 3.4409855551894077,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 38,
+              "x": 5.56230589874905,
+              "z": -20.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 39,
+              "x": 7.6836262423086925,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            }
+          ],
+          "enemies": [
+            {
+              "id": 0,
+              "x": 20.564612404832815,
+              "z": 14.069008295426299,
+              "fleeUntil": 0
+            },
+            {
+              "id": 1,
+              "x": -14.069008295426299,
+              "z": 20.564612404832815,
+              "fleeUntil": 0
+            },
+            {
+              "id": 2,
+              "x": -20.564612404832815,
+              "z": -14.069008295426299,
+              "fleeUntil": 0
+            },
+            {
+              "id": 3,
+              "x": 14.069008295426288,
+              "z": -20.564612404832822,
+              "fleeUntil": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "E2E-03 successful glow",
+      "status": "PASS",
+      "actual": {
+        "before": {
+          "level": "Đêm 1 – Đảo Bến",
+          "status": "playing",
+          "tick": 322,
+          "score": 40,
+          "player": {
+            "x": 17.78578643762691,
+            "y": 0,
+            "z": 3.314213562373094,
+            "vy": 0,
+            "health": 90,
+            "light": 4
+          },
+          "damageAt": 363,
+          "glowAt": 0,
+          "glowUntil": 0,
+          "message": "Bóng Mực chạm vào Mây!",
+          "lanterns": [
+            {
+              "id": 0,
+              "x": 18,
+              "z": 0,
+              "lit": false
+            },
+            {
+              "id": 1,
+              "x": 5.562305898749054,
+              "z": 17.119017293312762,
+              "lit": false
+            },
+            {
+              "id": 2,
+              "x": -14.562305898749052,
+              "z": 10.580134541264519,
+              "lit": false
+            },
+            {
+              "id": 3,
+              "x": -14.562305898749056,
+              "z": -10.580134541264515,
+              "lit": false
+            },
+            {
+              "id": 4,
+              "x": 5.562305898749051,
+              "z": -17.119017293312766,
+              "lit": false
+            }
+          ],
+          "fireflies": [
+            {
+              "id": 0,
+              "x": 21,
+              "z": 0,
+              "available": false,
+              "respawnAt": 1127
+            },
+            {
+              "id": 1,
+              "x": 20.121320343559642,
+              "z": 2.1213203435596424,
+              "available": false,
+              "respawnAt": 1165
+            },
+            {
+              "id": 2,
+              "x": 18,
+              "z": 3,
+              "available": false,
+              "respawnAt": 1198
+            },
+            {
+              "id": 3,
+              "x": 15.878679656440358,
+              "z": 2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 4,
+              "x": 15,
+              "z": 3.6739403974420594e-16,
+              "available": false,
+              "respawnAt": 1062
+            },
+            {
+              "id": 5,
+              "x": 15.878679656440358,
+              "z": -2.1213203435596424,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 6,
+              "x": 18,
+              "z": -3,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 7,
+              "x": 20.121320343559642,
+              "z": -2.121320343559643,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 8,
+              "x": 8.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 9,
+              "x": 7.683626242308697,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 10,
+              "x": 5.562305898749054,
+              "z": 20.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 11,
+              "x": 3.4409855551894117,
+              "z": 19.240337636872404,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 12,
+              "x": 2.562305898749054,
+              "z": 17.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 13,
+              "x": 3.4409855551894113,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 14,
+              "x": 5.562305898749053,
+              "z": 14.119017293312762,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 15,
+              "x": 7.683626242308696,
+              "z": 14.99769694975312,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 16,
+              "x": -11.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 17,
+              "x": -12.44098555518941,
+              "z": 12.70145488482416,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 18,
+              "x": -14.562305898749052,
+              "z": 13.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 19,
+              "x": -16.683626242308694,
+              "z": 12.701454884824162,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 20,
+              "x": -17.562305898749052,
+              "z": 10.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 21,
+              "x": -16.683626242308694,
+              "z": 8.458814197704877,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 22,
+              "x": -14.562305898749052,
+              "z": 7.580134541264519,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 23,
+              "x": -12.44098555518941,
+              "z": 8.458814197704875,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 24,
+              "x": -11.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 25,
+              "x": -12.440985555189414,
+              "z": -8.458814197704873,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 26,
+              "x": -14.562305898749056,
+              "z": -7.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 27,
+              "x": -16.683626242308698,
+              "z": -8.458814197704871,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 28,
+              "x": -17.562305898749056,
+              "z": -10.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 29,
+              "x": -16.683626242308698,
+              "z": -12.701454884824157,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 30,
+              "x": -14.562305898749056,
+              "z": -13.580134541264515,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 31,
+              "x": -12.440985555189414,
+              "z": -12.701454884824159,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 32,
+              "x": 8.56230589874905,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 33,
+              "x": 7.683626242308693,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 34,
+              "x": 5.562305898749051,
+              "z": -14.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 35,
+              "x": 3.440985555189408,
+              "z": -14.997696949753124,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 36,
+              "x": 2.5623058987490506,
+              "z": -17.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 37,
+              "x": 3.4409855551894077,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 38,
+              "x": 5.56230589874905,
+              "z": -20.119017293312766,
+              "available": true,
+              "respawnAt": 0
+            },
+            {
+              "id": 39,
+              "x": 7.6836262423086925,
+              "z": -19.240337636872408,
+              "available": true,
+              "respawnAt": 0
+            }
+          ],
+          "enemies": [
+            {
+              "id": 0,
+              "x": 17.78714247530949,
+              "z": 3.314645510859102,
+              "fleeUntil": 0
+            },
+            {
+              "id": 1,
+              "x": -3.391453399800047,
+              "z": 12.858672186742824,
+              "fleeUntil": 0
+            },
+            {
+              "id": 2,
+              "x": -8.362707809076221,
+              "z": -8.795384058488708,
+              "fleeUntil": 0
+            },
+            {
+              "id": 3,
+              "x": 14.864713535433962,
+              "z": -8.15662553903561,
+              "fleeUntil": 0
+            }
+          ]
+        },
+        "after": {
+          "state": {
+            "level": "Đêm 1 – Đảo Bến",
+            "status": "playing",
+            "tick": 330,
+            "score": 40,
+            "player": {
+              "x": 17.78578643762691,
+              "y": 0,
+              "z": 3.314213562373094,
+              "vy": 0,
+              "health": 90,
+              "light": 2
+            },
+            "damageAt": 363,
+            "glowAt": 384,
+            "glowUntil": 354,
+            "message": "Ánh sáng xua tan Bóng Mực!",
+            "lanterns": [
+              {
+                "id": 0,
+                "x": 18,
+                "z": 0,
+                "lit": false
+              },
+              {
+                "id": 1,
+                "x": 5.562305898749054,
+                "z": 17.119017293312762,
+                "lit": false
+              },
+              {
+                "id": 2,
+                "x": -14.562305898749052,
+                "z": 10.580134541264519,
+                "lit": false
+              },
+              {
+                "id": 3,
+                "x": -14.562305898749056,
+                "z": -10.580134541264515,
+                "lit": false
+              },
+              {
+                "id": 4,
+                "x": 5.562305898749051,
+                "z": -17.119017293312766,
+                "lit": false
+              }
+            ],
+            "fireflies": [
+              {
+                "id": 0,
+                "x": 21,
+                "z": 0,
+                "available": false,
+                "respawnAt": 1127
+              },
+              {
+                "id": 1,
+                "x": 20.121320343559642,
+                "z": 2.1213203435596424,
+                "available": false,
+                "respawnAt": 1165
+              },
+              {
+                "id": 2,
+                "x": 18,
+                "z": 3,
+                "available": false,
+                "respawnAt": 1198
+              },
+              {
+                "id": 3,
+                "x": 15.878679656440358,
+                "z": 2.121320343559643,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 4,
+                "x": 15,
+                "z": 3.6739403974420594e-16,
+                "available": false,
+                "respawnAt": 1062
+              },
+              {
+                "id": 5,
+                "x": 15.878679656440358,
+                "z": -2.1213203435596424,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 6,
+                "x": 18,
+                "z": -3,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 7,
+                "x": 20.121320343559642,
+                "z": -2.121320343559643,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 8,
+                "x": 8.562305898749054,
+                "z": 17.119017293312762,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 9,
+                "x": 7.683626242308697,
+                "z": 19.240337636872404,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 10,
+                "x": 5.562305898749054,
+                "z": 20.119017293312762,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 11,
+                "x": 3.4409855551894117,
+                "z": 19.240337636872404,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 12,
+                "x": 2.562305898749054,
+                "z": 17.119017293312762,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 13,
+                "x": 3.4409855551894113,
+                "z": 14.99769694975312,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 14,
+                "x": 5.562305898749053,
+                "z": 14.119017293312762,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 15,
+                "x": 7.683626242308696,
+                "z": 14.99769694975312,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 16,
+                "x": -11.562305898749052,
+                "z": 10.580134541264519,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 17,
+                "x": -12.44098555518941,
+                "z": 12.70145488482416,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 18,
+                "x": -14.562305898749052,
+                "z": 13.580134541264519,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 19,
+                "x": -16.683626242308694,
+                "z": 12.701454884824162,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 20,
+                "x": -17.562305898749052,
+                "z": 10.580134541264519,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 21,
+                "x": -16.683626242308694,
+                "z": 8.458814197704877,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 22,
+                "x": -14.562305898749052,
+                "z": 7.580134541264519,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 23,
+                "x": -12.44098555518941,
+                "z": 8.458814197704875,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 24,
+                "x": -11.562305898749056,
+                "z": -10.580134541264515,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 25,
+                "x": -12.440985555189414,
+                "z": -8.458814197704873,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 26,
+                "x": -14.562305898749056,
+                "z": -7.580134541264515,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 27,
+                "x": -16.683626242308698,
+                "z": -8.458814197704871,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 28,
+                "x": -17.562305898749056,
+                "z": -10.580134541264515,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 29,
+                "x": -16.683626242308698,
+                "z": -12.701454884824157,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 30,
+                "x": -14.562305898749056,
+                "z": -13.580134541264515,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 31,
+                "x": -12.440985555189414,
+                "z": -12.701454884824159,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 32,
+                "x": 8.56230589874905,
+                "z": -17.119017293312766,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 33,
+                "x": 7.683626242308693,
+                "z": -14.997696949753124,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 34,
+                "x": 5.562305898749051,
+                "z": -14.119017293312766,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 35,
+                "x": 3.440985555189408,
+                "z": -14.997696949753124,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 36,
+                "x": 2.5623058987490506,
+                "z": -17.119017293312766,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 37,
+                "x": 3.4409855551894077,
+                "z": -19.240337636872408,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 38,
+                "x": 5.56230589874905,
+                "z": -20.119017293312766,
+                "available": true,
+                "respawnAt": 0
+              },
+              {
+                "id": 39,
+                "x": 7.6836262423086925,
+                "z": -19.240337636872408,
+                "available": true,
+                "respawnAt": 0
+              }
+            ],
+            "enemies": [
+              {
+                "id": 0,
+                "x": 17.53364536155511,
+                "z": 2.9215271027960763,
+                "fleeUntil": 444
+              },
+              {
+                "id": 1,
+                "x": -3.087558559403584,
+                "z": 12.721708552549218,
+                "fleeUntil": 0
+              },
+              {
+                "id": 2,
+                "x": -8.060235658946477,
+                "z": -8.655306545992943,
+                "fleeUntil": 0
+              },
+              {
+                "id": 3,
+                "x": 14.946972305090126,
+                "z": -7.8336013821591255,
+                "fleeUntil": 0
+              }
+            ]
+          },
+          "ambient": 1.3,
+          "yaw": 0,
+          "ringVisible": true,
+          "camera": [
+            17.78578643762691,
+            12,
+            17.314213562373094
+          ]
+        }
+      }
+    },
+    {
+      "id": "camera actual drag",
+      "status": "PASS",
+      "actual": {
+        "before": 0,
+        "after": -1.2
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "[.WebGL-0x10340060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x10340060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x10340060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x10340060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "browser": "159.0.8154.6"
+}

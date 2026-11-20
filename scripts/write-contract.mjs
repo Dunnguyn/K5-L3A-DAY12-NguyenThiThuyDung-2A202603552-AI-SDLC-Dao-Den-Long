@@ -1,0 +1,3 @@
+import { writeFileSync } from 'node:fs';
+import { config } from '../src/config/game.js';
+writeFileSync('game.contract.json',JSON.stringify({status:'INTERNAL DRAFT — official v1.0 NOT VERIFIED',version:'internal-draft-1',command:'node scripts/headless.mjs <scenario.json>',input:{version:'internal-draft-1',actions:'array of {ticks: integer >=1, moveX/moveZ: optional number [-1,1], jump/interact/glow/restart: optional boolean}; unknown keys rejected; max 10000 actions and 360000 ticks; buttons apply at first tick of action'},output:'{version, state}; full shared core state, game units and integer ticks; JSON stdout, errors JSON stderr with exit 1; success exit 0',determinism:'fixed layout; no randomness; 60Hz; identical actions => identical state',config},null,2)+'\n');

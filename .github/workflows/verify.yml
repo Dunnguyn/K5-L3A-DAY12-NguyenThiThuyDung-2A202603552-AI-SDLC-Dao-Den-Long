@@ -1,0 +1,27 @@
+name: Verify Phase 1
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - run: node docs/proof/phase-1/remediation/independent.mjs
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - name: Internal CLI JSON smoke
+        run: |
+          node scripts/headless.mjs docs/proof/phase-1/loss.input.json > /tmp/headless.json
+          node --input-type=module -e "import fs from 'node:fs'; if(JSON.parse(fs.readFileSync('/tmp/headless.json')).state.status!=='lost')process.exit(1)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase-1-evidence
+          path: docs/proof/phase-1/
