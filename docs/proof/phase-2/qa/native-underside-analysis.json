@@ -1,0 +1,48 @@
+{
+  "scope": "Read-only analysis of recorded native observations; includes transitions between loop iterations",
+  "rawPairDetection": false,
+  "observationCount": 60,
+  "jumps": [
+    {
+      "before": {
+        "x": 40.050000000000395,
+        "y": -1.8055555555555554,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": -8.33333333333333,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0,
+        "tick": 431,
+        "kind": "after"
+      },
+      "after": {
+        "x": 39.950000000000394,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0,
+        "tick": 435,
+        "kind": "before"
+      }
+    }
+  ],
+  "undersideJump": true
+}

@@ -1,9 +1,10 @@
+import {proofDirectory} from './proof-directory.mjs';
 ﻿import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { writeFileSync,mkdirSync } from 'node:fs';
 import { createGame,step,gameSnapshot } from '../src/core/game.js';
 import { getWorld } from '../src/data/worlds.js';
-const dir=process.env.PROOF_DIR||'docs/proof/phase-2/core';mkdirSync(dir,{recursive:true});
+const dir=proofDirectory('core','scenarios');mkdirSync(dir,{recursive:true});
 const evidence={scope:'Phase 2 Core/World/Headless smoke; internal adapter, official v1.0 base NOT VERIFIED',node:process.version,platform:process.platform,checks:[]};
 for(let night=1;night<=3;night++){const a=createGame({night,seed:1122}),b=createGame({night,seed:1122});for(let i=0;i<600;i++){step(a,{moveX:i%120<60?1:-1,dash:i%180===0});step(b,{moveX:i%120<60?1:-1,dash:i%180===0});}assert.deepEqual(gameSnapshot(a),gameSnapshot(b));assert.equal(a.lanterns.length,[0,5,6,7][night]);assert.equal(getWorld(night).motePoints.length,[0,24,24,30][night]);const input={version:'internal-draft-1',seed:1122,scenario:{player:{invuln_ticks:720}},actions:[{ticks:600,moveX:1}]};const inPath=`${dir}/night-${night}.input.json`;writeFileSync(inPath,JSON.stringify(input,null,2)+'\n');const runs=[];for(let i=0;i<2;i++){const r=spawnSync(process.execPath,['scripts/headless.mjs','--night',String(night),inPath],{encoding:'utf8',timeout:30000});assert.equal(r.status,0,r.stderr);assert.equal(r.stderr,'');const o=JSON.parse(r.stdout);assert.equal(o.state.night,night);assert.equal(o.state.sim_tick,600);runs.push(o);}assert.deepEqual(runs[0],runs[1]);writeFileSync(`${dir}/night-${night}.actual.json`,JSON.stringify(runs[0],null,2)+'\n');evidence.checks.push({night,seed:1122,ticks:600,deterministic:true,cliExitCode:0,stdoutPureJson:true,lamps:a.lanterns.length,motes:getWorld(night).motePoints.length});}
 const bad=spawnSync(process.execPath,['scripts/headless.mjs','--night','2','package.json'],{encoding:'utf8'});assert.equal(bad.status,1);assert.equal(bad.stdout,'');assert.equal(typeof JSON.parse(bad.stderr).error,'string');evidence.checks.push({cliInvalidInput:true,exitCode:bad.status,jsonStderr:true,stdoutEmpty:true});

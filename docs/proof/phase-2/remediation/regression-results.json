@@ -1,0 +1,1297 @@
+{
+  "timestamp": "2026-11-21T09:01:47.125Z",
+  "verdict": "READY FOR QA RE-TEST",
+  "defects": [
+    {
+      "id": "F01",
+      "severity": "MAJOR",
+      "title": "Dash speed",
+      "rootCause": "The run vector retained fractional magnitude and was reused for dash/facing.",
+      "files": [
+        "src/core/game.js"
+      ],
+      "fix": "Store a unit facing vector separately from analogue run magnitude; latch that unit direction for dash.",
+      "test": "QA-DASH-ANALOG / QA-DASH-IDLE-FACING; cardinal/diagonal/fractional/air/pad/charm/wind tests",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F02",
+      "severity": "MAJOR",
+      "title": "Residual velocity after dash",
+      "rootCause": "Actual dash/pad displacement was fed back as controlled movement velocity.",
+      "files": [
+        "src/core/game.js"
+      ],
+      "fix": "Keep controlled motionVelocity separate; snapshots still report total dash/pad/wind displacement. External launch vector survives air dash.",
+      "test": "QA-DASH-STOP; ticks11/12/13, release/opposite/normal/jump/wind/pad landing",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F03",
+      "severity": "MAJOR",
+      "title": "Terrain penetration",
+      "rootCause": "Terrain query returned a higher floor when no support existed; ground snapping did not require a descending crossing from above.",
+      "files": [
+        "src/core/game.js",
+        "src/data/worlds.js"
+      ],
+      "fix": "Return null without support; use previous foot height for descending crossings and bound grounded ramp following. Uphill ramp lip uses existing numerical contact tolerance at the straight-ramp/circular-tier seam. Canonical geometry and tuning unchanged.",
+      "test": "QA-UNDERSIDE; actual-input browser trace; default fall/respawn, bridge, raised tiers, pads, old ramp-width and tower assertions",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F04",
+      "severity": "MINOR",
+      "title": "Drifter overlap",
+      "rootCause": "The pulse chase-to-flee path produced a zero direction; dividing by fallback denominator1 still moved zero.",
+      "files": [
+        "src/core/game.js"
+      ],
+      "fix": "Flee uses deterministic +X for zero direction, otherwise normalizes even very small nonzero vectors; consumes no RNG.",
+      "test": "QA-DRIFTER-ZERO; exact/near-zero positions and deterministic actual CLI replay",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F05",
+      "severity": "MINOR",
+      "title": "Known event payload validation",
+      "rootCause": "Output events were checked only for an object and type string.",
+      "files": [
+        "src/headless/adapter.js"
+      ],
+      "fix": "Validate the published v1.1 charm/theft/drop/night and fall-hit fields and numeric ranges with field-specific errors. Leave unknown v1.0 fields unconstrained.",
+      "test": "QA-EVENT-VALIDATION; valid/missing/null/type/fractional/negative/nonfinite/over-range matrix",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F06",
+      "severity": "MAJOR",
+      "title": "Dash visual lifecycle",
+      "rootCause": "Dash class was added once and never removed; forwards dash animation overrode later feedback.",
+      "files": [
+        "src/browser/app.js",
+        "src/browser/app.css",
+        "src/browser/renderer.js"
+      ],
+      "fix": "Derive dash class from active sim dash ticks; clear transient FX on screen transitions and prevent dash selector overriding warning/wind/pulse/hurt. Night3 identical shade body/eye meshes are instanced after correct visible FX exposed under-target software FPS; topology, transforms and materials are retained. Decorative HUD backdrop blur is removed and unchanged text writes skipped; text, layout and canonical colors remain identical.",
+      "test": "Browser speed/expiry/pause/resume/retry/menu/terminal checks and visible real Night3 wind after dash",
+      "evidence": "browser-regression.json; screenshots/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    },
+    {
+      "id": "F07",
+      "severity": "MINOR",
+      "title": "Partial lantern palette",
+      "rootCause": "Partial-progress renderer branch used mote halo color for an unlit cage.",
+      "files": [
+        "src/browser/renderer.js"
+      ],
+      "fix": "Use canonical off cage color until lit=true; retain the existing scaled progress indicator and lit bulb state.",
+      "test": "Actual-input partial3/10 material assertion #5B5F6E; screenshots; full-charge campaign",
+      "evidence": "browser-regression.json; screenshots/",
+      "status": "FIXED — READY FOR QA RE-TEST"
+    }
+  ],
+  "rtm": {
+    "PASS": 36,
+    "PARTIAL": 4,
+    "FAIL": 0,
+    "NOT VERIFIED": 3
+  },
+  "unit": 79,
+  "crossCheck": "7/7",
+  "harness": "7/7",
+  "independent": {
+    "before": {
+      "pass": 36,
+      "fail": 6
+    },
+    "after": {
+      "pass": 42,
+      "fail": 0
+    }
+  },
+  "commands": [
+    {
+      "id": "npm-version",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 809.7503
+    },
+    {
+      "id": "unit",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 4141.9304999999995
+    },
+    {
+      "id": "cross-check",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:independent"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1417.5433000000003
+    },
+    {
+      "id": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1639.6646
+    },
+    {
+      "id": "harness",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 27444.423400000003
+    },
+    {
+      "id": "benchmark",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "bench:headless"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 17630.790200000003
+    },
+    {
+      "id": "existing-browser",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:browser"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 405615.0268
+    }
+  ],
+  "productionBrowser": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "Menu and WebGL2",
+        "status": "PASS"
+      },
+      {
+        "id": "Settings persist after reload using real keyboard inputs",
+        "status": "PASS"
+      },
+      {
+        "id": "Natural fall loss and same-night retry",
+        "status": "PASS"
+      },
+      {
+        "id": "Pause resume freezes simulation",
+        "status": "PASS"
+      },
+      {
+        "id": "Camera drag",
+        "status": "PASS"
+      },
+      {
+        "id": "Night 1 default-state victory",
+        "status": "PASS",
+        "sim_tick": 8599,
+        "score": 1467,
+        "flames": 3,
+        "lamps": 5
+      },
+      {
+        "id": "Night 2 jump pad crosses islands through real input",
+        "status": "PASS"
+      },
+      {
+        "id": "Night 2 bamboo bridge and charm",
+        "status": "PASS"
+      },
+      {
+        "id": "Night 2 natural loss and retry preserves won-night score",
+        "status": "PASS"
+      },
+      {
+        "id": "Night 2 default-state victory",
+        "status": "PASS",
+        "sim_tick": 11554,
+        "score": 1629,
+        "flames": 3,
+        "lamps": 6
+      },
+      {
+        "id": "Night 3 default-state victory",
+        "status": "PASS",
+        "sim_tick": 14140,
+        "score": 1803,
+        "flames": 3,
+        "lamps": 7
+      },
+      {
+        "id": "Full campaign victory and total score",
+        "status": "PASS",
+        "scores": [
+          1467,
+          1629,
+          1803
+        ],
+        "total": 4899
+      }
+    ],
+    "campaign": 4899
+  },
+  "readOnlyBrowser": {
+    "passed": true,
+    "findings": [],
+    "campaign": 4872,
+    "checks": [
+      {
+        "id": "QA-E2E settings keyboard and reload persistence",
+        "status": "PASS"
+      },
+      {
+        "id": "QA-E2E autoplay unlock and real master gain",
+        "status": "PASS"
+      },
+      {
+        "id": "QA-E2E pause freezes sim/time, mute changes master gain and resume works",
+        "status": "PASS"
+      },
+      {
+        "id": "QA-E2E camera changes actual camera quaternion",
+        "status": "PASS"
+      },
+      {
+        "id": "F01/F02/F06 real-input dash speed14, stop and FX expiry",
+        "status": "PASS",
+        "dash": {
+          "x": 13.99999999999999,
+          "y": 0,
+          "z": 0
+        },
+        "stop": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "id": "F06 dash pause cleanup and resume expiry",
+        "status": "PASS"
+      },
+      {
+        "id": "F06 dash retry cleanup",
+        "status": "PASS"
+      },
+      {
+        "id": "F06 dash return-to-menu cleanup",
+        "status": "PASS"
+      },
+      {
+        "id": "F03 actual-input underside re-entry does not snap",
+        "status": "PASS"
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 3
+      },
+      {
+        "id": "QA-E2E partial charge reached through collection/movement/deposit",
+        "status": "PASS"
+      },
+      {
+        "id": "QA-E2E night 1 full default victory",
+        "status": "PASS",
+        "score": 1469,
+        "tick": 8569,
+        "lamps": 5,
+        "baseScore": 1464,
+        "pulseBonus": 5
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 7
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 7
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 7
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 7
+      },
+      {
+        "id": "QA-E2E night 2 full default victory",
+        "status": "PASS",
+        "score": 1664,
+        "tick": 10363,
+        "lamps": 6,
+        "baseScore": 1664,
+        "pulseBonus": 0
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 4
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 5
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 5
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 5
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 5
+      },
+      {
+        "id": "F07 partial unlit material retains canonical color",
+        "status": "PASS",
+        "actual": "#5b5f6e",
+        "progress": 5
+      },
+      {
+        "id": "QA-E2E night 3 full default victory",
+        "status": "PASS",
+        "score": 1739,
+        "tick": 14551,
+        "lamps": 7,
+        "baseScore": 1734,
+        "pulseBonus": 5
+      },
+      {
+        "id": "QA-E2E full campaign and summed won-night scores",
+        "status": "PASS",
+        "total": 4872
+      }
+    ],
+    "windVisible": {
+      "night": 3,
+      "tick": 14400,
+      "className": "wind",
+      "opacity": 0.8,
+      "animation": "gust",
+      "toast": "Gió mạnh sắp tới!",
+      "clock": "02:00"
+    },
+    "errors": []
+  },
+  "benchmark": {
+    "node": "v24.13.0",
+    "npm": "11.6.2",
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26300",
+      "arch": "x64"
+    },
+    "scenario": "night 3 full 21600 ticks; ten shades and two drifters from tick zero, wind/random systems enabled; initial base-center position and invulnerability fixture prevent early loss",
+    "ticks": 21600,
+    "replays": [
+      {
+        "elapsedMs": 7746.08,
+        "exitCode": 0,
+        "state": "lost",
+        "end_reason": "dawn",
+        "finalSimTick": 21600,
+        "stdoutJson": true,
+        "stderr": ""
+      },
+      {
+        "elapsedMs": 7946.63,
+        "exitCode": 0,
+        "state": "lost",
+        "end_reason": "dawn",
+        "finalSimTick": 21600,
+        "stdoutJson": true,
+        "stderr": ""
+      }
+    ],
+    "startedAt": "2026-11-21T08:32:05.641Z",
+    "deterministic": true,
+    "elapsedWithin30s": true
+  },
+  "performance": {
+    "scope": "Windows Chromium SwiftShader only,1280x720,2x>=60s Night3. Native render timestamps and Node wall clock; test clock resumed in real time. No concurrent regression or screenshots during sampling.",
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26300",
+      "arch": "x64"
+    },
+    "browser": "159.0.8154.6",
+    "renderer": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "drawingBuffer": [
+        1280,
+        720
+      ]
+    },
+    "samples": [
+      {
+        "iteration": 1,
+        "durationMs": 60587.400000002235,
+        "fps": 30.303330395427636,
+        "frameMs": 33.00392370572167,
+        "p95": 65.89999999850988,
+        "target30": true,
+        "metrics": {
+          "calls": 26,
+          "triangles": 11258,
+          "geometries": 44,
+          "textures": 0
+        },
+        "scene": {
+          "tick": 12,
+          "sim_tick": 12,
+          "night": 3,
+          "state": "playing",
+          "time_s": 359.8,
+          "score": 0,
+          "end_reason": "victory",
+          "wind": {
+            "active": false,
+            "dir_deg": 0
+          },
+          "player": {
+            "x": 0,
+            "y": 0,
+            "z": -28.599999999999973,
+            "vel": {
+              "x": 0,
+              "y": 0,
+              "z": 14.00000000000027
+            },
+            "grounded": true,
+            "flames": 3,
+            "light": 0,
+            "invuln": false,
+            "dash_cd_s": 1.417,
+            "pulse_cd_s": 0,
+            "charm_s": 0
+          },
+          "lanterns": [
+            {
+              "id": "L1",
+              "pos": {
+                "x": 0,
+                "y": 6,
+                "z": 6
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L2",
+              "pos": {
+                "x": 18,
+                "y": 3,
+                "z": 10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L3",
+              "pos": {
+                "x": -18,
+                "y": 3,
+                "z": 10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L4",
+              "pos": {
+                "x": 35,
+                "y": 0,
+                "z": -10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L5",
+              "pos": {
+                "x": -35,
+                "y": 0,
+                "z": -10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L6",
+              "pos": {
+                "x": 20,
+                "y": 0,
+                "z": -35
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L7",
+              "pos": {
+                "x": -20,
+                "y": 0,
+                "z": -35
+              },
+              "lit": false,
+              "progress": 0
+            }
+          ],
+          "shades": [],
+          "motes": [
+            {
+              "id": "M1",
+              "pos": {
+                "x": 26.045511066045243,
+                "y": 0,
+                "z": -21.854778729342346
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M2",
+              "pos": {
+                "x": 31.949549106720887,
+                "y": 0,
+                "z": -11.628684873072732
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M3",
+              "pos": {
+                "x": 17.000000000000004,
+                "y": 0,
+                "z": 29.444863728670914
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M4",
+              "pos": {
+                "x": 5.904038040675634,
+                "y": 0,
+                "z": 33.48346360241507
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M5",
+              "pos": {
+                "x": -31.949549106720887,
+                "y": 0,
+                "z": -11.628684873072734
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M6",
+              "pos": {
+                "x": -13.788799976141602,
+                "y": 3,
+                "z": 11.570176974357711
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M7",
+              "pos": {
+                "x": 3.535533905932737,
+                "y": 6,
+                "z": -3.5355339059327386
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M8",
+              "pos": {
+                "x": -16.91446717414635,
+                "y": 3,
+                "z": 6.15636257986204
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M9",
+              "pos": {
+                "x": -16.999999999999993,
+                "y": 0,
+                "z": 29.444863728670917
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M10",
+              "pos": {
+                "x": 3.5355339059327378,
+                "y": 6,
+                "z": 3.5355339059327373
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M11",
+              "pos": {
+                "x": 26.045511066045254,
+                "y": 0,
+                "z": 21.854778729342335
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M12",
+              "pos": {
+                "x": 9.000000000000002,
+                "y": 3,
+                "z": 15.588457268119894
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M13",
+              "pos": {
+                "x": -26.045511066045254,
+                "y": 0,
+                "z": -21.854778729342335
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M14",
+              "pos": {
+                "x": -5.904038040675632,
+                "y": 0,
+                "z": -33.48346360241507
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M15",
+              "pos": {
+                "x": -31.949549106720884,
+                "y": 0,
+                "z": 11.628684873072743
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M16",
+              "pos": {
+                "x": -17.000000000000014,
+                "y": 0,
+                "z": -29.444863728670903
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M17",
+              "pos": {
+                "x": 34,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M18",
+              "pos": {
+                "x": -34,
+                "y": 0,
+                "z": 4.1637991171010006e-15
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M19",
+              "pos": {
+                "x": -3.5355339059327386,
+                "y": 6,
+                "z": -3.5355339059327373
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M20",
+              "pos": {
+                "x": -8.999999999999996,
+                "y": 3,
+                "z": 15.588457268119896
+              },
+              "kind": "random",
+              "ttl_s": null
+            }
+          ],
+          "drifters": [],
+          "charms": [
+            {
+              "id": "C1",
+              "available": true,
+              "respawn_s": 0
+            },
+            {
+              "id": "C2",
+              "available": true,
+              "respawn_s": 0
+            }
+          ],
+          "events": [
+            {
+              "type": "night_start",
+              "night": 3
+            },
+            {
+              "type": "dash"
+            }
+          ],
+          "campaign_score": 3133
+        }
+      },
+      {
+        "iteration": 2,
+        "durationMs": 60628.10000000149,
+        "fps": 30.645855634597726,
+        "frameMs": 32.60893914916572,
+        "p95": 65.30000000074506,
+        "target30": true,
+        "metrics": {
+          "calls": 26,
+          "triangles": 11294,
+          "geometries": 44,
+          "textures": 0
+        },
+        "scene": {
+          "tick": 6,
+          "sim_tick": 6,
+          "night": 3,
+          "state": "playing",
+          "time_s": 359.9,
+          "score": 0,
+          "end_reason": "victory",
+          "wind": {
+            "active": false,
+            "dir_deg": 0
+          },
+          "player": {
+            "x": 0,
+            "y": 0,
+            "z": -30,
+            "vel": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "grounded": true,
+            "flames": 3,
+            "light": 0,
+            "invuln": false,
+            "dash_cd_s": 0,
+            "pulse_cd_s": 0,
+            "charm_s": 0
+          },
+          "lanterns": [
+            {
+              "id": "L1",
+              "pos": {
+                "x": 0,
+                "y": 6,
+                "z": 6
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L2",
+              "pos": {
+                "x": 18,
+                "y": 3,
+                "z": 10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L3",
+              "pos": {
+                "x": -18,
+                "y": 3,
+                "z": 10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L4",
+              "pos": {
+                "x": 35,
+                "y": 0,
+                "z": -10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L5",
+              "pos": {
+                "x": -35,
+                "y": 0,
+                "z": -10
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L6",
+              "pos": {
+                "x": 20,
+                "y": 0,
+                "z": -35
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L7",
+              "pos": {
+                "x": -20,
+                "y": 0,
+                "z": -35
+              },
+              "lit": false,
+              "progress": 0
+            }
+          ],
+          "shades": [],
+          "motes": [
+            {
+              "id": "M1",
+              "pos": {
+                "x": 26.045511066045243,
+                "y": 0,
+                "z": -21.854778729342346
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M2",
+              "pos": {
+                "x": 31.949549106720887,
+                "y": 0,
+                "z": -11.628684873072732
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M3",
+              "pos": {
+                "x": 17.000000000000004,
+                "y": 0,
+                "z": 29.444863728670914
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M4",
+              "pos": {
+                "x": 5.904038040675634,
+                "y": 0,
+                "z": 33.48346360241507
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M5",
+              "pos": {
+                "x": -31.949549106720887,
+                "y": 0,
+                "z": -11.628684873072734
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M6",
+              "pos": {
+                "x": -13.788799976141602,
+                "y": 3,
+                "z": 11.570176974357711
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M7",
+              "pos": {
+                "x": 3.535533905932737,
+                "y": 6,
+                "z": -3.5355339059327386
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M8",
+              "pos": {
+                "x": -16.91446717414635,
+                "y": 3,
+                "z": 6.15636257986204
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M9",
+              "pos": {
+                "x": -16.999999999999993,
+                "y": 0,
+                "z": 29.444863728670917
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M10",
+              "pos": {
+                "x": 3.5355339059327378,
+                "y": 6,
+                "z": 3.5355339059327373
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M11",
+              "pos": {
+                "x": 26.045511066045254,
+                "y": 0,
+                "z": 21.854778729342335
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M12",
+              "pos": {
+                "x": 9.000000000000002,
+                "y": 3,
+                "z": 15.588457268119894
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M13",
+              "pos": {
+                "x": -26.045511066045254,
+                "y": 0,
+                "z": -21.854778729342335
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M14",
+              "pos": {
+                "x": -5.904038040675632,
+                "y": 0,
+                "z": -33.48346360241507
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M15",
+              "pos": {
+                "x": -31.949549106720884,
+                "y": 0,
+                "z": 11.628684873072743
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M16",
+              "pos": {
+                "x": -17.000000000000014,
+                "y": 0,
+                "z": -29.444863728670903
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M17",
+              "pos": {
+                "x": 34,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M18",
+              "pos": {
+                "x": -34,
+                "y": 0,
+                "z": 4.1637991171010006e-15
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M19",
+              "pos": {
+                "x": -3.5355339059327386,
+                "y": 6,
+                "z": -3.5355339059327373
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M20",
+              "pos": {
+                "x": -8.999999999999996,
+                "y": 3,
+                "z": 15.588457268119896
+              },
+              "kind": "random",
+              "ttl_s": null
+            }
+          ],
+          "drifters": [],
+          "charms": [
+            {
+              "id": "C1",
+              "available": true,
+              "respawn_s": 0
+            },
+            {
+              "id": "C2",
+              "available": true,
+              "respawn_s": 0
+            }
+          ],
+          "events": [
+            {
+              "type": "night_start",
+              "night": 3
+            }
+          ],
+          "campaign_score": 3133
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "OFFICIAL CONTRACT COMPLIANCE NOT VERIFIED: missing v1.0 base/schema",
+    "Linux/macOS/current remote CI and real GPU not executed",
+    "Subjective audio listening NOT VERIFIED; graph/events only",
+    "Short restart/memory trend does not certify absence of leaks",
+    "UI-only features have browser evidence, not invented headless fields",
+    "Night1/2 FPS evidence is historical; only Night3 was freshly measured after final HUD changes"
+  ],
+  "preservedFiles": 551,
+  "gitDiffCheck": 0,
+  "finalBoundaryCheck": {
+    "passed": true,
+    "evidence": "final-boundaries/boundaries.json"
+  },
+  "visualReview": {
+    "method": "Static screenshots inspected; not manual full-game play or subjective audio listening",
+    "screenshots": [
+      "screenshots/qa-partial-charge.png",
+      "screenshots/qa-full-campaign-dawn.png",
+      "regression-render-final/existing-browser/night-3-gust.png"
+    ]
+  }
+}

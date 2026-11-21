@@ -1,0 +1,89 @@
+{
+  "startedAt": "2026-11-21T06:47:47.484Z",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "scope": "Unchanged existing regression commands after actual npm ci --offline; browser command has SKIP_FPS=1 because native independent FPS is separate",
+  "commands": [
+    {
+      "id": "npm-version",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 721.7647
+    },
+    {
+      "id": "unit",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 5239.0759
+    },
+    {
+      "id": "cross-check",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:independent"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1290.1398
+    },
+    {
+      "id": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1791.0666999999994
+    },
+    {
+      "id": "harness",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 8193.134499999998
+    },
+    {
+      "id": "benchmark",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "bench:headless"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 14932.7049
+    },
+    {
+      "id": "existing-browser",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:browser"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 439011.1179
+    }
+  ],
+  "finishedAt": "2026-11-21T06:55:38.684Z",
+  "passed": false
+}

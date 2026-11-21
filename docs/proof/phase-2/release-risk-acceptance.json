@@ -1,0 +1,29 @@
+{
+  "recordedAt": "2026-11-21T09:24:51.438Z",
+  "decisionBy": "Project owner, explicit instruction in the release request",
+  "decision": "Waive the additional Independent QA Re-test and hand over Phase2 with documented limitations",
+  "independentAcceptanceOfRemediation": false,
+  "codexVerification": "42/42 existing independent QA assertions rerun by Codex; this is not independent QA confirmation of the fixes",
+  "rtm": {
+    "PASS": 36,
+    "PARTIAL": 4,
+    "FAIL": 0,
+    "NOT VERIFIED": 3
+  },
+  "acceptedLimits": [
+    "4 PARTIAL and3 NOT VERIFIED remain",
+    "Official v1.0 base/schema/hidden harness unverified; no full contract compliance claim",
+    "Real GPU and macOS unverified",
+    "Subjective direct audio listening unverified",
+    "Software-renderer performance has narrow margins; GUI/memory coverage is sampled",
+    "UI-only features lack invented headless equivalents"
+  ],
+  "releaseConditions": [
+    "All required local commands PASS",
+    "Verify Phase2 GitHub Actions on the exact pushed release SHA SUCCESS",
+    "Remote main unchanged except the authorized normal push",
+    "Local and remote phase-2 tags absent before creation",
+    "phase-1 unchanged"
+  ],
+  "scope": "Phase2 milestone only; no Phase3"
+}

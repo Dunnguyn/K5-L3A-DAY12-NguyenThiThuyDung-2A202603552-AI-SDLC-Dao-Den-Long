@@ -1,0 +1,10 @@
+import {defineConfig} from 'vite';
+// Read-only observation added to a separate QA build. No Core/input/tuning changes.
+export default defineConfig({build:{outDir:'docs/proof/phase-2/qa/dist',emptyOutDir:true},plugins:[{name:'qa-read-only-observation',transform(code,id){
+ if(id.replaceAll('\\','/').endsWith('/src/browser/app.js'))return `window.__QA_NATIVE__={now:performance.now.bind(performance),raf:requestAnimationFrame.bind(window)};\n`+code;
+ if(id.replaceAll('\\','/').endsWith('/src/browser/renderer.js')){
+  code=code.replace('renderer.render(scene,camera);',`renderer.render(scene,camera);const qm=window.__QA_MEASURE__;if(qm?.active){const qt=window.__QA_NATIVE__.now();qm.renderTimes.push(qt);qm.metrics={calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures};}`);
+  return code.replace("addEventListener('resize',resize);return{",`window.__QA_RENDER_OBSERVE__=()=>({ambient:hemisphere.intensity,camera:{position:camera.position.toArray(),quaternion:camera.quaternion.toArray()},canvas:{width:renderer.domElement.width,height:renderer.domElement.height},lamps:[...lampMeshes.entries()].map(([id,o])=>({id,color:'#'+o.cage.material.color.getHexString(),emissive:'#'+o.cage.material.emissive.getHexString(),position:o.g.position.toArray()})),palette:{...M},metrics:{calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures}});addEventListener('resize',resize);return{`);
+ }
+ if(id.replaceAll('\\','/').endsWith('/src/browser/audio.js'))return code.replace('contextState:ctx?.state', 'masterGain:master?.gain.value,musicGain:music?.gain.value,contextState:ctx?.state');
+}}]});

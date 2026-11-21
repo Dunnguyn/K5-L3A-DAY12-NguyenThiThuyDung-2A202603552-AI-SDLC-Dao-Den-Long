@@ -1,0 +1,8 @@
+﻿{
+    "OS":  "Windows",
+    "WslBinary":  "C:\\Windows\\system32\\wsl.exe",
+    "DockerBinary":  null,
+    "LinuxExecuted":  false,
+    "MacOSExecuted":  false,
+    "RemoteCIExecuted":  false
+}

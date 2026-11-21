@@ -1,0 +1,43 @@
+{
+  "scope": "Phase 2 Core/World/Headless smoke; internal adapter, official v1.0 base NOT VERIFIED",
+  "node": "v24.13.0",
+  "platform": "win32",
+  "checks": [
+    {
+      "night": 1,
+      "seed": 1122,
+      "ticks": 600,
+      "deterministic": true,
+      "cliExitCode": 0,
+      "stdoutPureJson": true,
+      "lamps": 5,
+      "motes": 24
+    },
+    {
+      "night": 2,
+      "seed": 1122,
+      "ticks": 600,
+      "deterministic": true,
+      "cliExitCode": 0,
+      "stdoutPureJson": true,
+      "lamps": 6,
+      "motes": 24
+    },
+    {
+      "night": 3,
+      "seed": 1122,
+      "ticks": 600,
+      "deterministic": true,
+      "cliExitCode": 0,
+      "stdoutPureJson": true,
+      "lamps": 7,
+      "motes": 30
+    },
+    {
+      "cliInvalidInput": true,
+      "exitCode": 1,
+      "jsonStderr": true,
+      "stdoutEmpty": true
+    }
+  ]
+}

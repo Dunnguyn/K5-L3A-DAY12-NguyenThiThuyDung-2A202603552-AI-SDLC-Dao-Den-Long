@@ -1,4 +1,4 @@
-﻿import { tuning } from '../config/game.js';
+﻿import { physics } from '../config/game.js';
 const polar=(r,deg,cx=0,cz=0,y=0)=>({x:cx+r*Math.cos(deg*Math.PI/180),y,z:cz+r*Math.sin(deg*Math.PI/180)});
 const polarSet=(r,angles,cx=0,cz=0,y=0)=>angles.map(a=>polar(r,a,cx,cz,y));
 const rings=(center,outerAngles,innerAngles,outerR,innerR)=>[...polarSet(innerR,innerAngles,center[0],center[1]),...polarSet(outerR,outerAngles,center[0],center[1])];
@@ -16,7 +16,16 @@ export function layout(){const w=getWorld(1);return {lanterns:w.lamps,fireflies:
 function insideDisk(x,z,s){return Math.hypot(x-s.x,z-s.z)<=s.r+1e-8;}
 export function terrainHeight(n,x,z,previousY=0){const w=worlds[n];if(!w)return null;let heights=[];for(const s of w.surfaces){if(s.type==='disk'&&insideDisk(x,z,s))heights.push(s.y);if(s.type==='annulus'){const r=Math.hypot(x-s.x,z-s.z);if(r>=s.rmin-1e-8&&r<=s.r+1e-8&&(!s.zPositive||z>0))heights.push(s.y);}if(s.type==='rect'&&x>=s.x1&&x<=s.x2&&z>=s.z1&&z<=s.z2)heights.push(s.y);}
  if(n===3){for(const ramp of w.ramps){const a=ramp.angle,ux=Math.cos(a),uz=Math.sin(a),along=x*ux+z*uz,cross=Math.abs(-x*uz+z*ux);if(along>=ramp.r1&&along<=ramp.r0&&cross<=ramp.width/2){const t=(ramp.r0-along)/(ramp.r0-ramp.r1);heights.push(ramp.y0+t*(ramp.y1-ramp.y0));}}}
- if(!heights.length)return null;const support=heights.filter(y=>y<=previousY+0.15);return support.length?Math.max(...support):Math.min(...heights);}
-export function isSolid(n,x,y,z){if(n===3){const t=worlds[3].tower,r=Math.hypot(x,z);if(r<t.r&&y>=t.y&&y<=t.y+t.height)return true;const onRamp=worlds[3].ramps.some(q=>{const ux=Math.cos(q.angle),uz=Math.sin(q.angle),along=x*ux+z*uz,cross=Math.abs(-x*uz+z*ux);return along>=q.r1-1e-8&&along<=q.r0+1e-8&&cross<=q.width/2;});if(z>0&&y<3&&(Math.abs(r-12)<.22||(Math.abs(r-24)<.22&&!onRamp)))return true;if(y<6&&Math.abs(r-8)<.22)return true;}return false;}
+ if(!heights.length)return null;const support=heights.filter(y=>y<=previousY+physics.supportTolerance);return support.length?Math.max(...support):null;}
+export function isSolid(n,x,y,z){if(n===3){const t=worlds[3].tower,r=Math.hypot(x,z);if(r<t.r&&y>=t.y&&y<=t.y+t.height)return true;const onRamp=worlds[3].ramps.some(q=>{const ux=Math.cos(q.angle),uz=Math.sin(q.angle),along=x*ux+z*uz,cross=Math.abs(-x*uz+z*ux);return along>=q.r1-1e-8&&along<=q.r0+1e-8&&cross<=q.width/2;});if(Math.abs(z)<physics.wallHalfWidth&&Math.abs(x)>=12&&Math.abs(x)<=24&&y<3-physics.supportTolerance)return true;if(z>0&&y<3-physics.supportTolerance&&(Math.abs(r-12)<physics.wallHalfWidth||(Math.abs(r-24)<physics.wallHalfWidth&&!onRamp)))return true;if(y<6-physics.supportTolerance&&Math.abs(r-8)<physics.wallHalfWidth)return true;}return false;}
 export function validPoint(n,p){return terrainHeight(n,p.x,p.z,p.y)!==null;}
+// A finite-width straight ramp meets a circular tier at a narrow corner seam.
+// Use the existing contact tolerance only for a grounded uphill crossing of its lip.
+export function rampTopContact(n,from,to){
+ if(n!==3)return null;
+ for(const q of worlds[3].ramps){const ux=Math.cos(q.angle),uz=Math.sin(q.angle),before=from.x*ux+from.z*uz,after=to.x*ux+to.z*uz;
+  if(before>=q.r1&&before<=q.r0&&after<=q.r1&&after>=q.r1-physics.supportTolerance&&Math.abs(-to.x*uz+to.z*ux)<=q.width/2&&Math.abs(from.y-q.y1)<=physics.supportTolerance)return q.y1;
+ }
+ return null;
+}
 export function getAmbientProgress(lit,total){return .15+.55*(total?lit/total:0);}

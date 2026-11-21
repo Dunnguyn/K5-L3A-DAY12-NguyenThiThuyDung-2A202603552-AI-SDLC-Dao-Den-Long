@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-21T06:07:58.619Z",
+  "sources": [
+    {
+      "url": "https://github.com/VinUni-AI20k/K5-L3-LAB-Day12-AI-SDLC",
+      "result": "Readable"
+    },
+    {
+      "url": "https://github.com/VinUni-AI20k/K5-L3-LAB-Day12-AI-SDLC/blob/main/GUIDE.md",
+      "result": "Readable; full base schema not obtained from inspected content"
+    },
+    {
+      "url": "https://claude.ai/artifact/Q1RYyv1dxjUczzCbd2ZnoW",
+      "result": "Internal Error: URL is not accessible via this tool"
+    }
+  ],
+  "officialCompliance": "NOT VERIFIED"
+}

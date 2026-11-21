@@ -208,3 +208,95 @@ Testing exposed and corrected implementation defects: lamp completion bonus omis
 Evidence: `verification.json`, `benchmark-night3.input.json`, `benchmark-night3.json`, `night-{1,2,3}.input.json`, `night-{1,2,3}.actual.json`, `core-smoke.json`, `independent-core.json` under `docs/proof/phase-2/core/`. These results do not verify browser behavior, Linux/macOS, external independent QA, or official contract compliance.
 
 **Current scoped verdict: READY FOR BROWSER INTEGRATION**, with the partial/not-verified items above. Do not interpret this as official contract compliance or release readiness.
+
+
+## Runtime recovery and browser completion - 2026-11-21
+
+User-reported recovery: Codex CLI 0.171.0 and Windows Sandbox unelevated. The four runtime probes succeeded (workspace path, clean main ahead origin/main by one commit, Node v24.13.0, npm 11.6.2). However, a successful shell probe did not prove child-process availability: the first new Vitest/CLI/harness attempt still returned `spawn EPERM`. Its logs remain in `docs/proof/phase-2/core/recovery-baseline/`; authorized execution outside the sandbox subsequently ran the suites. This distinction is part of the SDLC environment gate, not a gameplay failure. Keep command execution, child-process execution, browser launch and renderer/GPU capability as separate evidence.
+
+Local HEAD `9ced7a1ff98cdc4056626a9aa678e243d2d8cec6` has parent `95aa97e` and adds/updates 51 files (2,456 insertions, 244 deletions), including the shared three-night core, worlds, draft adapter, tests, browser app/renderer/audio/CSS, and historical evidence. It contains the implementation recovered in the initially clean workspace; the original 33-test and seven-check core baselines were reproduced. README and previous notes still described browser work as pending, so their text was stale. There is no separate pre-commit snapshot proving arbitrary older unsaved buffers; Git/source/test/evidence contents are the audit basis. No reset, revert, commit, push or tag operation was performed.
+
+Implementation corrections discovered during actual testing:
+
+- Winning Nights 1/2 accessed a missing retry button and threw instead of showing results; guard the optional button and preserve progression.
+- The nearest-lamp arrow projected the player focus instead of the lamp. Project the actual nearest unlit target and keep its caption upright.
+- Island B's top disk was incorrectly drawn at the origin; use its shared descriptor center (70,0,0).
+- Settings range controls lost arrow-key input to the game's global listener; settings/help now retain their native keyboard behavior.
+- Wind displacement fed back into movement acceleration. Keep controlled velocity separately; snapshot velocity still includes actual displacement. Gust remains an additive 2 m/s force, including during pad flight/dash.
+- Dash/pad movement bypassed collision tests. Sweep horizontal displacement using the same solid queries; support at ramp tops uses the existing 0.15 m numerical support tolerance, avoiding a false wall at a rounded height just below 3 m.
+- The straight z=0 edges of Night 3's half-annulus were missing from collision/rendering. Include both end walls; extend the central tier's visible wood side to the base. The canonical footprints and heights remain unchanged.
+- Night 3's pad must launch exactly along minus Z even when touched off-center; it no longer aims diagonally toward a target point.
+- Countdown audio now comes from simulation-tick transitions, and temporary pulse/hurt FX expire independently of future events. A read-only WebAudio observation reports context/event consumption; it does not prove subjective listening quality.
+- Rendering uses Lambert lighting, disables MSAA and the extra personal point light, instances motes/decorations, pools transient entities, and reuses the world descriptor per frame. Shadows remain disabled. All canonical material palette literals, terrain coordinates and gameplay tuning remain unchanged.
+- Draft adapter rejects explicit null defaults, fractional inventory/flame/charge counts, impossible stolen counts and unknown charm fields. These are internal validation improvements, not evidence of official v1.0/v1.1 schema compatibility.
+
+Internal numerical choices (not new Ticket requirements): `physics.collisionStep=0.08`, `supportTolerance=0.15` (existing support tolerance), `wallHalfWidth=0.22` (existing radial-wall envelope, also used for missing straight edges). They live in `src/config/game.js`, outside the public tuning object. Collision tests cover both ramp widths, stepping down, 36 directions around the tier/tower and both straight tier edges; they are a sampled envelope, not a mathematical proof for every floating-point position.
+
+Browser acceptance uses Chromium at 1280?720, actual keyboard/mouse/range inputs and read-only snapshots. Functional clock steps are at most 100 ms during navigation; no inventory, health, lantern, timer or terminal state is assigned. FPS uses a 60-second sample with Playwright's clock resumed in real time, no explicit clock advance and no screenshots during the sample. It is software-renderer evidence when the reported renderer is SwiftShader; it is not hardware-GPU certification. The performance route is actual circular movement, then the pause/retry UI resets the same night before a default-state winning attempt.
+
+Keep every failed/interrupted attempt: attempt 1 exposed blocked settings keys; attempt 2 used an overly large virtual-clock step, conflicting with the app's long-frame clamp; attempt 3 was interrupted by Vite HMR during a source edit; attempt 4's driver pursued a guarded mote and stalled; attempt 5 won Night 1 but its pad check waited for the exact pad center after automatic launch. Later runs use a static production build, threat-aware target selection, edge-safe input cadence and actual launch/landing observations. These driver/environment failures are not relabeled as passing journeys.
+
+CI now selects Phase 2 tests/CLI paths and preserves immutable requirements and historical evidence, rather than comparing changed Phase 2 gameplay against Phase 1 snapshots. npm 11.19.1 is available from cache; local npm remains 11.6.2. Keep the repaired cross-platform lockfile and dependency versions intact. Linux/macOS and the remote CI result remain NOT VERIFIED until actually run.
+
+## Current verification and RTM — completion after recovery
+
+Actual results on Windows/Node v24.13.0: unit **44/44 PASS**; internal separate cross-check **7/7 PASS**; harness **7/7 PASS**; production build PASS; local Phase 2 preflight PASS, including actual CLI checks for all three nights and malformed CLI input. Cached npm **11.19.1** also ran the same **44/44** tests and production build successfully; local npm remains **11.6.2**. This compares package-manager execution against the existing installation, not a fresh Linux CI/dependency installation. No dependency version or lockfile change was needed. Build still warns about a JavaScript chunk over 500 kB; it is non-blocking.
+
+The final standalone high-load benchmark executed **21,600 ticks twice**, with ten shades/two drifters from the initial scenario and wind/random systems enabled. Runs took **6,169.59 / 6,354.00 ms**, both reached real `dawn` loss at sim_tick 21600, with pure JSON stdout and identical replay output. Its initial position/invulnerability are explicit headless fixture setup, not a default-state victory or browser result. Default-state CLI winning replays separately completed Nights 1/2/3 at ticks **9,337 / 10,843 / 14,470**, scores **1,448 / 1,648 / 1,791**, total **4,887**; no scenario overrides were used for these winning routes.
+
+Actual-input Chromium campaign on the corrected core/render build completed Nights 1/2/3 at ticks **7,807 / 10,978 / 14,290**, with **5/5, 6/6, 7/7** lamps and **3 Flames** after every night. Scores were **1,488 / 1,644 / 1,797**, and the Bình Minh screen displayed their verified sum **4,929**. Snapshots were read-only; all collection, deposition, wins, losses and retries came from keyboard/mouse input. Browser console/runtime errors were empty in the final campaign and HUD/audio boundary runs.
+
+| RTM group | Current status | Actual evidence and limit |
+|---|---|---|
+| P2-TICK/MOVE/DASH/MOTES/LAMP/SAFE/PULSE/SHADE/HIT/FALL/END/SCORE | PASS for covered requirements | 44 unit assertions/tests, CLI scenarios, deterministic default winning routes and full-tick benchmark; known same-tick/timer regressions included |
+| P2-MAPS and collision | PASS for tested envelope | All three canonical maps, both ramp widths, step-down, exact minus-Z pad, 36 directions around tier/tower, straight half-annulus end walls; not exhaustive floating-point proof |
+| P2-WIND/DRIFTER/CHARM | PASS at core; browser traversal/observations PASS | Headless state-machine/schedule tests; actual bridge/charm/pad cross-island checks, drifter observations, tier/pad/gust screenshots and successful default campaign |
+| P2-PROGRESS/PAUSE | PASS | Full default-state three-night campaign/Bình Minh; natural fall loss, natural dawn loss, retry correct Night 2 with previous score retained, pause/resume freezes sim/time |
+| P2-SETTINGS | PASS for Ticket persistence | Volume 0.37 and sensitivity 1.7 set using range keyboard inputs, persisted after reload; volume recorded by read-only audio observation |
+| P2-HUD | PASS for exercised UI | Flames/lamps/score/ten slots/cooldowns/context prompt, nearest-unlit offscreen arrow, `00:30` red/blinking and `00:10` countdown screenshots |
+| P2-AUDIO | Programmatic PASS; listening PARTIAL | WebAudio unlocked/running, expected event counts match Core events once, ten countdown cues, terminal cues, volume and music pause observed. Subjective listening still requires human QA |
+| P2-ART | Base palette/ambient and visual review PASS | Canonical base hex literals retained, shared descriptors rendered, progression ambient helper retained; lit screenshot pixels are not asserted equal to unlit source colors |
+| P2-CON | Internal known-delta checks PASS; official compatibility NOT VERIFIED | Strict malformed/null/range checks, required arrays, CLI purity/replay; official v1.0 base/schema/harness still unavailable |
+| P2-DOD performance | Local software-renderer target PASS, narrow Night 3 margin | FPS table below; no hardware-GPU/platform certification |
+| External independent QA / Linux/macOS / remote GitHub CI | NOT VERIFIED | Local cross-check/preflight is agent-authored and is not an external suite or remote CI run |
+
+| Night | Average FPS | Actual sample | Renderer / source |
+|---|---:|---:|---|
+| 1 | 32.3322 | 60,033 ms | SwiftShader; `browser/recovery-attempt-6/browser-e2e.json` |
+| 2 | 33.9387 | 60,020 ms | SwiftShader; same run |
+| 3 before final optimization | 26.7218 | 60,026 ms | Retained failed performance sample; same run |
+| 3 after final optimization | 30.0122 | 60,009 ms | SwiftShader; `browser/recovery-final/browser-e2e.json` |
+
+All samples used 1280×720, actual movement, the clock resumed in real time, and no screenshots during measurement. Night 3 optimization alone merged static meshes, removed duplicate walls, reduced geometry allocations and moved wind overlays using compositor transforms. Its sampled draw calls decreased **37 → 31**, geometries **100 → 72**. Night 1/2 rendering was unchanged by this conditional optimization. The final small UI-only follow-up fixed PowerShell-corrupted Unicode with escaped text/leaves and removed a redundant render-frame countdown branch; the subsequent boundary browser run passed, including readable Vietnamese text and exactly ten countdown sounds. Do not interpret 30.01 FPS as a broad performance margin or real-GPU PASS.
+
+Evidence under `docs/proof/phase-2/`:
+
+- `core/recovery-final/`: harness verification/CLI JSON, standalone benchmark input/output metadata, separate cross-check, local/CI-version test/build logs, local preflight and fresh default winning CLI inputs/outputs.
+- `core/recovery-final/audit-final/preservation.json`: **140** immutable files match HEAD byte-for-byte (Phase 1/Phase 2 historical evidence, PRD-0, Ticket-02 and lockfile); `phase-1` still resolves to `627ed7f92c59482bc902fba108c2936dc9481976`.
+- `browser/recovery-final/`: complete campaign trace, actual inputs, screenshots, audio/console observations and final Night 3 FPS.
+- `browser/recovery-attempt-6/`: earlier complete 4,900-point campaign, unchanged Night 1/2 FPS and retained under-target Night 3 measurement.
+- `browser/recovery-boundaries-final/`: 30-second/10-second HUD, nearest-lamp arrow, natural dawn loss, Unicode leaves and exact audio cardinality.
+- Other `recovery-*` folders/logs remain as actual failed/interrupted attempts. One resumed shell attempt also returned `helper_unknown_error: setup refresh had errors`; an authorized outside-sandbox probe succeeded. The audit's first parser attempt rejected the existing package.json BOM; its original error log remains, and the corrected audit passed without changing package.json/lockfile to satisfy it.
+
+**Verdict: READY FOR INDEPENDENT QA** for the implemented Phase 2 browser/core scope. Official contract compliance, external QA, hardware-GPU performance, subjective audio listening and Linux/macOS remain explicitly unverified. No Phase 3, commit, push, new tag, tag movement or historical evidence deletion was performed.
+
+
+## Phase2 F01–F07 remediation — 2026-11-21
+
+Independent QA defects mapping: F01 dash magnitude; F02 residual dash movement; F03 underside snap; F04 coincident Drifter flee; F05 known event payload validation; F06 stale dash visual; F07 partial-lamp palette. All seven were reproduced and fixed at their respective Core/terrain/adapter/browser layers. Canonical tuning, map geometry and12-step pipeline are unchanged.
+
+Contact interpretation: a grounded uphill crossing at a straight ramp's top lip can use the existing numerical support tolerance to bridge its sub-contact-width seam to the circular tier. This is a collision-envelope assumption, not a new Ticket requirement; old full-width ramp tests and new below-support crossing tests pass together. Dash-controlled velocity is separate from pad launch/additive wind. Coincident Drifter flee deterministically falls back to+X without consuming RNG. Known1.1 event payloads are validated without inventing the unknown1.0base.
+
+Actual results: units79; cross-check7/7; harness7/7; unchanged QA assertions42PASS/0FAIL (before36/6). Browser campaigns4899 / 4872; fresh Night3 software FPS30.30/30.65;21600tick benchmark7.746/7.947s. RTM{"PASS":36,"PARTIAL":4,"FAIL":0,"NOT VERIFIED":3}. Input driver empty-bag/decision-rate fixes and failed runs are disclosed in before-after.md. Evidence: docs/proof/phase-2/remediation/. Verdict READY FOR QA RE-TEST; official schema, hidden harness, actual GPU, Linux/macOS and listening remain unverified. Historical QA evidence is immutable. No commit/push/tag.
+
+
+Rendering follow-up for F06: displaying wind feedback correctly exposed under-target software samples (27.26FPS/60636ms/31draw calls; 28.11FPS/60548ms/32draw calls). These actual failed performance samples remain in pre-instancing-browser-regression.json/performance.json; no sample was discarded or relabeled. Night3 now batches identical shade spheres/eyes with GPU instancing, retaining the original sphere dimensions/segments, animation transforms, diffuse/emissive colors and all shared gameplay geometry. Instancing-only intermediate samples: 29.03FPS/60590ms/26draw calls; 31.04FPS/60592ms/26draw calls; these are retained separately, including the29.03FPS miss. Final HUD optimization removes only decorative panel blur and redundant unchanged text writes. Post-change samples: 30.30FPS/60587ms/26draw calls; 30.65FPS/60628ms/26draw calls. GPU hardware certification is still not claimed. Instrumentation counts actual render calls with native timestamps; screenshots under a virtual clock are not FPS measurements.
+
+The audio-gain harness also required bounded native-time polling instead of assuming a250ms wall delay completes an AudioContext fade under headless load. The <.005 gain assertion remains unchanged; no production audio change was made. A new instance-matrix assertion initially sampled Core and renderer at different times during live FPS; the harness now reads both atomically with the same matrix tolerance. Its failed non-atomic run is retained in non-atomic-browser-regression.json. The worker log reader also explicitly handles PowerShell UTF-16 rather than treating a completed process as still running. The audio failed sample/log is retained in attempt2-browser-regression.json/browser-verified.log.
+
+
+## Final milestone handover — owner risk acceptance
+
+2026-11-21T09:24:51.438Z: chủ dự án chủ động miễn vòng Independent QA Re-test bổ sung, chấp nhận rủi ro để bàn giao Phase2. Đây không phải Independent QA xác nhận remediation. Codex sửa F01–F07 và chạy lại42/42 assertions gốc; local unit79,cross-check7/7,harness7/7,build,browser và21,600tick benchmark đều PASS. Campaign mới4886. Giữ RTM36PASS/4PARTIAL/0FAIL/3NOT VERIFIED; không tuyên bố full compliance. Officialv1.0,realGPU,macOS và nghe audio trực tiếp chưa xác minh. Ubuntu CI được ghi nhận riêng theo đúng SHA sau push; không dùng CI Phase1.
+
+Quyền release mới thay thế giới hạn no-commit/push/tag trước đó: commit Phase2 với message đã chỉ định, normal push, chỉ annotated tag phase-2 sau khi CI đúng HEAD SUCCESS và tag chưa tồn tại; giữ nguyên phase-1. Không làm Phase3. [Final report](../proof/phase-2/PHASE2_FINAL_REPORT.md),[RTM](phase-2-rtm.md),[risk decision](../proof/phase-2/release-risk-acceptance.json). Exact release SHA/CI URL nằm trong annotated tag sau gates; tại thời điểm viết đoạn này các Git gates còn chờ thực hiện.

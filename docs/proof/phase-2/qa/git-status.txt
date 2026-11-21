@@ -1,0 +1,57 @@
+## main...origin/main
+ M .github/workflows/verify.yml
+ M README.md
+ M docs/notes/AI_USAGE.md
+ M docs/notes/phase-2.md
+ M package.json
+ M scripts/bench-headless.mjs
+ M scripts/independent-core.mjs
+ M scripts/phase2-browser.mjs
+ M scripts/preflight-ci.mjs
+ M scripts/scenarios.mjs
+ M scripts/verify.mjs
+ M src/browser/app.css
+ M src/browser/app.js
+ M src/browser/audio.js
+ M src/browser/renderer.js
+ M src/config/game.js
+ M src/core/game.js
+ M src/data/worlds.js
+ M src/headless/adapter.js
+ M tests/game.test.js
+ M tests/validation.test.js
+?? docs/proof/phase-2/browser/recovery-attempt-1.log
+?? docs/proof/phase-2/browser/recovery-attempt-1/
+?? docs/proof/phase-2/browser/recovery-attempt-2.log
+?? docs/proof/phase-2/browser/recovery-attempt-2/
+?? docs/proof/phase-2/browser/recovery-attempt-3.log
+?? docs/proof/phase-2/browser/recovery-attempt-3/
+?? docs/proof/phase-2/browser/recovery-attempt-4-interruption.json
+?? docs/proof/phase-2/browser/recovery-attempt-4.log
+?? docs/proof/phase-2/browser/recovery-attempt-4/
+?? docs/proof/phase-2/browser/recovery-attempt-5.log
+?? docs/proof/phase-2/browser/recovery-attempt-5/
+?? docs/proof/phase-2/browser/recovery-attempt-6.log
+?? docs/proof/phase-2/browser/recovery-attempt-6/
+?? docs/proof/phase-2/browser/recovery-boundaries-1.log
+?? docs/proof/phase-2/browser/recovery-boundaries-1/
+?? docs/proof/phase-2/browser/recovery-boundaries-final.log
+?? docs/proof/phase-2/browser/recovery-boundaries-final/
+?? docs/proof/phase-2/browser/recovery-final.log
+?? docs/proof/phase-2/browser/recovery-final/
+?? docs/proof/phase-2/browser/recovery-summary/
+?? docs/proof/phase-2/core/recovery-authorized/
+?? docs/proof/phase-2/core/recovery-baseline/
+?? docs/proof/phase-2/core/recovery-current/
+?? docs/proof/phase-2/core/recovery-edges/
+?? docs/proof/phase-2/core/recovery-final/
+?? docs/proof/phase-2/core/recovery-regression-1/
+?? docs/proof/phase-2/core/recovery-routes.log
+?? docs/proof/phase-2/core/recovery-routes/
+?? docs/proof/phase-2/qa/
+?? scripts/browser-route.mjs
+?? scripts/campaign-headless.mjs
+?? scripts/phase2-browser-boundaries.mjs
+?? scripts/phase2-campaign.mjs
+?? scripts/proof-directory.mjs
+?? scripts/recovery-audit.mjs

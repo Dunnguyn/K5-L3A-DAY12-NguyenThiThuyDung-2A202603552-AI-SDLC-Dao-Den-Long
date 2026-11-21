@@ -1,0 +1,1 @@
+{"scenario":{"player":{"light":5},"drifters":[{"id":"D1","pos":{"x":0,"y":0,"z":0},"state":"chase"}],"shades":[],"random_drifters":false,"wind_enabled":false},"actions":[{"ticks":1,"pulse":true},{"ticks":59}]}

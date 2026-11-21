@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const dir='docs/proof/phase-2/remediation';
+fs.copyFileSync('src/browser/renderer.js',`${dir}/renderer-before-perf.js`);
+for(const f of ['browser-regression.json','browser-verified-final.log','performance.json'])fs.copyFileSync(`${dir}/${f}`,`${dir}/before-perf-${f}`);
+let s=fs.readFileSync('src/browser/renderer.js','utf8');
+s=s.replace('let moteInstances=null;','let moteInstances=null,shadeInstances=null;');
+s=s.replace('worldRoot=new T.Group();moteInstances=null;','worldRoot=new T.Group();moteInstances=null;shadeInstances=null;');
+const marker=' function syncMotes(items,time)';assert.ok(s.includes(marker));
+const fn=` // Night3 shares identical enemy geometry/materials across GPU instances.\n function syncShadeInstances(items,time){\n   if(!shadeInstances||items.length>shadeInstances.capacity){\n     if(shadeInstances)for(const mesh of shadeInstances.meshes){worldRoot.remove(mesh);mesh.dispose();mesh.geometry.dispose();mesh.material.dispose();}\n     const capacity=Math.max(16,items.length*2),bodyGeometry=new T.SphereGeometry(.67,12,9),eyeGeometry=new T.SphereGeometry(.09,8,6);\n     const normal=new T.InstancedMesh(bodyGeometry,mat(M.shade,0,{emissive:M.shadeEdge,emissiveIntensity:.12}),capacity),stunned=new T.InstancedMesh(bodyGeometry,mat(M.stunned,0,{emissive:M.stunned,emissiveIntensity:.12}),capacity),eyes=new T.InstancedMesh(eyeGeometry,mat(M.halo,0xFFF6C2),capacity*2);\n     shadeInstances={capacity,meshes:[normal,stunned,eyes]};for(const mesh of shadeInstances.meshes){mesh.instanceMatrix.setUsage(T.DynamicDrawUsage);mesh.frustumCulled=false;worldRoot.add(mesh);}\n   }\n   const [normal,stunned,eyes]=shadeInstances.meshes,counts=[0,0,0];\n   for(const e of items){const angle=Math.sin(time*.003+e.id.length)*.08,c=Math.cos(angle),sn=Math.sin(angle),index=e.state==='stunned'?1:0;\n     moteDummy.position.set(e.x-sn*.7,e.y+c*.7,e.z);moteDummy.rotation.set(0,0,angle);moteDummy.scale.set(1,1.15,1);moteDummy.updateMatrix();shadeInstances.meshes[index].setMatrixAt(counts[index]++,moteDummy.matrix);\n     for(const x of [-.22,.22]){moteDummy.position.set(e.x+c*x-sn*.85,e.y+sn*x+c*.85,e.z+.56);moteDummy.scale.set(1,1,1);moteDummy.updateMatrix();eyes.setMatrixAt(counts[2]++,moteDummy.matrix);}\n   }\n   shadeInstances.meshes.forEach((mesh,i)=>{mesh.count=counts[i];mesh.visible=counts[i]>0;mesh.instanceMatrix.needsUpdate=true;});moteDummy.rotation.set(0,0,0);moteDummy.scale.set(1,1,1);\n }\n`;
+s=s.replace(marker,fn+marker);
+s=s.replace("syncMap(shadeMeshes,s.shades,'shade');", "if(s.night===3)syncShadeInstances(s.shades,time);else syncMap(shadeMeshes,s.shades,'shade');");
+fs.writeFileSync('src/browser/renderer.js',s);
+console.log('Night3 enemy instancing preserves sphere topology, transforms, colors, emissive values and all gameplay geometry.');

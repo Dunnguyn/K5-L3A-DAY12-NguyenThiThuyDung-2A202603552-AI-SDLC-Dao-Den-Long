@@ -1,0 +1,9 @@
+PASS QA-E2E settings keyboard and reload persistence
+PASS QA-E2E autoplay unlock and real master gain
+PASS QA-E2E pause freezes sim/time, mute changes master gain and resume works
+PASS QA-E2E camera changes actual camera quaternion
+PASS F01/F02/F06 real-input dash speed14, stop and FX expiry
+PASS F06 dash pause cleanup and resume expiry
+PASS F06 dash retry cleanup
+PASS F06 dash return-to-menu cleanup
+{"functionalPassed":false,"failure":"AssertionError [ERR_ASSERTION]: Did not re-enter below island\n    at defectInputs (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:48:378)\n    at async file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:60:13","findings":[],"performance":[]}

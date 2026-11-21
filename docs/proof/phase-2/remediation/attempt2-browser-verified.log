@@ -1,0 +1,3 @@
+PASS QA-E2E settings keyboard and reload persistence
+PASS QA-E2E autoplay unlock and real master gain
+{"functionalPassed":false,"failure":"AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(report.audioMuted.masterGain<.005)\n\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:57:497","findings":[],"performance":[]}

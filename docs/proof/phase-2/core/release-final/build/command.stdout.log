@@ -1,0 +1,14 @@
+
+> dao-den-long@0.0.0 build
+> vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 13 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:   0.30 kB
+dist/assets/index-2OyuOp7X.css    6.89 kB │ gzip:   2.28 kB
+dist/assets/index-BL1X91_Y.js   598.00 kB │ gzip: 153.60 kB
+
+✓ built in 1.25s

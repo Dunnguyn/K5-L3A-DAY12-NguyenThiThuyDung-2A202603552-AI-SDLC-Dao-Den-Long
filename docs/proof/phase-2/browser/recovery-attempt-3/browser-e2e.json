@@ -1,0 +1,6631 @@
+{
+  "startedAt": "2026-11-20T19:37:22.465Z",
+  "scope": "Default-state campaign; real keyboard/mouse inputs; read-only snapshots. Virtual clock for E2E, real clock for FPS.",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": [
+    {
+      "id": "Menu and WebGL2",
+      "status": "PASS"
+    },
+    {
+      "id": "Settings persist after reload using real keyboard inputs",
+      "status": "PASS"
+    },
+    {
+      "id": "Natural fall loss and same-night retry",
+      "status": "PASS"
+    },
+    {
+      "id": "Pause resume freezes simulation",
+      "status": "PASS"
+    },
+    {
+      "id": "Camera drag",
+      "status": "PASS"
+    }
+  ],
+  "attempts": [
+    {
+      "night": 1,
+      "initial": {
+        "tick": 3,
+        "sim_tick": 3,
+        "night": 1,
+        "state": "playing",
+        "time_s": 299.95,
+        "score": 0,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "grounded": true,
+          "flames": 3,
+          "light": 0,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 25
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": 14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": -14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 30.488024572872465,
+              "y": 0,
+              "z": -12.628553268047956
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": -6.062001655779398e-15,
+              "y": 0,
+              "z": -33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 8.485281374238568,
+              "y": 0,
+              "z": -8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 12,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": 12.628553268047964,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": 33,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": -2.204364238465236e-15,
+              "y": 0,
+              "z": -12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": 30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047963
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -12,
+              "y": 0,
+              "z": 1.4695761589768238e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": -23.334523779156065,
+              "y": 0,
+              "z": 23.33452377915607
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": -12.628553268047954,
+              "y": 0,
+              "z": -30.488024572872465
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": -23.334523779156072,
+              "y": 0,
+              "z": -23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": 23.33452377915606,
+              "y": 0,
+              "z": -23.334523779156072
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -8.48528137423857,
+              "y": 0,
+              "z": 8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -30.48802457287247,
+              "y": 0,
+              "z": -12.628553268047945
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": 8.485281374238571,
+              "y": 0,
+              "z": 8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": -12.62855326804796,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": 12.62855326804797,
+              "y": 0,
+              "z": -30.488024572872458
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -8.485281374238571,
+              "y": 0,
+              "z": -8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": 23.33452377915607,
+              "y": 0,
+              "z": 23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 1
+          }
+        ],
+        "campaign_score": 0
+      },
+      "trace": [
+        {
+          "tick": 6,
+          "sim_tick": 6,
+          "night": 1,
+          "state": "playing",
+          "time_s": 299.9,
+          "score": 0,
+          "end_reason": null,
+          "wind": {
+            "active": false,
+            "dir_deg": 0
+          },
+          "player": {
+            "x": 0.1,
+            "y": 0,
+            "z": -0.1,
+            "vel": {
+              "x": 3,
+              "y": 0,
+              "z": -3
+            },
+            "grounded": true,
+            "flames": 3,
+            "light": 0,
+            "invuln": false,
+            "dash_cd_s": 0,
+            "pulse_cd_s": 0,
+            "charm_s": 0
+          },
+          "lanterns": [
+            {
+              "id": "L1",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 25
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L2",
+              "pos": {
+                "x": 23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L3",
+              "pos": {
+                "x": 14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L4",
+              "pos": {
+                "x": -14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L5",
+              "pos": {
+                "x": -23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": false,
+              "progress": 0
+            }
+          ],
+          "shades": [],
+          "motes": [
+            {
+              "id": "M1",
+              "pos": {
+                "x": 30.488024572872465,
+                "y": 0,
+                "z": -12.628553268047956
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M2",
+              "pos": {
+                "x": -6.062001655779398e-15,
+                "y": 0,
+                "z": -33
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M3",
+              "pos": {
+                "x": 8.485281374238568,
+                "y": 0,
+                "z": -8.485281374238571
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M4",
+              "pos": {
+                "x": 12,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M5",
+              "pos": {
+                "x": 12.628553268047964,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M6",
+              "pos": {
+                "x": 33,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M7",
+              "pos": {
+                "x": -2.204364238465236e-15,
+                "y": 0,
+                "z": -12
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M8",
+              "pos": {
+                "x": 30.48802457287246,
+                "y": 0,
+                "z": 12.628553268047963
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M9",
+              "pos": {
+                "x": -12,
+                "y": 0,
+                "z": 1.4695761589768238e-15
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M10",
+              "pos": {
+                "x": -23.334523779156065,
+                "y": 0,
+                "z": 23.33452377915607
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M11",
+              "pos": {
+                "x": -12.628553268047954,
+                "y": 0,
+                "z": -30.488024572872465
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M12",
+              "pos": {
+                "x": -23.334523779156072,
+                "y": 0,
+                "z": -23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M13",
+              "pos": {
+                "x": 23.33452377915606,
+                "y": 0,
+                "z": -23.334523779156072
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M14",
+              "pos": {
+                "x": -8.48528137423857,
+                "y": 0,
+                "z": 8.485281374238571
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M15",
+              "pos": {
+                "x": -30.48802457287247,
+                "y": 0,
+                "z": -12.628553268047945
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M16",
+              "pos": {
+                "x": 8.485281374238571,
+                "y": 0,
+                "z": 8.48528137423857
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M17",
+              "pos": {
+                "x": -12.62855326804796,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M18",
+              "pos": {
+                "x": 12.62855326804797,
+                "y": 0,
+                "z": -30.488024572872458
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M19",
+              "pos": {
+                "x": -8.485281374238571,
+                "y": 0,
+                "z": -8.48528137423857
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M20",
+              "pos": {
+                "x": 23.33452377915607,
+                "y": 0,
+                "z": 23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            }
+          ],
+          "drifters": [],
+          "charms": [],
+          "events": [
+            {
+              "type": "night_start",
+              "night": 1
+            }
+          ],
+          "campaign_score": 0
+        },
+        {
+          "tick": 600,
+          "sim_tick": 600,
+          "night": 1,
+          "state": "playing",
+          "time_s": 290,
+          "score": 0,
+          "end_reason": null,
+          "wind": {
+            "active": false,
+            "dir_deg": 0
+          },
+          "player": {
+            "x": -11.476380464080062,
+            "y": 0,
+            "z": -4.647126009549472,
+            "vel": {
+              "x": -9.899494936611717,
+              "y": 0,
+              "z": 9.899494936611717
+            },
+            "grounded": true,
+            "flames": 3,
+            "light": 6,
+            "invuln": false,
+            "dash_cd_s": 1.317,
+            "pulse_cd_s": 0,
+            "charm_s": 0
+          },
+          "lanterns": [
+            {
+              "id": "L1",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 25
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L2",
+              "pos": {
+                "x": 23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L3",
+              "pos": {
+                "x": 14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L4",
+              "pos": {
+                "x": -14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L5",
+              "pos": {
+                "x": -23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": false,
+              "progress": 0
+            }
+          ],
+          "shades": [
+            {
+              "id": "S1",
+              "pos": {
+                "x": 21.964359507787258,
+                "y": 0,
+                "z": 19.978498196631374
+              },
+              "state": "wander",
+              "state_ticks_left": 0
+            },
+            {
+              "id": "S2",
+              "pos": {
+                "x": 20.666293893182406,
+                "y": 0,
+                "z": -21.097145271378277
+              },
+              "state": "wander",
+              "state_ticks_left": 0
+            }
+          ],
+          "motes": [
+            {
+              "id": "M1",
+              "pos": {
+                "x": 30.488024572872465,
+                "y": 0,
+                "z": -12.628553268047956
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M2",
+              "pos": {
+                "x": -6.062001655779398e-15,
+                "y": 0,
+                "z": -33
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M5",
+              "pos": {
+                "x": 12.628553268047964,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M6",
+              "pos": {
+                "x": 33,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M8",
+              "pos": {
+                "x": 30.48802457287246,
+                "y": 0,
+                "z": 12.628553268047963
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M9",
+              "pos": {
+                "x": -12,
+                "y": 0,
+                "z": 1.4695761589768238e-15
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M10",
+              "pos": {
+                "x": -23.334523779156065,
+                "y": 0,
+                "z": 23.33452377915607
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M11",
+              "pos": {
+                "x": -12.628553268047954,
+                "y": 0,
+                "z": -30.488024572872465
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M12",
+              "pos": {
+                "x": -23.334523779156072,
+                "y": 0,
+                "z": -23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M13",
+              "pos": {
+                "x": 23.33452377915606,
+                "y": 0,
+                "z": -23.334523779156072
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M14",
+              "pos": {
+                "x": -8.48528137423857,
+                "y": 0,
+                "z": 8.485281374238571
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M15",
+              "pos": {
+                "x": -30.48802457287247,
+                "y": 0,
+                "z": -12.628553268047945
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M17",
+              "pos": {
+                "x": -12.62855326804796,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M18",
+              "pos": {
+                "x": 12.62855326804797,
+                "y": 0,
+                "z": -30.488024572872458
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M20",
+              "pos": {
+                "x": 23.33452377915607,
+                "y": 0,
+                "z": 23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M480",
+              "pos": {
+                "x": 12,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            }
+          ],
+          "drifters": [],
+          "charms": [],
+          "events": [
+            {
+              "type": "night_start",
+              "night": 1
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M3"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M4"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M16"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "shade_spawn",
+              "shade_id": "S1"
+            },
+            {
+              "type": "shade_spawn",
+              "shade_id": "S2"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M240"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M7"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M19"
+            },
+            {
+              "type": "dash"
+            }
+          ],
+          "campaign_score": 0
+        },
+        {
+          "tick": 1200,
+          "sim_tick": 1200,
+          "night": 1,
+          "state": "playing",
+          "time_s": 280,
+          "score": 200,
+          "end_reason": null,
+          "wind": {
+            "active": false,
+            "dir_deg": 0
+          },
+          "player": {
+            "x": 32.339107721347375,
+            "y": 0.966666666666667,
+            "z": 10.327887194006985,
+            "vel": {
+              "x": 4.24264068711949,
+              "y": 3.000000000000002,
+              "z": 4.242640687119277
+            },
+            "grounded": false,
+            "flames": 3,
+            "light": 0,
+            "invuln": false,
+            "dash_cd_s": 1.217,
+            "pulse_cd_s": 0,
+            "charm_s": 0
+          },
+          "lanterns": [
+            {
+              "id": "L1",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 25
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L2",
+              "pos": {
+                "x": 23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": true,
+              "progress": 10
+            },
+            {
+              "id": "L3",
+              "pos": {
+                "x": 14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L4",
+              "pos": {
+                "x": -14.7,
+                "y": 0,
+                "z": -20.2
+              },
+              "lit": false,
+              "progress": 0
+            },
+            {
+              "id": "L5",
+              "pos": {
+                "x": -23.8,
+                "y": 0,
+                "z": 7.7
+              },
+              "lit": false,
+              "progress": 0
+            }
+          ],
+          "shades": [
+            {
+              "id": "S1",
+              "pos": {
+                "x": 18.382546789339052,
+                "y": 0,
+                "z": 5.121007811120906
+              },
+              "state": "chase",
+              "state_ticks_left": 0
+            },
+            {
+              "id": "S2",
+              "pos": {
+                "x": 9.63621293521676,
+                "y": 0,
+                "z": -10.931649018822316
+              },
+              "state": "wander",
+              "state_ticks_left": 0
+            },
+            {
+              "id": "S3",
+              "pos": {
+                "x": 28.407443195681505,
+                "y": 0,
+                "z": 11.543366648989945
+              },
+              "state": "chase",
+              "state_ticks_left": 0
+            }
+          ],
+          "motes": [
+            {
+              "id": "M1",
+              "pos": {
+                "x": 30.488024572872465,
+                "y": 0,
+                "z": -12.628553268047956
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M2",
+              "pos": {
+                "x": -6.062001655779398e-15,
+                "y": 0,
+                "z": -33
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M5",
+              "pos": {
+                "x": 12.628553268047964,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M6",
+              "pos": {
+                "x": 33,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M8",
+              "pos": {
+                "x": 30.48802457287246,
+                "y": 0,
+                "z": 12.628553268047963
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M10",
+              "pos": {
+                "x": -23.334523779156065,
+                "y": 0,
+                "z": 23.33452377915607
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M11",
+              "pos": {
+                "x": -12.628553268047954,
+                "y": 0,
+                "z": -30.488024572872465
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M12",
+              "pos": {
+                "x": -23.334523779156072,
+                "y": 0,
+                "z": -23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M13",
+              "pos": {
+                "x": 23.33452377915606,
+                "y": 0,
+                "z": -23.334523779156072
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M15",
+              "pos": {
+                "x": -30.48802457287247,
+                "y": 0,
+                "z": -12.628553268047945
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M17",
+              "pos": {
+                "x": -12.62855326804796,
+                "y": 0,
+                "z": 30.48802457287246
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M18",
+              "pos": {
+                "x": 12.62855326804797,
+                "y": 0,
+                "z": -30.488024572872458
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M20",
+              "pos": {
+                "x": 23.33452377915607,
+                "y": 0,
+                "z": 23.334523779156065
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M960",
+              "pos": {
+                "x": 12,
+                "y": 0,
+                "z": 0
+              },
+              "kind": "random",
+              "ttl_s": null
+            },
+            {
+              "id": "M1200",
+              "pos": {
+                "x": 8.485281374238571,
+                "y": 0,
+                "z": 8.48528137423857
+              },
+              "kind": "random",
+              "ttl_s": null
+            }
+          ],
+          "drifters": [],
+          "charms": [],
+          "events": [
+            {
+              "type": "night_start",
+              "night": 1
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M3"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M4"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M16"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "shade_spawn",
+              "shade_id": "S1"
+            },
+            {
+              "type": "shade_spawn",
+              "shade_id": "S2"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M240"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M7"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M19"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M9"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M14"
+            },
+            {
+              "type": "shade_spawn",
+              "shade_id": "S3"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M720"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "mote_picked",
+              "mote_id": "M480"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "jump"
+            },
+            {
+              "type": "jump"
+            },
+            {
+              "type": "lantern_lit",
+              "lantern_id": "L2"
+            },
+            {
+              "type": "dash"
+            },
+            {
+              "type": "jump"
+            },
+            {
+              "type": "jump"
+            },
+            {
+              "type": "dash"
+            }
+          ],
+          "campaign_score": 0
+        }
+      ],
+      "status": "RUNNING"
+    }
+  ],
+  "measurements": {
+    "night1": {
+      "averageFps": 32.595110733389994,
+      "durationMs": 60009,
+      "frames": 1956,
+      "p95FrameMs": 60,
+      "complete60s": true,
+      "metrics": {
+        "calls": 63,
+        "triangles": 8396,
+        "geometries": 60,
+        "textures": 0
+      },
+      "finalState": {
+        "tick": 3714,
+        "sim_tick": 3681,
+        "night": 1,
+        "state": "playing",
+        "time_s": 238.65,
+        "score": 0,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 15.909783532115004,
+          "y": 0,
+          "z": 17.090663761154794,
+          "vel": {
+            "x": -4.242640687119277,
+            "y": 0,
+            "z": 4.242640687119277
+          },
+          "grounded": true,
+          "flames": 1,
+          "light": 1,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 25
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": 14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": -14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": 20.57912357432655,
+              "y": 0,
+              "z": 0.9116636827406728
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": -3.2460691619004023,
+              "y": 0,
+              "z": -12.725912864668953
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": -37.29334474274749,
+              "y": 0,
+              "z": 5.767048570793624
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 0.37655370213132905,
+              "y": 0,
+              "z": -9.585513929214846
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 22.13137916631906,
+              "y": 0,
+              "z": 5.164323488637376
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 20.533636037390263,
+              "y": 0,
+              "z": 0.8949234307000383
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 30.488024572872465,
+              "y": 0,
+              "z": -12.628553268047956
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": -6.062001655779398e-15,
+              "y": 0,
+              "z": -33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 8.485281374238568,
+              "y": 0,
+              "z": -8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 12,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": 12.628553268047964,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": 33,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": -2.204364238465236e-15,
+              "y": 0,
+              "z": -12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": 30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047963
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -12,
+              "y": 0,
+              "z": 1.4695761589768238e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": -23.334523779156065,
+              "y": 0,
+              "z": 23.33452377915607
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": -12.628553268047954,
+              "y": 0,
+              "z": -30.488024572872465
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": -23.334523779156072,
+              "y": 0,
+              "z": -23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": 23.33452377915606,
+              "y": 0,
+              "z": -23.334523779156072
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -8.48528137423857,
+              "y": 0,
+              "z": 8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -30.48802457287247,
+              "y": 0,
+              "z": -12.628553268047945
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": -12.62855326804796,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": 12.62855326804797,
+              "y": 0,
+              "z": -30.488024572872458
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -8.485281374238571,
+              "y": 0,
+              "z": -8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": 23.33452377915607,
+              "y": 0,
+              "z": 23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M240",
+            "pos": {
+              "x": 8.485281374238571,
+              "y": 0,
+              "z": 8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M480",
+            "pos": {
+              "x": 7.347880794884119e-16,
+              "y": 0,
+              "z": 12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M720",
+            "pos": {
+              "x": 2.0206672185931327e-15,
+              "y": 0,
+              "z": 33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M960",
+            "pos": {
+              "x": -30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047966
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1200",
+            "pos": {
+              "x": -33,
+              "y": 0,
+              "z": 4.0413344371862654e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 1
+          },
+          {
+            "type": "paused"
+          },
+          {
+            "type": "resumed"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M16"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S1"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S2"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S3"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S4"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S5"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "player_hit",
+            "source": "S3",
+            "lost": 0
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S6"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "player_hit",
+            "source": "S1",
+            "lost": 0
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          }
+        ],
+        "campaign_score": 0
+      },
+      "target30": true
+    }
+  },
+  "consoleErrors": [],
+  "consoleWarnings": [
+    "[.WebGL-0x246c00608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x246c00608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x246c00608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x246c00608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "inputs": [
+    {
+      "night": 1,
+      "sim_tick": 3,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 6,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 9,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 12,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 15,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 18,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 21,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 24,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 27,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 30,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 33,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 36,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 39,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 42,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 45,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 48,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 51,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 54,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 57,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 60,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 63,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 66,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 69,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 72,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 75,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 78,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 81,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 84,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 87,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 90,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 93,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 96,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 99,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 102,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 105,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 108,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 111,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 114,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 117,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 120,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 123,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 126,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 129,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 132,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 135,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 138,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 141,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 144,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 147,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 150,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 153,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 156,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 159,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 162,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 165,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 168,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 171,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 174,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 177,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 180,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 183,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 186,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 189,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 192,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 195,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 198,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 201,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 204,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 207,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 210,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 213,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 216,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 219,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 222,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 225,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 228,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 231,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 234,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 237,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 240,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 243,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 246,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 249,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 252,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 255,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 258,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 261,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 264,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 267,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 270,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 273,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 276,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 279,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 282,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 285,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 288,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 291,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 294,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 297,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 300,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 303,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 306,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 309,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 312,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 315,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 318,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 321,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 324,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 327,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 330,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 333,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 336,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 339,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 342,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 345,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 348,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 351,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 354,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 357,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 360,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 363,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 366,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 369,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 372,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 375,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 378,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 381,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 384,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 387,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 390,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 393,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 396,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 399,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 402,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 405,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 408,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 411,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 414,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 417,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 420,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 423,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 426,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 429,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 432,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 435,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 438,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 441,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 444,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 447,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 450,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 453,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 456,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 459,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 462,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 465,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 468,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 471,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 474,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 477,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 480,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 483,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 486,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 489,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 492,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 495,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 498,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 501,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 504,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 507,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 510,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 513,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 516,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 519,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 522,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 525,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 528,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 531,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 534,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 537,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 540,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 543,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 546,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 549,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 552,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 555,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 558,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 561,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 564,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 567,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 570,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 573,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 576,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 579,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 582,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 585,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 588,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 591,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 594,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 597,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 600,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 603,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 606,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 609,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 612,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 615,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 618,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 621,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 624,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 627,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 630,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 633,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 636,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 639,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 642,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 645,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 648,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 651,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 654,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 657,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 660,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 663,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 666,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 669,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 672,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 675,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 678,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 681,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 684,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 687,
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 690,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 693,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 696,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 699,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 702,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 705,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 708,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 711,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 714,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 717,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 720,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 723,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 726,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 729,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 732,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 735,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 738,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 741,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 744,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 747,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 750,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 753,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 756,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 759,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 762,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 765,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 768,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 771,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 774,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 777,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 780,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 783,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 786,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 789,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 792,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 795,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 798,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 801,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 804,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 807,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 810,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 813,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 816,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 819,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 822,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 825,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 828,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 831,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 834,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 837,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 840,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 843,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 846,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 849,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 852,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 855,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 858,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 861,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 864,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 867,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 870,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 873,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 876,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 879,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 882,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 885,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 888,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 891,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 894,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 897,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 900,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 903,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 906,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 909,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 912,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 915,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 918,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 921,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 924,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 927,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 930,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 933,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 936,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 939,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 942,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 945,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 948,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 951,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 954,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 957,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 960,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 963,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 966,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 969,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 972,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 975,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 978,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 981,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 984,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 987,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 990,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 993,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 996,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 999,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1002,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1005,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1008,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1011,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1014,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1017,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1020,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1023,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1026,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1029,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1032,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1035,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1038,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1041,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1044,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1047,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1050,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1053,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1056,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1059,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1062,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1065,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1068,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1071,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1074,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1077,
+      "interact": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1080,
+      "interact": true
+    },
+    {
+      "night": 1,
+      "sim_tick": 1083,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1086,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1089,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1092,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1095,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1098,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1101,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1104,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1107,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1110,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1113,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1116,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1119,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1122,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1125,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1128,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1131,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1134,
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1137,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1140,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1143,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1146,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1149,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1152,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1155,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1158,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1161,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1164,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1167,
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1170,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1173,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1176,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1179,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1182,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1185,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1188,
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1191,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1194,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1197,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1200,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1203,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1206,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1209,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1212,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1215,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1218,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1221,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1224,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1227,
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1230,
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1233,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1236,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1239,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1242,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1245,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1248,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1251,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1254,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1257,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1260,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1263,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1266,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1269,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1272,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1275,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1278,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1281,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1284,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1287,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1290,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1293,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1296,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1299,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1302,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1305,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1308,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1311,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1314,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1317,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1320,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1323,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1326,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1329,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1332,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1335,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1338,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1341,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1344,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1347,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1350,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1353,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1356,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1359,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1362,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1365,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1368,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1371,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1374,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1377,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1380,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1383,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1386,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1389,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": true,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1392,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1395,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1398,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1401,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1404,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1407,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1410,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1413,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1416,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1419,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1422,
+      "moveX": -1,
+      "moveZ": -1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    },
+    {
+      "night": 1,
+      "sim_tick": 1425,
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "jump": false,
+      "pulse": false
+    }
+  ],
+  "browserVersion": "159.0.8154.6",
+  "webgl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "antialias": false
+  },
+  "loss": {
+    "tick": 1521,
+    "sim_tick": 1521,
+    "night": 1,
+    "state": "lost",
+    "time_s": 274.65,
+    "score": 0,
+    "end_reason": "no_flames",
+    "wind": {
+      "active": false,
+      "dir_deg": 0
+    },
+    "player": {
+      "x": 0,
+      "y": -10.166666666666668,
+      "z": -46.05000000000039,
+      "vel": {
+        "x": 0,
+        "y": -19.999999999999996,
+        "z": -6.000000000000085
+      },
+      "grounded": false,
+      "flames": 0,
+      "light": 0,
+      "invuln": false,
+      "dash_cd_s": 0,
+      "pulse_cd_s": 0,
+      "charm_s": 0
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L2",
+        "pos": {
+          "x": 23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L3",
+        "pos": {
+          "x": 14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L4",
+        "pos": {
+          "x": -14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L5",
+        "pos": {
+          "x": -23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      }
+    ],
+    "shades": [
+      {
+        "id": "S1",
+        "pos": {
+          "x": 9.045616750509446,
+          "y": 0,
+          "z": 0.9494129434912002
+        },
+        "state": "wander",
+        "state_ticks_left": 0
+      },
+      {
+        "id": "S2",
+        "pos": {
+          "x": 0.6119306376440528,
+          "y": 0,
+          "z": -31.240138895051388
+        },
+        "state": "chase",
+        "state_ticks_left": 0
+      },
+      {
+        "id": "S3",
+        "pos": {
+          "x": 19.503613687305123,
+          "y": 0,
+          "z": 18.392741452967467
+        },
+        "state": "wander",
+        "state_ticks_left": 0
+      },
+      {
+        "id": "S4",
+        "pos": {
+          "x": -19.768928376634857,
+          "y": 0,
+          "z": 25.142117459702604
+        },
+        "state": "wander",
+        "state_ticks_left": 0
+      }
+    ],
+    "motes": [
+      {
+        "id": "M1",
+        "pos": {
+          "x": 30.488024572872465,
+          "y": 0,
+          "z": -12.628553268047956
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M3",
+        "pos": {
+          "x": 8.485281374238568,
+          "y": 0,
+          "z": -8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M4",
+        "pos": {
+          "x": 12,
+          "y": 0,
+          "z": 0
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M5",
+        "pos": {
+          "x": 12.628553268047964,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M6",
+        "pos": {
+          "x": 33,
+          "y": 0,
+          "z": 0
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M8",
+        "pos": {
+          "x": 30.48802457287246,
+          "y": 0,
+          "z": 12.628553268047963
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M9",
+        "pos": {
+          "x": -12,
+          "y": 0,
+          "z": 1.4695761589768238e-15
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M10",
+        "pos": {
+          "x": -23.334523779156065,
+          "y": 0,
+          "z": 23.33452377915607
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M11",
+        "pos": {
+          "x": -12.628553268047954,
+          "y": 0,
+          "z": -30.488024572872465
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M12",
+        "pos": {
+          "x": -23.334523779156072,
+          "y": 0,
+          "z": -23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M13",
+        "pos": {
+          "x": 23.33452377915606,
+          "y": 0,
+          "z": -23.334523779156072
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M14",
+        "pos": {
+          "x": -8.48528137423857,
+          "y": 0,
+          "z": 8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M15",
+        "pos": {
+          "x": -30.48802457287247,
+          "y": 0,
+          "z": -12.628553268047945
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M16",
+        "pos": {
+          "x": 8.485281374238571,
+          "y": 0,
+          "z": 8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M17",
+        "pos": {
+          "x": -12.62855326804796,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M18",
+        "pos": {
+          "x": 12.62855326804797,
+          "y": 0,
+          "z": -30.488024572872458
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M19",
+        "pos": {
+          "x": -8.485281374238571,
+          "y": 0,
+          "z": -8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M20",
+        "pos": {
+          "x": 23.33452377915607,
+          "y": 0,
+          "z": 23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M240",
+        "pos": {
+          "x": 7.347880794884119e-16,
+          "y": 0,
+          "z": 12
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M960",
+        "pos": {
+          "x": 2.0206672185931327e-15,
+          "y": 0,
+          "z": 33
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M1200",
+        "pos": {
+          "x": -2.204364238465236e-15,
+          "y": 0,
+          "z": -12
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M1440",
+        "pos": {
+          "x": -30.48802457287246,
+          "y": 0,
+          "z": 12.628553268047966
+        },
+        "kind": "random",
+        "ttl_s": null
+      }
+    ],
+    "drifters": [],
+    "charms": [],
+    "events": [
+      {
+        "type": "night_start",
+        "night": 1
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M7"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S1"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S2"
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M2"
+      },
+      {
+        "type": "player_hit",
+        "source": "fall",
+        "lost": 2
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M480"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S3"
+      },
+      {
+        "type": "player_hit",
+        "source": "fall",
+        "lost": 1
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M720"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S4"
+      },
+      {
+        "type": "player_hit",
+        "source": "fall",
+        "lost": 1
+      }
+    ],
+    "campaign_score": 0
+  },
+  "passed": false,
+  "failure": "page.evaluate: Execution context was destroyed, most likely because of a navigation\n    at snap (E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\\scripts\\phase2-campaign.mjs:14:21)\n    at win (E:\\VinUni\\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\\scripts\\phase2-campaign.mjs:25:185)\n    at async file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/scripts/phase2-campaign.mjs:37:161",
+  "finishedAt": "2026-11-20T19:38:59.132Z"
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-21T06:31:55.239Z",
+  "method": "Actual Chromium inputs; read-only observations; before production edits",
+  "F06": {
+    "classes": "dash",
+    "animation": "dashfx",
+    "opacity": "0.45"
+  },
+  "F07": {
+    "material": null
+  }
+}

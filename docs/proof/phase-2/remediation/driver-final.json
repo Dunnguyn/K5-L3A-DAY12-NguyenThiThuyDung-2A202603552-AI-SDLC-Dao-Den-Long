@@ -1,0 +1,23 @@
+[
+  {
+    "night": 1,
+    "state": "won",
+    "tick": 9178,
+    "score": 1454,
+    "lamps": 5
+  },
+  {
+    "night": 2,
+    "state": "won",
+    "tick": 11554,
+    "score": 1629,
+    "lamps": 6
+  },
+  {
+    "night": 3,
+    "state": "won",
+    "tick": 14140,
+    "score": 1803,
+    "lamps": 7
+  }
+]

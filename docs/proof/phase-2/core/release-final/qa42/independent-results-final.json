@@ -1,0 +1,276 @@
+{
+  "timestamp": "2026-11-21T09:13:06.184Z",
+  "scope": "Independent tests authored during QA; production unchanged; unit fixtures are setup before stepping and are not browser wins",
+  "node": "v24.13.0",
+  "tests": [
+    {
+      "id": "QA-TUNING",
+      "requirement": "Ticket-02 section 1 standard constants",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "checkedKeys": 69
+      }
+    },
+    {
+      "id": "QA-MAPS",
+      "requirement": "All canonical maps, lamps, motes and spawn rings",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "nights": 3
+      }
+    },
+    {
+      "id": "QA-RUN",
+      "requirement": "Run 6 m/s, stop within six ticks, diagonal no boost",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "stopTicks": 6
+      }
+    },
+    {
+      "id": "QA-JUMP",
+      "requirement": "Jump impulse 7, gravity -20, no repeated air jump",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-TIMER",
+      "requirement": "Dash 14 m/s for 12 ticks, cooldown from start, rising edge",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-ANALOG",
+      "requirement": "Dash direction normalized for valid fractional move input",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-IDLE-FACING",
+      "requirement": "Idle dash keeps unit facing after fractional movement",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-STOP",
+      "requirement": "Return to stopped movement within 0.1 s after releasing dash movement",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-AIR-DASH",
+      "requirement": "Air dash holds height and grants no invulnerability",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PICKUP",
+      "requirement": "Pickup inclusive XZ/Y limits and capacity, deposit-only scoring",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SPAWN",
+      "requirement": "Spawn at 240k; skip occupied sites; cap 30",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-LAMP",
+      "requirement": "Partial charging min(carried,missing), inclusive radius and vertical distance",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SAFE",
+      "requirement": "Final charge updates safe zone before contact, eviction <=30 ticks",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PULSE-3D",
+      "requirement": "Pulse latches inclusive 3D range before enemy movement",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PUSH",
+      "requirement": "Coincident pulse pushes +X by 4m over first 15 ticks, stun refresh",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-HIT-ID",
+      "requirement": "One hit per tick, numeric S2 before S10, recoil/invulnerability",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-STEAL-HIT",
+      "requirement": "Drifter steal precedes shade hit and half-drop",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "events": [
+          "drifter_steal",
+          "player_hit"
+        ]
+      }
+    },
+    {
+      "id": "QA-DROP-TTL",
+      "requirement": "Dropped TTL480 and no same-tick pickup",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-FALL",
+      "requirement": "Fall ignores invulnerability, happens once, respawn after 60 ticks",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-UNDERSIDE",
+      "requirement": "No upward floor teleport after default-input off-edge and re-entry",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DEATH-CLEAR",
+      "requirement": "Actual fall death has priority over completed lanterns and time zero",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CLEAR-TIMEOUT",
+      "requirement": "Final lantern on timeout tick wins with exact score",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PICK-DEPOSIT-PULSE",
+      "requirement": "Pickup funds deposit before pulse and last-tick clear",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-NEW-ENTITY",
+      "requirement": "Step-10 spawned mote interacts first on following tick",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PAUSE-ALL",
+      "requirement": "Pause freezes respawn/dash/charm/stun/TTL/spawn, wall tick advances",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SHADE-SCHEDULE",
+      "requirement": "First2 at300, 480/420/360 intervals, valid position and cap",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PADS",
+      "requirement": "Both Night2 pads launch24 and land on destination, no input override",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-COLLISION",
+      "requirement": "Tier/tower wall sweeps and both ramps",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-WIND",
+      "requirement": "1680 warning,1800 start,300 force ticks at2m/s, no feedback",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CHARM",
+      "requirement": "Effect600, expiry, run7.2, respawn2700",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CHARM-EDGE",
+      "requirement": "Charm ignores cooldown but requires release and ignores active-dash press",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER",
+      "requirement": "Theft ignores invulnerability/safezone, one theft, removal240",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-DROP",
+      "requirement": "Pulse fleeing loot drops all at spot, no same-tick pickup, removal120",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-ZERO",
+      "requirement": "Pulse at coincident chase drifter must still flee at7m/s",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-RESET",
+      "requirement": "Retry resets night state while preserving earlier won score/settings",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DELTA-CLI",
+      "requirement": "Required v1.1 fields, override replacement, events, replay and pure stdout",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-INVALID-CLI",
+      "requirement": "Invalid JSON/night/shape returns exit1, JSON stderr, empty stdout",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SHADE-BOUNDARY",
+      "requirement": "Detect12/abandon18 and contact height1.5 inclusive",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-FEATURE-CLI",
+      "requirement": "Actual CLI scenarios for charm, wind, drifter drop, fall and pads",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PAD-DASH",
+      "requirement": "Pad momentum survives air dash; height held; wind additive during dash",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-BOUNDS",
+      "requirement": "Idle/chase bag5/radius15 thresholds and normal pulse flee7",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-EVENT-VALIDATION",
+      "requirement": "Known v1.1 event payloads must reject missing/wrong fields",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    }
+  ],
+  "passed": 42,
+  "failed": 0
+}

@@ -1,0 +1,76 @@
+{
+  "startedAt": "2026-11-21T07:26:46.310Z",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "scope": "Unchanged existing regression commands after actual npm ci --offline; browser command has SKIP_FPS=1 because native independent FPS is separate",
+  "commands": [
+    {
+      "id": "npm-version",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 546.1451
+    },
+    {
+      "id": "unit",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 4497.4989
+    },
+    {
+      "id": "cross-check",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:independent"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1305.6992
+    },
+    {
+      "id": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2014.705899999999
+    },
+    {
+      "id": "harness",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "exitCode": 1,
+      "elapsedMs": 8846.4848
+    },
+    {
+      "id": "benchmark",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "bench:headless"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 16915.797000000002
+    }
+  ]
+}

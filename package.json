@@ -13,7 +13,7 @@
                     "preview":  "vite preview --host 127.0.0.1",
                     "test":  "vitest run",
                     "headless":  "node scripts/headless.mjs",
-                    "test:browser":  "node scripts/phase2-browser.mjs",
+                    "test:browser":  "npm run build && node scripts/phase2-campaign.mjs",
                     "smoke:headless":  "node scripts/smoke-headless.mjs",
                     "verify":  "node scripts/verify.mjs",
                     "bench:headless":  "node scripts/bench-headless.mjs",

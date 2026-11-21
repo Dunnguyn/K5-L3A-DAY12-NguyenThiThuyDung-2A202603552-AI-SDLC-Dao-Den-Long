@@ -1,0 +1,20 @@
+
+> dao-den-long@0.0.0 test
+> vitest run
+
+
+ RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long
+
+ ❯ tests/remediation.test.js (34 tests | 4 failed) 382ms
+   × F02 dash boundary returns to controlled opposite movement 13ms
+   × F01/F02 pad flight in Night2 preserves launch through charm/dash/wind 6ms
+   × F01/F02 pad flight in Night3 preserves launch through charm/dash/wind 3ms
+   × F03 default edge re-entry continues falling then respawns once 90ms
+ ❯ tests/game.test.js (31 tests | 1 failed) 2039ms
+   × both ramp widths connect to tier 1 and stepping off tier 2 falls to the lower support 33ms
+
+ Test Files  2 failed | 3 passed (5)
+      Tests  5 failed | 73 passed (78)
+   Start at  13:47:50
+   Duration  3.12s (tests 67%, transform 18%, worker 11%, import 5%)
+

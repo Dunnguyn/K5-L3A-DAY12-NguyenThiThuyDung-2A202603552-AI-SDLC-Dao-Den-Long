@@ -1,3 +1,4 @@
+import {proofDirectory} from './proof-directory.mjs';
 ﻿import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { mkdirSync,writeFileSync } from 'node:fs';
@@ -5,7 +6,7 @@ import { tuning } from '../src/config/game.js';
 import { createGame,step,gameSnapshot } from '../src/core/game.js';
 import { getWorld } from '../src/data/worlds.js';
 import { runScenario,validateOutput } from '../src/headless/adapter.js';
-const dir=process.env.PROOF_DIR||'docs/proof/phase-2/core';mkdirSync(dir,{recursive:true});const checks=[];function check(id,fn){fn();checks.push({id,status:'PASS'});}
+const dir=proofDirectory('core','cross-check');mkdirSync(dir,{recursive:true});const checks=[];function check(id,fn){fn();checks.push({id,status:'PASS'});}
 check('standard values and map cardinality',()=>{assert.equal(tuning.tick_rate,60);assert.equal(tuning.dash_speed,14);assert.equal(tuning.night3_duration_s,360);assert.deepEqual([1,2,3].map(n=>getWorld(n).lamps.length),[5,6,7]);});
 check('fixed tick and pause separation',()=>{const s=createGame();step(s,{pause:true});assert.equal(s.tick,1);assert.equal(s.sim_tick,0);step(s,{pause:false});assert.equal(s.sim_tick,0);step(s,{pause:true});assert.equal(s.sim_tick,1);});
 check('dash rising edge and stable replay',()=>{const input={version:'internal-draft-1',seed:88,actions:[{ticks:1,dash:true},{ticks:1,dash:true}]};const a=runScenario(input,2),b=runScenario(input,2);assert.deepEqual(a,b);assert.equal(a.state.events.filter(e=>e.type==='dash').length,1);});

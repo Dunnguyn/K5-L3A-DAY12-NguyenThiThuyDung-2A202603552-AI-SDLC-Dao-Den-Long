@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-11-21T04:22:15.484Z",
+  "verdict": "READY FOR INDEPENDENT QA",
+  "officialContractCompliant": "NOT VERIFIED",
+  "campaignScore": 4929,
+  "nightWins": [
+    {
+      "id": "Night 1 default-state victory",
+      "status": "PASS",
+      "sim_tick": 7807,
+      "score": 1488,
+      "flames": 3,
+      "lamps": 5
+    },
+    {
+      "id": "Night 2 default-state victory",
+      "status": "PASS",
+      "sim_tick": 10978,
+      "score": 1644,
+      "flames": 3,
+      "lamps": 6
+    },
+    {
+      "id": "Night 3 default-state victory",
+      "status": "PASS",
+      "sim_tick": 14290,
+      "score": 1797,
+      "flames": 3,
+      "lamps": 7
+    }
+  ],
+  "fps": {
+    "night1": 32.332217280495726,
+    "night2": 33.938687104298566,
+    "night3": 30.012164841940375
+  },
+  "renderer": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "antialias": false
+  },
+  "benchmarkMs": [
+    6169.59,
+    6354
+  ],
+  "preservedFiles": 140,
+  "head": "9ced7a1ff98cdc4056626a9aa678e243d2d8cec6",
+  "phase1": "627ed7f92c59482bc902fba108c2936dc9481976",
+  "browserErrors": [],
+  "boundaryPassed": true,
+  "palettePassed": true,
+  "limitations": [
+    "SwiftShader only; narrow Night 3 FPS margin",
+    "Subjective audio listening, hardware GPU, Linux/macOS and remote CI not verified",
+    "Official v1.0 base/schema and external independent QA not verified"
+  ],
+  "evidence": {
+    "campaign": "docs/proof/phase-2/browser/recovery-final/browser-e2e.json",
+    "fpsNight1And2": "docs/proof/phase-2/browser/recovery-attempt-6/browser-e2e.json",
+    "boundaries": "docs/proof/phase-2/browser/recovery-boundaries-final/boundaries.json",
+    "core": "docs/proof/phase-2/core/recovery-final/"
+  }
+}

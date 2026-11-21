@@ -1,0 +1,63 @@
+{
+  "scope": "Phase 2 shared core + world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED",
+  "timestamp": "2026-11-21T07:26:55.869Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "commit": "9ced7a1ff98cdc4056626a9aa678e243d2d8cec6",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "ticket02Sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb",
+  "checks": [
+    {
+      "name": "contract-generation",
+      "command": [
+        "node",
+        "scripts/write-contract.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "core-world-scenarios",
+      "command": [
+        "node",
+        "scripts/scenarios.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: canonical worlds, deterministic CLI replay on nights 1-3, invalid CLI handling\n",
+      "stderr": ""
+    },
+    {
+      "name": "independent-core-cross-check",
+      "command": [
+        "node",
+        "scripts/independent-core.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"kind\":\"separate acceptance cross-check (agent-authored; not external independent QA)\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"id\":\"standard values and map cardinality\",\"status\":\"PASS\"},{\"id\":\"fixed tick and pause separation\",\"status\":\"PASS\"},{\"id\":\"dash rising edge and stable replay\",\"status\":\"PASS\"},{\"id\":\"firefly only scores when deposited\",\"status\":\"PASS\"},{\"id\":\"shade contact and safe zone update order\",\"status\":\"PASS\"},{\"id\":\"required output rejects null records and keeps required arrays\",\"status\":\"PASS\"},{\"id\":\"CLI pure JSON for selected night\",\"status\":\"PASS\"}],\"passed\":7,\"failed\":0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "headless-import",
+      "command": [
+        "node",
+        "scripts/smoke-headless.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: Node ESM imports core without DOM. Infrastructure only; no contract runner.\n",
+      "stderr": ""
+    },
+    {
+      "name": "vitest",
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run"
+      ],
+      "exitCode": 1,
+      "stdout": "\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n ❯ tests/remediation.test.js (35 tests | 1 failed) 418ms\n   × acceptance driver abandons a lamp destination if theft/pulse empties its bag 22ms\n\n Test Files  1 failed | 4 passed (5)\n      Tests  1 failed | 78 passed (79)\n   Start at  14:27:00\n   Duration  2.74s (tests 91%, import 6%, transform 2%, worker 1%)\n\n",
+      "stderr": "\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/remediation.test.js > acceptance driver abandons a lamp destination if theft/pulse empties its bag\nAssertionError: expected 'mote' to be 'lamp' // Object.is equality\n\nExpected: \"lamp\"\nReceived: \"mote\"\n\n ❯ tests/remediation.test.js:9:184\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"
+    }
+  ],
+  "passed": false
+}

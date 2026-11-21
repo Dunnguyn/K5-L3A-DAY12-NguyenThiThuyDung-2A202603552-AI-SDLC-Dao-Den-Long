@@ -1,7 +1,8 @@
+import {proofDirectory} from './proof-directory.mjs';
 ﻿import { spawnSync } from 'node:child_process';
 import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-const dir=process.env.PROOF_DIR||'docs/proof/phase-2/core';mkdirSync(dir,{recursive:true});
+const dir=proofDirectory('core','verify');mkdirSync(dir,{recursive:true});process.env.PROOF_DIR=dir;
 const report={scope:'Phase 2 shared core + world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED',timestamp:new Date().toISOString(),platform:process.platform,node:process.version,commit:spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).stdout?.trim(),prdSha256:createHash('sha256').update(readFileSync('docs/requirements/PRD-0.md')).digest('hex'),ticket02Sha256:createHash('sha256').update(readFileSync('docs/requirements/TICKET-02.md')).digest('hex'),checks:[]};
 const checks=[['contract-generation',['scripts/write-contract.mjs']],['core-world-scenarios',['scripts/scenarios.mjs']],['independent-core-cross-check',['scripts/independent-core.mjs']],['headless-import',['scripts/smoke-headless.mjs']],['vitest',['node_modules/vitest/vitest.mjs','run']],['headless-benchmark',['scripts/bench-headless.mjs']],['vite-build',['node_modules/vite/bin/vite.js','build']]];
 for(const [name,args] of checks){const r=spawnSync(process.execPath,args,{encoding:'utf8',timeout:30000,maxBuffer:16e6,env:process.env});const item={name,command:['node',...args],exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message};report.checks.push(item);process.stdout.write(`${name}: ${r.status===0?'PASS':'FAIL'}\n`);if(r.status!==0){process.exitCode=1;break;}}

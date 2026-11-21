@@ -1,0 +1,136 @@
+[
+  {
+    "id": "F01",
+    "severity": "MAJOR",
+    "title": "Dash direction is not normalized for fractional inputs or remembered facing",
+    "expected": "14 m/s for 12 ticks regardless of nonzero direction magnitude",
+    "actual": "moveX=0.5 travels 1.4m in 12 ticks (7m/s), including idle dash after partial movement; expected 2.8m",
+    "tests": [
+      "QA-DASH-ANALOG",
+      "QA-DASH-IDLE-FACING"
+    ],
+    "source": [
+      "src/core/game.js:17",
+      "src/core/game.js:18"
+    ],
+    "evidence": [
+      "scenarios/dash-analog.input.json",
+      "scenarios/dash-analog.stdout.json",
+      "independent-results-final.json"
+    ],
+    "priority": "P1: normalize nonzero dash/facing direction separately from analogue run magnitude; retain speed/duration/cooldown constants"
+  },
+  {
+    "id": "F02",
+    "severity": "MAJOR",
+    "title": "Unlisted post-dash velocity tail exceeds normal movement/stop requirement",
+    "expected": "Outside dash/pad/wind/charm, normal run is6m/s and stopping takes <=0.1s",
+    "actual": "After12 dash ticks and6 released-input ticks, speed is8m/s; first normal tick is13m/s",
+    "tests": [
+      "QA-DASH-STOP"
+    ],
+    "source": [
+      "src/core/game.js:21",
+      "src/core/game.js:22"
+    ],
+    "evidence": [
+      "independent-results-final.json"
+    ],
+    "priority": "P1: define/reset controlled run velocity at dash completion and test return-to-run/stop; also regress pad landing without changing standard tuning"
+  },
+  {
+    "id": "F03",
+    "severity": "MAJOR",
+    "title": "Returning below island surface teleports the player upward through terrain",
+    "expected": "Gravity-only re-entry below a solid top must not snap upward to a support above the feet",
+    "actual": "Default-input Core trajectory tick425 jumps fromY=-1.2833 atX40.05 toY0 atX39.95. Native browser observations also jump fromY=-1.8056 to0 without jump/respawn",
+    "tests": [
+      "QA-UNDERSIDE"
+    ],
+    "source": [
+      "src/data/worlds.js:19",
+      "src/core/game.js:17",
+      "src/core/game.js:24"
+    ],
+    "evidence": [
+      "underside-trajectory.json",
+      "native-underside.json",
+      "native-underside-analysis.json"
+    ],
+    "priority": "P1: use previous-to-current vertical crossing/contact direction when choosing support; cover outer boundaries and raised-platform undersides"
+  },
+  {
+    "id": "F04",
+    "severity": "MINOR",
+    "title": "Coincident chasing Drifter does not move after pulse changes it to flee",
+    "expected": "Flee moves away at7m/s, including degenerate coincident position",
+    "actual": "D1 remains(0,0,0) for60ticks after pulse, instead of moving7m",
+    "tests": [
+      "QA-DRIFTER-ZERO"
+    ],
+    "source": [
+      "src/core/game.js:29",
+      "src/core/game.js:31"
+    ],
+    "evidence": [
+      "scenarios/drifter-coincident.input.json",
+      "scenarios/drifter-coincident.stdout.json"
+    ],
+    "priority": "P2: choose a stable unit fallback flee direction at coincidence, as the contact path already does"
+  },
+  {
+    "id": "F05",
+    "severity": "MINOR",
+    "title": "Output validator accepts malformed known-v1.1 event payloads",
+    "expected": "Published charm_picked/drifter_steal/night_start/fall-hit payload fields checked by the internal validator",
+    "actual": "Accepts charm_picked with no payload, negative theft/string carried, night4 and fall hit without lost",
+    "tests": [
+      "QA-EVENT-VALIDATION"
+    ],
+    "source": [
+      "src/headless/adapter.js:10"
+    ],
+    "evidence": [
+      "independent-results-final.json"
+    ],
+    "priority": "P2: validate the published per-event fields/types/ranges; keep unknown v1.0 base explicitly unverified"
+  },
+  {
+    "id": "F06",
+    "severity": "MAJOR",
+    "title": "Dash FX class permanently hides later wind-warning/gust feedback",
+    "expected": "Warning leaves remain visible2s before wind after normal use of dash; later FX can animate",
+    "actual": "Night3 tick1705: class=\"dash warning\", opacity0, animation=\"dashfx\" while toast says wind warning. Dash class is added and never expired; forwards animation wins over wind/pulse/hurt",
+    "tests": [
+      "QA-BROWSER-FX"
+    ],
+    "source": [
+      "src/browser/app.js:35",
+      "src/browser/app.css:6",
+      "src/browser/app.js:38"
+    ],
+    "evidence": [
+      "browser-independent.json",
+      "screenshots/finding-invisible-wind-after-dash.png"
+    ],
+    "priority": "P1: expire/reset dash class or separate independently composited FX layers; regress dash -> warning/gust/pulse/hurt"
+  },
+  {
+    "id": "F07",
+    "severity": "MINOR",
+    "title": "Partially charged but unlit lantern violates canonical unlit base color",
+    "expected": "#5B5F6E within10% perRGB while lit=false",
+    "actual": "Actual renderer material for L2 at3/10 is#FFE58A. Per-channel absolute differences are164,134,28, exceeding tolerance",
+    "tests": [
+      "QA-BROWSER-PALETTE"
+    ],
+    "source": [
+      "src/browser/renderer.js:46"
+    ],
+    "evidence": [
+      "browser-independent.json",
+      "screenshots/qa-partial-charge.png"
+    ],
+    "priority": "P2: retain canonical unlit cage color and show partial charge through the existing progress indicator"
+  }
+]

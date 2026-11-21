@@ -1,0 +1,104 @@
+PASS QA-E2E settings keyboard and reload persistence
+PASS QA-E2E autoplay unlock and real master gain
+PASS QA-E2E pause freezes sim/time, mute changes master gain and resume works
+PASS QA-E2E camera changes actual camera quaternion
+PASS F01/F02/F06 real-input dash speed14, stop and FX expiry
+PASS F06 dash pause cleanup and resume expiry
+PASS F06 dash retry cleanup
+PASS F06 dash return-to-menu cleanup
+PASS F03 actual-input underside re-entry does not snap
+PASS F07 partial unlit material retains canonical color
+PASS QA-E2E partial charge reached through collection/movement/deposit
+QA Night 1 tick 12, 0/5
+QA Night 1 tick 600, 0/5
+QA Night 1 tick 1200, 1/5
+QA Night 1 tick 1800, 1/5
+QA Night 1 tick 2400, 1/5
+QA Night 1 tick 3000, 2/5
+QA Night 1 tick 3600, 2/5
+QA Night 1 tick 4200, 3/5
+QA Night 1 tick 4800, 3/5
+QA Night 1 tick 5400, 3/5
+QA Night 1 tick 6000, 4/5
+QA Night 1 tick 6600, 4/5
+QA Night 1 tick 7200, 4/5
+QA Night 1 tick 7800, 4/5
+QA Night 1 tick 8400, 4/5
+PASS QA-E2E night 1 full default victory
+QA Night 2 tick 12, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 600, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 1200, 0/6
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 1800, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 2400, 1/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 3000, 1/6
+QA Night 2 tick 3600, 2/6
+QA Night 2 tick 4200, 2/6
+QA Night 2 tick 4800, 3/6
+QA Night 2 tick 5400, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 6000, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 6600, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 7200, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 7800, 4/6
+QA Night 2 tick 8400, 5/6
+QA Night 2 tick 9000, 5/6
+QA Night 2 tick 9600, 5/6
+QA Night 2 tick 10200, 5/6
+PASS QA-E2E night 2 full default victory
+NATIVE FPS night3/1: render=29.03 nativeRAF=33.16 duration=60590
+NATIVE FPS night3/2: render=31.04 nativeRAF=35.71 duration=60592
+QA Night 3 tick 9, 0/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 600, 0/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 1200, 0/7
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 1800, 0/7
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 2400, 1/7
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 3000, 1/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 3600, 1/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 4200, 1/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 4800, 1/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 5400, 1/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 6000, 2/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 6600, 2/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 7200, 2/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 7800, 3/7
+PASS F07 partial unlit material retains canonical color
+QA Night 3 tick 8400, 3/7
+QA Night 3 tick 9000, 4/7
+QA Night 3 tick 9600, 4/7
+QA Night 3 tick 10200, 4/7
+QA Night 3 tick 10800, 5/7
+QA Night 3 tick 11400, 5/7
+QA Night 3 tick 12000, 5/7
+QA Night 3 tick 12600, 6/7
+QA Night 3 tick 13200, 6/7
+QA Night 3 tick 13800, 6/7
+QA Night 3 tick 14400, 6/7
+PASS QA-E2E night 3 full default victory
+PASS QA-E2E full campaign and summed won-night scores
+{"functionalPassed":true,"findings":[],"performance":[{"night":3,"iteration":1,"fps":29.031289094864686,"native":33.15739612938212,"valid":true,"target30":false},{"night":3,"iteration":2,"fps":31.043753372975406,"native":35.7143446566288,"valid":true,"target30":true}]}

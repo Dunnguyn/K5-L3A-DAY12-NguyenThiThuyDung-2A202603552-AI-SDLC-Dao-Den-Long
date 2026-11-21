@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-11-21T07:36:01.174Z",
+  "status": "INTERRUPTED — NOT PASS",
+  "reason": "Stopped only run-accepted.mjs process tree after observing deterministic old Night1 driver losses. Logs/artifacts retained; driver final headless proof now wins all three nights. New verification runs all required commands again."
+}

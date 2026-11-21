@@ -2,43 +2,50 @@
 
 ## Phase 2 status
 
-Ticket-02 Core, shared world/terrain descriptors, fixed-tick gameplay and an internal headless adapter are implemented. Browser rendering, three-night UI, audio, settings and full browser acceptance remain for the next workstream. The current browser remains a minimal legacy view and is not evidence that all three nights are playable.
+Phase 2 implements the three-island campaign within the verified scope: shared 60Hz Core, canonical maps, bridge/pads/ramps/tiers/tower, wind, Drifters, Wind Charms, partial lantern charging, enemies/pulse/scoring/fall, menu/results/Bình Minh, correct-night retry, pause, HUD, procedural audio and persistent settings. Codex repaired F01–F07.
 
-Test Contract v1.0 base is **NOT VERIFIED**. The adapter keeps the local `internal-draft-1` envelope while implementing the known v1.1 additions; this does not establish official contract compliance. Phase 1 notes/evidence remain under [docs/notes/phase-1.md](docs/notes/phase-1.md) and [docs/proof/phase-1](docs/proof/phase-1).
+**Owner decision: milestone handover with documented risk acceptance.** The additional Independent QA Re-test is explicitly waived by the project owner. Codex reran 42/42 original independent assertions; this is **not independent QA confirmation** of the remediation. RTM remains **36 PASS / 4 PARTIAL / 0 FAIL / 3 NOT VERIFIED**. No full compliance is claimed. See [final report](docs/proof/phase-2/PHASE2_FINAL_REPORT.md), [milestone RTM](docs/notes/phase-2-rtm.md), [risk decision](docs/proof/phase-2/release-risk-acceptance.json) and [historical QA](docs/proof/phase-2/qa/review.md).
 
 ## Run
 
-Requires Node.js 24.x and npm 11.19.1. From the repository root:
+Requires Node.js 24.x. CI pins Node 24.13.0 / npm 11.19.1; the final local verification used Node 24.13.0 / npm 11.6.2.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the local Vite URL. Current browser controls: WASD/arrows move, Space jumps, E charges a nearby lantern, Q pulses, mouse drag rotates camera, R restarts after an ending. Dash and pause are available in the shared core/headless; their browser bindings are pending browser integration.
+Open the Vite URL. WASD/arrows move; Space jumps; Shift dashes; E deposits; Q pulses; mouse drag rotates the camera; wheel zooms; P/Esc pauses. Settings persist after reload.
 
-## Phase 2 gameplay and scoring
+## Gameplay and scoring
 
-Three canonical nights use 60 fixed ticks per second. Mây runs at 6 m/s, jumps at 7 m/s, dashes at 14 m/s for 12 ticks with a 90-tick cooldown. Fireflies fill a 10-unit bag; lanterns cost 10 and retain partial charge. Pulse costs 3. Night duration is 300/330/360 seconds; each starts with 3 Flames.
+Three nights use 60 fixed ticks/s. Run 6m/s, jump 7m/s, dash 14m/s for 12 ticks with 90-tick cooldown. Bag capacity 10; lanterns cost 10 and retain partial charge. Pulse costs 3. Durations 300/330/360s, with 3 Flames at each night start. Score:+10/deposited mote,+100/lit lantern,+5/Shade hit by pulse; victory adds floor(seconds remaining)*2+50*remaining Flames. Campaign score sums won nights.
 
-Score: +10 for each firefly deposited into a lantern, +100 for each lantern lit, +5 for each Shade hit by a pulse, and on victory `floor(seconds remaining) × 2 + 50 × remaining Flames`. Campaign score includes won nights only.
+## Verification
 
-## Headless and checks
+```sh
+npm test
+npm run test:independent
+node scripts/run-phase2-qa.mjs
+npm run build
+npm run verify
+npm run bench:headless
+npm run test:browser
+```
+
+The final local run passed 79 unit tests,7/7 cross-checks,42/42 QA assertions and 7/7 harness checks. The browser campaign used actual keyboard/mouse input and read-only snapshots; all three nights won, total **4886**. A full 21,600-tick high-load benchmark ran twice in 7.580/7.476s and replayed deterministically. Fresh outputs:[core](docs/proof/phase-2/core/release-final/results.json), [browser](docs/proof/phase-2/browser/release-final/browser-e2e.json). Use a fresh PROOF_DIR to preserve prior runs.
+
+Headless example:
 
 ```sh
 node scripts/headless.mjs --night 2 docs/proof/phase-2/core/night-2.input.json
-npm test
-npm run verify
 ```
 
-The CLI writes a single JSON document to stdout and JSON errors to stderr. `npm run test:independent` runs the separate agent-authored acceptance cross-check. `npm run bench:headless` measures a full 21,600-tick run. The headless adapter and manifest are internal draft artifacts; consult [game.contract.json](game.contract.json) and [Phase 2 notes](docs/notes/phase-2.md).
+## Limitations and release identity
 
-## Known limitations
+Official Test Contract v1.0 base/schema and hidden harness remain NOT VERIFIED. The internal adapter implements known v1.1 delta; it does not establish official compatibility. Real GPU, macOS and direct subjective audio listening remain unverified. Memory/collision/browser coverage is sampled; UI-only features have browser evidence. Software FPS has narrow margins. These limits are accepted for milestone handover, not full compliance.
 
-- Official Test Contract v1.0 has not been obtained or checked; the official v1.0 base and unspecified v1.1 shapes remain NOT VERIFIED.
-- Browser menu/HUD/rendering for all three nights, settings, audio and browser gameplay are not implemented or verified in this workstream.
-- Ubuntu/Linux/macOS after these Phase 2 edits and real-GPU performance are NOT VERIFIED.
-- Headless timing is measured locally on Windows/Node; it is not a browser FPS result.
+Fresh built-in browser FPS observations (1280x720, software renderer) are in the final report; remediation's separate native-clock Night 3 samples were 30.30/30.65 FPS. Neither is a real-GPU certificate. Ubuntu CI must succeed on the exact pushed commit before tagging; the annotated phase-2 tag records that commit SHA and CI run URL. Resolve release identity using git show phase-2 and git rev-parse phase-2^{commit}. The original phase-1 tag remains unchanged.
 
 ### Sáng tạo của tôi
 

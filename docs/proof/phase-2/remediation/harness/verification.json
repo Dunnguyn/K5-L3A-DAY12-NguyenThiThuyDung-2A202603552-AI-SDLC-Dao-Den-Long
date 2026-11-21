@@ -1,0 +1,63 @@
+{
+  "scope": "Phase 2 shared core + world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED",
+  "timestamp": "2026-11-21T06:47:57.397Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "commit": "9ced7a1ff98cdc4056626a9aa678e243d2d8cec6",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "ticket02Sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb",
+  "checks": [
+    {
+      "name": "contract-generation",
+      "command": [
+        "node",
+        "scripts/write-contract.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "core-world-scenarios",
+      "command": [
+        "node",
+        "scripts/scenarios.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: canonical worlds, deterministic CLI replay on nights 1-3, invalid CLI handling\n",
+      "stderr": ""
+    },
+    {
+      "name": "independent-core-cross-check",
+      "command": [
+        "node",
+        "scripts/independent-core.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"kind\":\"separate acceptance cross-check (agent-authored; not external independent QA)\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"id\":\"standard values and map cardinality\",\"status\":\"PASS\"},{\"id\":\"fixed tick and pause separation\",\"status\":\"PASS\"},{\"id\":\"dash rising edge and stable replay\",\"status\":\"PASS\"},{\"id\":\"firefly only scores when deposited\",\"status\":\"PASS\"},{\"id\":\"shade contact and safe zone update order\",\"status\":\"PASS\"},{\"id\":\"required output rejects null records and keeps required arrays\",\"status\":\"PASS\"},{\"id\":\"CLI pure JSON for selected night\",\"status\":\"PASS\"}],\"passed\":7,\"failed\":0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "headless-import",
+      "command": [
+        "node",
+        "scripts/smoke-headless.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: Node ESM imports core without DOM. Infrastructure only; no contract runner.\n",
+      "stderr": ""
+    },
+    {
+      "name": "vitest",
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run"
+      ],
+      "exitCode": 1,
+      "stdout": "\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n ❯ tests/remediation.test.js (34 tests | 4 failed) 429ms\n   × F02 dash boundary returns to controlled opposite movement 14ms\n   × F01/F02 pad flight in Night2 preserves launch through charm/dash/wind 6ms\n   × F01/F02 pad flight in Night3 preserves launch through charm/dash/wind 5ms\n   × F03 default edge re-entry continues falling then respawns once 110ms\n ❯ tests/game.test.js (31 tests | 1 failed) 2173ms\n   × both ramp widths connect to tier 1 and stepping off tier 2 falls to the lower support 46ms\n\n Test Files  2 failed | 3 passed (5)\n      Tests  5 failed | 73 passed (78)\n   Start at  13:48:01\n   Duration  2.72s (tests 92%, import 5%, transform 2%, worker 1%)\n\n",
+      "stderr": "\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/game.test.js > both ramp widths connect to tier 1 and stepping off tier 2 falls to the lower support\nAssertionError: expected 1.4249198421397207 to be close to 3, received difference is 1.5750801578602793, but expected 0.05\n ❯ tests/game.test.js:12:357\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯\n\n FAIL  tests/remediation.test.js > F02 dash boundary returns to controlled opposite movement\nAssertionError: expected +0 to be close to 6, received difference is 6, but expected 0.005\n ❯ tests/remediation.test.js:15:251\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯\n\n FAIL  tests/remediation.test.js > F01/F02 pad flight in Night2 preserves launch through charm/dash/wind\nAssertionError: expected 10.999999999999995 to be less than 10.999999999999995\n ❯ tests/remediation.test.js:21:464\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯\n\n FAIL  tests/remediation.test.js > F01/F02 pad flight in Night3 preserves launch through charm/dash/wind\nAssertionError: expected 8.999999999999995 to be less than 8.999999999999995\n ❯ tests/remediation.test.js:21:464\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯\n\n FAIL  tests/remediation.test.js > F03 default edge re-entry continues falling then respawns once\nAssertionError: expected -10.166666666666668 to be +0 // Object.is equality\n\n- Expected\n+ Received\n\n- 0\n+ -10.166666666666668\n\n ❯ tests/remediation.test.js:27:210\n\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯\n\n"
+    }
+  ],
+  "passed": false
+}

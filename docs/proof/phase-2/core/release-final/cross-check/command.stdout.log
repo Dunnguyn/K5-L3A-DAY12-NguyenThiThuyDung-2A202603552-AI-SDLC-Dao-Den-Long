@@ -1,0 +1,5 @@
+
+> dao-den-long@0.0.0 test:independent
+> node scripts/independent-core.mjs
+
+{"kind":"separate acceptance cross-check (agent-authored; not external independent QA)","node":"v24.13.0","platform":"win32","checks":[{"id":"standard values and map cardinality","status":"PASS"},{"id":"fixed tick and pause separation","status":"PASS"},{"id":"dash rising edge and stable replay","status":"PASS"},{"id":"firefly only scores when deposited","status":"PASS"},{"id":"shade contact and safe zone update order","status":"PASS"},{"id":"required output rejects null records and keeps required arrays","status":"PASS"},{"id":"CLI pure JSON for selected night","status":"PASS"}],"passed":7,"failed":0}

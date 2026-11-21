@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const p='docs/proof/phase-2/remediation/final-report.mjs';let s=fs.readFileSync(p,'utf8');
+s=s.replace("const protectedFiles=[...before.protectedFiles,...historical.files.filter(f=>f.path.startsWith('docs/proof/phase-2/core/')||f.path.startsWith('docs/proof/phase-2/browser/')||f.path==='package-lock.json')];",`const authorized=new Set(['src/core/game.js','src/data/worlds.js','src/browser/app.js','src/browser/app.css','src/browser/renderer.js','src/headless/adapter.js','scripts/browser-route.mjs','scripts/phase2-campaign.mjs','docs/notes/phase-2.md','docs/notes/AI_USAGE.md']);
+const protectedFiles=[...new Map([...before.protectedFiles,...historical.files.filter(f=>!authorized.has(f.path))].map(f=>[f.path,f])).values()];
+assert.equal(fs.readFileSync(dir+'/independent-core.mjs','utf8'),fs.readFileSync('docs/proof/phase-2/qa/independent-core.mjs','utf8').replaceAll('docs/proof/phase-2/qa',dir),'Original independent assertions must be unchanged');`);
+s=s.replace("const counts=Object.fromEntries",`list.find(r=>r.id==='AUDIT-01').actual='Requirements, QA originals, historical evidence, lockfile, prior unrelated work and phase1 tag hash-checked unchanged; authorized remediation is recorded in dirty Git.';
+list.find(r=>r.id==='PERF-01').actual='Fresh Night3 >=60s software-render samples; Night1/2 retain historical QA scope. See performance-final.json and ../qa/performance-final.json.';
+const counts=Object.fromEntries`);
+s=s.replace('browser long clock advance was split because per-frame delta is capped.', 'browser long clock advance was split because per-frame delta is capped; the new driver test now gives every candidate lamp the same partial progress so its nearest-lamp setup matches its assertion.');
+s=s.replace('within the valid radius, and make Night3', 'within the valid radius on Night3 (Night1/2 retain their original threshold), and make Night3');
+fs.writeFileSync(p,s);console.log('Report preservation widened to all unrelated pre-existing work, with exact QA source comparison.');

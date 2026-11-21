@@ -1,0 +1,9 @@
+warning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/notes/AI_USAGE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/notes/phase-2.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/browser/app.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/browser/renderer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/core/game.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/headless/adapter.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/game.test.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/validation.test.js', LF will be replaced by CRLF the next time Git touches it

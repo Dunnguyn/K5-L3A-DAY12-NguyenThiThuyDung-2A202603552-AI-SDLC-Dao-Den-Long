@@ -1,0 +1,1 @@
+{"passed":true,"checks":[{"id":"HUD clock 00:30 red/blinking, flames, ten slots, nearest-lamp offscreen arrow","status":"PASS"},{"id":"Natural dawn loss, ten countdown cues and once-only audio event consumption","status":"PASS"}],"dir":"docs/proof/phase-2/remediation/final-boundaries"}

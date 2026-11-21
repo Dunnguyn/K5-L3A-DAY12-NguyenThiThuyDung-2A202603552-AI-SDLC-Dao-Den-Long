@@ -1,0 +1,57 @@
+PASS QA-E2E settings keyboard and reload persistence
+PASS QA-E2E autoplay unlock and real master gain
+PASS QA-E2E pause freezes sim/time, mute changes master gain and resume works
+PASS QA-E2E camera changes actual camera quaternion
+PASS F01/F02/F06 real-input dash speed14, stop and FX expiry
+PASS F06 dash pause cleanup and resume expiry
+PASS F06 dash retry cleanup
+PASS F06 dash return-to-menu cleanup
+PASS F03 actual-input underside re-entry does not snap
+PASS F07 partial unlit material retains canonical color
+PASS QA-E2E partial charge reached through collection/movement/deposit
+QA Night 1 tick 12, 0/5
+QA Night 1 tick 600, 0/5
+QA Night 1 tick 1200, 1/5
+QA Night 1 tick 1800, 1/5
+QA Night 1 tick 2400, 1/5
+QA Night 1 tick 3000, 2/5
+QA Night 1 tick 3600, 2/5
+QA Night 1 tick 4200, 3/5
+QA Night 1 tick 4800, 3/5
+QA Night 1 tick 5400, 3/5
+QA Night 1 tick 6000, 4/5
+QA Night 1 tick 6600, 4/5
+QA Night 1 tick 7200, 4/5
+QA Night 1 tick 7800, 4/5
+QA Night 1 tick 8400, 4/5
+PASS QA-E2E night 1 full default victory
+QA Night 2 tick 12, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 600, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 1200, 0/6
+PASS F07 partial unlit material retains canonical color
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 1800, 0/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 2400, 1/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 3000, 1/6
+QA Night 2 tick 3600, 2/6
+QA Night 2 tick 4200, 2/6
+QA Night 2 tick 4800, 3/6
+QA Night 2 tick 5400, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 6000, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 6600, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 7200, 3/6
+PASS F07 partial unlit material retains canonical color
+QA Night 2 tick 7800, 4/6
+QA Night 2 tick 8400, 5/6
+QA Night 2 tick 9000, 5/6
+QA Night 2 tick 9600, 5/6
+QA Night 2 tick 10200, 5/6
+PASS QA-E2E night 2 full default victory
+{"functionalPassed":false,"failure":"AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Math.abs(m[14]-e.pos.z)<.0001)\n\n    at observations (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:26:551)\n    at async perf (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:35:409)\n    at async file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:64:145","findings":[],"performance":[]}

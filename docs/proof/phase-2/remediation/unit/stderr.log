@@ -1,0 +1,45 @@
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/game.test.js > both ramp widths connect to tier 1 and stepping off tier 2 falls to the lower support
+AssertionError: expected 1.4249198421397207 to be close to 3, received difference is 1.5750801578602793, but expected 0.05
+ ❯ tests/game.test.js:12:357
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  tests/remediation.test.js > F02 dash boundary returns to controlled opposite movement
+AssertionError: expected +0 to be close to 6, received difference is 6, but expected 0.005
+ ❯ tests/remediation.test.js:15:251
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+ FAIL  tests/remediation.test.js > F01/F02 pad flight in Night2 preserves launch through charm/dash/wind
+AssertionError: expected 10.999999999999995 to be less than 10.999999999999995
+ ❯ tests/remediation.test.js:21:464
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+ FAIL  tests/remediation.test.js > F01/F02 pad flight in Night3 preserves launch through charm/dash/wind
+AssertionError: expected 8.999999999999995 to be less than 8.999999999999995
+ ❯ tests/remediation.test.js:21:464
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯
+
+ FAIL  tests/remediation.test.js > F03 default edge re-entry continues falling then respawns once
+AssertionError: expected -10.166666666666668 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ -10.166666666666668
+
+ ❯ tests/remediation.test.js:27:210
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯
+

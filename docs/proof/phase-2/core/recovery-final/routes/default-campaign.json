@@ -1,0 +1,31 @@
+{
+  "scope": "Default-state campaign, no scenario overrides; generated input replayed through actual headless CLI",
+  "nights": [
+    {
+      "night": 1,
+      "sim_tick": 9337,
+      "score": 1448,
+      "flames": 3,
+      "cliExitCode": 0,
+      "actions": 406
+    },
+    {
+      "night": 2,
+      "sim_tick": 10843,
+      "score": 1648,
+      "flames": 3,
+      "cliExitCode": 0,
+      "actions": 635
+    },
+    {
+      "night": 3,
+      "sim_tick": 14470,
+      "score": 1791,
+      "flames": 3,
+      "cliExitCode": 0,
+      "actions": 1085
+    }
+  ],
+  "campaign_score": 4887,
+  "passed": true
+}

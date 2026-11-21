@@ -1,0 +1,339 @@
+{
+  "version": "internal-draft-1",
+  "state": {
+    "tick": 600,
+    "sim_tick": 600,
+    "night": 1,
+    "state": "playing",
+    "time_s": 290,
+    "score": 0,
+    "end_reason": null,
+    "wind": {
+      "active": false,
+      "dir_deg": 0
+    },
+    "player": {
+      "x": 7.54999999999999,
+      "y": 0,
+      "z": 0,
+      "vel": {
+        "x": 5.999999999999979,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 2,
+      "light": 0,
+      "invuln": true,
+      "dash_cd_s": 0,
+      "pulse_cd_s": 0,
+      "charm_s": 0
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L2",
+        "pos": {
+          "x": 23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L3",
+        "pos": {
+          "x": 14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L4",
+        "pos": {
+          "x": -14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L5",
+        "pos": {
+          "x": -23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      }
+    ],
+    "shades": [
+      {
+        "id": "S1",
+        "pos": {
+          "x": 3.388353257049924,
+          "y": 0,
+          "z": 31.54582233417738
+        },
+        "state": "wander",
+        "state_ticks_left": 0
+      },
+      {
+        "id": "S2",
+        "pos": {
+          "x": 29.259432994072238,
+          "y": 0,
+          "z": -19.3594647633083
+        },
+        "state": "wander",
+        "state_ticks_left": 0
+      }
+    ],
+    "motes": [
+      {
+        "id": "M1",
+        "pos": {
+          "x": 23.33452377915606,
+          "y": 0,
+          "z": -23.334523779156072
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M3",
+        "pos": {
+          "x": -23.334523779156065,
+          "y": 0,
+          "z": 23.33452377915607
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M4",
+        "pos": {
+          "x": 12.628553268047964,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M5",
+        "pos": {
+          "x": -2.204364238465236e-15,
+          "y": 0,
+          "z": -12
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M6",
+        "pos": {
+          "x": 30.48802457287246,
+          "y": 0,
+          "z": 12.628553268047963
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M7",
+        "pos": {
+          "x": 7.347880794884119e-16,
+          "y": 0,
+          "z": 12
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M8",
+        "pos": {
+          "x": -23.334523779156072,
+          "y": 0,
+          "z": -23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M9",
+        "pos": {
+          "x": -30.48802457287246,
+          "y": 0,
+          "z": 12.628553268047966
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M10",
+        "pos": {
+          "x": -12.62855326804796,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M11",
+        "pos": {
+          "x": -12.628553268047954,
+          "y": 0,
+          "z": -30.488024572872465
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M12",
+        "pos": {
+          "x": -30.48802457287247,
+          "y": 0,
+          "z": -12.628553268047945
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M13",
+        "pos": {
+          "x": 23.33452377915607,
+          "y": 0,
+          "z": 23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M14",
+        "pos": {
+          "x": -6.062001655779398e-15,
+          "y": 0,
+          "z": -33
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M15",
+        "pos": {
+          "x": 8.485281374238571,
+          "y": 0,
+          "z": 8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M16",
+        "pos": {
+          "x": 2.0206672185931327e-15,
+          "y": 0,
+          "z": 33
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M18",
+        "pos": {
+          "x": 8.485281374238568,
+          "y": 0,
+          "z": -8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M19",
+        "pos": {
+          "x": -8.485281374238571,
+          "y": 0,
+          "z": -8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M20",
+        "pos": {
+          "x": 12.62855326804797,
+          "y": 0,
+          "z": -30.488024572872458
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M240",
+        "pos": {
+          "x": 12,
+          "y": 0,
+          "z": 0
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M480",
+        "pos": {
+          "x": -8.48528137423857,
+          "y": 0,
+          "z": 8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      }
+    ],
+    "drifters": [],
+    "charms": [],
+    "events": [
+      {
+        "type": "night_start",
+        "night": 1
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M2"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S1"
+      },
+      {
+        "type": "shade_spawn",
+        "shade_id": "S2"
+      },
+      {
+        "type": "mote_picked",
+        "mote_id": "M17"
+      },
+      {
+        "type": "player_hit",
+        "source": "fall",
+        "lost": 2
+      }
+    ],
+    "campaign_score": 0
+  }
+}

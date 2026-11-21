@@ -1,0 +1,9 @@
+
+> dao-den-long@0.0.0 verify
+> node scripts/verify.mjs
+
+contract-generation: PASS
+core-world-scenarios: PASS
+independent-core-cross-check: PASS
+headless-import: PASS
+vitest: FAIL

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+const root='docs/proof/phase-2',out=`${root}/core/release-final`,read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const before=read(`${root}/remediation/before.json`),original=read(`${root}/qa/workspace-before.json`);
+const protectedFiles=[...new Map([...before.protectedFiles,...original.files.filter(f=>f.path.startsWith('docs/requirements/')||f.path.startsWith('docs/proof/')||f.path==='package-lock.json')].map(f=>[f.path,f])).values()];
+const changes=protectedFiles.filter(f=>!fs.existsSync(f.path)||crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex')!==f.sha256);assert.deepEqual(changes,[]);
+const git=args=>spawnSync('git',args,{encoding:'utf8',maxBuffer:64e6}),diff=git(['diff','--check']);assert.equal(diff.status,0);assert.equal(git(['rev-parse','phase-1^{commit}']).stdout.trim(),'627ed7f92c59482bc902fba108c2936dc9481976');
+const risk=read(`${root}/release-risk-acceptance.json`);assert.equal(risk.independentAcceptanceOfRemediation,false);
+fs.writeFileSync(`${out}/preservation.json`,JSON.stringify({timestamp:new Date().toISOString(),protectedFiles:protectedFiles.length,changes,diffCheck:{exit:diff.status,stderr:diff.stderr},phase1:git(['rev-parse','phase-1^{commit}']).stdout.trim(),status:git(['status','--short','--branch']).stdout,decision:'Owner risk acceptance; no independent QA re-test sign-off'},null,2)+'\n');console.log(JSON.stringify({protectedFiles:protectedFiles.length,changed:changes.length,diffCheck:diff.status}));

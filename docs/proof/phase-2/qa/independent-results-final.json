@@ -1,0 +1,677 @@
+{
+  "timestamp": "2026-11-21T05:48:58.473Z",
+  "scope": "Independent tests authored during QA; production unchanged; unit fixtures are setup before stepping and are not browser wins",
+  "node": "v24.13.0",
+  "tests": [
+    {
+      "id": "QA-TUNING",
+      "requirement": "Ticket-02 section 1 standard constants",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "checkedKeys": 69
+      }
+    },
+    {
+      "id": "QA-MAPS",
+      "requirement": "All canonical maps, lamps, motes and spawn rings",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "nights": 3
+      }
+    },
+    {
+      "id": "QA-RUN",
+      "requirement": "Run 6 m/s, stop within six ticks, diagonal no boost",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "stopTicks": 6
+      }
+    },
+    {
+      "id": "QA-JUMP",
+      "requirement": "Jump impulse 7, gravity -20, no repeated air jump",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-TIMER",
+      "requirement": "Dash 14 m/s for 12 ticks, cooldown from start, rising edge",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DASH-ANALOG",
+      "requirement": "Dash direction normalized for valid fractional move input",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "observed": {
+        "distance": 1.4000000000000001,
+        "expected": 2.8,
+        "velocity": {
+          "x": 7.000000000000002,
+          "y": 0,
+          "z": 0
+        }
+      },
+      "error": "actual=1.4000000000000001, expected=2.8 +/- 1e-7",
+      "stack": "AssertionError [ERR_ASSERTION]: actual=1.4000000000000001, expected=2.8 +/- 1e-7\n    at near (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:10:33)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:22:240\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:22:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "id": "QA-DASH-IDLE-FACING",
+      "requirement": "Idle dash keeps unit facing after fractional movement",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "observed": {
+        "distance": 1.4000000000000004,
+        "expected": 2.8
+      },
+      "error": "actual=1.4000000000000004, expected=2.8 +/- 1e-7",
+      "stack": "AssertionError [ERR_ASSERTION]: actual=1.4000000000000004, expected=2.8 +/- 1e-7\n    at near (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:10:33)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:23:249\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:23:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "id": "QA-DASH-STOP",
+      "requirement": "Return to stopped movement within 0.1 s after releasing dash movement",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "observed": {
+        "afterSixReleaseTicks": {
+          "x": 8.000000000000052,
+          "y": 0,
+          "z": 0
+        },
+        "position": 3.850000000000005
+      },
+      "error": "actual=8.000000000000052, expected=0 +/- 1e-7",
+      "stack": "AssertionError [ERR_ASSERTION]: actual=8.000000000000052, expected=0 +/- 1e-7\n    at near (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:10:33)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:24:247\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:24:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "id": "QA-AIR-DASH",
+      "requirement": "Air dash holds height and grants no invulnerability",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PICKUP",
+      "requirement": "Pickup inclusive XZ/Y limits and capacity, deposit-only scoring",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SPAWN",
+      "requirement": "Spawn at 240k; skip occupied sites; cap 30",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-LAMP",
+      "requirement": "Partial charging min(carried,missing), inclusive radius and vertical distance",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SAFE",
+      "requirement": "Final charge updates safe zone before contact, eviction <=30 ticks",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PULSE-3D",
+      "requirement": "Pulse latches inclusive 3D range before enemy movement",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PUSH",
+      "requirement": "Coincident pulse pushes +X by 4m over first 15 ticks, stun refresh",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-HIT-ID",
+      "requirement": "One hit per tick, numeric S2 before S10, recoil/invulnerability",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-STEAL-HIT",
+      "requirement": "Drifter steal precedes shade hit and half-drop",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "detail": {
+        "events": [
+          "drifter_steal",
+          "player_hit"
+        ]
+      }
+    },
+    {
+      "id": "QA-DROP-TTL",
+      "requirement": "Dropped TTL480 and no same-tick pickup",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-FALL",
+      "requirement": "Fall ignores invulnerability, happens once, respawn after 60 ticks",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-UNDERSIDE",
+      "requirement": "No upward floor teleport after default-input off-edge and re-entry",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "observed": {
+        "trace": [
+          {
+            "tick": 409,
+            "before": {
+              "x": 40.55000000000031,
+              "y": -0.08333333333333331
+            },
+            "after": {
+              "x": 40.633333333333645,
+              "y": -0.11666666666666664
+            }
+          },
+          {
+            "tick": 410,
+            "before": {
+              "x": 40.633333333333645,
+              "y": -0.11666666666666664
+            },
+            "after": {
+              "x": 40.700000000000315,
+              "y": -0.15555555555555553
+            }
+          },
+          {
+            "tick": 411,
+            "before": {
+              "x": 40.700000000000315,
+              "y": -0.15555555555555553
+            },
+            "after": {
+              "x": 40.75000000000032,
+              "y": -0.19999999999999996
+            }
+          },
+          {
+            "tick": 412,
+            "before": {
+              "x": 40.75000000000032,
+              "y": -0.19999999999999996
+            },
+            "after": {
+              "x": 40.78333333333366,
+              "y": -0.24999999999999994
+            }
+          },
+          {
+            "tick": 413,
+            "before": {
+              "x": 40.78333333333366,
+              "y": -0.24999999999999994
+            },
+            "after": {
+              "x": 40.80000000000033,
+              "y": -0.3055555555555555
+            }
+          },
+          {
+            "tick": 414,
+            "before": {
+              "x": 40.80000000000033,
+              "y": -0.3055555555555555
+            },
+            "after": {
+              "x": 40.80000000000034,
+              "y": -0.36666666666666664
+            }
+          },
+          {
+            "tick": 415,
+            "before": {
+              "x": 40.80000000000034,
+              "y": -0.36666666666666664
+            },
+            "after": {
+              "x": 40.78333333333368,
+              "y": -0.4333333333333333
+            }
+          },
+          {
+            "tick": 416,
+            "before": {
+              "x": 40.78333333333368,
+              "y": -0.4333333333333333
+            },
+            "after": {
+              "x": 40.750000000000355,
+              "y": -0.5055555555555555
+            }
+          },
+          {
+            "tick": 417,
+            "before": {
+              "x": 40.750000000000355,
+              "y": -0.5055555555555555
+            },
+            "after": {
+              "x": 40.700000000000365,
+              "y": -0.5833333333333333
+            }
+          },
+          {
+            "tick": 418,
+            "before": {
+              "x": 40.700000000000365,
+              "y": -0.5833333333333333
+            },
+            "after": {
+              "x": 40.63333333333371,
+              "y": -0.6666666666666665
+            }
+          },
+          {
+            "tick": 419,
+            "before": {
+              "x": 40.63333333333371,
+              "y": -0.6666666666666665
+            },
+            "after": {
+              "x": 40.55000000000039,
+              "y": -0.7555555555555554
+            }
+          },
+          {
+            "tick": 420,
+            "before": {
+              "x": 40.55000000000039,
+              "y": -0.7555555555555554
+            },
+            "after": {
+              "x": 40.4500000000004,
+              "y": -0.8499999999999999
+            }
+          },
+          {
+            "tick": 421,
+            "before": {
+              "x": 40.4500000000004,
+              "y": -0.8499999999999999
+            },
+            "after": {
+              "x": 40.3500000000004,
+              "y": -0.9499999999999998
+            }
+          },
+          {
+            "tick": 422,
+            "before": {
+              "x": 40.3500000000004,
+              "y": -0.9499999999999998
+            },
+            "after": {
+              "x": 40.2500000000004,
+              "y": -1.0555555555555554
+            }
+          },
+          {
+            "tick": 423,
+            "before": {
+              "x": 40.2500000000004,
+              "y": -1.0555555555555554
+            },
+            "after": {
+              "x": 40.1500000000004,
+              "y": -1.1666666666666665
+            }
+          },
+          {
+            "tick": 424,
+            "before": {
+              "x": 40.1500000000004,
+              "y": -1.1666666666666665
+            },
+            "after": {
+              "x": 40.050000000000395,
+              "y": -1.2833333333333332
+            }
+          },
+          {
+            "tick": 425,
+            "before": {
+              "x": 40.050000000000395,
+              "y": -1.2833333333333332
+            },
+            "after": {
+              "x": 39.950000000000394,
+              "y": 0
+            }
+          },
+          {
+            "tick": 426,
+            "before": {
+              "x": 39.950000000000394,
+              "y": 0
+            },
+            "after": {
+              "x": 39.85000000000039,
+              "y": 0
+            }
+          },
+          {
+            "tick": 427,
+            "before": {
+              "x": 39.85000000000039,
+              "y": 0
+            },
+            "after": {
+              "x": 39.75000000000039,
+              "y": 0
+            }
+          },
+          {
+            "tick": 428,
+            "before": {
+              "x": 39.75000000000039,
+              "y": 0
+            },
+            "after": {
+              "x": 39.65000000000039,
+              "y": 0
+            }
+          },
+          {
+            "tick": 429,
+            "before": {
+              "x": 39.65000000000039,
+              "y": 0
+            },
+            "after": {
+              "x": 39.55000000000039,
+              "y": 0
+            }
+          },
+          {
+            "tick": 430,
+            "before": {
+              "x": 39.55000000000039,
+              "y": 0
+            },
+            "after": {
+              "x": 39.45000000000039,
+              "y": 0
+            }
+          },
+          {
+            "tick": 431,
+            "before": {
+              "x": 39.45000000000039,
+              "y": 0
+            },
+            "after": {
+              "x": 39.350000000000385,
+              "y": 0
+            }
+          },
+          {
+            "tick": 432,
+            "before": {
+              "x": 39.350000000000385,
+              "y": 0
+            },
+            "after": {
+              "x": 39.250000000000384,
+              "y": 0
+            }
+          },
+          {
+            "tick": 433,
+            "before": {
+              "x": 39.250000000000384,
+              "y": 0
+            },
+            "after": {
+              "x": 39.15000000000038,
+              "y": 0
+            }
+          },
+          {
+            "tick": 434,
+            "before": {
+              "x": 39.15000000000038,
+              "y": 0
+            },
+            "after": {
+              "x": 39.05000000000038,
+              "y": 0
+            }
+          },
+          {
+            "tick": 435,
+            "before": {
+              "x": 39.05000000000038,
+              "y": 0
+            },
+            "after": {
+              "x": 38.95000000000038,
+              "y": 0
+            }
+          },
+          {
+            "tick": 436,
+            "before": {
+              "x": 38.95000000000038,
+              "y": 0
+            },
+            "after": {
+              "x": 38.85000000000038,
+              "y": 0
+            }
+          },
+          {
+            "tick": 437,
+            "before": {
+              "x": 38.85000000000038,
+              "y": 0
+            },
+            "after": {
+              "x": 38.75000000000038,
+              "y": 0
+            }
+          },
+          {
+            "tick": 438,
+            "before": {
+              "x": 38.75000000000038,
+              "y": 0
+            },
+            "after": {
+              "x": 38.650000000000375,
+              "y": 0
+            }
+          }
+        ]
+      },
+      "error": "gravity-only movement jumped upward through the island underside",
+      "stack": "AssertionError [ERR_ASSERTION]: gravity-only movement jumped upward through the island underside\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:36:429\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:36:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "id": "QA-DEATH-CLEAR",
+      "requirement": "Actual fall death has priority over completed lanterns and time zero",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CLEAR-TIMEOUT",
+      "requirement": "Final lantern on timeout tick wins with exact score",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PICK-DEPOSIT-PULSE",
+      "requirement": "Pickup funds deposit before pulse and last-tick clear",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-NEW-ENTITY",
+      "requirement": "Step-10 spawned mote interacts first on following tick",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PAUSE-ALL",
+      "requirement": "Pause freezes respawn/dash/charm/stun/TTL/spawn, wall tick advances",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SHADE-SCHEDULE",
+      "requirement": "First2 at300, 480/420/360 intervals, valid position and cap",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PADS",
+      "requirement": "Both Night2 pads launch24 and land on destination, no input override",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-COLLISION",
+      "requirement": "Tier/tower wall sweeps and both ramps",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-WIND",
+      "requirement": "1680 warning,1800 start,300 force ticks at2m/s, no feedback",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CHARM",
+      "requirement": "Effect600, expiry, run7.2, respawn2700",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-CHARM-EDGE",
+      "requirement": "Charm ignores cooldown but requires release and ignores active-dash press",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER",
+      "requirement": "Theft ignores invulnerability/safezone, one theft, removal240",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-DROP",
+      "requirement": "Pulse fleeing loot drops all at spot, no same-tick pickup, removal120",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-ZERO",
+      "requirement": "Pulse at coincident chase drifter must still flee at7m/s",
+      "status": "FAIL",
+      "severity": "MINOR",
+      "observed": {
+        "drifter": {
+          "id": "D1",
+          "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "state": "flee",
+          "stolen": 0
+        },
+        "expectedDistance": 7
+      },
+      "error": "actual=0, expected=7 +/- 1e-7",
+      "stack": "AssertionError [ERR_ASSERTION]: actual=0, expected=7 +/- 1e-7\n    at near (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:10:33)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:50:369\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:50:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "id": "QA-RESET",
+      "requirement": "Retry resets night state while preserving earlier won score/settings",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DELTA-CLI",
+      "requirement": "Required v1.1 fields, override replacement, events, replay and pure stdout",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-INVALID-CLI",
+      "requirement": "Invalid JSON/night/shape returns exit1, JSON stderr, empty stdout",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-SHADE-BOUNDARY",
+      "requirement": "Detect12/abandon18 and contact height1.5 inclusive",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-FEATURE-CLI",
+      "requirement": "Actual CLI scenarios for charm, wind, drifter drop, fall and pads",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-PAD-DASH",
+      "requirement": "Pad momentum survives air dash; height held; wind additive during dash",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-DRIFTER-BOUNDS",
+      "requirement": "Idle/chase bag5/radius15 thresholds and normal pulse flee7",
+      "status": "PASS",
+      "severity": "OBSERVATION"
+    },
+    {
+      "id": "QA-EVENT-VALIDATION",
+      "requirement": "Known v1.1 event payloads must reject missing/wrong fields",
+      "status": "FAIL",
+      "severity": "MINOR",
+      "observed": {
+        "accepted": [
+          {
+            "type": "charm_picked"
+          },
+          {
+            "type": "drifter_steal",
+            "drifter_id": 12,
+            "amount": -4,
+            "carried": "bad"
+          },
+          {
+            "type": "night_start",
+            "night": 4
+          },
+          {
+            "type": "player_hit",
+            "source": "fall"
+          }
+        ]
+      },
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     type: 'charm_picked'\n+   },\n+   {\n+     amount: -4,\n+     carried: 'bad',\n+     drifter_id: 12,\n+     type: 'drifter_steal'\n+   },\n+   {\n+     night: 4,\n+     type: 'night_start'\n+   },\n+   {\n+     source: 'fall',\n+     type: 'player_hit'\n+   }\n+ ]\n- []\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     type: 'charm_picked'\n+   },\n+   {\n+     amount: -4,\n+     carried: 'bad',\n+     drifter_id: 12,\n+     type: 'drifter_steal'\n+   },\n+   {\n+     night: 4,\n+     type: 'night_start'\n+   },\n+   {\n+     source: 'fall',\n+     type: 'player_hit'\n+   }\n+ ]\n- []\n\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:58:439\n    at check (file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:15:75)\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/qa/independent-core.mjs:58:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    }
+  ],
+  "passed": 36,
+  "failed": 6
+}

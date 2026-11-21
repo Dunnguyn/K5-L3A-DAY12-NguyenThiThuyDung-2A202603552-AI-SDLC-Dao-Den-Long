@@ -1,0 +1,1 @@
+{"scenario":{"player":{"light":3},"drifters":[{"id":"D1","pos":{"x":2,"y":0,"z":0},"state":"flee","stolen":3,"state_ticks_left":200}]},"actions":[{"ticks":1,"pulse":true}]}

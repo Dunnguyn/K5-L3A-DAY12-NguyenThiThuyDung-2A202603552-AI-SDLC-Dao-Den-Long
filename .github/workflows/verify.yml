@@ -1,4 +1,4 @@
-name: Verify Phase 1
+name: Verify Phase 2
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -17,16 +17,18 @@ jobs:
       - run: node --version && npm --version
       - run: npm ci
       - run: node scripts/preflight-ci.mjs
+      - run: node scripts/run-phase2-qa.mjs
+        env:
+          PROOF_DIR: docs/proof/phase-2/core/ci/qa42
+      - run: npm run bench:headless
+        env:
+          PROOF_DIR: docs/proof/phase-2/core/ci/benchmark
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
         env:
-          PROOF_DIR: docs/proof/phase-2/preflight/ci-browser
-      - name: Internal CLI JSON smoke
-        run: |
-          node scripts/headless.mjs docs/proof/phase-1/loss.input.json > /tmp/headless.json
-          node --input-type=module -e "import fs from 'node:fs'; if(JSON.parse(fs.readFileSync('/tmp/headless.json')).state.status!=='lost')process.exit(1)"
+          PROOF_DIR: docs/proof/phase-2/browser/ci
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cross-platform-preflight
-          path: docs/proof/phase-2/preflight/
+          path: docs/proof/phase-2/

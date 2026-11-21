@@ -1,0 +1,89 @@
+{
+  "startedAt": "2026-11-21T08:31:28.166Z",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "scope": "Unchanged existing regression commands after actual npm ci --offline; browser command has SKIP_FPS=1 because native independent FPS is separate",
+  "commands": [
+    {
+      "id": "npm-version",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 809.7503
+    },
+    {
+      "id": "unit",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 4141.9304999999995
+    },
+    {
+      "id": "cross-check",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:independent"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1417.5433000000003
+    },
+    {
+      "id": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1639.6646
+    },
+    {
+      "id": "harness",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 27444.423400000003
+    },
+    {
+      "id": "benchmark",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "bench:headless"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 17630.790200000003
+    },
+    {
+      "id": "existing-browser",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:browser"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 405615.0268
+    }
+  ],
+  "finishedAt": "2026-11-21T08:39:07.011Z",
+  "passed": true
+}

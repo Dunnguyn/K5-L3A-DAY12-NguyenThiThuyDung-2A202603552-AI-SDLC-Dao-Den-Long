@@ -1,0 +1,2425 @@
+{
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "browser": "159.0.8154.6",
+  "renderer": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "drawingBuffer": [
+      1280,
+      720
+    ]
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "sampling": "Real Node wall clock >=60s; original native performance.now and native RAF captured before clock installation; actual render-call timestamps counted after renderer.render. No clock advances/screenshots/GC during samples.",
+  "samples": [
+    {
+      "durationMs": 60587.400000002235,
+      "renderFrames": 1836,
+      "nativeFrames": 2278,
+      "renderFps": 30.303330395427636,
+      "nativeRafFps": 37.59857660173429,
+      "averageFrameMs": 33.00392370572167,
+      "p95FrameMs": 65.89999999850988,
+      "metrics": {
+        "calls": 26,
+        "triangles": 11258,
+        "geometries": 44,
+        "textures": 0
+      },
+      "firstRenderTimes": [
+        146815.19999999925,
+        146852.8999999985,
+        146893.8999999985,
+        146919.80000000075,
+        146948.8999999985
+      ],
+      "lastRenderTimes": [
+        207266.3999999985,
+        207280.30000000075,
+        207326.5,
+        207352.30000000075,
+        207377.3999999985
+      ],
+      "nodeWallMs": 60722.875700000004,
+      "night": 3,
+      "iteration": 1,
+      "startState": {
+        "tick": 12,
+        "sim_tick": 12,
+        "night": 3,
+        "state": "playing",
+        "time_s": 359.8,
+        "score": 0,
+        "end_reason": "victory",
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": -28.599999999999973,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": 14.00000000000027
+          },
+          "grounded": true,
+          "flames": 3,
+          "light": 0,
+          "invuln": false,
+          "dash_cd_s": 1.417,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 6,
+              "z": 6
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L7",
+            "pos": {
+              "x": -20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 26.045511066045243,
+              "y": 0,
+              "z": -21.854778729342346
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072732
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": 29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 5.904038040675634,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": -31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072734
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": -13.788799976141602,
+              "y": 3,
+              "z": 11.570176974357711
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": 3.535533905932737,
+              "y": 6,
+              "z": -3.5355339059327386
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": -16.91446717414635,
+              "y": 3,
+              "z": 6.15636257986204
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -16.999999999999993,
+              "y": 0,
+              "z": 29.444863728670917
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": 3.5355339059327378,
+              "y": 6,
+              "z": 3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": 26.045511066045254,
+              "y": 0,
+              "z": 21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": 9.000000000000002,
+              "y": 3,
+              "z": 15.588457268119894
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": -26.045511066045254,
+              "y": 0,
+              "z": -21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -5.904038040675632,
+              "y": 0,
+              "z": -33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -31.949549106720884,
+              "y": 0,
+              "z": 11.628684873072743
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": -17.000000000000014,
+              "y": 0,
+              "z": -29.444863728670903
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": 34,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": -34,
+              "y": 0,
+              "z": 4.1637991171010006e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -3.5355339059327386,
+              "y": 6,
+              "z": -3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": -8.999999999999996,
+              "y": 3,
+              "z": 15.588457268119896
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          },
+          {
+            "id": "C2",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 3
+          },
+          {
+            "type": "dash"
+          }
+        ],
+        "campaign_score": 3133
+      },
+      "endState": {
+        "tick": 3655,
+        "sim_tick": 3655,
+        "night": 3,
+        "state": "playing",
+        "time_s": 299.083,
+        "score": 0,
+        "end_reason": "victory",
+        "wind": {
+          "active": true,
+          "dir_deg": 212.52292432822287
+        },
+        "player": {
+          "x": -30.349127221261206,
+          "y": 0.31666666666666843,
+          "z": -7.76094410366769,
+          "vel": {
+            "x": 2.556287883021966,
+            "y": -5.666666666666663,
+            "z": -5.317914708061302
+          },
+          "grounded": false,
+          "flames": 2,
+          "light": 5,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 6,
+              "z": 6
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L7",
+            "pos": {
+              "x": -20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -4.570029851958133,
+              "y": 0,
+              "z": -44.859756919131634
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 6.13334918367085,
+              "y": 0,
+              "z": 29.11379741555483
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 55.333451073927314,
+              "y": 0,
+              "z": -103.68789149526374
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 89.8519155299634,
+              "y": 0,
+              "z": -2.0796834829530555
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 54.41912437887654,
+              "y": 0,
+              "z": -59.44631879285784
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 13.872232584985648,
+              "y": 0,
+              "z": -12.264566640967017
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": -27.839206631108084,
+              "y": 0,
+              "z": 5.822398039422267
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 1.8674308555058423,
+              "y": 0,
+              "z": -39.157498916508956
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S9",
+            "pos": {
+              "x": 58.38425432284011,
+              "y": 0,
+              "z": -7.148259104235364
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S10",
+            "pos": {
+              "x": 24.291911978008077,
+              "y": 0,
+              "z": -40.55672067055817
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 26.045511066045243,
+              "y": 0,
+              "z": -21.854778729342346
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072732
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": 29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": -31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072734
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": -13.788799976141602,
+              "y": 3,
+              "z": 11.570176974357711
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": 3.535533905932737,
+              "y": 6,
+              "z": -3.5355339059327386
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": -16.91446717414635,
+              "y": 3,
+              "z": 6.15636257986204
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -16.999999999999993,
+              "y": 0,
+              "z": 29.444863728670917
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": 3.5355339059327378,
+              "y": 6,
+              "z": 3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": 26.045511066045254,
+              "y": 0,
+              "z": 21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": 9.000000000000002,
+              "y": 3,
+              "z": 15.588457268119894
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": -26.045511066045254,
+              "y": 0,
+              "z": -21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -5.904038040675632,
+              "y": 0,
+              "z": -33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -31.949549106720884,
+              "y": 0,
+              "z": 11.628684873072743
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": -17.000000000000014,
+              "y": 0,
+              "z": -29.444863728670903
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -3.5355339059327386,
+              "y": 6,
+              "z": -3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": -8.999999999999996,
+              "y": 3,
+              "z": 15.588457268119896
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M240",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": 11.628684873072736
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M480",
+            "pos": {
+              "x": -5.90403804067563,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M960",
+            "pos": {
+              "x": -26.04551106604525,
+              "y": 0,
+              "z": 21.854778729342343
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1440",
+            "pos": {
+              "x": 5.904038040675619,
+              "y": 0,
+              "z": -33.48346360241508
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1920",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": -29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2160",
+            "pos": {
+              "x": 16.914467174146353,
+              "y": 3,
+              "z": 6.156362579862037
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2400",
+            "pos": {
+              "x": 13.788799976141604,
+              "y": 3,
+              "z": 11.570176974357707
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2640",
+            "pos": {
+              "x": 34,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2880",
+            "pos": {
+              "x": 3.1256671980047477,
+              "y": 3,
+              "z": 17.726539554219745
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3120",
+            "pos": {
+              "x": 5.904038040675634,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3360",
+            "pos": {
+              "x": -3.1256671980047455,
+              "y": 3,
+              "z": 17.726539554219745
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3600",
+            "pos": {
+              "x": -34,
+              "y": 0,
+              "z": 4.1637991171010006e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -120.75302990633591,
+              "y": 0,
+              "z": -4.990321690130532
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 45.15396183722919,
+              "y": 0,
+              "z": 57.9351887984179
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          },
+          {
+            "id": "C2",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 3
+          },
+          {
+            "type": "dash"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S1"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S2"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M17"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S3"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M4"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S4"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "drifter_spawn",
+            "drifter_id": "D1"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S5"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M18"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "wind_warning",
+            "dir_deg": 72.8955149743706
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S6"
+          },
+          {
+            "type": "wind_start",
+            "dir_deg": 72.8955149743706
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S7"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "drifter_spawn",
+            "drifter_id": "D2"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S8"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M720"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S9"
+          },
+          {
+            "type": "player_hit",
+            "source": "S7",
+            "lost": 2
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "MD1"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M1200"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S10"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "wind_warning",
+            "dir_deg": 212.52292432822287
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M1680"
+          },
+          {
+            "type": "wind_start",
+            "dir_deg": 212.52292432822287
+          },
+          {
+            "type": "jump"
+          }
+        ],
+        "campaign_score": 3133
+      },
+      "gameplayContinuous": true,
+      "valid": true,
+      "target30": true
+    },
+    {
+      "durationMs": 60628.10000000149,
+      "renderFrames": 1858,
+      "nativeFrames": 2283,
+      "renderFps": 30.645855634597726,
+      "nativeRafFps": 37.65580646597772,
+      "averageFrameMs": 32.60893914916572,
+      "p95FrameMs": 65.30000000074506,
+      "metrics": {
+        "calls": 26,
+        "triangles": 11294,
+        "geometries": 44,
+        "textures": 0
+      },
+      "firstRenderTimes": [
+        207937.69999999925,
+        207970.80000000075,
+        208004.19999999925,
+        208029,
+        208057.6000000015
+      ],
+      "lastRenderTimes": [
+        268355.8999999985,
+        268393.80000000075,
+        268420.80000000075,
+        268453.69999999925,
+        268492.5
+      ],
+      "nodeWallMs": 60632.19330000001,
+      "night": 3,
+      "iteration": 2,
+      "startState": {
+        "tick": 6,
+        "sim_tick": 6,
+        "night": 3,
+        "state": "playing",
+        "time_s": 359.9,
+        "score": 0,
+        "end_reason": "victory",
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": -30,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "grounded": true,
+          "flames": 3,
+          "light": 0,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 6,
+              "z": 6
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L7",
+            "pos": {
+              "x": -20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 26.045511066045243,
+              "y": 0,
+              "z": -21.854778729342346
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072732
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": 29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 5.904038040675634,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": -31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072734
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": -13.788799976141602,
+              "y": 3,
+              "z": 11.570176974357711
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": 3.535533905932737,
+              "y": 6,
+              "z": -3.5355339059327386
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": -16.91446717414635,
+              "y": 3,
+              "z": 6.15636257986204
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -16.999999999999993,
+              "y": 0,
+              "z": 29.444863728670917
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": 3.5355339059327378,
+              "y": 6,
+              "z": 3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": 26.045511066045254,
+              "y": 0,
+              "z": 21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": 9.000000000000002,
+              "y": 3,
+              "z": 15.588457268119894
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": -26.045511066045254,
+              "y": 0,
+              "z": -21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -5.904038040675632,
+              "y": 0,
+              "z": -33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -31.949549106720884,
+              "y": 0,
+              "z": 11.628684873072743
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": -17.000000000000014,
+              "y": 0,
+              "z": -29.444863728670903
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": 34,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": -34,
+              "y": 0,
+              "z": 4.1637991171010006e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -3.5355339059327386,
+              "y": 6,
+              "z": -3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": -8.999999999999996,
+              "y": 3,
+              "z": 15.588457268119896
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          },
+          {
+            "id": "C2",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 3
+          }
+        ],
+        "campaign_score": 3133
+      },
+      "endState": {
+        "tick": 3644,
+        "sim_tick": 3644,
+        "night": 3,
+        "state": "playing",
+        "time_s": 299.267,
+        "score": 0,
+        "end_reason": "victory",
+        "wind": {
+          "active": true,
+          "dir_deg": 212.52292432822287
+        },
+        "player": {
+          "x": -30.002704240306944,
+          "y": 0.8000000000000015,
+          "z": -8.012100581421,
+          "vel": {
+            "x": 2.556287883021966,
+            "y": -3.6666666666666647,
+            "z": -5.317914708061355
+          },
+          "grounded": false,
+          "flames": 2,
+          "light": 3,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 6,
+              "z": 6
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -18,
+              "y": 3,
+              "z": 10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -35,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L7",
+            "pos": {
+              "x": -20,
+              "y": 0,
+              "z": -35
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -32.624213312747194,
+              "y": 0,
+              "z": -53.403882084299305
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 6.347030185608526,
+              "y": 0,
+              "z": 28.802321712264778
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 55.190612497339316,
+              "y": 0,
+              "z": -103.45289757823964
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 89.603658292557,
+              "y": 0,
+              "z": -2.1979769488561587
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 70.61127082362496,
+              "y": 0,
+              "z": -56.09358305903954
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 13.61776233110054,
+              "y": 0,
+              "z": -12.368825405047799
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": -27.963644812833262,
+              "y": 0,
+              "z": 5.346657953954911
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 2.130345234141245,
+              "y": 0,
+              "z": -39.07686995454885
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S9",
+            "pos": {
+              "x": 58.13817305344754,
+              "y": 0,
+              "z": -7.271014995556833
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S10",
+            "pos": {
+              "x": 24.433790618816406,
+              "y": 0,
+              "z": -40.32114594508369
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 26.045511066045243,
+              "y": 0,
+              "z": -21.854778729342346
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072732
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": 29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": -31.949549106720887,
+              "y": 0,
+              "z": -11.628684873072734
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": -13.788799976141602,
+              "y": 3,
+              "z": 11.570176974357711
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": 3.535533905932737,
+              "y": 6,
+              "z": -3.5355339059327386
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": -16.91446717414635,
+              "y": 3,
+              "z": 6.15636257986204
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -16.999999999999993,
+              "y": 0,
+              "z": 29.444863728670917
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": 3.5355339059327378,
+              "y": 6,
+              "z": 3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": 26.045511066045254,
+              "y": 0,
+              "z": 21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": 9.000000000000002,
+              "y": 3,
+              "z": 15.588457268119894
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": -26.045511066045254,
+              "y": 0,
+              "z": -21.854778729342335
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -5.904038040675632,
+              "y": 0,
+              "z": -33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -31.949549106720884,
+              "y": 0,
+              "z": 11.628684873072743
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": -17.000000000000014,
+              "y": 0,
+              "z": -29.444863728670903
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": -34,
+              "y": 0,
+              "z": 4.1637991171010006e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -3.5355339059327386,
+              "y": 6,
+              "z": -3.5355339059327373
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": -8.999999999999996,
+              "y": 3,
+              "z": 15.588457268119896
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M240",
+            "pos": {
+              "x": 31.949549106720887,
+              "y": 0,
+              "z": 11.628684873072736
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M480",
+            "pos": {
+              "x": -5.90403804067563,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M720",
+            "pos": {
+              "x": 34,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1440",
+            "pos": {
+              "x": -26.04551106604525,
+              "y": 0,
+              "z": 21.854778729342343
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1680",
+            "pos": {
+              "x": 5.904038040675619,
+              "y": 0,
+              "z": -33.48346360241508
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1920",
+            "pos": {
+              "x": 17.000000000000004,
+              "y": 0,
+              "z": -29.444863728670914
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2160",
+            "pos": {
+              "x": 16.914467174146353,
+              "y": 3,
+              "z": 6.156362579862037
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2400",
+            "pos": {
+              "x": 13.788799976141604,
+              "y": 3,
+              "z": 11.570176974357707
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2640",
+            "pos": {
+              "x": 3.1256671980047477,
+              "y": 3,
+              "z": 17.726539554219745
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2880",
+            "pos": {
+              "x": -3.1256671980047455,
+              "y": 3,
+              "z": 17.726539554219745
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3120",
+            "pos": {
+              "x": 5.904038040675634,
+              "y": 0,
+              "z": 33.48346360241507
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3360",
+            "pos": {
+              "x": -3.5355339059327373,
+              "y": 6,
+              "z": 3.5355339059327378
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -120.38997967819259,
+              "y": 0,
+              "z": -5.041692657510268
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 45.10639326246291,
+              "y": 0,
+              "z": 57.57162081971359
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          },
+          {
+            "id": "C2",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 3
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S1"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S2"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M17"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S3"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M4"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M960"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S4"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "drifter_spawn",
+            "drifter_id": "D1"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S5"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "wind_warning",
+            "dir_deg": 72.8955149743706
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S6"
+          },
+          {
+            "type": "wind_start",
+            "dir_deg": 72.8955149743706
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S7"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "drifter_spawn",
+            "drifter_id": "D2"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S8"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S9"
+          },
+          {
+            "type": "player_hit",
+            "source": "S7",
+            "lost": 1
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M1200"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S10"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "wind_warning",
+            "dir_deg": 212.52292432822287
+          },
+          {
+            "type": "wind_start",
+            "dir_deg": 212.52292432822287
+          },
+          {
+            "type": "jump"
+          }
+        ],
+        "campaign_score": 3133
+      },
+      "gameplayContinuous": true,
+      "valid": true,
+      "target30": true
+    }
+  ],
+  "memory": [
+    {
+      "cycle": 1,
+      "heap": {
+        "usedSize": 5763252,
+        "totalSize": 6623232,
+        "embedderHeapUsedSize": 785944,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "heap": {
+        "usedSize": 5726240,
+        "totalSize": 6623232,
+        "embedderHeapUsedSize": 784872,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "heap": {
+        "usedSize": 5749744,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 786328,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "heap": {
+        "usedSize": 5749756,
+        "totalSize": 6623232,
+        "embedderHeapUsedSize": 786816,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 5,
+      "heap": {
+        "usedSize": 5755692,
+        "totalSize": 6623232,
+        "embedderHeapUsedSize": 787224,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 6,
+      "heap": {
+        "usedSize": 5756204,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 788616,
+        "backingStorageSize": 907302
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    }
+  ]
+}

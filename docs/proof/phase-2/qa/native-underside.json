@@ -1,0 +1,1115 @@
+{
+  "trace": [
+    {
+      "before": {
+        "x": 40.95000000000032,
+        "y": -0.3055555555555555,
+        "z": 0,
+        "vel": {
+          "x": 3.000000000000256,
+          "y": -3.3333333333333335,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 41.000000000000334,
+        "y": -0.4333333333333333,
+        "z": 0,
+        "vel": {
+          "x": 1.0000000000003695,
+          "y": -4,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 418
+    },
+    {
+      "before": {
+        "x": 41.00000000000034,
+        "y": -0.5055555555555555,
+        "z": 0,
+        "vel": {
+          "x": 4.263256414560601e-13,
+          "y": -4.333333333333333,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 40.83333333333371,
+        "y": -0.8499999999999999,
+        "z": 0,
+        "vel": {
+          "x": -3.9999999999993463,
+          "y": -5.666666666666665,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 423
+    },
+    {
+      "before": {
+        "x": 40.75000000000039,
+        "y": -0.9499999999999998,
+        "z": 0,
+        "vel": {
+          "x": -4.9999999999992895,
+          "y": -5.999999999999998,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 40.4500000000004,
+        "y": -1.2833333333333332,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": -6.999999999999997,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 427
+    },
+    {
+      "before": {
+        "x": 40.3500000000004,
+        "y": -1.4055555555555554,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": -7.33333333333333,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 40.050000000000395,
+        "y": -1.8055555555555554,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": -8.33333333333333,
+          "z": 0
+        },
+        "grounded": false,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 431
+    },
+    {
+      "before": {
+        "x": 39.950000000000394,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 39.65000000000039,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 435
+    },
+    {
+      "before": {
+        "x": 39.55000000000039,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 39.15000000000038,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 440
+    },
+    {
+      "before": {
+        "x": 39.05000000000038,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 38.85000000000038,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 443
+    },
+    {
+      "before": {
+        "x": 38.75000000000038,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 38.45000000000037,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 447
+    },
+    {
+      "before": {
+        "x": 38.35000000000037,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 38.05000000000037,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 451
+    },
+    {
+      "before": {
+        "x": 37.950000000000365,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 37.65000000000036,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 455
+    },
+    {
+      "before": {
+        "x": 37.55000000000036,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 37.150000000000354,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 460
+    },
+    {
+      "before": {
+        "x": 37.05000000000035,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 36.75000000000035,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 464
+    },
+    {
+      "before": {
+        "x": 36.65000000000035,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 36.35000000000034,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 468
+    },
+    {
+      "before": {
+        "x": 36.25000000000034,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 35.95000000000034,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 472
+    },
+    {
+      "before": {
+        "x": 35.850000000000335,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 35.45000000000033,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 477
+    },
+    {
+      "before": {
+        "x": 35.35000000000033,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 35.050000000000324,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 481
+    },
+    {
+      "before": {
+        "x": 34.95000000000032,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 34.55000000000032,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 486
+    },
+    {
+      "before": {
+        "x": 34.350000000000314,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 34.15000000000031,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 490
+    },
+    {
+      "before": {
+        "x": 33.95000000000031,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 33.750000000000306,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 494
+    },
+    {
+      "before": {
+        "x": 33.5500000000003,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 33.2500000000003,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 499
+    },
+    {
+      "before": {
+        "x": 33.1500000000003,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 32.85000000000029,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 503
+    },
+    {
+      "before": {
+        "x": 32.75000000000029,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 32.45000000000029,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 507
+    },
+    {
+      "before": {
+        "x": 32.350000000000286,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 31.95000000000028,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 512
+    },
+    {
+      "before": {
+        "x": 31.85000000000028,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 31.450000000000273,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 517
+    },
+    {
+      "before": {
+        "x": 31.35000000000027,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 31.050000000000267,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 521
+    },
+    {
+      "before": {
+        "x": 30.950000000000266,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 30.55000000000026,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 526
+    },
+    {
+      "before": {
+        "x": 30.45000000000026,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 30.150000000000254,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 530
+    },
+    {
+      "before": {
+        "x": 29.95000000000025,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 29.650000000000247,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 535
+    },
+    {
+      "before": {
+        "x": 29.450000000000244,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 29.15000000000024,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 540
+    },
+    {
+      "before": {
+        "x": 29.05000000000024,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "after": {
+        "x": 28.650000000000233,
+        "y": 0,
+        "z": 0,
+        "vel": {
+          "x": -6.000000000000085,
+          "y": 0,
+          "z": 0
+        },
+        "grounded": true,
+        "flames": 3,
+        "light": 2,
+        "invuln": false,
+        "dash_cd_s": 0,
+        "pulse_cd_s": 0,
+        "charm_s": 0
+      },
+      "tick": 545
+    }
+  ],
+  "reproduced": false
+}

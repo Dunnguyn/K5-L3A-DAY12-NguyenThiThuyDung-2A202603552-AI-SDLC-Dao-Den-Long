@@ -1,0 +1,124 @@
+
+> dao-den-long@0.0.0 test:browser
+> npm run build && node scripts/phase2-campaign.mjs
+
+
+> dao-den-long@0.0.0 build
+> vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 13 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:   0.30 kB
+dist/assets/index-Bhxapwcs.css    6.90 kB │ gzip:   2.28 kB
+dist/assets/index-Dp2hFa4I.js   596.89 kB │ gzip: 153.25 kB
+
+✓ built in 535ms
+PASS Menu and WebGL2
+PASS Settings persist after reload using real keyboard inputs
+PASS Natural fall loss and same-night retry
+PASS Pause resume freezes simulation
+PASS Camera drag
+Night 1 tick 18, lamps 0, flames 3
+Night 1 tick 600, lamps 0, flames 3
+Night 1 tick 1200, lamps 1, flames 3
+Night 1 tick 1800, lamps 1, flames 3
+Night 1 tick 2400, lamps 1, flames 3
+Night 1 tick 3000, lamps 2, flames 3
+Night 1 tick 3600, lamps 2, flames 3
+Night 1 tick 4200, lamps 2, flames 3
+Night 1 tick 4800, lamps 3, flames 3
+Night 1 tick 5400, lamps 3, flames 3
+Night 1 tick 6000, lamps 3, flames 3
+Night 1 tick 6600, lamps 4, flames 3
+Night 1 tick 7200, lamps 4, flames 3
+Night 1 tick 7800, lamps 4, flames 3
+Night 1 tick 8400, lamps 4, flames 3
+PASS Night 1 default-state victory
+PASS Night 2 jump pad crosses islands through real input
+PASS Night 2 bamboo bridge and charm
+PASS Night 2 natural loss and retry preserves won-night score
+Night 2 tick 9, lamps 0, flames 3
+Night 2 tick 603, lamps 0, flames 3
+Night 2 tick 1203, lamps 0, flames 3
+Night 2 tick 1803, lamps 0, flames 3
+Night 2 tick 2403, lamps 1, flames 3
+Night 2 tick 3003, lamps 1, flames 3
+Night 2 tick 3603, lamps 2, flames 3
+Night 2 tick 4203, lamps 2, flames 3
+Night 2 tick 4803, lamps 2, flames 3
+Night 2 tick 5403, lamps 3, flames 3
+Night 2 tick 6003, lamps 3, flames 3
+Night 2 tick 6603, lamps 3, flames 3
+Night 2 tick 7203, lamps 4, flames 3
+Night 2 tick 7803, lamps 4, flames 3
+Night 2 tick 8403, lamps 4, flames 3
+Night 2 tick 9003, lamps 5, flames 3
+Night 2 tick 9603, lamps 5, flames 3
+Night 2 tick 10203, lamps 5, flames 3
+Night 2 tick 10803, lamps 5, flames 3
+Night 2 tick 11403, lamps 5, flames 3
+PASS Night 2 default-state victory
+Night 3 tick 9, lamps 0, flames 3
+Night 3 tick 603, lamps 0, flames 3
+Night 3 tick 1203, lamps 0, flames 3
+Night 3 tick 1803, lamps 0, flames 3
+Night 3 tick 2403, lamps 1, flames 3
+Night 3 tick 3003, lamps 1, flames 3
+Night 3 tick 3603, lamps 1, flames 2
+Night 3 tick 4203, lamps 1, flames 2
+Night 3 tick 4803, lamps 1, flames 2
+Night 3 tick 5403, lamps 1, flames 2
+Night 3 tick 6003, lamps 2, flames 2
+Night 3 tick 6603, lamps 2, flames 2
+Night 3 tick 7203, lamps 2, flames 2
+Night 3 tick 7803, lamps 2, flames 2
+Night 3 tick 8403, lamps 2, flames 1
+Night 3 tick 9, lamps 0, flames 3
+Night 3 tick 603, lamps 0, flames 3
+Night 3 tick 1203, lamps 0, flames 3
+Night 3 tick 1803, lamps 0, flames 3
+Night 3 tick 2403, lamps 1, flames 3
+Night 3 tick 3003, lamps 1, flames 3
+Night 3 tick 3603, lamps 1, flames 2
+Night 3 tick 4203, lamps 1, flames 2
+Night 3 tick 4803, lamps 1, flames 2
+Night 3 tick 5403, lamps 1, flames 2
+Night 3 tick 6003, lamps 2, flames 2
+Night 3 tick 6603, lamps 2, flames 2
+Night 3 tick 7203, lamps 2, flames 2
+Night 3 tick 7803, lamps 2, flames 2
+Night 3 tick 8403, lamps 2, flames 1
+Night 3 tick 9, lamps 0, flames 3
+Night 3 tick 603, lamps 0, flames 3
+Night 3 tick 1203, lamps 0, flames 3
+Night 3 tick 1803, lamps 0, flames 3
+Night 3 tick 2403, lamps 1, flames 3
+Night 3 tick 3003, lamps 1, flames 3
+Night 3 tick 3603, lamps 1, flames 2
+Night 3 tick 4203, lamps 1, flames 2
+Night 3 tick 4803, lamps 1, flames 2
+Night 3 tick 5403, lamps 1, flames 2
+Night 3 tick 6003, lamps 2, flames 2
+Night 3 tick 6603, lamps 2, flames 2
+Night 3 tick 7203, lamps 2, flames 2
+Night 3 tick 7803, lamps 2, flames 2
+Night 3 tick 8403, lamps 2, flames 1
+Night 3 tick 9, lamps 0, flames 3
+Night 3 tick 603, lamps 0, flames 3
+Night 3 tick 1203, lamps 0, flames 3
+Night 3 tick 1803, lamps 0, flames 3
+Night 3 tick 2403, lamps 1, flames 3
+Night 3 tick 3003, lamps 1, flames 3
+Night 3 tick 3603, lamps 1, flames 2
+Night 3 tick 4203, lamps 1, flames 2
+Night 3 tick 4803, lamps 1, flames 2
+Night 3 tick 5403, lamps 1, flames 2
+Night 3 tick 6003, lamps 2, flames 2
+Night 3 tick 6603, lamps 2, flames 2
+Night 3 tick 7203, lamps 2, flames 2
+Night 3 tick 7803, lamps 2, flames 2
+Night 3 tick 8403, lamps 2, flames 1
+{"passed":false,"dir":"docs/proof/phase-2/remediation/regression-final/existing-browser","failure":"AssertionError [ERR_ASSERTION]: Night 3: no winning route after four actual attempts\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/scripts/phase2-campaign.mjs:43:283","checks":[{"id":"Menu and WebGL2","status":"PASS"},{"id":"Settings persist after reload using real keyboard inputs","status":"PASS"},{"id":"Natural fall loss and same-night retry","status":"PASS"},{"id":"Pause resume freezes simulation","status":"PASS"},{"id":"Camera drag","status":"PASS"},{"id":"Night 1 default-state victory","status":"PASS","sim_tick":8599,"score":1467,"flames":3,"lamps":5},{"id":"Night 2 jump pad crosses islands through real input","status":"PASS"},{"id":"Night 2 bamboo bridge and charm","status":"PASS"},{"id":"Night 2 natural loss and retry preserves won-night score","status":"PASS"},{"id":"Night 2 default-state victory","status":"PASS","sim_tick":11554,"score":1629,"flames":3,"lamps":6}],"measurements":{}}

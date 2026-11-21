@@ -1,0 +1,273 @@
+{
+  "passed": true,
+  "findings": [],
+  "campaign": 4872,
+  "checks": [
+    {
+      "id": "QA-E2E settings keyboard and reload persistence",
+      "status": "PASS"
+    },
+    {
+      "id": "QA-E2E autoplay unlock and real master gain",
+      "status": "PASS"
+    },
+    {
+      "id": "QA-E2E pause freezes sim/time, mute changes master gain and resume works",
+      "status": "PASS"
+    },
+    {
+      "id": "QA-E2E camera changes actual camera quaternion",
+      "status": "PASS"
+    },
+    {
+      "id": "F01/F02/F06 real-input dash speed14, stop and FX expiry",
+      "status": "PASS",
+      "dash": {
+        "x": 13.99999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "stop": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "F06 dash pause cleanup and resume expiry",
+      "status": "PASS"
+    },
+    {
+      "id": "F06 dash retry cleanup",
+      "status": "PASS"
+    },
+    {
+      "id": "F06 dash return-to-menu cleanup",
+      "status": "PASS"
+    },
+    {
+      "id": "F03 actual-input underside re-entry does not snap",
+      "status": "PASS"
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 3
+    },
+    {
+      "id": "QA-E2E partial charge reached through collection/movement/deposit",
+      "status": "PASS"
+    },
+    {
+      "id": "QA-E2E night 1 full default victory",
+      "status": "PASS",
+      "score": 1469,
+      "tick": 8569,
+      "lamps": 5,
+      "baseScore": 1464,
+      "pulseBonus": 5
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 7
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 7
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 7
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 7
+    },
+    {
+      "id": "QA-E2E night 2 full default victory",
+      "status": "PASS",
+      "score": 1664,
+      "tick": 10363,
+      "lamps": 6,
+      "baseScore": 1664,
+      "pulseBonus": 0
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 4
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 5
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 5
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 5
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 5
+    },
+    {
+      "id": "F07 partial unlit material retains canonical color",
+      "status": "PASS",
+      "actual": "#5b5f6e",
+      "progress": 5
+    },
+    {
+      "id": "QA-E2E night 3 full default victory",
+      "status": "PASS",
+      "score": 1739,
+      "tick": 14551,
+      "lamps": 7,
+      "baseScore": 1734,
+      "pulseBonus": 5
+    },
+    {
+      "id": "QA-E2E full campaign and summed won-night scores",
+      "status": "PASS",
+      "total": 4872
+    }
+  ],
+  "windVisible": {
+    "night": 3,
+    "tick": 14400,
+    "className": "wind",
+    "opacity": 0.8,
+    "animation": "gust",
+    "toast": "Gió mạnh sắp tới!",
+    "clock": "02:00"
+  },
+  "errors": []
+}

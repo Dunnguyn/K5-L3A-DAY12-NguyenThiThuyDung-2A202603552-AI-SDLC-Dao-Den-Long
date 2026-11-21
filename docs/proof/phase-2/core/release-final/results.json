@@ -1,0 +1,117 @@
+{
+  "startedAt": "2026-11-21T09:12:44.955Z",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "executor": "Codex release verification; additional independent QA re-test waived by project owner",
+  "commands": [
+    {
+      "id": "npm-version",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/environment",
+      "exitCode": 0,
+      "elapsedMs": 845.7249
+    },
+    {
+      "id": "unit",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/unit",
+      "exitCode": 0,
+      "elapsedMs": 6207.6529
+    },
+    {
+      "id": "cross-check",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:independent"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/cross-check",
+      "exitCode": 0,
+      "elapsedMs": 1476.4979000000003
+    },
+    {
+      "id": "qa42",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/run-phase2-qa.mjs"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/qa42",
+      "exitCode": 0,
+      "elapsedMs": 12797.1711
+    },
+    {
+      "id": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/build",
+      "exitCode": 0,
+      "elapsedMs": 3435.1805999999997
+    },
+    {
+      "id": "verify",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/harness",
+      "exitCode": 0,
+      "elapsedMs": 26010.305699999997
+    },
+    {
+      "id": "benchmark",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "bench:headless"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/benchmark",
+      "exitCode": 0,
+      "elapsedMs": 16920.051900000006
+    },
+    {
+      "id": "browser",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:browser"
+      ],
+      "output": "docs/proof/phase-2/browser/release-final",
+      "exitCode": 0,
+      "elapsedMs": 591488.8936000001
+    },
+    {
+      "id": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "output": "docs/proof/phase-2/core/release-final/diff-check",
+      "exitCode": 0,
+      "elapsedMs": 113.45539999997709
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-11-21T09:23:44.277Z"
+}

@@ -1,3 +1,4 @@
+import {proofDirectory} from './proof-directory.mjs';
 import { chromium } from '@playwright/test';
 import { spawn } from 'node:child_process';
 import { mkdirSync,writeFileSync } from 'node:fs';
@@ -5,7 +6,7 @@ import { join } from 'node:path';
 import os from 'node:os';
 import assert from 'node:assert/strict';
 
-const dir=process.env.PROOF_DIR||'docs/proof/phase-2/browser';mkdirSync(dir,{recursive:true});
+const dir=proofDirectory('browser','smoke');mkdirSync(dir,{recursive:true});
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','4174','--strictPort'],{stdio:'ignore',windowsHide:true});let browser,page;const errors=[],warnings=[],checks=[],measurements={},inputSequence=[];
 const report={scope:'Phase 2 browser E2E (real Playwright inputs + read-only Core snapshots); not full campaign E2E',startedAt:new Date().toISOString(),os:{platform:os.platform(),release:os.release(),arch:os.arch()},node:process.version,browser:'Chromium',viewport:{width:1280,height:720},checks,measurements,inputSequence,unverified:[],consoleErrors:errors,consoleWarnings:warnings};
 async function snapshot(){return page.evaluate(()=>window.__DAO_LANTERN_SNAPSHOT__());}

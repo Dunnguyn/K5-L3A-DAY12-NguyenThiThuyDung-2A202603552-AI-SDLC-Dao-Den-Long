@@ -1,0 +1,20 @@
+{
+  "scope": "Phase 2 shared core + world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED",
+  "timestamp": "2026-11-20T19:24:39.835Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "ticket02Sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb",
+  "checks": [
+    {
+      "name": "contract-generation",
+      "command": [
+        "node",
+        "scripts/write-contract.mjs"
+      ],
+      "exitCode": null,
+      "error": "spawnSync C:\\Program Files\\nodejs\\node.exe EPERM"
+    }
+  ],
+  "passed": false
+}

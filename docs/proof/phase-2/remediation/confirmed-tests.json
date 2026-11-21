@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-11-21T07:31:39.880Z",
+  "commands": [
+    {
+      "id": "final-unit",
+      "command": [
+        "node",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "test"
+      ],
+      "exitCode": 0
+    },
+    {
+      "id": "final-harness",
+      "command": [
+        "node",
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "passed": true
+}

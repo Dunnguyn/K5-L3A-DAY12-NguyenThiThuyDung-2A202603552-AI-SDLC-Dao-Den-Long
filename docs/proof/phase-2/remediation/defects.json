@@ -1,0 +1,96 @@
+[
+  {
+    "id": "F01",
+    "severity": "MAJOR",
+    "title": "Dash speed",
+    "rootCause": "The run vector retained fractional magnitude and was reused for dash/facing.",
+    "files": [
+      "src/core/game.js"
+    ],
+    "fix": "Store a unit facing vector separately from analogue run magnitude; latch that unit direction for dash.",
+    "test": "QA-DASH-ANALOG / QA-DASH-IDLE-FACING; cardinal/diagonal/fractional/air/pad/charm/wind tests",
+    "evidence": "independent-results-final.json; regression-acceptance/unit/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F02",
+    "severity": "MAJOR",
+    "title": "Residual velocity after dash",
+    "rootCause": "Actual dash/pad displacement was fed back as controlled movement velocity.",
+    "files": [
+      "src/core/game.js"
+    ],
+    "fix": "Keep controlled motionVelocity separate; snapshots still report total dash/pad/wind displacement. External launch vector survives air dash.",
+    "test": "QA-DASH-STOP; ticks11/12/13, release/opposite/normal/jump/wind/pad landing",
+    "evidence": "independent-results-final.json; regression-acceptance/unit/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F03",
+    "severity": "MAJOR",
+    "title": "Terrain penetration",
+    "rootCause": "Terrain query returned a higher floor when no support existed; ground snapping did not require a descending crossing from above.",
+    "files": [
+      "src/core/game.js",
+      "src/data/worlds.js"
+    ],
+    "fix": "Return null without support; use previous foot height for descending crossings and bound grounded ramp following. Uphill ramp lip uses existing numerical contact tolerance at the straight-ramp/circular-tier seam. Canonical geometry and tuning unchanged.",
+    "test": "QA-UNDERSIDE; actual-input browser trace; default fall/respawn, bridge, raised tiers, pads, old ramp-width and tower assertions",
+    "evidence": "independent-results-final.json; regression-acceptance/unit/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F04",
+    "severity": "MINOR",
+    "title": "Drifter overlap",
+    "rootCause": "The pulse chase-to-flee path produced a zero direction; dividing by fallback denominator1 still moved zero.",
+    "files": [
+      "src/core/game.js"
+    ],
+    "fix": "Flee uses deterministic +X for zero direction, otherwise normalizes even very small nonzero vectors; consumes no RNG.",
+    "test": "QA-DRIFTER-ZERO; exact/near-zero positions and deterministic actual CLI replay",
+    "evidence": "independent-results-final.json; regression-acceptance/unit/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F05",
+    "severity": "MINOR",
+    "title": "Known event payload validation",
+    "rootCause": "Output events were checked only for an object and type string.",
+    "files": [
+      "src/headless/adapter.js"
+    ],
+    "fix": "Validate the published v1.1 charm/theft/drop/night and fall-hit fields and numeric ranges with field-specific errors. Leave unknown v1.0 fields unconstrained.",
+    "test": "QA-EVENT-VALIDATION; valid/missing/null/type/fractional/negative/nonfinite/over-range matrix",
+    "evidence": "independent-results-final.json; regression-acceptance/unit/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F06",
+    "severity": "MAJOR",
+    "title": "Dash visual lifecycle",
+    "rootCause": "Dash class was added once and never removed; forwards dash animation overrode later feedback.",
+    "files": [
+      "src/browser/app.js",
+      "src/browser/app.css",
+      "src/browser/renderer.js"
+    ],
+    "fix": "Derive dash class from active sim dash ticks; clear transient FX on screen transitions and prevent dash selector overriding warning/wind/pulse/hurt. Night3 identical shade body/eye meshes are instanced after correct visible FX exposed under-target software FPS; topology, transforms and materials are retained. Decorative HUD backdrop blur is removed and unchanged text writes skipped; text, layout and canonical colors remain identical.",
+    "test": "Browser speed/expiry/pause/resume/retry/menu/terminal checks and visible real Night3 wind after dash",
+    "evidence": "browser-regression.json; screenshots/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  },
+  {
+    "id": "F07",
+    "severity": "MINOR",
+    "title": "Partial lantern palette",
+    "rootCause": "Partial-progress renderer branch used mote halo color for an unlit cage.",
+    "files": [
+      "src/browser/renderer.js"
+    ],
+    "fix": "Use canonical off cage color until lit=true; retain the existing scaled progress indicator and lit bulb state.",
+    "test": "Actual-input partial3/10 material assertion #5B5F6E; screenshots; full-charge campaign",
+    "evidence": "browser-regression.json; screenshots/",
+    "status": "FIXED — READY FOR QA RE-TEST"
+  }
+]

@@ -1,0 +1,443 @@
+{
+  "recordedAt": "2026-11-21T09:24:51.438Z",
+  "counts": {
+    "PASS": 36,
+    "PARTIAL": 4,
+    "FAIL": 0,
+    "NOT VERIFIED": 3
+  },
+  "decision": "Owner risk acceptance; independent remediation re-test waived",
+  "independentAcceptance": false,
+  "rows": [
+    {
+      "id": "STD-01",
+      "expected": "All Ticket1 constants/manifest known tuning match",
+      "actual": "Independent literal comparisons passed",
+      "test": "QA-TUNING",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "TICK-01",
+      "expected": "60Hz and12-step order; tick/sim_tick separation",
+      "actual": "Pipeline observed with pause, pickup/deposit/pulse, spawn-next-tick, priority cases; measured live sim rate ~60Hz",
+      "test": "QA-PAUSE-ALL/QA-PICK-DEPOSIT-PULSE/QA-NEW-ENTITY",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; performance.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "MOVE-01",
+      "expected": "Run6; stop<=6ticks; no diagonal boost",
+      "actual": "Remediated F02; original independent assertions and added regression passed. ",
+      "test": "QA-RUN/QA-DASH-STOP",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MAJOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "JUMP-01",
+      "expected": "Impulse7, gravity-20, grounded-only jump, full air control",
+      "actual": "Impulse-minus-one-gravity-step and next dv, landing and repeated-input behavior passed",
+      "test": "QA-JUMP",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "DASH-01",
+      "expected": "14m/s latched unit movement/facing direction",
+      "actual": "Remediated F01; original independent assertions and added regression passed. ",
+      "test": "QA-DASH-ANALOG/QA-DASH-IDLE-FACING",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MAJOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "DASH-02",
+      "expected": "12ticks, cooldown90fromstart, rising edge, air height hold, no invulnerability",
+      "actual": "Timer/edge/air assertions passed",
+      "test": "QA-DASH-TIMER/QA-AIR-DASH/QA-CHARM-EDGE",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "MOTE-01",
+      "expected": "Initial20 unique;240k spawn; cap30; skip occupied points",
+      "actual": "All3 maps tested; N1/N2 stop at24 occupied candidates, N3 reaches30",
+      "test": "QA-MAPS/QA-SPAWN",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "MOTE-02",
+      "expected": "Pickup XZ<=1/Y<=1.5; bag10; no pickup score",
+      "actual": "Inclusive/barely-outside ranges and full bag passed",
+      "test": "QA-PICKUP",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "DROP-01",
+      "expected": "floor(bag/2), ring1.5..2.5, TTL480, pickup next tick",
+      "actual": "Born drop count/range/TTL/delay plus isolated479/480 boundary passed",
+      "test": "QA-DROP-TTL/QA-STEAL-HIT",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "LAMP-01",
+      "expected": "10cost, partial min-charge, nearest/id tie, radius2, height-aware",
+      "actual": "Partial fill/resource/score/Y checks and unchanged tie-break regression passed",
+      "test": "QA-LAMP/QA-PICK-DEPOSIT-PULSE; existing44",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; unit/stdout.log; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "SAFE-01",
+      "expected": "Lit radius6; eviction<=30ticks; no hit while evicting",
+      "actual": "Actual final charge evicted shade before contact, distance6, no flame loss",
+      "test": "QA-SAFE",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "PULSE-01",
+      "expected": "Cost3/range3D5/cd180; latch; stun120; push4m/15; coincident+X",
+      "actual": "3D inclusive/outside, refresh, latched-before-AI and push path passed",
+      "test": "QA-PULSE-3D/QA-PUSH/QA-PICK-DEPOSIT-PULSE",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "SHADE-01",
+      "expected": "First2 at300; per-night intervals/caps/IDs; detect12/abandon18",
+      "actual": "All nights and boundary thresholds passed",
+      "test": "QA-SHADE-SCHEDULE/QA-SHADE-BOUNDARY",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "HIT-01",
+      "expected": "One flame/tick, numeric-ID order, recoil60, invulnerability90, Y<=1.5",
+      "actual": "S2 beforeS10, one hit, recoil/invulnerability and height boundaries passed",
+      "test": "QA-HIT-ID/QA-SHADE-BOUNDARY/QA-STEAL-HIT",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "FALL-01",
+      "expected": "Y<-10 ignores invulnerability; once; lose bag; wait60; zero-speed respawn/inv90",
+      "actual": "Exact wait59/60 and invulnerability fall-loss assertions passed",
+      "test": "QA-FALL",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "END-01",
+      "expected": "no_flames > clear > dawn; clear at timeout; exact score; won-night total",
+      "actual": "Actual fall death versus clear/time, final charge at time0, terminal freeze and campaign sum passed",
+      "test": "QA-DEATH-CLEAR/QA-CLEAR-TIMEOUT; independent E2E",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; browser-independent.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "WORLD-01",
+      "expected": "N1r40,5canonical lamps/mote/shade rings, fall",
+      "actual": "Literal positions/rings passed; legitimate default edge path exposes collision issue separately",
+      "test": "QA-MAPS",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "WORLD-02",
+      "expected": "N2two r28 islands,18x4 bridge,2pads/six lamps, valid cross-island landings",
+      "actual": "All data and both pad trajectories passed; real browser bridge/charm/pad checks reran",
+      "test": "QA-MAPS/QA-PADS",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; existing-browser/browser-e2e.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "WORLD-03",
+      "expected": "N3r45,tiers0/3/6,2ramps,width3,pad,tower r2h8,7lamps",
+      "actual": "Canonical descriptors, both ramps,24-direction tower sweep and real tier traversal passed",
+      "test": "QA-MAPS/QA-COLLISION/QA-PADS",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; browser-independent.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "COLLISION-01",
+      "expected": "Support/landing must not pass upward through solid island",
+      "actual": "Remediated F03; original independent assertions and added regression passed. ",
+      "test": "QA-UNDERSIDE; native actual-input trace",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MAJOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "PAD-01",
+      "expected": "Pad velocity held until landing, air dash holdsY and resumes launch; wind additive",
+      "actual": "Both pads/landing, pad->dash->resume and wind-dash force passed",
+      "test": "QA-PADS/QA-PAD-DASH",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "WIND-01",
+      "expected": "1680warning,1800start,300force ticks,2m/s, seeded direction",
+      "actual": "Schedule and ten-meter displacement over300ticks passed; live gust observed",
+      "test": "QA-WIND",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; browser-independent.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "WIND-02",
+      "expected": "Visible leaves and sound warning2s before strong wind",
+      "actual": "Remediated F06; original independent assertions and added regression passed. ",
+      "test": "QA-BROWSER-FX",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MAJOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "DRIFTER-01",
+      "expected": "N2/N3 schedule1200k/max2; idle2/chase7/flee7; theft/drop/removal",
+      "actual": "Remediated F04; original independent assertions and added regression passed. Exact overlap is Core/CLI-tested; no browser state mutation used.",
+      "test": "QA-DRIFTER/QA-DRIFTER-BOUNDS/QA-DRIFTER-DROP/QA-DRIFTER-ZERO",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MINOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CHARM-01",
+      "expected": "Cpositions,600effect,7.2run,edge-only no-CD dash,2700respawn",
+      "actual": "Canonical locations/timers/speed/edge tests and real bridge charm pickup passed",
+      "test": "QA-MAPS/QA-CHARM/QA-CHARM-EDGE",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; existing-browser/browser-e2e.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CAMPAIGN-01",
+      "expected": "Menu/intro/results/next/BinhMinh; retry same night, preserve earlier wins",
+      "actual": "Production E2E and separate QA campaign both won3 nights; loss/retry N1/N2 and repeated N3 UI reset passed",
+      "test": "QA-RESET; both browser campaigns",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; browser-independent.json; existing-browser/browser-e2e.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "PAUSE-01",
+      "expected": "Esc/P freezes sim/time/respawn/dash/charm/stun/TTL/spawn; usable menu",
+      "actual": "Combined Core freeze and actual pause/settings/resume passed",
+      "test": "QA-PAUSE-ALL; QA-E2E pause",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; browser-independent.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "SETTINGS-01",
+      "expected": "Volume/sensitivity saved across openings",
+      "actual": "Real range keyboard0.37/1.7 and reload persistence passed; actual master gain and mute checked",
+      "test": "QA-E2E settings/audio controls",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: browser-independent.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "AUDIO-01",
+      "expected": "BGM and all prescribed SFX, volume/autoplay and final10 countdown",
+      "actual": "Context unlock/master gain/mute/events/countdown counts pass; human listening not possible",
+      "test": "QA-E2E audio + rerun boundary harness",
+      "evidence": "browser-independent.json; boundaries/boundaries.json",
+      "status": "PARTIAL",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "HUD-01",
+      "expected": "Flames UL, mm:ss red/blink<=30, lamps/score UR,10 slots, CDs,contextE,arrow",
+      "actual": "DOM thresholds/ten slots/offscreen arrow/countdown and actual screenshots passed",
+      "test": "Rerun boundary + browser E2E",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: boundaries/boundaries.json; screenshots/qa-partial-charge.png; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CAMERA-01",
+      "expected": "Camera drag/zoom and real movement,jump,dash,fall/respawn",
+      "actual": "Actual camera quaternion changed; actual-input journey/natural loss and Core jump/dash tests passed",
+      "test": "QA-E2E camera; existing browser; QA-JUMP/QA-FALL",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: browser-independent.json; existing-browser/browser-e2e.json; independent-results-final.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "PALETTE-01",
+      "expected": "Each specified component baseRGB within10% of canonical",
+      "actual": "Remediated F07; original independent assertions and added regression passed. ",
+      "test": "QA-BROWSER-PALETTE",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MINOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "ART-01",
+      "expected": "Ambient .15+.55lit/total; outfit/nondestructive cozy style",
+      "actual": "Actual runtime light formula checked at sampled progress states; character/outfit/scene screenshots inspected",
+      "test": "Runtime material/camera observer and visual review",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: browser-independent.json; screenshots/; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CON-01",
+      "expected": "Known v1.1 manifest,night1/2/3,fields/arrays/enums,overrides,edges,JSONstdout/errors",
+      "actual": "Positive CLI and malformed input/record tests passed on internal adapter",
+      "test": "QA-DELTA-CLI/QA-INVALID-CLI/QA-FEATURE-CLI; existing44",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: independent-results-final.json; scenarios/; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CON-02",
+      "expected": "Known event required fields/types/ranges validated",
+      "actual": "Remediated F05; original independent assertions and added regression passed. ",
+      "test": "QA-EVENT-VALIDATION",
+      "evidence": "independent-results-final.json; regression-acceptance/unit/stdout.log; browser-regression.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "MINOR",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "CON-03",
+      "expected": "Official v1.0 base + v1.1 full compatibility and hidden regression",
+      "actual": "Official repo/Guide checked; Lab Board inaccessible via tool; base/schema not obtained",
+      "test": "Fresh source-access attempt",
+      "evidence": "contract-audit.md",
+      "status": "NOT VERIFIED",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "REPLAY-01",
+      "expected": "Same seed/actions deterministic; full21600ticks<=30s",
+      "actual": "CLI deep equality and benchmark2x21600 passed; no early terminal shortcut",
+      "test": "QA-DELTA-CLI; unchanged benchmark",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: benchmark/benchmark-night3.json; scenarios/; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    },
+    {
+      "id": "PERF-01",
+      "expected": "1280x720,>=60s/night,repeat N3,average>=30",
+      "actual": "Fresh Night3 >=60s software-render samples; Night1/2 retain historical QA scope. See performance-final.json and ../qa/performance-final.json.",
+      "test": "Independent native counters and Node wall clock",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: performance-final.json",
+      "status": "PARTIAL",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "LIFECYCLE-01",
+      "expected": "Transitions/restarts, memory/draw calls, no shader/runtime failures",
+      "actual": "6 forced-GC restarts: geometry24 stable; heap +3.3%; zero runtime errors, screenshot readback warnings; short trend not proof of no leak",
+      "test": "Actual UI restarts/CDP memory",
+      "evidence": "browser-independent.json; performance-final.json",
+      "status": "PARTIAL",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "DOD-HEADLESS",
+      "expected": "At least one scenario for every new feature or disclose UI-only coverage",
+      "actual": "Dash/pause/charm/wind/pads/drifter/fall actual CLI fixtures; UI/settings/audio/palette are browser-only",
+      "test": "QA-FEATURE-CLI and scenario inventory",
+      "evidence": "scenarios/; browser-independent.json",
+      "status": "PARTIAL",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "PORTABLE-01",
+      "expected": "Clean install and execution on Linux/macOS, current Ubuntu CI",
+      "actual": "Windows npm ci --offline succeeded; Linux/macOS/current remote CI not executed, no large tools installed",
+      "test": "Windows clean install, WSL capability probe",
+      "evidence": "npm-ci.log; cross-platform.json; wsl-probe.log",
+      "status": "NOT VERIFIED",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "GPU-01",
+      "expected": "Hardware GPU performance evidence",
+      "actual": "Only ANGLE SwiftShader available in this QA run",
+      "test": "Renderer discovery",
+      "evidence": "performance-final.json",
+      "status": "NOT VERIFIED",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Owner-accepted limitation; not upgraded"
+    },
+    {
+      "id": "AUDIT-01",
+      "expected": "Requirements, historical evidence, delivery changes and phase1 tag preserved",
+      "actual": "Requirements, QA originals, historical evidence, lockfile, prior unrelated work and phase1 tag hash-checked unchanged; authorized remediation is recorded in dirty Git.",
+      "test": "SHA256 before/after audit",
+      "evidence": "Historical QA scope retained; remediation regression: regression-acceptance/ and independent-results-final.json; original: workspace-before.json; workspace-after.json; final Codex regression: ../proof/phase-2/core/release-final/results.json",
+      "status": "PASS",
+      "severity": "OBSERVATION",
+      "releaseDisposition": "Retained verified scope"
+    }
+  ]
+}

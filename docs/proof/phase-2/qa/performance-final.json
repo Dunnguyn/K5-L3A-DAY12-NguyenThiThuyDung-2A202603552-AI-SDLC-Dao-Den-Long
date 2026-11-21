@@ -1,0 +1,1117 @@
+{
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "browser": "159.0.8154.6",
+  "renderer": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "drawingBuffer": [
+      1280,
+      720
+    ]
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "validSamples": [
+    {
+      "night": 1,
+      "iteration": "native-safe-zone",
+      "method": "No clock installation; moving near a genuinely lit safe lamp",
+      "durationMs": 60593.5,
+      "renderFps": 34.805713484119586,
+      "nativeRafFps": 34.805713484119586,
+      "averageFrameMs": 28.731546489563833,
+      "p95FrameMs": 33.799999999813735,
+      "metrics": {
+        "calls": 45,
+        "triangles": 8376,
+        "geometries": 56,
+        "textures": 0
+      },
+      "valid": true,
+      "target30": true
+    },
+    {
+      "night": 2,
+      "iteration": 1,
+      "method": "Clock resumed in real time; original native now/RAF and actual render-call timestamps",
+      "durationMs": 60569.700000000186,
+      "renderFps": 37.11426670430914,
+      "nativeRafFps": 43.437560364340456,
+      "averageFrameMs": 26.941121495327184,
+      "p95FrameMs": 49.69999999925494,
+      "metrics": {
+        "calls": 30,
+        "triangles": 6808,
+        "geometries": 55,
+        "textures": 0
+      },
+      "valid": true,
+      "target30": true
+    },
+    {
+      "night": 3,
+      "iteration": 1,
+      "method": "Clock resumed in real time; original native now/RAF and actual render-call timestamps",
+      "durationMs": 60594.299999999814,
+      "renderFps": 32.148238365654954,
+      "nativeRafFps": 38.287429675728696,
+      "averageFrameMs": 31.090241397021153,
+      "p95FrameMs": 63.5,
+      "metrics": {
+        "calls": 32,
+        "triangles": 8750,
+        "geometries": 72,
+        "textures": 0
+      },
+      "valid": true,
+      "target30": true
+    },
+    {
+      "night": 3,
+      "iteration": 2,
+      "method": "Clock resumed in real time; original native now/RAF and actual render-call timestamps",
+      "durationMs": 60536.300000000745,
+      "renderFps": 31.435684044118595,
+      "nativeRafFps": 37.448605217034604,
+      "averageFrameMs": 31.798580441640574,
+      "p95FrameMs": 66.40000000037253,
+      "metrics": {
+        "calls": 31,
+        "triangles": 8670,
+        "geometries": 72,
+        "textures": 0
+      },
+      "valid": true,
+      "target30": true
+    },
+    {
+      "night": 3,
+      "iteration": 3,
+      "method": "Clock resumed in real time; original native now/RAF and actual render-call timestamps",
+      "durationMs": 60617.10000000056,
+      "renderFps": 32.36710433194564,
+      "nativeRafFps": 38.04207063683315,
+      "averageFrameMs": 30.890566037735564,
+      "p95FrameMs": 63.59999999962747,
+      "metrics": {
+        "calls": 31,
+        "triangles": 8634,
+        "geometries": 72,
+        "textures": 0
+      },
+      "valid": true,
+      "target30": true
+    }
+  ],
+  "invalidSamples": [
+    {
+      "durationMs": 47856.39999999944,
+      "renderFrames": 1531,
+      "nativeFrames": 1816,
+      "renderFps": 31.991541361239413,
+      "nativeRafFps": 37.946857682567455,
+      "averageFrameMs": 31.253398692810578,
+      "p95FrameMs": 63.10000000055879,
+      "metrics": {
+        "calls": 32,
+        "triangles": 7328,
+        "geometries": 60,
+        "textures": 0
+      },
+      "firstRenderTimes": [
+        3618.899999999441,
+        3666.399999999441,
+        3696.0999999996275,
+        3727.199999999255,
+        3761.2999999998137
+      ],
+      "lastRenderTimes": [
+        51262.89999999944,
+        51290.09999999963,
+        51322.89999999944,
+        51333.299999999814,
+        51436.59999999963
+      ],
+      "nodeWallMs": 47861.653600000005,
+      "night": 1,
+      "iteration": 1,
+      "startState": {
+        "tick": 70,
+        "sim_tick": 34,
+        "night": 1,
+        "state": "playing",
+        "time_s": 299.433,
+        "score": 0,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "grounded": true,
+          "flames": 3,
+          "light": 0,
+          "invuln": false,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 25
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": 14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": -14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 30.488024572872465,
+              "y": 0,
+              "z": -12.628553268047956
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": -6.062001655779398e-15,
+              "y": 0,
+              "z": -33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 8.485281374238568,
+              "y": 0,
+              "z": -8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 12,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": 12.628553268047964,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": 33,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": -2.204364238465236e-15,
+              "y": 0,
+              "z": -12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": 30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047963
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -12,
+              "y": 0,
+              "z": 1.4695761589768238e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": -23.334523779156065,
+              "y": 0,
+              "z": 23.33452377915607
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": -12.628553268047954,
+              "y": 0,
+              "z": -30.488024572872465
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": -23.334523779156072,
+              "y": 0,
+              "z": -23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": 23.33452377915606,
+              "y": 0,
+              "z": -23.334523779156072
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -8.48528137423857,
+              "y": 0,
+              "z": 8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -30.48802457287247,
+              "y": 0,
+              "z": -12.628553268047945
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M16",
+            "pos": {
+              "x": 8.485281374238571,
+              "y": 0,
+              "z": 8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": -12.62855326804796,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": 12.62855326804797,
+              "y": 0,
+              "z": -30.488024572872458
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -8.485281374238571,
+              "y": 0,
+              "z": -8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": 23.33452377915607,
+              "y": 0,
+              "z": 23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 1
+          },
+          {
+            "type": "paused"
+          },
+          {
+            "type": "resumed"
+          }
+        ],
+        "campaign_score": 0
+      },
+      "endState": {
+        "tick": 2934,
+        "sim_tick": 2898,
+        "night": 1,
+        "state": "lost",
+        "time_s": 251.7,
+        "score": 0,
+        "end_reason": "no_flames",
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": -11.803538948063672,
+          "y": 0.8611111111111114,
+          "z": -21.38551946340305,
+          "vel": {
+            "x": 4.242640687119277,
+            "y": 3.666666666666669,
+            "z": -4.242640687119277
+          },
+          "grounded": false,
+          "flames": 0,
+          "light": 1,
+          "invuln": true,
+          "dash_cd_s": 0,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 25
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": 14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": -14.7,
+              "y": 0,
+              "z": -20.2
+            },
+            "lit": false,
+            "progress": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": -23.8,
+              "y": 0,
+              "z": 7.7
+            },
+            "lit": false,
+            "progress": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -11.674327650007301,
+              "y": 0,
+              "z": -22.289264336197476
+            },
+            "state": "recoil",
+            "state_ticks_left": 60
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": -20.08602091096507,
+              "y": 0,
+              "z": -10.398511396485327
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": -19.708812655046025,
+              "y": 0,
+              "z": -4.284920067541036
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": -19.548753950302917,
+              "y": 0,
+              "z": -5.5859625425457455
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 0.6026930729212386,
+              "y": 0,
+              "z": -15.196824536497449
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": -13.983961705048713,
+              "y": 0,
+              "z": -19.923328698999107
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M1",
+            "pos": {
+              "x": 30.488024572872465,
+              "y": 0,
+              "z": -12.628553268047956
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M2",
+            "pos": {
+              "x": -6.062001655779398e-15,
+              "y": 0,
+              "z": -33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M3",
+            "pos": {
+              "x": 8.485281374238568,
+              "y": 0,
+              "z": -8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M4",
+            "pos": {
+              "x": 12,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M5",
+            "pos": {
+              "x": 12.628553268047964,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6",
+            "pos": {
+              "x": 33,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7",
+            "pos": {
+              "x": -2.204364238465236e-15,
+              "y": 0,
+              "z": -12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8",
+            "pos": {
+              "x": 30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047963
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9",
+            "pos": {
+              "x": -12,
+              "y": 0,
+              "z": 1.4695761589768238e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10",
+            "pos": {
+              "x": -23.334523779156065,
+              "y": 0,
+              "z": 23.33452377915607
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11",
+            "pos": {
+              "x": -12.628553268047954,
+              "y": 0,
+              "z": -30.488024572872465
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12",
+            "pos": {
+              "x": -23.334523779156072,
+              "y": 0,
+              "z": -23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M13",
+            "pos": {
+              "x": 23.33452377915606,
+              "y": 0,
+              "z": -23.334523779156072
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M14",
+            "pos": {
+              "x": -8.48528137423857,
+              "y": 0,
+              "z": 8.485281374238571
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M15",
+            "pos": {
+              "x": -30.48802457287247,
+              "y": 0,
+              "z": -12.628553268047945
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M17",
+            "pos": {
+              "x": -12.62855326804796,
+              "y": 0,
+              "z": 30.48802457287246
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M18",
+            "pos": {
+              "x": 12.62855326804797,
+              "y": 0,
+              "z": -30.488024572872458
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M19",
+            "pos": {
+              "x": -8.485281374238571,
+              "y": 0,
+              "z": -8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M20",
+            "pos": {
+              "x": 23.33452377915607,
+              "y": 0,
+              "z": 23.334523779156065
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M240",
+            "pos": {
+              "x": 8.485281374238571,
+              "y": 0,
+              "z": 8.48528137423857
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M480",
+            "pos": {
+              "x": 7.347880794884119e-16,
+              "y": 0,
+              "z": 12
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M720",
+            "pos": {
+              "x": 2.0206672185931327e-15,
+              "y": 0,
+              "z": 33
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M960",
+            "pos": {
+              "x": -30.48802457287246,
+              "y": 0,
+              "z": 12.628553268047966
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M1200",
+            "pos": {
+              "x": -33,
+              "y": 0,
+              "z": 4.0413344371862654e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [],
+        "charms": [],
+        "events": [
+          {
+            "type": "night_start",
+            "night": 1
+          },
+          {
+            "type": "paused"
+          },
+          {
+            "type": "resumed"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "mote_picked",
+            "mote_id": "M16"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S1"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S2"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S3"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S4"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S5"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "player_hit",
+            "source": "S3",
+            "lost": 0
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "player_hit",
+            "source": "S4",
+            "lost": 0
+          },
+          {
+            "type": "shade_spawn",
+            "shade_id": "S6"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "jump"
+          },
+          {
+            "type": "player_hit",
+            "source": "S1",
+            "lost": 0
+          }
+        ],
+        "campaign_score": 0
+      },
+      "gameplayContinuous": false,
+      "valid": false,
+      "target30": false
+    }
+  ],
+  "memory": [
+    {
+      "cycle": 1,
+      "heap": {
+        "usedSize": 5614756,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 1144824,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "heap": {
+        "usedSize": 5703236,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 879184,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "heap": {
+        "usedSize": 5705676,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 779056,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "heap": {
+        "usedSize": 5710648,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 1241888,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 5,
+      "heap": {
+        "usedSize": 5710792,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 778952,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    },
+    {
+      "cycle": 6,
+      "heap": {
+        "usedSize": 5801904,
+        "totalSize": 6361088,
+        "embedderHeapUsedSize": 1104240,
+        "backingStorageSize": 893555
+      },
+      "render": {
+        "calls": 24,
+        "triangles": 7414,
+        "geometries": 24,
+        "textures": 0
+      }
+    }
+  ],
+  "limitations": [
+    "SwiftShader is not hardware-GPU evidence",
+    "N1 scenes differ: discarded initial circle died at47.86s; valid native sample moved in a legitimately earned safe zone",
+    "N2/N3 measurement used clock resumed in real time; counters/timestamps are native and no explicit clock advance occurred during samples",
+    "Selected scenes and6 restart cycles do not prove all-path performance or absence of leaks"
+  ]
+}

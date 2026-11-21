@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-11-21T09:13:06.249Z",
+  "source": "docs/proof/phase-2/qa/independent-core.mjs",
+  "output": "docs/proof/phase-2/core/release-final/qa42",
+  "assertions": "Original QA assertions unchanged; only output path redirected",
+  "executor": "Codex/internal automation; not independent remediation acceptance",
+  "exitCode": 0
+}

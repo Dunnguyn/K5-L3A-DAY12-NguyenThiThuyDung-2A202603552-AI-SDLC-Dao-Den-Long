@@ -1,0 +1,371 @@
+{
+  "startedAt": "2026-11-21T07:43:18.408Z",
+  "scope": "Separate QA build with read-only native clocks/render counters/camera/material observations; Core/input/physics unchanged. Reuses delivery navigation driver only, independent oracles/assertions.",
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": [
+    {
+      "id": "QA-E2E settings keyboard and reload persistence",
+      "status": "PASS"
+    },
+    {
+      "id": "QA-E2E autoplay unlock and real master gain",
+      "status": "PASS"
+    }
+  ],
+  "findings": [],
+  "nights": [],
+  "performance": [],
+  "memory": [],
+  "errors": [],
+  "warnings": [
+    "[.WebGL-0x54240060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x54240060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x54240060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x54240060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "browser": "159.0.8154.6",
+  "renderer": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "drawingBuffer": [
+      1280,
+      720
+    ]
+  },
+  "nativeClock": {
+    "rafSource": "function () { [native code] }",
+    "nowSource": "function () { [native code] }"
+  },
+  "audioInitial": {
+    "masterGain": 0.3700000047683716,
+    "musicGain": 0.10504813492298126,
+    "contextState": "running",
+    "unlocked": true,
+    "playing": true,
+    "volume": 0.37,
+    "eventCounts": {
+      "night_start": 1
+    }
+  },
+  "audioMuted": {
+    "masterGain": 0.1361861377954483,
+    "musicGain": 0.06371492147445679,
+    "contextState": "running",
+    "unlocked": true,
+    "playing": false,
+    "volume": 0,
+    "eventCounts": {
+      "night_start": 1,
+      "paused": 1
+    }
+  },
+  "functionalPassed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(report.audioMuted.masterGain<.005)\n\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/docs/proof/phase-2/remediation/browser-regression.mjs:57:497",
+  "failureState": {
+    "tick": 50,
+    "sim_tick": 14,
+    "night": 1,
+    "state": "paused",
+    "time_s": 299.767,
+    "score": 0,
+    "end_reason": null,
+    "wind": {
+      "active": false,
+      "dir_deg": 0
+    },
+    "player": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 0,
+      "invuln": false,
+      "dash_cd_s": 0,
+      "pulse_cd_s": 0,
+      "charm_s": 0
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L2",
+        "pos": {
+          "x": 23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L3",
+        "pos": {
+          "x": 14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L4",
+        "pos": {
+          "x": -14.7,
+          "y": 0,
+          "z": -20.2
+        },
+        "lit": false,
+        "progress": 0
+      },
+      {
+        "id": "L5",
+        "pos": {
+          "x": -23.8,
+          "y": 0,
+          "z": 7.7
+        },
+        "lit": false,
+        "progress": 0
+      }
+    ],
+    "shades": [],
+    "motes": [
+      {
+        "id": "M1",
+        "pos": {
+          "x": 30.488024572872465,
+          "y": 0,
+          "z": -12.628553268047956
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M2",
+        "pos": {
+          "x": -6.062001655779398e-15,
+          "y": 0,
+          "z": -33
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M3",
+        "pos": {
+          "x": 8.485281374238568,
+          "y": 0,
+          "z": -8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M4",
+        "pos": {
+          "x": 12,
+          "y": 0,
+          "z": 0
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M5",
+        "pos": {
+          "x": 12.628553268047964,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M6",
+        "pos": {
+          "x": 33,
+          "y": 0,
+          "z": 0
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M7",
+        "pos": {
+          "x": -2.204364238465236e-15,
+          "y": 0,
+          "z": -12
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M8",
+        "pos": {
+          "x": 30.48802457287246,
+          "y": 0,
+          "z": 12.628553268047963
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M9",
+        "pos": {
+          "x": -12,
+          "y": 0,
+          "z": 1.4695761589768238e-15
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M10",
+        "pos": {
+          "x": -23.334523779156065,
+          "y": 0,
+          "z": 23.33452377915607
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M11",
+        "pos": {
+          "x": -12.628553268047954,
+          "y": 0,
+          "z": -30.488024572872465
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M12",
+        "pos": {
+          "x": -23.334523779156072,
+          "y": 0,
+          "z": -23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M13",
+        "pos": {
+          "x": 23.33452377915606,
+          "y": 0,
+          "z": -23.334523779156072
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M14",
+        "pos": {
+          "x": -8.48528137423857,
+          "y": 0,
+          "z": 8.485281374238571
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M15",
+        "pos": {
+          "x": -30.48802457287247,
+          "y": 0,
+          "z": -12.628553268047945
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M16",
+        "pos": {
+          "x": 8.485281374238571,
+          "y": 0,
+          "z": 8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M17",
+        "pos": {
+          "x": -12.62855326804796,
+          "y": 0,
+          "z": 30.48802457287246
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M18",
+        "pos": {
+          "x": 12.62855326804797,
+          "y": 0,
+          "z": -30.488024572872458
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M19",
+        "pos": {
+          "x": -8.485281374238571,
+          "y": 0,
+          "z": -8.48528137423857
+        },
+        "kind": "random",
+        "ttl_s": null
+      },
+      {
+        "id": "M20",
+        "pos": {
+          "x": 23.33452377915607,
+          "y": 0,
+          "z": 23.334523779156065
+        },
+        "kind": "random",
+        "ttl_s": null
+      }
+    ],
+    "drifters": [],
+    "charms": [],
+    "events": [
+      {
+        "type": "night_start",
+        "night": 1
+      },
+      {
+        "type": "paused"
+      }
+    ],
+    "campaign_score": 0
+  },
+  "finishedAt": "2026-11-21T07:43:23.639Z"
+}

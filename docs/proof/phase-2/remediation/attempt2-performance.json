@@ -1,0 +1,23 @@
+{
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "browser": "159.0.8154.6",
+  "renderer": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "drawingBuffer": [
+      1280,
+      720
+    ]
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "sampling": "Real Node wall clock >=60s; original native performance.now and native RAF captured before clock installation; actual render-call timestamps counted after renderer.render. No clock advances/screenshots/GC during samples.",
+  "samples": [],
+  "memory": []
+}

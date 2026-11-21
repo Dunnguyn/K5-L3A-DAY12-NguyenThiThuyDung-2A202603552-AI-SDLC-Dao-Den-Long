@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+const dir='docs/proof/phase-2/remediation';
+let p=`${dir}/vite.qa.config.mjs`,s=fs.readFileSync(p,'utf8');s=s.replace('palette:{...M},metrics:',"shadeBatches:shadeInstances?.meshes.map((m,i)=>({role:['normal','stunned','eyes'][i],count:m.count,geometry:m.geometry.parameters,color:'#'+m.material.color.getHexString(),emissive:'#'+m.material.emissive.getHexString(),matrices:Array.from(m.instanceMatrix.array.slice(0,m.count*16))}))??[],palette:{...M},metrics:");fs.writeFileSync(p,s);
+p=`${dir}/browser-regression.mjs`;s=fs.readFileSync(p,'utf8');s=s.replace('const lit=s.lanterns.filter(l=>l.lit).length;',`if(s.night===3&&s.shades.length&&render.shadeBatches.length){
+ const batches=render.shadeBatches;assert.equal(batches[0].count+batches[1].count,s.shades.length);assert.equal(batches[2].count,s.shades.length*2);
+ for(let b=0;b<2;b++){const batch=batches[b],items=s.shades.filter(e=>(e.state==='stunned')===(b===1));assert.equal(batch.geometry.radius,.67);assert.equal(batch.geometry.widthSegments,12);assert.equal(batch.geometry.heightSegments,9);assert.equal(batch.color.toUpperCase(),b===0?'#120A1A':'#3A3450');assert.equal(batch.emissive.toUpperCase(),b===0?'#7A3CFF':'#3A3450');for(let i=0;i<items.length;i++){const m=batch.matrices.slice(i*16,i*16+16),e=items[i];assert.ok(Math.abs(m[12]-e.pos.x)<=.057);assert.ok(Math.abs(m[13]-(e.pos.y+.7))<=.003);assert.ok(Math.abs(m[14]-e.pos.z)<.0001);assert.ok(Math.abs(Math.hypot(m[4],m[5],m[6])-1.15)<.0001);}}
+ assert.equal(batches[2].geometry.radius,.09);assert.equal(batches[2].color.toUpperCase(),'#FFE58A');report.instanceProof={tick:s.sim_tick,counts:batches.map(b=>b.count),geometry:batches.map(b=>b.geometry),colors:batches.map(b=>[b.color,b.emissive]),metrics:render.metrics};
+ }const lit=s.lanterns.filter(l=>l.lit).length;`);fs.writeFileSync(p,s);
+console.log('Read-only assertions cover actual instance counts, GPU matrices, sphere topology and materials against Core snapshots.');

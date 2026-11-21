@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+const dir='docs/proof/phase-2/remediation',read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const boundary=read(`${dir}/final-boundaries/boundaries.json`),results=read(`${dir}/regression-results.json`);assert.equal(boundary.passed,true);
+results.finalBoundaryCheck={passed:true,evidence:'final-boundaries/boundaries.json'};results.visualReview={method:'Static screenshots inspected; not manual full-game play or subjective audio listening',screenshots:['screenshots/qa-partial-charge.png','screenshots/qa-full-campaign-dawn.png','regression-render-final/existing-browser/night-3-gust.png']};
+fs.writeFileSync(`${dir}/regression-results.json`,JSON.stringify(results,null,2)+'\n');
+fs.appendFileSync(`${dir}/defect-resolution.md`,'\nFinal boundary rerun passed:30-second danger blink,10-slot HUD/offscreen arrow, readable countdown, natural dawn loss and exactly10 audio countdown cues. Static screenshot inspection confirmed readable HUD after blur removal, the partial-charge hint and actual Binh Minh total4872. Exact Drifter overlap remains Core/CLI-scoped; no browser coincidence was manufactured.\n');
+fs.appendFileSync(`${dir}/before-after.md`,'\nDiagnostic route-trace.json/log files were used only to debug input decisions. Their velocity/waypoint object references are not atomic per-tick observations and must not be treated as acceptance trajectory evidence. Acceptance relies on immutable CLI outputs, independent assertions and atomic browser observations.\n');
+const before=read(`${dir}/before.json`),historical=read('docs/proof/phase-2/qa/workspace-before.json'),authorized=new Set(['src/core/game.js','src/data/worlds.js','src/browser/app.js','src/browser/app.css','src/browser/renderer.js','src/headless/adapter.js','scripts/browser-route.mjs','scripts/phase2-campaign.mjs','docs/notes/phase-2.md','docs/notes/AI_USAGE.md']);
+const files=[...new Map([...before.protectedFiles,...historical.files.filter(f=>!authorized.has(f.path))].map(f=>[f.path,f])).values()];
+const changed=files.filter(f=>!fs.existsSync(f.path)||crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex')!==f.sha256);assert.deepEqual(changed,[]);
+assert.equal(fs.readFileSync(`${dir}/independent-core.mjs`,'utf8'),fs.readFileSync('docs/proof/phase-2/qa/independent-core.mjs','utf8').replaceAll('docs/proof/phase-2/qa',dir));
+const git=args=>spawnSync('git',args,{encoding:'utf8',maxBuffer:32e6}),check=git(['diff','--check']),tag=git(['rev-parse','phase-1^{commit}']).stdout.trim();assert.equal(check.status,0);assert.equal(tag,before.tag);
+const seal={timestamp:new Date().toISOString(),protectedFiles:files.length,changed,originalQaAssertionsUnchanged:true,head:git(['rev-parse','HEAD']).stdout.trim(),phase1:tag,trackingComparison:git(['rev-list','--left-right','--count','origin/main...HEAD']).stdout.trim(),diffCheck:{exit:check.status,stdout:check.stdout,stderr:check.stderr},status:git(['status','--short','--branch']).stdout};
+fs.writeFileSync(`${dir}/final-git.json`,JSON.stringify(seal,null,2)+'\n');fs.writeFileSync(`${dir}/final-working-tree.diff`,git(['diff','--binary']).stdout);
+console.log(JSON.stringify({verdict:results.verdict,unit:results.unit,qa:results.independent.after,rtm:results.rtm,boundaries:true,preserved:files.length,gitDiffCheck:check.status,head:seal.head,tracking:seal.trackingComparison}));

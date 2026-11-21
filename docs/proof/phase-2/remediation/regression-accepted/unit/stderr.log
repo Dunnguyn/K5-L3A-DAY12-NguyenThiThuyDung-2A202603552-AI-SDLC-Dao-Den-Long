@@ -1,0 +1,14 @@
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/remediation.test.js > acceptance driver abandons a lamp destination if theft/pulse empties its bag
+AssertionError: expected 'mote' to be 'lamp' // Object.is equality
+
+Expected: "lamp"
+Received: "mote"
+
+ ❯ tests/remediation.test.js:9:184
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

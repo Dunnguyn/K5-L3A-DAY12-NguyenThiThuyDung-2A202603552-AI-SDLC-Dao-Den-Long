@@ -1,0 +1,2015 @@
+{
+  "timestamp": "2026-11-21T04:34:26.340Z",
+  "files": [
+    {
+      "path": ".agents/skills/verify-game/SKILL.md",
+      "bytes": 2399,
+      "sha256": "6426d4d6cb62f156f91d53311e7ab0f19018daa335106153cecfcb629c387b4f"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 218,
+      "sha256": "6d3a915c2839e74284bf1311938f8149f67da5a65677b92386303a322b369a62"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 815,
+      "sha256": "709a163ab9750c84024804a3feac6684e80703cee1660ffb1acb2640b8507af9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 97,
+      "sha256": "35ab89ebcb8825284cc643ea469f01d82c3d8145dfb2c3ce3ebef5ae81b3f258"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2352,
+      "sha256": "67e8f7d42efd12d9e462a784478ef75af304d8c4c8fee3f455a85b850f152849"
+    },
+    {
+      "path": "CHECKPOINTS.md",
+      "bytes": 7843,
+      "sha256": "af8ddd2ddbff0e271475e16980267776baaf709260a0eb5abb1184ba5bd7faf5"
+    },
+    {
+      "path": "CREDITS.md",
+      "bytes": 446,
+      "sha256": "658063cb2391848914737b5b829f75bd60b5ee8ff1907df0f5978163dfd7722f"
+    },
+    {
+      "path": "docs/notes/AI_USAGE.md",
+      "bytes": 9732,
+      "sha256": "9e607909de62724ec5696fcf04f9c07a458a551d46003d863675da0660fe44a8"
+    },
+    {
+      "path": "docs/notes/phase-1.md",
+      "bytes": 25270,
+      "sha256": "795bcb709b92dd106698a4f193040bad365103ab48a8fa4d7e618f9ec6c729f7"
+    },
+    {
+      "path": "docs/notes/phase-2.md",
+      "bytes": 41336,
+      "sha256": "fe270fb9e3f9407aaa9da71d9a1a56348cf932e91d6bd634589863fc737c6178"
+    },
+    {
+      "path": "docs/proof/phase-1/browser-game.png",
+      "bytes": 98679,
+      "sha256": "8490a4dd75d68da5f77e887d45aae5dfff6290352a56ee897f23b7f6a8c09dcb"
+    },
+    {
+      "path": "docs/proof/phase-1/browser-jump.png",
+      "bytes": 99739,
+      "sha256": "176d065fa3b68fb842b4bb0c376f288ea4188520f6aef668e5c76832d531c0a9"
+    },
+    {
+      "path": "docs/proof/phase-1/browser-loss.png",
+      "bytes": 275340,
+      "sha256": "9175e8a94c262a5ed08892a20c6c595af8c31cd06517acd055f0b65aec3a19c1"
+    },
+    {
+      "path": "docs/proof/phase-1/browser-start.png",
+      "bytes": 268871,
+      "sha256": "c34b63e6d5fd3007a57fc0b99c9b8486aebba202ccf372ff0b55f4c60e3b858a"
+    },
+    {
+      "path": "docs/proof/phase-1/browser.json",
+      "bytes": 871,
+      "sha256": "6bcb4fab63bd7f62def7323c34d472d1d2b29f98819475a0603a796275ae0030"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/audit.json",
+      "bytes": 330,
+      "sha256": "83636067a2af126d8cc4f7501e2c46c94a78ed1854c0255a49df2459afab3144"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/commands.json",
+      "bytes": 3673,
+      "sha256": "03c834668572d5e39d411fce6aae8e302141a6539914a5c253152e92e7a200b4"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/independent.mjs",
+      "bytes": 6617,
+      "sha256": "4655fa737c7efddc528c07e8990368fa6050e66fc0702bfc1188455541f8fca7"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/loss.expected.json",
+      "bytes": 38,
+      "sha256": "9ec8a242a31cd0c9690debe739a844f7b100ce6157ec10f7c507256a3c6fd838"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/staged-audit-attempt-1.json",
+      "bytes": 354,
+      "sha256": "235a6c8f29d510a16cbf7e0e732ec62345ffca1306c290b02eef71a6a02fd709"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/staged-audit.json",
+      "bytes": 354,
+      "sha256": "42a8a816afca806f39689c1ce5e12162fdf3c8973e09d149e5e248cfbbbb2a40"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/test-results.json",
+      "bytes": 5109,
+      "sha256": "b5ca46969fcc3ede9122fdd252eed7c285c4e12d9b3a8cff61b197c403873a37"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/verification.json",
+      "bytes": 2748,
+      "sha256": "feda0714935982b06bbc0cd5e5464647c1500d1f481d6354461b59a1e3a439e2"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/win.expected.json",
+      "bytes": 37,
+      "sha256": "eef669d1b3ac18a410bea28b3dade63db76f64aba152ea699df0f8962eb56dc3"
+    },
+    {
+      "path": "docs/proof/phase-1/final-handover/win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/proof/phase-1/loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-1/loss.expected.json",
+      "bytes": 38,
+      "sha256": "9ec8a242a31cd0c9690debe739a844f7b100ce6157ec10f7c507256a3c6fd838"
+    },
+    {
+      "path": "docs/proof/phase-1/loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/attempt-1-images/browser-camera.png",
+      "bytes": 106662,
+      "sha256": "dbaa8b449fa66b8b8221f0d9269e5f60f018c28dc4fbca5cecd6bcfefcdf1aae"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/attempt-1-images/browser-glow.png",
+      "bytes": 123581,
+      "sha256": "651a00ef517a2eb3412daafaffafe2a97fb181cde12c9d1f1d5d91ad62da220e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/attempt-1-images/browser-loss.png",
+      "bytes": 265757,
+      "sha256": "7677a1682567b2e0fa2d300def83e407ee6b1c57e13ccf0f88c287b89be75f7b"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/attempt-1-images/browser-one-lantern.png",
+      "bytes": 133941,
+      "sha256": "f7bec7b349fabbb667f230fd572e18ad54595a42da14289d9a81c425a8495748"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/attempt-1-images/browser-start.png",
+      "bytes": 268902,
+      "sha256": "b4d63527e67c815672f35063cb6a7090fe6e153470942814ee1a12f49f632416"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-acceptance.mjs",
+      "bytes": 9483,
+      "sha256": "98d0cf307111eefd96880d72d8e734047641a684e5e50ffb43510c84f7e922d3"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-attempt-1.json",
+      "bytes": 43160,
+      "sha256": "ac9324891d538ec23a23d36dcdfab2b7a6e69cd7a4deb389bfce4b59e27d7f06"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-attempt-2.json",
+      "bytes": 43160,
+      "sha256": "ac9324891d538ec23a23d36dcdfab2b7a6e69cd7a4deb389bfce4b59e27d7f06"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-camera.png",
+      "bytes": 117474,
+      "sha256": "f8eb9ce388e6283af036b5cdf942c1804d134c59dcd2cbf844c793472c05fedb"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-glow.png",
+      "bytes": 124457,
+      "sha256": "b0b0939431b3ab176fc59cf16b4aec1873b6a184defd0f46e5130a57b4fb91cf"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-loss.png",
+      "bytes": 265870,
+      "sha256": "04950f3546b1f3760caa499d0773d7171ae1af52a0dd796ffc922fac25d5aa33"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-one-lantern.png",
+      "bytes": 131782,
+      "sha256": "80c871f38e2df17a40c4df9258d8715581a586eaf36ccb26bbf62f73fc4bffdc"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-restart.png",
+      "bytes": 96512,
+      "sha256": "c18519e7c59699cbfd8cdbd2a4288a005221cef03dc4c772fb240301477edf94"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-results.json",
+      "bytes": 63635,
+      "sha256": "5668450b0ede710cceea8a264ff0937dc0ecca26a4869c49c39c85d4db3b374f"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-start.png",
+      "bytes": 268829,
+      "sha256": "5d14d40925e98cea64f138ee20faf144ea3d7af34dd01ba78f22d4a58a4abff6"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/browser-win.png",
+      "bytes": 261912,
+      "sha256": "e1f2a272f0da5eb4cdcb75449bf68554b10ea95557d83670ecf06d01665779a3"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/command-attempt-1.json",
+      "bytes": 12586,
+      "sha256": "026ef5ab73cbffdc9eb5f3d70ae55d38eefdb3107ace84f9309172d15a9ec070"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/command-results.json",
+      "bytes": 14721,
+      "sha256": "e17eced68c43d053e4755df194eda48ed1e361dbadf5475d7daa3e30de8f1a33"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/contract-audit.md",
+      "bytes": 3174,
+      "sha256": "c7c3aecd2b01daad782ee95bb4b72c85232c5034f037912250877fa572d1987e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/independent.mjs",
+      "bytes": 6605,
+      "sha256": "3f26899789d55581f19c1d5cc7a7db61df91006f58ebadeb5f39e746a5cee46e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/npm-headless.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/npm-headless.stdout.txt",
+      "bytes": 4364,
+      "sha256": "902866366dd27dc3380b7110ca61501ec5efcb0fbe7241d6b9d68871d0530b6e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/performance-attempt-1.json",
+      "bytes": 4448,
+      "sha256": "7846058110bea68349ec5e2bc48520049c95c65dd3499d2a9d5aaaaebdae4511"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/performance.json",
+      "bytes": 4328,
+      "sha256": "29645751e671d5ff87fbad6706d99a9dc55f458b5a917a53922123e519fb9a7e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/browser.json",
+      "bytes": 871,
+      "sha256": "a2758e128a541f7b8cd9405cfe186e0bf936c429bc0d6ca11cb5c2e4e072007d"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/loss.expected.json",
+      "bytes": 38,
+      "sha256": "9ec8a242a31cd0c9690debe739a844f7b100ce6157ec10f7c507256a3c6fd838"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/verification.json",
+      "bytes": 2747,
+      "sha256": "8356743808e8ca9cd868f49a23b8f05fbc39646c21a933698d97fe7b705e776e"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/win.expected.json",
+      "bytes": 37,
+      "sha256": "eef669d1b3ac18a410bea28b3dade63db76f64aba152ea699df0f8962eb56dc3"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/prior-evidence/win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/provenance.json",
+      "bytes": 2364,
+      "sha256": "2aba12b3ca07f0cabf3a5235491b86217bb69a24b795c832c2d073e96429456b"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/provenance.mjs",
+      "bytes": 1587,
+      "sha256": "23c637170bb5a526ebe4b94e1b4f042d40042b79461d38aa7936dc7ed05f6854"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/requirements.json",
+      "bytes": 9982,
+      "sha256": "336ff848065fe8f36fe03aaaeccc207fae78ed50f0d67e88836476f83889a11c"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/review.md",
+      "bytes": 15554,
+      "sha256": "05c0e9ba1d477d5cc1535bb1d63f65a25dd036f127c6e751a27e21fe685f6869"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/run-checks.mjs",
+      "bytes": 1815,
+      "sha256": "8e45e4831eb4e44e929a2ff64287e736c51cff164941c57832492a290f62d573"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/test-results.json",
+      "bytes": 5797,
+      "sha256": "f9892b96e15722f9b958ca5e878281eda7fbc8f2e8beb61b3e7facbe5212c3fc"
+    },
+    {
+      "path": "docs/proof/phase-1/qa/write-review.mjs",
+      "bytes": 17040,
+      "sha256": "3c921a967b6726edaca592f9d4e457ef3193013badc4f31dcdd0ebfe8eb2e701"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/baseline-loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/baseline-loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/baseline-win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/baseline-win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/before-test-results.json",
+      "bytes": 5824,
+      "sha256": "456db9e88f0efd2e64fdacf67f3e5e4cb8f6eb21d23c0e5c4e01c528f0a34e9c"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-acceptance.mjs",
+      "bytes": 9492,
+      "sha256": "dd540adc48098171d93691445a2d2df583d54d9decb7a4409c0a1315b3b49799"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-camera.png",
+      "bytes": 117002,
+      "sha256": "c010e66f571559ec314465d071ede1b23ad1b656900ba9a0bdfa3e2f33d96f9f"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-game.png",
+      "bytes": 100899,
+      "sha256": "40f28641bbfbcfd1679c9c267735e060f36bf13c6985fa8cfa9b7bbb9d612c33"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-glow.png",
+      "bytes": 124366,
+      "sha256": "4653fce982e65767f554f4bcc6204cb6295f1c567790083580ff3ea8b9effa0c"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-jump.png",
+      "bytes": 97992,
+      "sha256": "458743cce24fefb5ef15ea23ad27356cb294572a6945528c86dc9ded2389b386"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-loss.png",
+      "bytes": 265424,
+      "sha256": "c3d62359094e70eb56368f19a5d76a4e41cffd9ddc6222ea6c19e85b1d20f92e"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-one-lantern.png",
+      "bytes": 131893,
+      "sha256": "71f9bc145bd2fb828cdb8f2d2e6811d2cbe713ec92a8cec2baba6ecdc1d1b907"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-restart.png",
+      "bytes": 96248,
+      "sha256": "b45299ae605f3e46df7e5a7b86d744f31ce2aca46d5375d847d9389ef5771da5"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-results.json",
+      "bytes": 63635,
+      "sha256": "22ab4f37589649ce88efdc5da35ea9b45ad9660aebeea48d245212e9ff104e64"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-start.png",
+      "bytes": 268186,
+      "sha256": "f198960c73e7391e4bb56f250b7d50b7055e2dd29d45b06445d8e2e0fa7c94dd"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser-win.png",
+      "bytes": 261743,
+      "sha256": "f82a32bfa8addd8b84f0f81ae8678bc33c453bfd9f0159c3af7272c089c23f27"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/browser.json",
+      "bytes": 871,
+      "sha256": "7f5a622c6b0b5d9b365d396f2cc63173984aecc79596e0b037438ca6da523e85"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/cli-parity.json",
+      "bytes": 551,
+      "sha256": "86aadbb44fff39ae4e444ddd2e1ff1075556ca5b27ba16eb274a0c66d379e7b1"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/commands.json",
+      "bytes": 27007,
+      "sha256": "16f30ce3b422d00ccefab92a848c0b991259670f2fa3c91aa2e983a2439249a1"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/contract-platform-audit.md",
+      "bytes": 2009,
+      "sha256": "b8a3d985d7e1b0f6ab01ed6ad542fdab2796a8f778aec7d00f54a9b8b4c767a3"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/hardware-probe.json",
+      "bytes": 538,
+      "sha256": "fe4765f7c1268a0f197e79845dfde33bfa7cb56ea3933e7422ab4de06a2492a6"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/independent.mjs",
+      "bytes": 6614,
+      "sha256": "7f7e65112da45b4b723bac2e1b1809d07ffed11d1c3a78929dcc5546f8d3f257"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/loss.expected.json",
+      "bytes": 38,
+      "sha256": "9ec8a242a31cd0c9690debe739a844f7b100ce6157ec10f7c507256a3c6fd838"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/performance.json",
+      "bytes": 4170,
+      "sha256": "d53515030f4ffc56df0d2d00a11877071e633860a143d0a52bfef27dc64ef4d7"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/preservation.json",
+      "bytes": 131,
+      "sha256": "c2d912cd724524ad4ff434828081d35ebc32ed7016ed42a6c3b390b348410089"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/qa-original-hashes.json",
+      "bytes": 4639,
+      "sha256": "56311b0448eaf40fd36ba19f440c38f8d3d0cea0c5260f5ee57495937ea0871a"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/report.md",
+      "bytes": 4754,
+      "sha256": "94f71371a1b93ef19b90f38c79c4a25d585c5bfbfa9965cdb91bed59ae0cda3c"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/requirements.json",
+      "bytes": 13821,
+      "sha256": "63221e9ff08273d9cd6beccbbee39af89c26dfe96dfbddb2ffd5eb03573c9524"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/rtm.md",
+      "bytes": 5346,
+      "sha256": "201e28250a508b0ab86f18a366dd1b061a75c8b6d64fdae9dc09476b821212d1"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/test-results.json",
+      "bytes": 5109,
+      "sha256": "7e30919cc901c2337a9a7ae92994cd17989f332b30290812f604917100e953ba"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/verification.json",
+      "bytes": 2748,
+      "sha256": "6805e9868605e66d4915d90086c8a399326b65805e869aeb9290f907f702a07f"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/win.expected.json",
+      "bytes": 37,
+      "sha256": "eef669d1b3ac18a410bea28b3dade63db76f64aba152ea699df0f8962eb56dc3"
+    },
+    {
+      "path": "docs/proof/phase-1/remediation/win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/proof/phase-1/verification.json",
+      "bytes": 2748,
+      "sha256": "8042306400475ce9f996a67ddd2b7f54cb3f6cf9e5c87995e2d0719083abe262"
+    },
+    {
+      "path": "docs/proof/phase-1/win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-1/win.expected.json",
+      "bytes": 37,
+      "sha256": "eef669d1b3ac18a410bea28b3dade63db76f64aba152ea699df0f8962eb56dc3"
+    },
+    {
+      "path": "docs/proof/phase-1/win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/browser-console.json",
+      "bytes": 568,
+      "sha256": "852384e2e17e7ebe4f031392db23a36b0872c6e3e6ce5a71920f8032d25566c9"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/browser-e2e.json",
+      "bytes": 6860,
+      "sha256": "58f10b3d25a6fcff648d9d26cbf7c1a5bbe60ddfec771b8f64cd048a08f043ac"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-01-menu.png",
+      "bytes": 194878,
+      "sha256": "89f6b7932c3473bbbd234381d072d6f072291bcee0d621f8ccb0ea249aaf7143"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-01-night-intro.png",
+      "bytes": 200398,
+      "sha256": "da8bb7374e79d3fa4bf38edaed54fbbe5bef3750c7930396e59c3670db613d20"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-07-paused.png",
+      "bytes": 241510,
+      "sha256": "3fbbcd2c08776d3ae9cb04830fa80d702e225a37f2c055aa9ed2bc669fac6ab4"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-08-settings.png",
+      "bytes": 179060,
+      "sha256": "56a0a910c1c6306392f1873cdfa0acac3fe9e92e66fb4894122b9ad2df795c48"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-09-dash.png",
+      "bytes": 102473,
+      "sha256": "5580405b6141ac1c42d5e8247fb74cfd0948ae648a13a600b64722d52dc6db24"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-09-pulse.png",
+      "bytes": 90319,
+      "sha256": "3c984d441d729174cc589aa2b9bb821c7ef4e2fa6ea3bffdfef52c5d9770a6a5"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/e2e-10-camera.png",
+      "bytes": 97017,
+      "sha256": "245a8f3aad09bf3c2265bfadd4bdb4f38613d6ea0e42eae48468f798f8db46f6"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/failure.png",
+      "bytes": 79912,
+      "sha256": "6dfc58394cf4111103bbbffb8cc93597f11fea79b5c6131e655afed2dc5fa7ac"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-1/browser-e2e.json",
+      "bytes": 7062,
+      "sha256": "6b0cf3932b6a20f459714e67a36ef6b6c4795d221308ac7880ef3cb546c03ee2"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-1/failure.png",
+      "bytes": 192671,
+      "sha256": "96256a1c9d3b0e9c8c17c712d033f9db651c9f5dbe7dd4c28e0ea9c23b6633c9"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-1/menu.png",
+      "bytes": 207379,
+      "sha256": "c8cbd1e6c0768d0a5407e867a6570149959a7126dccd0cff75592c9acb64d3cc"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-1.log",
+      "bytes": 784,
+      "sha256": "8afc01cc2ec1c87d06cd4e22fc1bbec3fe3a6cf1a20018a210d88ccacd0cc221"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2/browser-e2e.json",
+      "bytes": 8026,
+      "sha256": "6b8f439c6e6ad0366ffa60435de9d02428f61d46896edf201a105f7a7c596248"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2/failure.png",
+      "bytes": 235250,
+      "sha256": "a4bf9f65ee7b40de19e8376b1d3da75a4a81259a61bf7c9523149b519845dc9d"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2/menu.png",
+      "bytes": 207154,
+      "sha256": "4b00c76dfaff5b1770430445a6c14d0a22697e008c07f0bacdafacc4ea3a0eee"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2/night-1-intro.png",
+      "bytes": 214326,
+      "sha256": "4a68c43f52ff98b3a47d2b8ae1da91728e97496e6d06d432338a47e6f5e18786"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2/settings-persistence.png",
+      "bytes": 192820,
+      "sha256": "5dd5a218751b38caca940d4613a8f8364287950ea122cb6d7aa13395558c285b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-2.log",
+      "bytes": 1086,
+      "sha256": "a466a3c12be950463779b71516faaff34c45d61a17db94769cfe0274ace34f2f"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/browser-e2e.json",
+      "bytes": 126868,
+      "sha256": "c7f8bf2a25c3e2be601259b037068eda732df511af8f0797dfadbe57dc34ac85"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/camera-drag.png",
+      "bytes": 59569,
+      "sha256": "28ec26b1f7f64b1efd4fe532b47d42193bfea17b9abeb642667ee1fe2b531018"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/menu.png",
+      "bytes": 207189,
+      "sha256": "80d666a52a4452a097f12704846fe0c657575f16a25e8ba679a1a01051201033"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/natural-loss.png",
+      "bytes": 266717,
+      "sha256": "527f6358c8ecb15f518047d9fd6b579b1f60872b330c83b0228ce063863e1370"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/night-1-intro.png",
+      "bytes": 214333,
+      "sha256": "8294bccf5459d98a73e057f6d41ad4269be3f124ed221ca2ee905c9abe1d10e3"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/pause.png",
+      "bytes": 233117,
+      "sha256": "a4a46ca653161467c5f886a3c70af9c81d41089420d883bc6a11f0ae47ca7bdc"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3/settings-persistence.png",
+      "bytes": 192698,
+      "sha256": "ff9ca9918bd41cb56295d29da8fdced00617e26d4813fe30a658c5e62712d1a6"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-3.log",
+      "bytes": 2520,
+      "sha256": "925390f8e9d95b41f7f805c7bdc8b85b9622f70fe353557dedf86e87feb990a4"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/browser-e2e.json",
+      "bytes": 1342395,
+      "sha256": "dc4376281de74e8df24853b7f7ba407050df3f5194990e7dc32c840368358ded"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/camera-drag.png",
+      "bytes": 59603,
+      "sha256": "f5b241f4239425e1fa9fbc0f726f16932c5ee3dd710ea40a5e8dace681f372b7"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/menu.png",
+      "bytes": 207353,
+      "sha256": "15d02b2d74c61cbdf210954c977902e4e9d3f70069e20c53bba940033783297f"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/natural-loss.png",
+      "bytes": 252316,
+      "sha256": "d38aef2396b0bbc2aee7572d049fcf01effdd79f7099a37cdb614cfb6409fe78"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/night-1-intro.png",
+      "bytes": 214303,
+      "sha256": "b9387195be7bcfee082a6aa061cd9d04d334f05ddc9141bd2cbdd557a77aa7ac"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/pause.png",
+      "bytes": 233111,
+      "sha256": "031c48573e9705c588e8923dfd9a199e518762bd67ec548f7a80096338d5b17c"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4/settings-persistence.png",
+      "bytes": 192843,
+      "sha256": "8f61c7fd7c6a28c7c8ac80c40e3960d49021096e6c9bcded5ed22af416ddf293"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4-interruption.json",
+      "bytes": 346,
+      "sha256": "2871af8d44b3f88639b14d2d557abeb6edcc21dec931701bedaa40ef48509d69"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-4.log",
+      "bytes": 4808,
+      "sha256": "479acc128f6394d0bc1611331ac687c4f2edc6556545a3b6a1360de6db9ca34b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/browser-e2e.json",
+      "bytes": 727310,
+      "sha256": "3715c9f3fc9f65870bd439baaeec7b3553ef9088d5da6777b73fd8a93a4ae4de"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/camera-drag.png",
+      "bytes": 59538,
+      "sha256": "7b880c33632dedb63ec4fdd409ccc12d81d07bf35c8f7e3dac7a9d3df50c2e48"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/failure.png",
+      "bytes": 81009,
+      "sha256": "fe048fbaa644606cf97fb09025bc59c2deab0eb17445cd47e1933c9c4b894a1b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/menu.png",
+      "bytes": 207179,
+      "sha256": "2d2552dcf3373cb3715f172408e95c88f5292a52642b0a118ff596d6e617b519"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/natural-loss.png",
+      "bytes": 265863,
+      "sha256": "8ad798dde32ee6cb9329eb3ce3b538b3b224569e169eb5f05040e8f5155005dd"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/night-1-attempt-1-won.png",
+      "bytes": 213653,
+      "sha256": "373bf5c09ad304271261da5548748932bb3983de6c1ff7450e41572f881e02b8"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/night-1-intro.png",
+      "bytes": 214367,
+      "sha256": "9b2db09b4cf0fb83f9c7f6dd14daef605277b14c417b75395edbc416e84492a5"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/night-2-intro.png",
+      "bytes": 224146,
+      "sha256": "ef6de822ed799217ce75acfb5abc6cada331ba916a310673a4167240e588c03f"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/pause.png",
+      "bytes": 233748,
+      "sha256": "1f5908980d3d6c0f4bc4b391f07d4f36ebc3ede44cd4baa56d42f3bdae7889de"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5/settings-persistence.png",
+      "bytes": 192724,
+      "sha256": "62362f99a924d665c68b7e450fb6c23655961d55dde086affebfec3c8e84f36c"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-5.log",
+      "bytes": 6128,
+      "sha256": "90837b6e7574ba84e10f19c0e02b3acd7d79b839e3be10383c11896478d8c6dc"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/browser-e2e.json",
+      "bytes": 2563980,
+      "sha256": "dd2bc4f9d9f571383871fcac14314391121e27e5ef062f302c4c6eec49bbfa3b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/camera-drag.png",
+      "bytes": 59675,
+      "sha256": "55d7e2dae0d3391d26e7e8299c7c83d6fd7a7e88c38278621c60172cc1d1fe9f"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/full-campaign-dawn.png",
+      "bytes": 194666,
+      "sha256": "7973999b0b5d2c7f2ee64049f39ba6a1641810365746e3f6ae7a1f93bc2963ba"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/menu.png",
+      "bytes": 207179,
+      "sha256": "2d2552dcf3373cb3715f172408e95c88f5292a52642b0a118ff596d6e617b519"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/natural-loss.png",
+      "bytes": 252302,
+      "sha256": "c3f49a18d8b4913a5e3ff6e4653e360536591a3f9a671993e71c847b7e087908"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-1-attempt-1-won.png",
+      "bytes": 213642,
+      "sha256": "55f0d0d7864d5e31a272ada6f3bf192a2e86f6b845b79006d16d83b5422907a2"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-1-intro.png",
+      "bytes": 214367,
+      "sha256": "9b2db09b4cf0fb83f9c7f6dd14daef605277b14c417b75395edbc416e84492a5"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-attempt-2-won.png",
+      "bytes": 237779,
+      "sha256": "dadcf9e52176d886c0d2b2c3facc72ec6b625ca1509f35d2fe7664b1a1424198"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-bridge-charm.png",
+      "bytes": 72892,
+      "sha256": "ca1913cbd1436e7edeb8d820f2049afb9f1f12c9ed7821dceffc77fbe3b14be2"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-bridge.png",
+      "bytes": 71725,
+      "sha256": "95e20925fd7ce72b578747aa04b67694a04580f889f6622964be9e3a031e0f4d"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-charm.png",
+      "bytes": 75129,
+      "sha256": "2ee1e796d63d05e70f2a1ff68d4e9b5bcf23fba040f764935b077aa7e4c06b15"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-drifter.png",
+      "bytes": 70002,
+      "sha256": "c853c82b27953cf7fdb8e1c65735370e243927bdb9ceb3a10e98b515598ef605"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-intro.png",
+      "bytes": 224303,
+      "sha256": "4a21b6d03aad04ed63ac675d67ffa9e4a3a8f76c8b3b5df6381bbcf28de6cbb4"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-natural-loss.png",
+      "bytes": 194892,
+      "sha256": "9dc38843b5d39d7f14f8e6d7db47316e05706d5f31ff13ffcc711d6079ac4ddd"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-2-pad-flight.png",
+      "bytes": 79138,
+      "sha256": "c8148d6790a706488af0c1405dacdfb84d9944928dc6fd95cdccf7f5adaa9393"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-attempt-3-won.png",
+      "bytes": 194666,
+      "sha256": "7973999b0b5d2c7f2ee64049f39ba6a1641810365746e3f6ae7a1f93bc2963ba"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-drifter.png",
+      "bytes": 76250,
+      "sha256": "cc5165235612321b6e6af82734ba2db6b2f92352e265d88c8e2987ac885f8bef"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-gust.png",
+      "bytes": 78466,
+      "sha256": "56062376fdc69660568f3fa8c9209c1f54f4284b6d036a4a7da43c5d3ae57826"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-intro.png",
+      "bytes": 250531,
+      "sha256": "3014abde410030d63f736339baacb0311234b33a556c2443aa3430f79ef8426b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-tier1.png",
+      "bytes": 74160,
+      "sha256": "2ebd0b014dad27430aaf583e0cbc8a486b61ffe10d03d1bf2ee915233945031b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/night-3-tier2.png",
+      "bytes": 73741,
+      "sha256": "e99e88d61a3bb36e8040c42c54edd44adebb76c61615dae6077ba45b37cbf8a8"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/pause.png",
+      "bytes": 233559,
+      "sha256": "7ce144a6570b6808b7d66def4022631d71bd8e8632e40c235fa484f6f20cb0d9"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6/settings-persistence.png",
+      "bytes": 192659,
+      "sha256": "ef843871eb636ddbea611e5761557292f5e892e052a495e2cce7a3ffad44f062"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-attempt-6.log",
+      "bytes": 10516,
+      "sha256": "e34b5e4171994519740c3b6bec22fdedda1071879dcb98af18dcf76f86e80bcd"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1/boundaries.json",
+      "bytes": 17394,
+      "sha256": "5b2e762d10f17b7b53e6c01886cbdb71a0688b4d52150688d2b1363f66b47471"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1/clock-30-seconds.png",
+      "bytes": 64588,
+      "sha256": "2b395aaef8f4cbf999cdb51f84ac000fcedb5a015240dbc1dc311b8774e63141"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1/lit-safe-zone.png",
+      "bytes": 67794,
+      "sha256": "df17e0a0526aca06f6f4419922888eb982438880dfd52790ccdc89b59a51beea"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1/natural-dawn-loss.png",
+      "bytes": 196586,
+      "sha256": "d00442da36af7a124acc75770ce992675eaf0dd747559da32423faf052d8f9fa"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1/offscreen-arrow.png",
+      "bytes": 59983,
+      "sha256": "a8de23b4816f45d54c0932ec27b2d8380dc4a897a9be8af0d379cb944605e69c"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-1.log",
+      "bytes": 580,
+      "sha256": "e648c13a85c1656a92691507968bfc6c06cee2d769f2bd8d9271444a7395b97d"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/boundaries.json",
+      "bytes": 17484,
+      "sha256": "d2be6d8f126b845b04513b85fb1b4fcd74424ecbca0ac42a126443d478c58a57"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/clock-30-seconds.png",
+      "bytes": 64603,
+      "sha256": "5f9e0a190c02493c671ac3c88295b5e59d2c8559565976bf92d092dcf0c1d70c"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/countdown-10-seconds.png",
+      "bytes": 67382,
+      "sha256": "98ebcdca21b6a05f5fd64da54c2d499f77bc09246c460ab8fa1b699510370b6d"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/lit-safe-zone.png",
+      "bytes": 67804,
+      "sha256": "cedc65ac88cd05274d3db4432d4bd1db38b94f2c73eea78015a5d63c19ceebb5"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/natural-dawn-loss.png",
+      "bytes": 196221,
+      "sha256": "af78b1b34de144aa5e6b5a8113813887fa8095d75923a99dab09ed0de2fc1a11"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final/offscreen-arrow.png",
+      "bytes": 60065,
+      "sha256": "a3fabd02e601da64a7f44fe25d954ba7dce10c7fc2cf24d8731f1f2d9da390ed"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-boundaries-final.log",
+      "bytes": 588,
+      "sha256": "1a7858f2b3f20b8834f933b4b5b1f26375071def52d6f6fd0ad428062ce00c61"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/browser-e2e.json",
+      "bytes": 1884284,
+      "sha256": "2a2ea2db59a3607d405113fb50b09c73fe8554f7e99eb40165cfd239a0341e9d"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/camera-drag.png",
+      "bytes": 59675,
+      "sha256": "88edfc77afa58cbfde2775430b802e6eda16d2150acfbf76881374cbfefd35ad"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/full-campaign-dawn.png",
+      "bytes": 198478,
+      "sha256": "f7634ca04e5ccd811400086e8a34d07855a7fb1b7a5a6d8edf818eb8eecc10ca"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/menu.png",
+      "bytes": 207154,
+      "sha256": "f41a737ab0afcc5ce59da438fae49cc5692c85cce8b896e686388515b5cd921e"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/natural-loss.png",
+      "bytes": 265916,
+      "sha256": "c2833dcdacb6a3b1169dfdae7e9eba0b9752e6ef10df4e2bc796427443c86324"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-1-attempt-1-won.png",
+      "bytes": 207059,
+      "sha256": "73184699f7c2307d3370149824de6689e95304d2b2851146a2ba4c151445728a"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-1-intro.png",
+      "bytes": 214393,
+      "sha256": "c98c3bc6d8a9f7e884fded6ca02fb34c852d52aea60c1b240ffc30e115866efb"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-attempt-2-won.png",
+      "bytes": 239058,
+      "sha256": "2b9fbc46f30ca1eee34fde41e167a7a2cfe9f74541ce1479d19ed34373f55317"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-bridge-charm.png",
+      "bytes": 73034,
+      "sha256": "fc0bdf50037805c799ea0d888e60fbb7f9bef9518c6f4eac33be1f763bbfc84b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-bridge.png",
+      "bytes": 71799,
+      "sha256": "6b4a6cd26777989899321c4b1dade43a86b9e668ae993637e43a0e1636193b92"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-charm.png",
+      "bytes": 75092,
+      "sha256": "e8536333b44a019dfd7333e08164221534ffed102a71dfbf53bd5b96f87dc39b"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-drifter.png",
+      "bytes": 69949,
+      "sha256": "404b2bb9018917c74e41f62a52dd82d81af55f284469716762c580f6c2fa3a58"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-intro.png",
+      "bytes": 212398,
+      "sha256": "29b0b58a474443cf97c661961ddfc454876f547bee1de3f6c35db7d5f106249c"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-natural-loss.png",
+      "bytes": 194898,
+      "sha256": "07d799d4391d4b9754492611c7aa7766620b8909a694e33b7a44cc8e5d6c834a"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-2-pad-flight.png",
+      "bytes": 79232,
+      "sha256": "3f6c277eabaccd225c975f9ab2f885a9746e0d05afcc024caef8ffea14790653"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-attempt-3-won.png",
+      "bytes": 198478,
+      "sha256": "f7634ca04e5ccd811400086e8a34d07855a7fb1b7a5a6d8edf818eb8eecc10ca"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-drifter.png",
+      "bytes": 74401,
+      "sha256": "4fa35511c3f4a2ef2f634d9b389cb28a399eeb05453dc8832f4edd242e996671"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-gust.png",
+      "bytes": 78798,
+      "sha256": "a83ad2a2e4db6a7f2264dcc8747c8b1695e1b243271d425952d6d4a2c9c1dce2"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-intro.png",
+      "bytes": 252135,
+      "sha256": "5efbe6270459d3ce0978e80994a8d29d9bb48f5b701b44d321bb4beffd65e067"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-tier1.png",
+      "bytes": 72679,
+      "sha256": "5e6a9eefe200b5db74d38085f852e2550c9bf77009ff0df3247483c81c9234c7"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/night-3-tier2.png",
+      "bytes": 74039,
+      "sha256": "1f7cd7b55f154138c19319a6e4dae759e9b89a0f1b0e77bf2cc8fab0085f67bd"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/pause.png",
+      "bytes": 233682,
+      "sha256": "43c06f525df290a71bc0c20d6b5695906bd63400c9f8dd6a7b770ae70c9eb596"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final/settings-persistence.png",
+      "bytes": 192713,
+      "sha256": "e647acc15e46115d61f632c31d3763956bbafb898ae3a6a10950b5f171ab55c3"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-final.log",
+      "bytes": 9952,
+      "sha256": "29662f70fe9fdb6c4dce85edd61d1a8a20560bbfe86020f5663c8444a75efc35"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-summary/completion.json",
+      "bytes": 1818,
+      "sha256": "6298315ae4b3727fe85f37af231c1a2f2ee01400732afcf610026e4e5170f1af"
+    },
+    {
+      "path": "docs/proof/phase-2/browser/recovery-summary/palette-audit.json",
+      "bytes": 1194,
+      "sha256": "aaeec14488c439a616ba22cf93beb1cb0e32222beb7415a109ce5dcfa05efa08"
+    },
+    {
+      "path": "docs/proof/phase-2/core/benchmark-night3.input.json",
+      "bytes": 161,
+      "sha256": "e2ca40d351313f285713ed436887034300ed937e2ae21327ea5d6b3cb5ed2bae"
+    },
+    {
+      "path": "docs/proof/phase-2/core/benchmark-night3.json",
+      "bytes": 735,
+      "sha256": "173dfb5c401a099c1220e621906797ca8d981b6f2879819af0be034c1ccedb95"
+    },
+    {
+      "path": "docs/proof/phase-2/core/core-smoke.json",
+      "bytes": 852,
+      "sha256": "bb492957bd2f2c1c44dce18b1c39f5238eefb2e0522d87cc7bc4cd98f05ec96c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-1.actual.json",
+      "bytes": 6348,
+      "sha256": "c37bcfc4ccc0ae619ea3a4e3e851cb16504830ffd97404c70d971e53e98eceba"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-1.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-2.actual.json",
+      "bytes": 6219,
+      "sha256": "25bfb35d4692c0a9daeca41024ac419cf00448b03bbdf3b83286a8d578e25326"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-2.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-3.actual.json",
+      "bytes": 7024,
+      "sha256": "19fb465933352b9c3d5585027cf99173fd6fb05248de2eaa9812212b4f119ba3"
+    },
+    {
+      "path": "docs/proof/phase-2/core/night-3.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/benchmark-night3.input.json",
+      "bytes": 161,
+      "sha256": "e2ca40d351313f285713ed436887034300ed937e2ae21327ea5d6b3cb5ed2bae"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/benchmark-night3.json",
+      "bytes": 735,
+      "sha256": "7935c0ad2385d983bc97392bd95377050365c8a197a75a66c4276b91f02ca8dd"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/core-smoke.json",
+      "bytes": 852,
+      "sha256": "bb492957bd2f2c1c44dce18b1c39f5238eefb2e0522d87cc7bc4cd98f05ec96c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/independent.log",
+      "bytes": 1382,
+      "sha256": "5620671625a8c1372400b194f88c7b65d7b29680b2bd9e0149c946f87688368b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-1.actual.json",
+      "bytes": 6348,
+      "sha256": "c37bcfc4ccc0ae619ea3a4e3e851cb16504830ffd97404c70d971e53e98eceba"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-1.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-2.actual.json",
+      "bytes": 6219,
+      "sha256": "25bfb35d4692c0a9daeca41024ac419cf00448b03bbdf3b83286a8d578e25326"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-2.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-3.actual.json",
+      "bytes": 7024,
+      "sha256": "19fb465933352b9c3d5585027cf99173fd6fb05248de2eaa9812212b4f119ba3"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/night-3.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/unit.log",
+      "bytes": 578,
+      "sha256": "0e24a2f1be1ec24913c41b4c0a0ad8a713425f5286197267a03b535d5aa5daca"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/verification.json",
+      "bytes": 4270,
+      "sha256": "c67f5a862a03670042317dcaf70c4f016e73e53b027ecc16b04b9e1cc8b48826"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-authorized/verify.log",
+      "bytes": 466,
+      "sha256": "135549f56a475df7fc8c427a13b3b2ac69f99b1aa8c937c0e8bb5e5e4da44a7d"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-baseline/independent.log",
+      "bytes": 2744,
+      "sha256": "e8e760f0960ba8e995852214e974f6655b202718f1e5c8c1aeafa6ccbfe5b0d3"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-baseline/unit.log",
+      "bytes": 19044,
+      "sha256": "2152e461d53fc00d6bdd4d5eb569cafd9927cc81fc7dc847e24a8619be827d7d"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-baseline/verification.json",
+      "bytes": 640,
+      "sha256": "a4e755f5098eccbb3b5873f966a8666ea63607642e3c4b2d56ae8c73e8594a50"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-baseline/verify.log",
+      "bytes": 176,
+      "sha256": "9d6c6da126e63beffe08777f444c87ff1863001f211f4dbd118c939d20cb9290"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-current/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-current/independent.log",
+      "bytes": 1382,
+      "sha256": "5620671625a8c1372400b194f88c7b65d7b29680b2bd9e0149c946f87688368b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-current/npm-ci-version.log",
+      "bytes": 20,
+      "sha256": "15c1cf8601f5e231d46db32cfda9e0d67d1e3627616c09f9dd57fb7af98c0942"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-current/unit.log",
+      "bytes": 578,
+      "sha256": "762a60ff857abf205e5eea9128028776d21d8f67d784617ea8da84c80affa66e"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-edges/unit.log",
+      "bytes": 578,
+      "sha256": "158d80a4658fea888e0fce589df31bb0098db76ff105a203fa3ccf914f912931"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/audit-final/preservation.json",
+      "bytes": 42393,
+      "sha256": "0cb627b0a98dad4b0da3fe55d667f51b1d288e3543ad2176be9552af0ed1f26a"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/audit-final.log",
+      "bytes": 308,
+      "sha256": "969f32e3e52d4376ed528e32ace70d8f663d15eb26e0f23efd2c3d837992f00a"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/audit.log",
+      "bytes": 1714,
+      "sha256": "98a442655d69051138cf7081a40ab078c12261cb128a051b6c85535b697ef992"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/benchmark/benchmark-night3.input.json",
+      "bytes": 1228,
+      "sha256": "cb385808921e88c692df6fb69683131e30e0e550a314c2945461f856e0fc4944"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/benchmark/benchmark-night3.json",
+      "bytes": 827,
+      "sha256": "d2dcd1742b1a3833d110c24deaca9537b967c9b8c14a2935359a636d39eda35a"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/benchmark.log",
+      "bytes": 1424,
+      "sha256": "c47431f527ef82d9d42886d746fc58cfba5926802d82f810082fc2d94ec28396"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/build.log",
+      "bytes": 2224,
+      "sha256": "2b84743c292fd6f79f4cbb4bb43f0354b69bb28fa9f552754b2716ac03d3929e"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/cross-check/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/diff-check.log",
+      "bytes": 1134,
+      "sha256": "9724eadeaedd58cc21b99d8c6a8a9acbc122dad398810417c59b141816ed140b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/diff-stat-final.txt",
+      "bytes": 1994,
+      "sha256": "5c586c2eeb97c99d4ad45558dfb338e8ecbdee71403e88c03af5dc10a5ad1a98"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/git-status-final.txt",
+      "bytes": 4440,
+      "sha256": "7ce1ac86bd608c68212c99aee009eb8f7e3537977444e1b9ff3e91618672070c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/benchmark-night3.input.json",
+      "bytes": 1228,
+      "sha256": "cb385808921e88c692df6fb69683131e30e0e550a314c2945461f856e0fc4944"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/benchmark-night3.json",
+      "bytes": 830,
+      "sha256": "9e5970843954c0fff975159279692906f6af62b8e195385dd64c94ec15eb42d9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/core-smoke.json",
+      "bytes": 852,
+      "sha256": "bb492957bd2f2c1c44dce18b1c39f5238eefb2e0522d87cc7bc4cd98f05ec96c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-1.actual.json",
+      "bytes": 6348,
+      "sha256": "c37bcfc4ccc0ae619ea3a4e3e851cb16504830ffd97404c70d971e53e98eceba"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-1.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-2.actual.json",
+      "bytes": 6219,
+      "sha256": "25bfb35d4692c0a9daeca41024ac419cf00448b03bbdf3b83286a8d578e25326"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-2.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-3.actual.json",
+      "bytes": 7024,
+      "sha256": "19fb465933352b9c3d5585027cf99173fd6fb05248de2eaa9812212b4f119ba3"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/night-3.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/harness/verification.json",
+      "bytes": 4365,
+      "sha256": "7932b144773302d10bf456b39b6b4500b585ab015240353b6b4b1dcf867d89db"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/independent.log",
+      "bytes": 1382,
+      "sha256": "5620671625a8c1372400b194f88c7b65d7b29680b2bd9e0149c946f87688368b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/npm-11.19.1-build.log",
+      "bytes": 2224,
+      "sha256": "e6c1f0949ec55856a346804514f6c308baca196b96934118cd1ed4f759d95a7e"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/npm-11.19.1-test.log",
+      "bytes": 578,
+      "sha256": "8da4e4bb30d106c19c8c0603fef05bb5c30b83005e27583b0574423bdea155ba"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/benchmark-night3.input.json",
+      "bytes": 1228,
+      "sha256": "cb385808921e88c692df6fb69683131e30e0e550a314c2945461f856e0fc4944"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/benchmark-night3.json",
+      "bytes": 830,
+      "sha256": "1068325d5f43dbebce7da1fb517019e6a500cc1cbd7193f4b7d8991304de4a44"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/ci-loss.input.json",
+      "bytes": 89,
+      "sha256": "801c478e3da99faa5ea83dca3d5402359d3bc6c54a1fe3bb9d5e27d6026edd42"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/ci-night-1.actual.json",
+      "bytes": 2716,
+      "sha256": "ba53bb770fe3cc616d108000e51c18c9eb224c397f2a925a906fa4b451b6463a"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/ci-night-2.actual.json",
+      "bytes": 2635,
+      "sha256": "d9b145b874f5206d418c4fbab5d54c55b48310f256f00e1ad91fddb625c533bc"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/ci-night-3.actual.json",
+      "bytes": 2991,
+      "sha256": "ee3a02d719373d989feb30a043bc77b632516354d98813d643edeadf3412be54"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/core-smoke.json",
+      "bytes": 852,
+      "sha256": "bb492957bd2f2c1c44dce18b1c39f5238eefb2e0522d87cc7bc4cd98f05ec96c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/independent-core.json",
+      "bytes": 819,
+      "sha256": "ac9be56e342ea4b8322b4c88c69c09e603ebb0c8186d2b53a296557e3cd1e3c9"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-1.actual.json",
+      "bytes": 6348,
+      "sha256": "c37bcfc4ccc0ae619ea3a4e3e851cb16504830ffd97404c70d971e53e98eceba"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-1.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-2.actual.json",
+      "bytes": 6219,
+      "sha256": "25bfb35d4692c0a9daeca41024ac419cf00448b03bbdf3b83286a8d578e25326"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-2.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-3.actual.json",
+      "bytes": 7024,
+      "sha256": "19fb465933352b9c3d5585027cf99173fd6fb05248de2eaa9812212b4f119ba3"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/night-3.input.json",
+      "bytes": 190,
+      "sha256": "52c55f24463e8a473ffb7225ba3c67c2bfd82a8dd4c16ed55daae7f8cc2fd70b"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/preservation-win32.json",
+      "bytes": 142,
+      "sha256": "b809ec3dc4b9107f76916876f6d226756eccfc2183918ba711ba6ea49e029f85"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/regression-win32.json",
+      "bytes": 22077,
+      "sha256": "375f781cd8ecd473aa29e6fb62351096327bd65b6d71eb23888089c18a634394"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight/verification.json",
+      "bytes": 4365,
+      "sha256": "a3e8128e888c3dd8c13daa3ce26a6efb4211896a5a5a30a59e515f6c839f079c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/preflight.log",
+      "bytes": 178,
+      "sha256": "7e0a3e7da0160023de0e3fc9b5733014b7c64fb625ae15a534fc3110fe33485c"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/default-campaign.json",
+      "bytes": 602,
+      "sha256": "c43b699c935f0986d428553d0df96143d9141a05ab475cbc0557dcb6f5736adc"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-1.actual.json",
+      "bytes": 6189,
+      "sha256": "a24c10133a500ed71e3f478eb60e61320a883c16d81b8486372b9fe57a11011f"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-1.input.json",
+      "bytes": 36225,
+      "sha256": "d23964fd0e9455319e2a9f18b3c8654be8a6b7f74af774b3b866a9bc5e02d5ca"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-2.actual.json",
+      "bytes": 8533,
+      "sha256": "92fb1846cfce1b913ab85250e107f8ece3d4954538b8fd6e196370ff84b59b12"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-2.input.json",
+      "bytes": 55840,
+      "sha256": "4752c81dd7b2924ed016af90004ec9f8707fe76a8612308f730884ae8cb82c20"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-3.actual.json",
+      "bytes": 9505,
+      "sha256": "cf8d8670494b7eb427671d283cdbacec625dbceb4b0a2584d20f61abcae70f2f"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-3.input.json",
+      "bytes": 95227,
+      "sha256": "3c5d25df849edc38560d7dc07b5f654771be7bba0b32f6d773539a3a7a1fccca"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes/winning-night-3.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/routes.log",
+      "bytes": 820,
+      "sha256": "9363d34a094b2b953eac1ea3eb9ba140b63093e4b518d69f0ff7fefa1dc4bc44"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/unit.log",
+      "bytes": 578,
+      "sha256": "84688673bea172733edacaf06ee38c6661f722922ed6954f35c180ea7f7ec317"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-final/verify.log",
+      "bytes": 466,
+      "sha256": "135549f56a475df7fc8c427a13b3b2ac69f99b1aa8c937c0e8bb5e5e4da44a7d"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-regression-1/unit.log",
+      "bytes": 580,
+      "sha256": "7e36ee4087fff34dc0617504337333148fa3e8ec9f139e8db13877640583fdf2"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/default-campaign.json",
+      "bytes": 602,
+      "sha256": "c43b699c935f0986d428553d0df96143d9141a05ab475cbc0557dcb6f5736adc"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-1.actual.json",
+      "bytes": 6189,
+      "sha256": "a24c10133a500ed71e3f478eb60e61320a883c16d81b8486372b9fe57a11011f"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-1.input.json",
+      "bytes": 36225,
+      "sha256": "d23964fd0e9455319e2a9f18b3c8654be8a6b7f74af774b3b866a9bc5e02d5ca"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-2.actual.json",
+      "bytes": 8533,
+      "sha256": "92fb1846cfce1b913ab85250e107f8ece3d4954538b8fd6e196370ff84b59b12"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-2.input.json",
+      "bytes": 55840,
+      "sha256": "4752c81dd7b2924ed016af90004ec9f8707fe76a8612308f730884ae8cb82c20"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-3.actual.json",
+      "bytes": 9505,
+      "sha256": "cf8d8670494b7eb427671d283cdbacec625dbceb4b0a2584d20f61abcae70f2f"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-3.input.json",
+      "bytes": 95227,
+      "sha256": "3c5d25df849edc38560d7dc07b5f654771be7bba0b32f6d773539a3a7a1fccca"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes/winning-night-3.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/proof/phase-2/core/recovery-routes.log",
+      "bytes": 820,
+      "sha256": "9363d34a094b2b953eac1ea3eb9ba140b63093e4b518d69f0ff7fefa1dc4bc44"
+    },
+    {
+      "path": "docs/proof/phase-2/core/verification.json",
+      "bytes": 4270,
+      "sha256": "46bad50d22a94bf7dcc3ca3d22d99998bc81ccf50a842fb82da66f3a721f0206"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/clean-install-win32.json",
+      "bytes": 14257,
+      "sha256": "ddf36a48276c22b3e9c9a97874dced11b23ee23721676d9d1233bad49b435d7f"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/independent.mjs",
+      "bytes": 6612,
+      "sha256": "52dd0ec5a75a19a7600334fc84d933535aa3920a9317c053c15ad48adb2de165"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/lock-delta.json",
+      "bytes": 460,
+      "sha256": "5e7d8bda62341d6e998c47646ca714905471b9dd3ec2fcf251f673258e78ff07"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/lock-repair-command.json",
+      "bytes": 250,
+      "sha256": "5939b1c6d3b0291e034fec76ab32c771cd57190ccbbf8297ee7791d14b72ce55"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/loss.actual.json",
+      "bytes": 7466,
+      "sha256": "7ae31c6e92a71c8e8b3baa165b2e9fc13f2f3cd25cb21747ccff03e10a7736c8"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/loss.expected.json",
+      "bytes": 38,
+      "sha256": "9ec8a242a31cd0c9690debe739a844f7b100ce6157ec10f7c507256a3c6fd838"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/loss.input.json",
+      "bytes": 57,
+      "sha256": "62102298a28368a0a240395c031ecbc657be5c29c41e1a0257c85966132e3f89"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/parity-win32.json",
+      "bytes": 172,
+      "sha256": "5f31699f5c91df97a70eb8f1f39a49539989ce48acfcd4909d008a63c05c51f6"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/phase1-ci-extract.log",
+      "bytes": 540,
+      "sha256": "1bf94a4a4888854ee7531b3b84694cb655450549e44b3b8bdb5dac59e0066656"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/README.md",
+      "bytes": 3613,
+      "sha256": "49194bb60964db4f76965485c7989e2f643943cb37ba8f1a75d8c946808f1fd7"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/regression-win32.json",
+      "bytes": 13887,
+      "sha256": "8ad896da84a5d5bb7711a55abe3ee4f42fb62e99a8023e3a4cfee8a9c4c0f795"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/test-results.json",
+      "bytes": 5109,
+      "sha256": "fdd2b02770dc5b8c0f8024b2b06c6d41e6297b9af1d7df98c2658d9bd1bdb205"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/verification.json",
+      "bytes": 2689,
+      "sha256": "b120f22e153ab31a6c8afd621067d7c1d2b78d47ec9f91afeea3cb02eee72438"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/win.actual.json",
+      "bytes": 7593,
+      "sha256": "ba4d090547adcd518a8da71969cd129e2e58fefc8d4420339061c770f68e1581"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/win.expected.json",
+      "bytes": 37,
+      "sha256": "eef669d1b3ac18a410bea28b3dade63db76f64aba152ea699df0f8962eb56dc3"
+    },
+    {
+      "path": "docs/proof/phase-2/preflight/win.input.json",
+      "bytes": 109761,
+      "sha256": "d6032cb99765b527ba3e510f79bb86cab9b91a45311117da24689aa9312f1d88"
+    },
+    {
+      "path": "docs/requirements/PRD-0.md",
+      "bytes": 5654,
+      "sha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b"
+    },
+    {
+      "path": "docs/requirements/TEST_CONTRACT_SPEC.md",
+      "bytes": 11029,
+      "sha256": "7751670b6111160f8236dfd0f3a7849699659b4d39218ec1dd05e193a2fa18f8"
+    },
+    {
+      "path": "docs/requirements/TICKET-02.md",
+      "bytes": 20671,
+      "sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb"
+    },
+    {
+      "path": "game.contract.json",
+      "bytes": 3222,
+      "sha256": "815a9da521fc70bc6b7e47591da89b3088eb147090329dc568d1bdc0cf5be4ac"
+    },
+    {
+      "path": "GUIDE.md",
+      "bytes": 10459,
+      "sha256": "ba157a8d65389a696eed758e12f9233500256c7178372877b7e1f31e2f7618ca"
+    },
+    {
+      "path": "index.html",
+      "bytes": 313,
+      "sha256": "3083d1656fa7946d992d9fc281fea4a8985a4574554dba28cbebea5f585d78e6"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1229,
+      "sha256": "4dcab750e06df270cd3a88313e18cc86994ac088965a4f1530d10cc92164ddf5"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 40241,
+      "sha256": "31ec57f17aa0f3df69d3130f7a41db959dfd34a6f4cffbbde81d6e942697e381"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1238,
+      "sha256": "356786d046547c7ccfee4d647f8b704388a50d071629a71950f987db18bbeb24"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10559,
+      "sha256": "8725a509a83c7a4a29bd67934991986b875ec1c4dec3d0f4ca9f528a3402d785"
+    },
+    {
+      "path": "RUBRIC.md",
+      "bytes": 6703,
+      "sha256": "ccbf368e60a835d141aa226ca33eaa67f5a290e0f2398b3a1c08ea31b1de0573"
+    },
+    {
+      "path": "RULES.md",
+      "bytes": 4901,
+      "sha256": "599acc7d3ff09e33cb34246adce2ed75f0e2d67931d50101f56286309ccb781c"
+    },
+    {
+      "path": "scripts/audit-staged.mjs",
+      "bytes": 1818,
+      "sha256": "acb994aebf6b49bc198e91391d6ab11018501fc097690ec4c9e7fd86ee4d3941"
+    },
+    {
+      "path": "scripts/bench-headless.mjs",
+      "bytes": 2537,
+      "sha256": "e84dabaa493496db44563041a9907a133449e9629b3dc6f6207bb02bd6e9084a"
+    },
+    {
+      "path": "scripts/browser-check.mjs",
+      "bytes": 2866,
+      "sha256": "553378e69afd732e19809890c6bb4bdb9511b683d4321f100daef95cb222a865"
+    },
+    {
+      "path": "scripts/browser-route.mjs",
+      "bytes": 5021,
+      "sha256": "05b1db47e1b8f3a76e2669967355a01b3758c8c6c71de9cb2121de359a47e00b"
+    },
+    {
+      "path": "scripts/campaign-headless.mjs",
+      "bytes": 2310,
+      "sha256": "2cd98afa1f5dcd7223e6c5a36c999fe3d37a3b6c312bfd6db08a62287b573a25"
+    },
+    {
+      "path": "scripts/final-handover.mjs",
+      "bytes": 2493,
+      "sha256": "be82d24fcb8f04cdb0f2473197948e3b484ec82bb6915f742dcd00498642d7e4"
+    },
+    {
+      "path": "scripts/headless.mjs",
+      "bytes": 597,
+      "sha256": "cb0e2cfc62cf0118efc7359af07e2e4af1b595b9806e98e4676479ad995c9f92"
+    },
+    {
+      "path": "scripts/independent-core.mjs",
+      "bytes": 2760,
+      "sha256": "35c5e68b3267c6bfedabd8c99d9509830528547873eb910c9a3ff3dd139bb606"
+    },
+    {
+      "path": "scripts/phase2-browser-boundaries.mjs",
+      "bytes": 5593,
+      "sha256": "a52d5e30455d1c15fe51e7d31574a11d8d8a840b5aae7ccff0bd3821c0cf7d6f"
+    },
+    {
+      "path": "scripts/phase2-browser.mjs",
+      "bytes": 9216,
+      "sha256": "2636ce88db2498e74d9a4543e2fa59a015932962782fa126dbdbd0fc7b28ba4e"
+    },
+    {
+      "path": "scripts/phase2-campaign.mjs",
+      "bytes": 11442,
+      "sha256": "7ec4602956cefe35aab3be378b6296a5ddfe3ae159c8acf0bb13f861064559fc"
+    },
+    {
+      "path": "scripts/preflight-ci.mjs",
+      "bytes": 2876,
+      "sha256": "7417830ac8a738954325049071cbc873f31a2c1e2529df6e99f9ef34961ecc37"
+    },
+    {
+      "path": "scripts/prepare-remediation.mjs",
+      "bytes": 899,
+      "sha256": "ef1df3a5d5236835f0bba406cb994121af44160769564c3baeb32f7c3bf3d6a4"
+    },
+    {
+      "path": "scripts/probe-hardware.mjs",
+      "bytes": 1844,
+      "sha256": "6fbe243b4cbc6ff50eece83262fd72f7d2f6e2487c8c915b5c14b5f988e80511"
+    },
+    {
+      "path": "scripts/proof-directory.mjs",
+      "bytes": 327,
+      "sha256": "3c61f9c391dbe3090a5cd8b92f1cbaf97aa490cc51c5214c01d7a65d7965c152"
+    },
+    {
+      "path": "scripts/recovery-audit.mjs",
+      "bytes": 1776,
+      "sha256": "5dc506467a9e775bdab1117766888cd7eab46ffaeaa865ed20803be8c1366803"
+    },
+    {
+      "path": "scripts/refactor-config.mjs",
+      "bytes": 2147,
+      "sha256": "bcc135efd762c39a6064bf1fc8bad76124fcc52fb3a019b064baa636b0c39c51"
+    },
+    {
+      "path": "scripts/remediation-check.mjs",
+      "bytes": 3036,
+      "sha256": "3068b14dcb7564407b588fa3b51eda73c5794268de3908a62fe041e257f8cc4c"
+    },
+    {
+      "path": "scripts/remediation-report.mjs",
+      "bytes": 7131,
+      "sha256": "c50d50b5e3cf9faf379257da8b58b4ad8a6e64bacbc6b895fc442b11addb7117"
+    },
+    {
+      "path": "scripts/repair-lockfile.mjs",
+      "bytes": 1960,
+      "sha256": "2ef25e3a83a0f5e903063131f9833df412373bb796c97bab0abf0060d56e08b2"
+    },
+    {
+      "path": "scripts/scenarios.mjs",
+      "bytes": 2301,
+      "sha256": "83b12935829ef056bbf28ddbed7df174f5f8d7eeff6b008c62bda4739a68245e"
+    },
+    {
+      "path": "scripts/smoke-headless.mjs",
+      "bytes": 364,
+      "sha256": "31cfbcb38a49e74116717ed0b5981ce95c884fb2a4d42af9cab525f6c50a9fa7"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "bytes": 1817,
+      "sha256": "ab89cfe91dbfa63e57e4fd8f8d5afda49dcd051e4130a3fc4696822a671e36e4"
+    },
+    {
+      "path": "scripts/write-contract.mjs",
+      "bytes": 940,
+      "sha256": "e85c982768885a0b47e1ebd0cc04c46456644d7522697171583910b5687594d4"
+    },
+    {
+      "path": "src/browser/app.css",
+      "bytes": 7049,
+      "sha256": "8c4169da99aa739c237bb013894337dea1f51c51322c93c37647fd49eaed6a8f"
+    },
+    {
+      "path": "src/browser/app.js",
+      "bytes": 15728,
+      "sha256": "323868a201dadef91b21c104a4292d61b5f781749ac94f37787742ef15d09fd8"
+    },
+    {
+      "path": "src/browser/audio.js",
+      "bytes": 2559,
+      "sha256": "605b39db144517474d23afce777dd312c8f7b58456b50990e9f8eff636d7357f"
+    },
+    {
+      "path": "src/browser/main.js",
+      "bytes": 8069,
+      "sha256": "d9fb9dd70ab4c8522beda7da5952bdead54cc7e5c0adcf53f6cf08a181a33184"
+    },
+    {
+      "path": "src/browser/renderer.js",
+      "bytes": 15050,
+      "sha256": "a09aba523289984c7a2e2d6f66934562b6fafb0c74630456b7b4cc4b86b1a172"
+    },
+    {
+      "path": "src/browser/style.css",
+      "bytes": 1367,
+      "sha256": "50c770b28197f5c07d454ac472f5936bfac37d0a8f62cf42bc868e04a28f7e01"
+    },
+    {
+      "path": "src/config/game.js",
+      "bytes": 3160,
+      "sha256": "7f227c5e911ea1f09bd9aa137bd814a974942b08aad836a3bb05e4ed99fc8cf3"
+    },
+    {
+      "path": "src/core/environment.js",
+      "bytes": 116,
+      "sha256": "e19bc23412d68a9e0bf7e6e96417e9f362c38bac1313785c8e3381a2b610a3c9"
+    },
+    {
+      "path": "src/core/game.js",
+      "bytes": 17755,
+      "sha256": "16e574e050b3e667f8a26b8c8478321ba3cc3e62917ead29a06f088fef2e534a"
+    },
+    {
+      "path": "src/data/night-1.js",
+      "bytes": 53,
+      "sha256": "d2cb552e82741aed753fc755abf90b32b9bb3c95156e75e44fa5a4f96f46aea3"
+    },
+    {
+      "path": "src/data/worlds.js",
+      "bytes": 4598,
+      "sha256": "b499b6f16471cac55fc477e299ec2d0193d49f960c1a56745c2686112afb0603"
+    },
+    {
+      "path": "src/headless/adapter.js",
+      "bytes": 7651,
+      "sha256": "1f7359d2e381f2cf1b5b4ae566e7aaf202ae82ca5db935db48488f429fb29434"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "bytes": 7760,
+      "sha256": "b769edc332e9c6d35c84d8582c5c149cb160dfe5527f1b142bdb3c963a08aff8"
+    },
+    {
+      "path": "tests/environment.test.js",
+      "bytes": 468,
+      "sha256": "18fa763ea370a1dafdc3eb91402c7c68a2f9494db52805e5904346d8a64e659e"
+    },
+    {
+      "path": "tests/game.test.js",
+      "bytes": 17178,
+      "sha256": "791fe31c4d7cc75c3fea2d2e1b6528ce6320177ae9aafcd4368192bda1d6480c"
+    },
+    {
+      "path": "tests/headless.test.js",
+      "bytes": 4358,
+      "sha256": "61e40a85f4b447eab9bb17af5e5a9174c5255709ba5f15bf7d4d156d73df1310"
+    },
+    {
+      "path": "tests/validation.test.js",
+      "bytes": 2277,
+      "sha256": "3d8ee8869593d11bb0a9465d7e3e6e59f49c197e213ec0396b6d2e9303225706"
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "exitCode": 0,
+      "stdout": "## main...origin/main [ahead 1]\n M .github/workflows/verify.yml\n M README.md\n M docs/notes/AI_USAGE.md\n M docs/notes/phase-2.md\n M package.json\n M scripts/bench-headless.mjs\n M scripts/independent-core.mjs\n M scripts/phase2-browser.mjs\n M scripts/preflight-ci.mjs\n M scripts/scenarios.mjs\n M scripts/verify.mjs\n M src/browser/app.css\n M src/browser/app.js\n M src/browser/audio.js\n M src/browser/renderer.js\n M src/config/game.js\n M src/core/game.js\n M src/data/worlds.js\n M src/headless/adapter.js\n M tests/game.test.js\n M tests/validation.test.js\n?? docs/proof/phase-2/browser/recovery-attempt-1.log\n?? docs/proof/phase-2/browser/recovery-attempt-1/\n?? docs/proof/phase-2/browser/recovery-attempt-2.log\n?? docs/proof/phase-2/browser/recovery-attempt-2/\n?? docs/proof/phase-2/browser/recovery-attempt-3.log\n?? docs/proof/phase-2/browser/recovery-attempt-3/\n?? docs/proof/phase-2/browser/recovery-attempt-4-interruption.json\n?? docs/proof/phase-2/browser/recovery-attempt-4.log\n?? docs/proof/phase-2/browser/recovery-attempt-4/\n?? docs/proof/phase-2/browser/recovery-attempt-5.log\n?? docs/proof/phase-2/browser/recovery-attempt-5/\n?? docs/proof/phase-2/browser/recovery-attempt-6.log\n?? docs/proof/phase-2/browser/recovery-attempt-6/\n?? docs/proof/phase-2/browser/recovery-boundaries-1.log\n?? docs/proof/phase-2/browser/recovery-boundaries-1/\n?? docs/proof/phase-2/browser/recovery-boundaries-final.log\n?? docs/proof/phase-2/browser/recovery-boundaries-final/\n?? docs/proof/phase-2/browser/recovery-final.log\n?? docs/proof/phase-2/browser/recovery-final/\n?? docs/proof/phase-2/browser/recovery-summary/\n?? docs/proof/phase-2/core/recovery-authorized/\n?? docs/proof/phase-2/core/recovery-baseline/\n?? docs/proof/phase-2/core/recovery-current/\n?? docs/proof/phase-2/core/recovery-edges/\n?? docs/proof/phase-2/core/recovery-final/\n?? docs/proof/phase-2/core/recovery-regression-1/\n?? docs/proof/phase-2/core/recovery-routes.log\n?? docs/proof/phase-2/core/recovery-routes/\n?? scripts/browser-route.mjs\n?? scripts/campaign-headless.mjs\n?? scripts/phase2-browser-boundaries.mjs\n?? scripts/phase2-campaign.mjs\n?? scripts/proof-directory.mjs\n?? scripts/recovery-audit.mjs\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "diff",
+        "--name-status"
+      ],
+      "exitCode": 0,
+      "stdout": "M\t.github/workflows/verify.yml\nM\tREADME.md\nM\tdocs/notes/AI_USAGE.md\nM\tdocs/notes/phase-2.md\nM\tpackage.json\nM\tscripts/bench-headless.mjs\nM\tscripts/independent-core.mjs\nM\tscripts/phase2-browser.mjs\nM\tscripts/preflight-ci.mjs\nM\tscripts/scenarios.mjs\nM\tscripts/verify.mjs\nM\tsrc/browser/app.css\nM\tsrc/browser/app.js\nM\tsrc/browser/audio.js\nM\tsrc/browser/renderer.js\nM\tsrc/config/game.js\nM\tsrc/core/game.js\nM\tsrc/data/worlds.js\nM\tsrc/headless/adapter.js\nM\ttests/game.test.js\nM\ttests/validation.test.js\n",
+      "stderr": "warning: in the working copy of 'tests/game.test.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/validation.test.js', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "args": [
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exitCode": 0,
+      "stdout": "docs/proof/phase-2/browser/recovery-attempt-1.log\ndocs/proof/phase-2/browser/recovery-attempt-1/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-1/failure.png\ndocs/proof/phase-2/browser/recovery-attempt-1/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-2.log\ndocs/proof/phase-2/browser/recovery-attempt-2/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-2/failure.png\ndocs/proof/phase-2/browser/recovery-attempt-2/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-2/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-2/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-attempt-3.log\ndocs/proof/phase-2/browser/recovery-attempt-3/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-3/camera-drag.png\ndocs/proof/phase-2/browser/recovery-attempt-3/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-3/natural-loss.png\ndocs/proof/phase-2/browser/recovery-attempt-3/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-3/pause.png\ndocs/proof/phase-2/browser/recovery-attempt-3/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-attempt-4-interruption.json\ndocs/proof/phase-2/browser/recovery-attempt-4.log\ndocs/proof/phase-2/browser/recovery-attempt-4/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-4/camera-drag.png\ndocs/proof/phase-2/browser/recovery-attempt-4/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-4/natural-loss.png\ndocs/proof/phase-2/browser/recovery-attempt-4/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-4/pause.png\ndocs/proof/phase-2/browser/recovery-attempt-4/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-attempt-5.log\ndocs/proof/phase-2/browser/recovery-attempt-5/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-5/camera-drag.png\ndocs/proof/phase-2/browser/recovery-attempt-5/failure.png\ndocs/proof/phase-2/browser/recovery-attempt-5/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-5/natural-loss.png\ndocs/proof/phase-2/browser/recovery-attempt-5/night-1-attempt-1-won.png\ndocs/proof/phase-2/browser/recovery-attempt-5/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-5/night-2-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-5/pause.png\ndocs/proof/phase-2/browser/recovery-attempt-5/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-attempt-6.log\ndocs/proof/phase-2/browser/recovery-attempt-6/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-attempt-6/camera-drag.png\ndocs/proof/phase-2/browser/recovery-attempt-6/full-campaign-dawn.png\ndocs/proof/phase-2/browser/recovery-attempt-6/menu.png\ndocs/proof/phase-2/browser/recovery-attempt-6/natural-loss.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-1-attempt-1-won.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-attempt-2-won.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-bridge-charm.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-bridge.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-charm.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-drifter.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-natural-loss.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-2-pad-flight.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-attempt-3-won.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-drifter.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-gust.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-intro.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-tier1.png\ndocs/proof/phase-2/browser/recovery-attempt-6/night-3-tier2.png\ndocs/proof/phase-2/browser/recovery-attempt-6/pause.png\ndocs/proof/phase-2/browser/recovery-attempt-6/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-boundaries-1.log\ndocs/proof/phase-2/browser/recovery-boundaries-1/boundaries.json\ndocs/proof/phase-2/browser/recovery-boundaries-1/clock-30-seconds.png\ndocs/proof/phase-2/browser/recovery-boundaries-1/lit-safe-zone.png\ndocs/proof/phase-2/browser/recovery-boundaries-1/natural-dawn-loss.png\ndocs/proof/phase-2/browser/recovery-boundaries-1/offscreen-arrow.png\ndocs/proof/phase-2/browser/recovery-boundaries-final.log\ndocs/proof/phase-2/browser/recovery-boundaries-final/boundaries.json\ndocs/proof/phase-2/browser/recovery-boundaries-final/clock-30-seconds.png\ndocs/proof/phase-2/browser/recovery-boundaries-final/countdown-10-seconds.png\ndocs/proof/phase-2/browser/recovery-boundaries-final/lit-safe-zone.png\ndocs/proof/phase-2/browser/recovery-boundaries-final/natural-dawn-loss.png\ndocs/proof/phase-2/browser/recovery-boundaries-final/offscreen-arrow.png\ndocs/proof/phase-2/browser/recovery-final.log\ndocs/proof/phase-2/browser/recovery-final/browser-e2e.json\ndocs/proof/phase-2/browser/recovery-final/camera-drag.png\ndocs/proof/phase-2/browser/recovery-final/full-campaign-dawn.png\ndocs/proof/phase-2/browser/recovery-final/menu.png\ndocs/proof/phase-2/browser/recovery-final/natural-loss.png\ndocs/proof/phase-2/browser/recovery-final/night-1-attempt-1-won.png\ndocs/proof/phase-2/browser/recovery-final/night-1-intro.png\ndocs/proof/phase-2/browser/recovery-final/night-2-attempt-2-won.png\ndocs/proof/phase-2/browser/recovery-final/night-2-bridge-charm.png\ndocs/proof/phase-2/browser/recovery-final/night-2-bridge.png\ndocs/proof/phase-2/browser/recovery-final/night-2-charm.png\ndocs/proof/phase-2/browser/recovery-final/night-2-drifter.png\ndocs/proof/phase-2/browser/recovery-final/night-2-intro.png\ndocs/proof/phase-2/browser/recovery-final/night-2-natural-loss.png\ndocs/proof/phase-2/browser/recovery-final/night-2-pad-flight.png\ndocs/proof/phase-2/browser/recovery-final/night-3-attempt-3-won.png\ndocs/proof/phase-2/browser/recovery-final/night-3-drifter.png\ndocs/proof/phase-2/browser/recovery-final/night-3-gust.png\ndocs/proof/phase-2/browser/recovery-final/night-3-intro.png\ndocs/proof/phase-2/browser/recovery-final/night-3-tier1.png\ndocs/proof/phase-2/browser/recovery-final/night-3-tier2.png\ndocs/proof/phase-2/browser/recovery-final/pause.png\ndocs/proof/phase-2/browser/recovery-final/settings-persistence.png\ndocs/proof/phase-2/browser/recovery-summary/completion.json\ndocs/proof/phase-2/browser/recovery-summary/palette-audit.json\ndocs/proof/phase-2/core/recovery-authorized/benchmark-night3.input.json\ndocs/proof/phase-2/core/recovery-authorized/benchmark-night3.json\ndocs/proof/phase-2/core/recovery-authorized/core-smoke.json\ndocs/proof/phase-2/core/recovery-authorized/independent-core.json\ndocs/proof/phase-2/core/recovery-authorized/independent.log\ndocs/proof/phase-2/core/recovery-authorized/night-1.actual.json\ndocs/proof/phase-2/core/recovery-authorized/night-1.input.json\ndocs/proof/phase-2/core/recovery-authorized/night-2.actual.json\ndocs/proof/phase-2/core/recovery-authorized/night-2.input.json\ndocs/proof/phase-2/core/recovery-authorized/night-3.actual.json\ndocs/proof/phase-2/core/recovery-authorized/night-3.input.json\ndocs/proof/phase-2/core/recovery-authorized/unit.log\ndocs/proof/phase-2/core/recovery-authorized/verification.json\ndocs/proof/phase-2/core/recovery-authorized/verify.log\ndocs/proof/phase-2/core/recovery-baseline/independent.log\ndocs/proof/phase-2/core/recovery-baseline/unit.log\ndocs/proof/phase-2/core/recovery-baseline/verification.json\ndocs/proof/phase-2/core/recovery-baseline/verify.log\ndocs/proof/phase-2/core/recovery-current/independent-core.json\ndocs/proof/phase-2/core/recovery-current/independent.log\ndocs/proof/phase-2/core/recovery-current/npm-ci-version.log\ndocs/proof/phase-2/core/recovery-current/unit.log\ndocs/proof/phase-2/core/recovery-edges/unit.log\ndocs/proof/phase-2/core/recovery-final/audit-final.log\ndocs/proof/phase-2/core/recovery-final/audit-final/preservation.json\ndocs/proof/phase-2/core/recovery-final/audit.log\ndocs/proof/phase-2/core/recovery-final/benchmark.log\ndocs/proof/phase-2/core/recovery-final/benchmark/benchmark-night3.input.json\ndocs/proof/phase-2/core/recovery-final/benchmark/benchmark-night3.json\ndocs/proof/phase-2/core/recovery-final/build.log\ndocs/proof/phase-2/core/recovery-final/cross-check/independent-core.json\ndocs/proof/phase-2/core/recovery-final/diff-check.log\ndocs/proof/phase-2/core/recovery-final/diff-stat-final.txt\ndocs/proof/phase-2/core/recovery-final/git-status-final.txt\ndocs/proof/phase-2/core/recovery-final/harness/benchmark-night3.input.json\ndocs/proof/phase-2/core/recovery-final/harness/benchmark-night3.json\ndocs/proof/phase-2/core/recovery-final/harness/core-smoke.json\ndocs/proof/phase-2/core/recovery-final/harness/independent-core.json\ndocs/proof/phase-2/core/recovery-final/harness/night-1.actual.json\ndocs/proof/phase-2/core/recovery-final/harness/night-1.input.json\ndocs/proof/phase-2/core/recovery-final/harness/night-2.actual.json\ndocs/proof/phase-2/core/recovery-final/harness/night-2.input.json\ndocs/proof/phase-2/core/recovery-final/harness/night-3.actual.json\ndocs/proof/phase-2/core/recovery-final/harness/night-3.input.json\ndocs/proof/phase-2/core/recovery-final/harness/verification.json\ndocs/proof/phase-2/core/recovery-final/independent.log\ndocs/proof/phase-2/core/recovery-final/npm-11.19.1-build.log\ndocs/proof/phase-2/core/recovery-final/npm-11.19.1-test.log\ndocs/proof/phase-2/core/recovery-final/preflight.log\ndocs/proof/phase-2/core/recovery-final/preflight/benchmark-night3.input.json\ndocs/proof/phase-2/core/recovery-final/preflight/benchmark-night3.json\ndocs/proof/phase-2/core/recovery-final/preflight/ci-loss.input.json\ndocs/proof/phase-2/core/recovery-final/preflight/ci-night-1.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/ci-night-2.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/ci-night-3.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/core-smoke.json\ndocs/proof/phase-2/core/recovery-final/preflight/independent-core.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-1.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-1.input.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-2.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-2.input.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-3.actual.json\ndocs/proof/phase-2/core/recovery-final/preflight/night-3.input.json\ndocs/proof/phase-2/core/recovery-final/preflight/preservation-win32.json\ndocs/proof/phase-2/core/recovery-final/preflight/regression-win32.json\ndocs/proof/phase-2/core/recovery-final/preflight/verification.json\ndocs/proof/phase-2/core/recovery-final/routes.log\ndocs/proof/phase-2/core/recovery-final/routes/default-campaign.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-1.actual.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-1.input.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-1.stderr.log\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-2.actual.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-2.input.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-2.stderr.log\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-3.actual.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-3.input.json\ndocs/proof/phase-2/core/recovery-final/routes/winning-night-3.stderr.log\ndocs/proof/phase-2/core/recovery-final/unit.log\ndocs/proof/phase-2/core/recovery-final/verify.log\ndocs/proof/phase-2/core/recovery-regression-1/unit.log\ndocs/proof/phase-2/core/recovery-routes.log\ndocs/proof/phase-2/core/recovery-routes/default-campaign.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-1.actual.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-1.input.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-1.stderr.log\ndocs/proof/phase-2/core/recovery-routes/winning-night-2.actual.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-2.input.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-2.stderr.log\ndocs/proof/phase-2/core/recovery-routes/winning-night-3.actual.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-3.input.json\ndocs/proof/phase-2/core/recovery-routes/winning-night-3.stderr.log\nscripts/browser-route.mjs\nscripts/campaign-headless.mjs\nscripts/phase2-browser-boundaries.mjs\nscripts/phase2-campaign.mjs\nscripts/proof-directory.mjs\nscripts/recovery-audit.mjs\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "show",
+        "--stat",
+        "9ced7a1"
+      ],
+      "exitCode": 0,
+      "stdout": "commit 9ced7a1ff98cdc4056626a9aa678e243d2d8cec6\nAuthor: Dunnguyn <nttdung2k5@gmail.com>\nDate:   Sat Nov 21 02:19:36 2026 +0700\n\n    feat: add audio and rendering capabilities with world generation\n\n .agents/skills/verify-game/SKILL.md                |  21 +-\n AGENTS.md                                          |  21 +-\n README.md                                          |  44 ++-\n docs/notes/AI_USAGE.md                             |   2 +\n docs/notes/phase-2.md                              | 210 ++++++++++++\n docs/proof/phase-2/browser/browser-console.json    |   9 +\n docs/proof/phase-2/browser/browser-e2e.json        | 303 +++++++++++++++++\n docs/proof/phase-2/browser/e2e-01-menu.png         | Bin 0 -> 194878 bytes\n docs/proof/phase-2/browser/e2e-01-night-intro.png  | Bin 0 -> 200398 bytes\n docs/proof/phase-2/browser/e2e-07-paused.png       | Bin 0 -> 241510 bytes\n docs/proof/phase-2/browser/e2e-08-settings.png     | Bin 0 -> 179060 bytes\n docs/proof/phase-2/browser/e2e-09-dash.png         | Bin 0 -> 102473 bytes\n docs/proof/phase-2/browser/e2e-09-pulse.png        | Bin 0 -> 90319 bytes\n docs/proof/phase-2/browser/e2e-10-camera.png       | Bin 0 -> 97017 bytes\n docs/proof/phase-2/browser/failure.png             | Bin 0 -> 79912 bytes\n .../proof/phase-2/core/benchmark-night3.input.json |   1 +\n docs/proof/phase-2/core/benchmark-night3.json      |  34 ++\n docs/proof/phase-2/core/core-smoke.json            |  43 +++\n docs/proof/phase-2/core/independent-core.json      |  37 ++\n docs/proof/phase-2/core/night-1.actual.json        | 339 +++++++++++++++++++\n docs/proof/phase-2/core/night-1.input.json         |  15 +\n docs/proof/phase-2/core/night-2.actual.json        | 343 +++++++++++++++++++\n docs/proof/phase-2/core/night-2.input.json         |  15 +\n docs/proof/phase-2/core/night-3.actual.json        | 376 +++++++++++++++++++++\n docs/proof/phase-2/core/night-3.input.json         |  15 +\n docs/proof/phase-2/core/verification.json          |  84 +++++\n docs/requirements/TEST_CONTRACT_SPEC.md            |   1 +\n docs/requirements/TICKET-02.md                     | 140 ++++++++\n game.contract.json                                 | 138 +++++---\n index.html                                         |   4 +-\n package.json                                       |  56 +--\n scripts/bench-headless.mjs                         |  15 +\n scripts/headless.mjs                               |   8 +-\n scripts/independent-core.mjs                       |  16 +\n scripts/phase2-browser.mjs                         |  30 ++\n scripts/scenarios.mjs                              |  21 +-\n scripts/verify.mjs                                 |  38 +--\n scripts/write-contract.mjs                         |   7 +-\n src/browser/app.css                                |   7 +\n src/browser/app.js                                 |  43 +++\n src/browser/audio.js                               |  11 +\n src/browser/main.js                                |   4 +-\n src/browser/renderer.js                            |  42 +++\n src/config/game.js                                 |   5 +-\n src/core/game.js                                   |  62 ++--\n src/data/night-1.js                                |   9 +-\n src/data/worlds.js                                 |  22 ++\n src/headless/adapter.js                            |  28 +-\n tests/game.test.js                                 |  40 ++-\n tests/headless.test.js                             |  16 +-\n tests/validation.test.js                           |  25 +-\n 51 files changed, 2456 insertions(+), 244 deletions(-)\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "rev-parse",
+        "phase-1^{commit}"
+      ],
+      "exitCode": 0,
+      "stdout": "627ed7f92c59482bc902fba108c2936dc9481976\n",
+      "stderr": ""
+    }
+  ]
+}
