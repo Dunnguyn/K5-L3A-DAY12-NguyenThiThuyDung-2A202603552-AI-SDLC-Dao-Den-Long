@@ -1,0 +1,12 @@
+warning: in the working copy of '.agents/skills/verify-game/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'game.contract.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/bench-headless.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/independent-core.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/proof-directory.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/write-contract.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/core/game.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/headless/adapter.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/game.test.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/headless.test.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/remediation.test.js', LF will be replaced by CRLF the next time Git touches it

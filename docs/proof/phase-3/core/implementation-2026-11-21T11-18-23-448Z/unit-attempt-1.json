@@ -1,0 +1,9 @@
+{
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run"
+  ],
+  "exitCode": 1,
+  "reason": "Retained pre-correction failure: off-target assertion sampled drain-to-wander transition before next wander targeting tick."
+}

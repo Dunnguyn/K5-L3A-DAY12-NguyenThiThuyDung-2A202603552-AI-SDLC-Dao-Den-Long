@@ -1,0 +1,39 @@
+{
+  "scenario": {
+    "player": {
+      "pos": {
+        "x": -30,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "lit": true,
+        "fuel": 20
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "fuel": 20
+      }
+    ],
+    "shades": [
+      {
+        "id": "S1",
+        "pos": {
+          "x": 11.9,
+          "y": 0,
+          "z": 16.35
+        },
+        "state": "wander"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 1
+    }
+  ]
+}

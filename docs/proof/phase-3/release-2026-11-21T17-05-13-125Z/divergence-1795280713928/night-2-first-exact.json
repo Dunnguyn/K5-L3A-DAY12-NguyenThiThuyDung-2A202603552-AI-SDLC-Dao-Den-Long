@@ -1,0 +1,2563 @@
+{
+  "tick": 12435,
+  "node": {
+    "action": {
+      "moveX": 0,
+      "moveZ": -1,
+      "ticks": 48,
+      "pulse": false,
+      "jump": false,
+      "interact": false,
+      "glow": false,
+      "restart": false
+    },
+    "before": {
+      "snapshot": {
+        "tick": 12434,
+        "sim_tick": 12434,
+        "night": 2,
+        "state": "playing",
+        "time_s": 62.767,
+        "score": 770,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 15.387688262436404,
+          "y": 0,
+          "z": -12.528650070512152,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": -5.999999999999979
+          },
+          "grounded": true,
+          "flames": 2,
+          "light": 1,
+          "capacity": 20,
+          "invuln": false,
+          "dash_cd_s": 0.083,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 20
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 93.2,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 99.1,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 70,
+              "y": 0,
+              "z": 20
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": 87,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 53,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M6240",
+            "pos": {
+              "x": -1.8369701987210296e-15,
+              "y": 0,
+              "z": -10
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6480",
+            "pos": {
+              "x": -10,
+              "y": 0,
+              "z": 1.2246467991473533e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6960",
+            "pos": {
+              "x": 15.556349186104047,
+              "y": 0,
+              "z": 15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7680",
+            "pos": {
+              "x": -15.556349186104043,
+              "y": 0,
+              "z": 15.556349186104047
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8160",
+            "pos": {
+              "x": -15.556349186104049,
+              "y": 0,
+              "z": -15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9600",
+            "pos": {
+              "x": 15.556349186104041,
+              "y": 0,
+              "z": -15.556349186104049
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10320",
+            "pos": {
+              "x": -4.0413344371862654e-15,
+              "y": 0,
+              "z": -22
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11280",
+            "pos": {
+              "x": -22,
+              "y": 0,
+              "z": 2.6942229581241772e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11520",
+            "pos": {
+              "x": 80,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11760",
+            "pos": {
+              "x": 22,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12240",
+            "pos": {
+              "x": 6.123233995736766e-16,
+              "y": 0,
+              "z": 10
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -290.82352739142397,
+              "y": 0,
+              "z": 76.48463580381724
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 414.97117689255754,
+              "y": 0,
+              "z": -104.07123455955583
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [],
+        "campaign_score": 0
+      },
+      "player": {
+        "x": 15.387688262436404,
+        "y": 0,
+        "z": -12.528650070512152,
+        "vel": {
+          "x": 0,
+          "y": 0,
+          "z": -5.999999999999979
+        },
+        "facing": {
+          "x": 0,
+          "z": -1
+        },
+        "grounded": true,
+        "flames": 2,
+        "light": 1,
+        "successful_lights": 6,
+        "capacity": 20,
+        "invuln_ticks": 0,
+        "respawn_ticks": 0,
+        "dash_ticks": 0,
+        "dash_cd_ticks": 5,
+        "pulse_cd_ticks": 0,
+        "charm_ticks": 0,
+        "padVelocity": null,
+        "dashDirection": {
+          "x": 0.7071067811865475,
+          "z": -0.7071067811865475
+        },
+        "fallHandled": false,
+        "motionVelocity": {
+          "x": 0,
+          "z": -6
+        }
+      },
+      "lanterns": [
+        {
+          "id": "L1",
+          "x": 0,
+          "y": 0,
+          "z": 20,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5591,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L2",
+          "x": 17,
+          "y": 0,
+          "z": -10,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5945,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L3",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L4",
+          "x": 70,
+          "y": 0,
+          "z": 20,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L5",
+          "x": 87,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        },
+        {
+          "id": "L6",
+          "x": 53,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        }
+      ],
+      "shades": [
+        {
+          "id": "S1",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 235.82762986421585,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L3",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": -0.4703531552371925,
+            "z": 0.8824782769895345
+          }
+        },
+        {
+          "id": "S2",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 137.335846144706,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S3",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 160.6578615680337,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S4",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 173.3010334521532,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S5",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 267.4705169722438,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S6",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 109.5242728292942,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S7",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 82.54586655646563,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "recoil_dir": {
+            "x": -0.164269318364612,
+            "z": 0.9243791964714916
+          },
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S8",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 26.511988565325737,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        }
+      ],
+      "drifters": [
+        {
+          "id": "D1",
+          "x": -290.82352739142397,
+          "y": 0,
+          "z": 76.48463580381724,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 171.94621447473764
+        },
+        {
+          "id": "D2",
+          "x": 414.97117689255754,
+          "y": 0,
+          "z": -104.07123455955583,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 343.6557667516172
+        }
+      ],
+      "wind": {
+        "active": false,
+        "dir_deg": 0,
+        "warning_ticks": 0,
+        "active_ticks": 0
+      },
+      "previous": {
+        "dash": false,
+        "pause": false,
+        "jump": false,
+        "interact": false,
+        "pulse": false
+      }
+    },
+    "after": {
+      "snapshot": {
+        "tick": 12435,
+        "sim_tick": 12435,
+        "night": 2,
+        "state": "playing",
+        "time_s": 62.75,
+        "score": 770,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 15.387688262436404,
+          "y": 0,
+          "z": -12.628650070512151,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": -5.999999999999979
+          },
+          "grounded": true,
+          "flames": 2,
+          "light": 1,
+          "capacity": 20,
+          "invuln": false,
+          "dash_cd_s": 0.067,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 20
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 93.2,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 99.1,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 70,
+              "y": 0,
+              "z": 20
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": 87,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 53,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313018
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313018
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313018
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M6240",
+            "pos": {
+              "x": -1.8369701987210296e-15,
+              "y": 0,
+              "z": -10
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6480",
+            "pos": {
+              "x": -10,
+              "y": 0,
+              "z": 1.2246467991473533e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6960",
+            "pos": {
+              "x": 15.556349186104047,
+              "y": 0,
+              "z": 15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7680",
+            "pos": {
+              "x": -15.556349186104043,
+              "y": 0,
+              "z": 15.556349186104047
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8160",
+            "pos": {
+              "x": -15.556349186104049,
+              "y": 0,
+              "z": -15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9600",
+            "pos": {
+              "x": 15.556349186104041,
+              "y": 0,
+              "z": -15.556349186104049
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10320",
+            "pos": {
+              "x": -4.0413344371862654e-15,
+              "y": 0,
+              "z": -22
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11280",
+            "pos": {
+              "x": -22,
+              "y": 0,
+              "z": 2.6942229581241772e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11520",
+            "pos": {
+              "x": 80,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11760",
+            "pos": {
+              "x": 22,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12240",
+            "pos": {
+              "x": 6.123233995736766e-16,
+              "y": 0,
+              "z": 10
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -290.8565319576188,
+              "y": 0,
+              "z": 76.48930589176085
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 415.00316317011857,
+              "y": 0,
+              "z": -104.08061481322517
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [],
+        "campaign_score": 0
+      },
+      "player": {
+        "x": 15.387688262436404,
+        "y": 0,
+        "z": -12.628650070512151,
+        "vel": {
+          "x": 0,
+          "y": 0,
+          "z": -5.999999999999979
+        },
+        "facing": {
+          "x": 0,
+          "z": -1
+        },
+        "grounded": true,
+        "flames": 2,
+        "light": 1,
+        "successful_lights": 6,
+        "capacity": 20,
+        "invuln_ticks": 0,
+        "respawn_ticks": 0,
+        "dash_ticks": 0,
+        "dash_cd_ticks": 4,
+        "pulse_cd_ticks": 0,
+        "charm_ticks": 0,
+        "padVelocity": null,
+        "dashDirection": {
+          "x": 0.7071067811865475,
+          "z": -0.7071067811865475
+        },
+        "fallHandled": false,
+        "motionVelocity": {
+          "x": 0,
+          "z": -6
+        }
+      },
+      "lanterns": [
+        {
+          "id": "L1",
+          "x": 0,
+          "y": 0,
+          "z": 20,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5590,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L2",
+          "x": 17,
+          "y": 0,
+          "z": -10,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5944,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L3",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L4",
+          "x": 70,
+          "y": 0,
+          "z": 20,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L5",
+          "x": 87,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        },
+        {
+          "id": "L6",
+          "x": 53,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        }
+      ],
+      "shades": [
+        {
+          "id": "S1",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 235.82762986421585,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L3",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": -0.4703531552371925,
+            "z": 0.8824782769895345
+          }
+        },
+        {
+          "id": "S2",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 137.335846144706,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S3",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313018,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 160.6578615680337,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S4",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 173.3010334521532,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S5",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 267.4705169722438,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S6",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313018,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 109.5242728292942,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S7",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313018,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 82.54586655646563,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "recoil_dir": {
+            "x": -0.164269318364612,
+            "z": 0.9243791964714916
+          },
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S8",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 26.511988565325737,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        }
+      ],
+      "drifters": [
+        {
+          "id": "D1",
+          "x": -290.8565319576188,
+          "y": 0,
+          "z": 76.48930589176085,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 171.94621447473764
+        },
+        {
+          "id": "D2",
+          "x": 415.00316317011857,
+          "y": 0,
+          "z": -104.08061481322517,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 343.6557667516172
+        }
+      ],
+      "wind": {
+        "active": false,
+        "dir_deg": 0,
+        "warning_ticks": 0,
+        "active_ticks": 0
+      },
+      "previous": {
+        "dash": false,
+        "pause": false,
+        "jump": false,
+        "interact": false,
+        "pulse": false
+      }
+    }
+  },
+  "chromium": {
+    "action": {
+      "moveX": 0,
+      "moveZ": -1,
+      "ticks": 48,
+      "pulse": false,
+      "jump": false,
+      "interact": false,
+      "glow": false,
+      "restart": false
+    },
+    "before": {
+      "snapshot": {
+        "tick": 12434,
+        "sim_tick": 12434,
+        "night": 2,
+        "state": "playing",
+        "time_s": 62.767,
+        "score": 770,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 15.387688262436404,
+          "y": 0,
+          "z": -12.528650070512152,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": -5.999999999999979
+          },
+          "grounded": true,
+          "flames": 2,
+          "light": 1,
+          "capacity": 20,
+          "invuln": false,
+          "dash_cd_s": 0.083,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 20
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 93.2,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 99.1,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 70,
+              "y": 0,
+              "z": 20
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": 87,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 53,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": 18.788659354702894,
+              "y": 0,
+              "z": -4.261390764422789
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 42.24501295179637,
+              "y": 0,
+              "z": 2.1253805027834094
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M6240",
+            "pos": {
+              "x": -1.8369701987210296e-15,
+              "y": 0,
+              "z": -10
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6480",
+            "pos": {
+              "x": -10,
+              "y": 0,
+              "z": 1.2246467991473533e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6960",
+            "pos": {
+              "x": 15.556349186104047,
+              "y": 0,
+              "z": 15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7680",
+            "pos": {
+              "x": -15.556349186104043,
+              "y": 0,
+              "z": 15.556349186104047
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8160",
+            "pos": {
+              "x": -15.556349186104049,
+              "y": 0,
+              "z": -15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9600",
+            "pos": {
+              "x": 15.556349186104041,
+              "y": 0,
+              "z": -15.556349186104049
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10320",
+            "pos": {
+              "x": -4.0413344371862654e-15,
+              "y": 0,
+              "z": -22
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11280",
+            "pos": {
+              "x": -22,
+              "y": 0,
+              "z": 2.6942229581241772e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11520",
+            "pos": {
+              "x": 80,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11760",
+            "pos": {
+              "x": 22,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12240",
+            "pos": {
+              "x": 6.123233995736766e-16,
+              "y": 0,
+              "z": 10
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -290.82352739142397,
+              "y": 0,
+              "z": 76.48463580381724
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 414.97117689255754,
+              "y": 0,
+              "z": -104.07123455955583
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [],
+        "campaign_score": 0
+      },
+      "player": {
+        "x": 15.387688262436404,
+        "y": 0,
+        "z": -12.528650070512152,
+        "vel": {
+          "x": 0,
+          "y": 0,
+          "z": -5.999999999999979
+        },
+        "facing": {
+          "x": 0,
+          "z": -1
+        },
+        "grounded": true,
+        "flames": 2,
+        "light": 1,
+        "successful_lights": 6,
+        "capacity": 20,
+        "invuln_ticks": 0,
+        "respawn_ticks": 0,
+        "dash_ticks": 0,
+        "dash_cd_ticks": 5,
+        "pulse_cd_ticks": 0,
+        "charm_ticks": 0,
+        "padVelocity": null,
+        "dashDirection": {
+          "x": 0.7071067811865475,
+          "z": -0.7071067811865475
+        },
+        "fallHandled": false,
+        "motionVelocity": {
+          "x": 0,
+          "z": -6
+        }
+      },
+      "lanterns": [
+        {
+          "id": "L1",
+          "x": 0,
+          "y": 0,
+          "z": 20,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5591,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L2",
+          "x": 17,
+          "y": 0,
+          "z": -10,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5945,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L3",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L4",
+          "x": 70,
+          "y": 0,
+          "z": 20,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L5",
+          "x": 87,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        },
+        {
+          "id": "L6",
+          "x": 53,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        }
+      ],
+      "shades": [
+        {
+          "id": "S1",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 235.82762986421585,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L3",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": -0.4703531552371925,
+            "z": 0.8824782769895345
+          }
+        },
+        {
+          "id": "S2",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 137.335846144706,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S3",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 160.6578615680337,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S4",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 173.3010334521532,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S5",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 267.4705169722438,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S6",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 109.5242728292942,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S7",
+          "x": 18.788659354702894,
+          "y": 0,
+          "z": -4.261390764422789,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 82.54586655646563,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "recoil_dir": {
+            "x": -0.164269318364612,
+            "z": 0.9243791964714916
+          },
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S8",
+          "x": 42.24501295179637,
+          "y": 0,
+          "z": 2.1253805027834094,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 26.511988565325737,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        }
+      ],
+      "drifters": [
+        {
+          "id": "D1",
+          "x": -290.82352739142397,
+          "y": 0,
+          "z": 76.48463580381724,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 171.94621447473764
+        },
+        {
+          "id": "D2",
+          "x": 414.97117689255754,
+          "y": 0,
+          "z": -104.07123455955583,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 343.6557667516172
+        }
+      ],
+      "wind": {
+        "active": false,
+        "dir_deg": 0,
+        "warning_ticks": 0,
+        "active_ticks": 0
+      },
+      "previous": {
+        "dash": false,
+        "pause": false,
+        "jump": false,
+        "interact": false,
+        "pulse": false
+      }
+    },
+    "after": {
+      "snapshot": {
+        "tick": 12435,
+        "sim_tick": 12435,
+        "night": 2,
+        "state": "playing",
+        "time_s": 62.75,
+        "score": 770,
+        "end_reason": null,
+        "wind": {
+          "active": false,
+          "dir_deg": 0
+        },
+        "player": {
+          "x": 15.387688262436404,
+          "y": 0,
+          "z": -12.628650070512151,
+          "vel": {
+            "x": 0,
+            "y": 0,
+            "z": -5.999999999999979
+          },
+          "grounded": true,
+          "flames": 2,
+          "light": 1,
+          "capacity": 20,
+          "invuln": false,
+          "dash_cd_s": 0.067,
+          "pulse_cd_s": 0,
+          "charm_s": 0
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "pos": {
+              "x": 0,
+              "y": 0,
+              "z": 20
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 93.2,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L2",
+            "pos": {
+              "x": 17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": true,
+            "progress": 5,
+            "fuel": 99.1,
+            "ever_lit": true,
+            "relit_count": 1
+          },
+          {
+            "id": "L3",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L4",
+            "pos": {
+              "x": 70,
+              "y": 0,
+              "z": 20
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": true,
+            "relit_count": 0
+          },
+          {
+            "id": "L5",
+            "pos": {
+              "x": 87,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          },
+          {
+            "id": "L6",
+            "pos": {
+              "x": 53,
+              "y": 0,
+              "z": -10
+            },
+            "lit": false,
+            "progress": 0,
+            "fuel": 0,
+            "ever_lit": false,
+            "relit_count": 0
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "pos": {
+              "x": -17,
+              "y": 0,
+              "z": -10
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S2",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S3",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313019
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S4",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S5",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S6",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313019
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S7",
+            "pos": {
+              "x": 18.780029853544214,
+              "y": 0,
+              "z": -4.270122713313019
+            },
+            "state": "chase",
+            "state_ticks_left": 0
+          },
+          {
+            "id": "S8",
+            "pos": {
+              "x": 42.261602109230914,
+              "y": 0,
+              "z": 2.1066775656982357
+            },
+            "state": "wander",
+            "state_ticks_left": 0
+          }
+        ],
+        "motes": [
+          {
+            "id": "M6240",
+            "pos": {
+              "x": -1.8369701987210296e-15,
+              "y": 0,
+              "z": -10
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6480",
+            "pos": {
+              "x": -10,
+              "y": 0,
+              "z": 1.2246467991473533e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M6960",
+            "pos": {
+              "x": 15.556349186104047,
+              "y": 0,
+              "z": 15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M7680",
+            "pos": {
+              "x": -15.556349186104043,
+              "y": 0,
+              "z": 15.556349186104047
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M8160",
+            "pos": {
+              "x": -15.556349186104049,
+              "y": 0,
+              "z": -15.556349186104043
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M9600",
+            "pos": {
+              "x": 15.556349186104041,
+              "y": 0,
+              "z": -15.556349186104049
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M10320",
+            "pos": {
+              "x": -4.0413344371862654e-15,
+              "y": 0,
+              "z": -22
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11280",
+            "pos": {
+              "x": -22,
+              "y": 0,
+              "z": 2.6942229581241772e-15
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11520",
+            "pos": {
+              "x": 80,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M11760",
+            "pos": {
+              "x": 22,
+              "y": 0,
+              "z": 0
+            },
+            "kind": "random",
+            "ttl_s": null
+          },
+          {
+            "id": "M12240",
+            "pos": {
+              "x": 6.123233995736766e-16,
+              "y": 0,
+              "z": 10
+            },
+            "kind": "random",
+            "ttl_s": null
+          }
+        ],
+        "drifters": [
+          {
+            "id": "D1",
+            "pos": {
+              "x": -290.8565319576188,
+              "y": 0,
+              "z": 76.48930589176085
+            },
+            "state": "idle",
+            "stolen": 0
+          },
+          {
+            "id": "D2",
+            "pos": {
+              "x": 415.00316317011857,
+              "y": 0,
+              "z": -104.08061481322517
+            },
+            "state": "idle",
+            "stolen": 0
+          }
+        ],
+        "charms": [
+          {
+            "id": "C1",
+            "available": true,
+            "respawn_s": 0
+          }
+        ],
+        "events": [],
+        "campaign_score": 0
+      },
+      "player": {
+        "x": 15.387688262436404,
+        "y": 0,
+        "z": -12.628650070512151,
+        "vel": {
+          "x": 0,
+          "y": 0,
+          "z": -5.999999999999979
+        },
+        "facing": {
+          "x": 0,
+          "z": -1
+        },
+        "grounded": true,
+        "flames": 2,
+        "light": 1,
+        "successful_lights": 6,
+        "capacity": 20,
+        "invuln_ticks": 0,
+        "respawn_ticks": 0,
+        "dash_ticks": 0,
+        "dash_cd_ticks": 4,
+        "pulse_cd_ticks": 0,
+        "charm_ticks": 0,
+        "padVelocity": null,
+        "dashDirection": {
+          "x": 0.7071067811865475,
+          "z": -0.7071067811865475
+        },
+        "fallHandled": false,
+        "motionVelocity": {
+          "x": 0,
+          "z": -6
+        }
+      },
+      "lanterns": [
+        {
+          "id": "L1",
+          "x": 0,
+          "y": 0,
+          "z": 20,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5590,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L2",
+          "x": 17,
+          "y": 0,
+          "z": -10,
+          "progress": 5,
+          "lit": true,
+          "fuel_units": 5944,
+          "ever_lit": true,
+          "relit_count": 1
+        },
+        {
+          "id": "L3",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L4",
+          "x": 70,
+          "y": 0,
+          "z": 20,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": true,
+          "relit_count": 0
+        },
+        {
+          "id": "L5",
+          "x": 87,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        },
+        {
+          "id": "L6",
+          "x": 53,
+          "y": 0,
+          "z": -10,
+          "progress": 0,
+          "lit": false,
+          "fuel_units": 0,
+          "ever_lit": false,
+          "relit_count": 0
+        }
+      ],
+      "shades": [
+        {
+          "id": "S1",
+          "x": -17,
+          "y": 0,
+          "z": -10,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 235.82762986421585,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L3",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": -0.4703531552371925,
+            "z": 0.8824782769895345
+          }
+        },
+        {
+          "id": "S2",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 137.335846144706,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S3",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313019,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 160.6578615680337,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S4",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 173.3010334521532,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S5",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 267.4705169722438,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        },
+        {
+          "id": "S6",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313019,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 109.5242728292942,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S7",
+          "x": 18.780029853544214,
+          "y": 0,
+          "z": -4.270122713313019,
+          "state": "chase",
+          "state_ticks_left": 0,
+          "wander_deg": 82.54586655646563,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": null,
+          "recoil_dir": {
+            "x": -0.164269318364612,
+            "z": 0.9243791964714916
+          },
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.9842792879042211,
+            "z": -0.17661903465583584
+          }
+        },
+        {
+          "id": "S8",
+          "x": 42.261602109230914,
+          "y": 0,
+          "z": 2.1066775656982357,
+          "state": "wander",
+          "state_ticks_left": 0,
+          "wander_deg": 26.511988565325737,
+          "eviction_ticks": 0,
+          "drain_ticks": 0,
+          "drain_target_lantern_id": null,
+          "target_lantern_id": "L6",
+          "push_ticks": 0,
+          "push_dir": {
+            "x": 0.7532141364503439,
+            "z": -0.6577753907310327
+          }
+        }
+      ],
+      "drifters": [
+        {
+          "id": "D1",
+          "x": -290.8565319576188,
+          "y": 0,
+          "z": 76.48930589176085,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 171.94621447473764
+        },
+        {
+          "id": "D2",
+          "x": 415.00316317011857,
+          "y": 0,
+          "z": -104.08061481322517,
+          "state": "idle",
+          "stolen": 0,
+          "state_ticks_left": 0,
+          "wander_deg": 343.6557667516172
+        }
+      ],
+      "wind": {
+        "active": false,
+        "dir_deg": 0,
+        "warning_ticks": 0,
+        "active_ticks": 0
+      },
+      "previous": {
+        "dash": false,
+        "pause": false,
+        "jump": false,
+        "interact": false,
+        "pulse": false
+      }
+    }
+  },
+  "differences": [
+    {
+      "path": ".after.snapshot.shades.2.pos.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    },
+    {
+      "path": ".after.snapshot.shades.5.pos.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    },
+    {
+      "path": ".after.snapshot.shades.6.pos.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    },
+    {
+      "path": ".after.shades.2.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    },
+    {
+      "path": ".after.shades.5.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    },
+    {
+      "path": ".after.shades.6.z",
+      "node": -4.270122713313018,
+      "chromium": -4.270122713313019
+    }
+  ]
+}

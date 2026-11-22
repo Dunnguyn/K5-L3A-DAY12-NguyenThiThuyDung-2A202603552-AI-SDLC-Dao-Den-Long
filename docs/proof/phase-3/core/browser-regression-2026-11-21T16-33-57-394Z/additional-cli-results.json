@@ -1,0 +1,43 @@
+{
+  "scope": "Phase 3 additional actual CLI edge fixtures; not browser/default campaign",
+  "checks": [
+    {
+      "name": "wander-weak-tie-ID",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    },
+    {
+      "name": "safe-refill-plus-pulse",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    },
+    {
+      "name": "safe-raw-threshold-1205",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    },
+    {
+      "name": "safe-raw-threshold-1206",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    },
+    {
+      "name": "safe-raw-threshold-1207",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    },
+    {
+      "name": "two-part-relight-with-real-pickups",
+      "status": "PASS",
+      "deterministic": true,
+      "layer": "actual CLI fixture"
+    }
+  ],
+  "passed": 6,
+  "failed": 0
+}

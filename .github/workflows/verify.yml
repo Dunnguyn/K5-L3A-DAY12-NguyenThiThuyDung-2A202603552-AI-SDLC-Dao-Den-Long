@@ -1,10 +1,18 @@
-name: Verify Phase 2
-on: [push, pull_request, workflow_dispatch]
+name: Verify Phase 3
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PROOF_DIR: docs/proof/phase-3/ci/core
+      BROWSER_PROOF_DIR: docs/proof/phase-3/ci/browser
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,18 +25,17 @@ jobs:
       - run: node --version && npm --version
       - run: npm ci
       - run: node scripts/preflight-ci.mjs
-      - run: node scripts/run-phase2-qa.mjs
-        env:
-          PROOF_DIR: docs/proof/phase-2/core/ci/qa42
-      - run: npm run bench:headless
-        env:
-          PROOF_DIR: docs/proof/phase-2/core/ci/benchmark
+      # Replaced Phase-2 assertions are mapped in phase-3-test-plan.md;
+      # retained physics/CLI/remediation assertions run in the unit suite.
+      - run: node scripts/phase3-edge-scenarios.mjs
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:browser
+      - run: node scripts/phase3-divergence.mjs
         env:
-          PROOF_DIR: docs/proof/phase-2/browser/ci
+          RELEASE_DIR: docs/proof/phase-3/ci/runtime
+          REQUIRE_GAMEPLAY_PARITY: '1'
+      - run: npm run test:browser
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cross-platform-preflight
-          path: docs/proof/phase-2/
+          name: phase-3-verification
+          path: docs/proof/phase-3/ci/

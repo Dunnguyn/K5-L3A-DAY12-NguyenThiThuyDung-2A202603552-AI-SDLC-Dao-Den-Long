@@ -1,0 +1,42 @@
+# Phase 3 — requirements traceability
+
+Source: Ticket-03; inherited Ticket-02/PRD-0 only where not replaced. **Current: 23 PASS / 2 PARTIAL / 0 FAIL / 0 NOT VERIFIED across these 25 scoped rows.** PASS is limited to exercised Core/browser/known-delta behavior; it is not full official-contract or independent acceptance. Residual numeric representation, official base compatibility, real GPU/macOS and manual audio listening remain explicit limitations. The release's exact-SHA CI result is recorded in the annotated phase-3 tag after SUCCESS. Historical Phase 2 results/waiver do not transfer to Phase 3. See [final report](../proof/phase-3/PHASE3_FINAL_REPORT.md).
+
+Test IDs and Given/When/Then: [test plan](phase-3-test-plan.md). Model/decisions: [ADR](../decisions/ADR-phase-3-lantern-fuel.md). Schema/events: [contract matrix](phase-3-contract-migration.md). Actual new evidence is under `docs/proof/phase-3/core/` and `browser/`; historical proof is preserved.
+
+| Requirement ID | Source | Expected | Acceptance/test IDs | Modules | Approved decision / remaining scope | Status | Actual evidence / pending scope |
+|---|---|---|---|---|---|---|---|
+| P3-F01 | §1 | Max 100; first/relight fuel 100; decay 1/s at 60 Hz | F01,F03,F08 | C,G,H | A4,A8 precision | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-F02 | §1 [THAY THẾ] | Refuel 10/mote with ceil/clamp and bag limit; no event/score when used=0 | F04,F06,S01,C04 | G,H,B | A1 amount | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-F03 | §1 | Nearest eligible lamp then ID; exclude full; inherited 2m 3D interaction | F05,F06 | G,B | Tie policy inherited | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-F04 | §1 | Fuel<=0 turns off, progress=0, ever_lit preserved; one out; ambient decreases | F01,F02,W04,U01 | G,H,B | A2 event order | PASS | Core + browser out59/60/61, ambient and off-shape probes; browser report |
+| P3-F05 | §1 | First cost 10, relight cost 5; persistent partial deposits and relit_count | F07,F08,S01 | C,G,H,B | A4/A5 initialization | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-F06 | §2 [THAY THẾ] | Safe iff lit raw fuel>=30; reactivation evicts within 30 ticks without hits | F03,A04,A06 | G,B | A3 guard order | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-A01 | §2 | Wander chooses nearest weak lit, then nearest off; chase does not retarget | A01,A06 | G | A6 fallback/metric | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-A02 | §2 | Drain at XZ<=2; stationary; 5/s/actor plus natural 1/s | A02,A03,A07 | G,H | A2/A3 latch/cadence | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-A03 | §2 | Drain exits and interruptions; stun expiry returns wander | A04–A07,S02 | G,H,B | A3,A9 | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-W01 | §3 [THAY THẾ] | Night durations 240/270/300 seconds | W01,C01,R02 | C,G,M,V | No gameplay ambiguity | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-W02 | §3 [THAY THẾ] | No early win; dawn alive with at least 3/5, 4/6, 5/7 lit | W02–W04 | G,H,B,V | No continuous-ratio assumption | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-W03 | §3 | no_flames first; reasons dawn_survived/dawn/no_flames | W05,C05 | G,H,B | A3,A8 finalizer | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-I01 | §4 | Capacity 10+2*successes, cap 20; relights count, pre-lit excluded, per-night reset | I01–I03,C02,C03 | C,G,H,B | A4/A5 defaults | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-S01 | §5 [THAY THẾ] | Deposit/refuel +5 per mote; first +100; relight +40 | S01,F04,F07 | C,G,M | A1 payload only | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-S02 | §5 | Pulse total 15 for pre-hit drain, otherwise 5 | S02,A05 | G | A3,A9 | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-S03 | §5 | Win bonus sum_lit(50+floor(raw fuel))+50*Flames; no time bonus | S03,W04,W05 | G,C,M,B | A8 rounding boundary | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-U01 | §1,§4 | Fuel bar; low blink 1 Hz below 30; ambient uses current lit; bag/capacity HUD | U01,I01,F02 | B | A7 rendering details | PASS | Browser material/matrix probes at 0/15/30/45/60/75 ticks, pause freeze, capacity20 and screenshots |
+| P3-U02 | §6 | Persist palette mode; cyan edge/eyes; white danger with warning icon | U02 | B | A7 defaults/normaleyes | PASS | Browser storage reload + actual material/CSS/icon probes, normal and instanced paths |
+| P3-U03 | §6 | Off cage collapses 20% with torn paper; distinguishable without color | U03 | B | A7 axis/scope | PASS | Browser actual cage scale0.8/torn marker/off color, partial and out screenshots |
+| P3-C01 | §7 | Contract 1.2; eight tuning additions and three durations | C01 | C,M | Base schema still unverified | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-C02 | §7 | Snapshot fuel/ever_lit/relit_count/capacity and Shade drain state | C01,C02 | G,H | A4,A8 | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-C03 | §7 | Scenario lamp/counter/target fields; lit missing fuel defaults 100 | C03,I02 | H,G | A4,A5 | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-C04 | §7 | Payloads for refuel/out/drain, lantern_lit.relight and game_over.reason | C04,C05,A07 | G,H,V | A1,A2,A8 | PASS | [Core handover](../proof/phase-3/core/PHASE3_CORE_FINAL_REPORT.md) |
+| P3-R01 | Ticket-02 unreplaced | Retain physics/maps/cooldowns/Drifter/Charm/pause and seeded determinism | R01,retained old tests | G,W,H,B,C | Keep Phase 2 rules unless explicitly replaced | PARTIAL | MAJOR safe-boundary divergence fixed with regression; same-input cross-runtime gameplay parity verified; two mote-coordinate representation differences and wider platform coverage remain |
+| P3-R02 | DoD | ADR/changelog/test mapping and actual CLI/browser/CI/performance verification | R02,testledger | V,docs | Release authorized only after actual mandatory gates | PARTIAL | Local suites/native SwiftShader samples exercised; retained under30 sample and hardware/macOS/listening/independent-QA limits remain; exact-SHA Ubuntu CI result is recorded in phase-3 annotation |
+
+Release limitations không được đóng bằng “code tồn tại”: official base/harness NOT VERIFIED cho tới khi có schema và chạy tương ứng; actual GPU/macOS/listening chỉ đánh giá khi chạy thật. GUI-only feature không có headless schema giả. Test failures sau implementation phải được giữ và xử lý, không gọi “replaced” nếu thiếu mapping clause→assertion.
+
+Current evidence: [browser handover](../proof/phase-3/browser/PHASE3_BROWSER_REPORT.md), including the new 170-unit run, 15 internal cross-checks, 22 CLI groups plus 6 edge scenarios, three declared fixture dawn replays and 8 harness stages. U01/U02/U03 and F04 now have exercised browser evidence. R01/R02 retain the documented limitations. All A1-A9 decisions were approved; official v1.0 base remains unavailable. Failed/incomplete attempts are retained and linked in the report.
+
+
+## Release audit of the two retained PARTIAL rows
+
+P3-R01: expected inherited physics/maps/timers/Drifter/Charm/pause and seeded determinism. Core/browser regression and complete same-input cross-runtime gameplay traces pass after the MAJOR safe-boundary timer fix. Remaining two Night3 mote coordinate differences<=7.11e-15m and untested platforms are OBSERVATION, non-blocking; status stays PARTIAL. P3-R02: expected ADR/changelog/test migration/known1.2 delta/gameplay/CLI/browser/CI/performance evidence. Documents and local gates pass; fresh native software samples plus retained28.51FPS/incomplete history keep overall performance PARTIAL. RealGPU/macOS/listening/independentQA/officialbase remain unverified. These are MINOR verification limitations for milestone handover; exact-SHA CI failure/unavailability remains a mandatory blocker until SUCCESS. No row is promoted automatically. Final evidence: ../proof/phase-3/PHASE3_FINAL_REPORT.md; final CI SHA/run URL are recorded by annotated phase-3.

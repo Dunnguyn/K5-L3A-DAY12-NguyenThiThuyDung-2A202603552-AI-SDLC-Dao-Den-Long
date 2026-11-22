@@ -1,6 +1,6 @@
 {
-  "status": "INTERNAL ADAPTER — known Test Contract v1.1 delta implemented; v1.0 base NOT VERIFIED",
-  "contract_version": "1.1",
+  "status": "INTERNAL ADAPTER — known Test Contract v1.2 delta implemented; v1.0 base NOT VERIFIED",
+  "contract_version": "1.2",
   "internal_adapter_version": "internal-draft-1",
   "command": "node scripts/headless.mjs --night 1 <scenario.json>",
   "night_option": [
@@ -11,9 +11,12 @@
   "scenario_input": {
     "version": "internal-draft-1",
     "seed": "optional non-negative integer",
+    "lanterns": "scenario.lanterns merges canonical ids; optional lit/fuel/ever_lit; lit without fuel defaults 100; fuel uses 1/60 units",
+    "player": "scenario.player.successful_lights defaults 0; capacity derived; pre-lit lamps excluded",
+    "shades": "scenario.shades supports drain and target_lantern_id",
     "actions": "array {ticks,moveX,moveZ,jump,interact,glow,pulse,dash,pause,restart}; max 10000 actions, 21600 total ticks; unknown keys rejected; button edges evaluated by shared core"
   },
-  "output": "{version,state}; known v1.1 snapshot fields and required arrays; stdout is one JSON document; errors JSON stderr and exit 1",
+  "output": "{version,state}; known v1.2 snapshot fields and required arrays; stdout is one JSON document; errors JSON stderr and exit 1",
   "determinism": "seeded RNG in shared core; same night, seed, scenario and actions yield same snapshot/events",
   "tuning": {
     "tick_rate": 60,
@@ -67,9 +70,9 @@
     "fall_y": -10,
     "fall_wait_ticks": 60,
     "initial_flames": 3,
-    "night1_duration_s": 300,
-    "night2_duration_s": 330,
-    "night3_duration_s": 360,
+    "night1_duration_s": 240,
+    "night2_duration_s": 270,
+    "night3_duration_s": 300,
     "drifter_speed": 7,
     "drifter_idle_speed": 2,
     "drifter_chase_min_light": 5,
@@ -87,8 +90,19 @@
     "gust_duration_ticks": 300,
     "gust_warning_ticks": 120,
     "gust_speed": 2,
-    "firefly_score": 10,
+    "fuel_max": 100,
+    "fuel_decay_per_s": 1,
+    "fuel_per_mote": 10,
+    "relight_cost": 5,
+    "win_ratio": 0.6,
+    "drain_per_s": 5,
+    "low_fuel_threshold": 30,
+    "capacity_max": 20,
+    "firefly_score": 5,
     "lantern_score": 100,
+    "relight_score": 40,
+    "drain_pulse_score": 15,
+    "dawn_lantern_bonus": 50,
     "pulse_score": 5,
     "shade_wander_speed": 1.5,
     "light_drop_divisor": 2,
@@ -97,7 +111,6 @@
     "drop_radius_modulus": 100,
     "ground_epsilon": 0.05,
     "shade_spawn_separation": 1,
-    "win_time_score_multiplier": 2,
     "win_flame_bonus": 50
   }
 }

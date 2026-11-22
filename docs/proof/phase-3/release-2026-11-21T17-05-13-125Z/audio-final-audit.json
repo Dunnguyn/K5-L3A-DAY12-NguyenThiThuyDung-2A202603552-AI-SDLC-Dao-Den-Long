@@ -1,0 +1,208 @@
+[
+  {
+    "night": 1,
+    "checks": [
+      {
+        "type": "night_start",
+        "expected": 1,
+        "actual": 1
+      },
+      {
+        "type": "dash",
+        "expected": 126,
+        "actual": 126
+      },
+      {
+        "type": "mote_picked",
+        "expected": 54,
+        "actual": 54
+      },
+      {
+        "type": "shade_spawn",
+        "expected": 6,
+        "actual": 6
+      },
+      {
+        "type": "jump",
+        "expected": 18,
+        "actual": 18
+      },
+      {
+        "type": "pulse",
+        "expected": 2,
+        "actual": 2
+      },
+      {
+        "type": "player_hit",
+        "expected": 1,
+        "actual": 1
+      },
+      {
+        "type": "lantern_lit",
+        "expected": 6,
+        "actual": 6
+      },
+      {
+        "type": "lantern_out",
+        "expected": 3,
+        "actual": 3
+      },
+      {
+        "type": "game_over",
+        "expected": 1,
+        "actual": 1
+      }
+    ],
+    "contextState": "running",
+    "manualListening": "NOT VERIFIED"
+  },
+  {
+    "night": 2,
+    "checks": [
+      {
+        "type": "night_start",
+        "expected": 2,
+        "actual": 2
+      },
+      {
+        "type": "dash",
+        "expected": 317,
+        "actual": 317
+      },
+      {
+        "type": "mote_picked",
+        "expected": 131,
+        "actual": 131
+      },
+      {
+        "type": "shade_spawn",
+        "expected": 14,
+        "actual": 14
+      },
+      {
+        "type": "jump",
+        "expected": 79,
+        "actual": 79
+      },
+      {
+        "type": "pulse",
+        "expected": 7,
+        "actual": 7
+      },
+      {
+        "type": "player_hit",
+        "expected": 3,
+        "actual": 3
+      },
+      {
+        "type": "lantern_lit",
+        "expected": 14,
+        "actual": 14
+      },
+      {
+        "type": "lantern_out",
+        "expected": 7,
+        "actual": 7
+      },
+      {
+        "type": "game_over",
+        "expected": 2,
+        "actual": 2
+      },
+      {
+        "type": "drifter_spawn",
+        "expected": 2,
+        "actual": 2
+      },
+      {
+        "type": "charm_picked",
+        "expected": 2,
+        "actual": 2
+      }
+    ],
+    "contextState": "running",
+    "manualListening": "NOT VERIFIED"
+  },
+  {
+    "night": 3,
+    "checks": [
+      {
+        "type": "night_start",
+        "expected": 3,
+        "actual": 3
+      },
+      {
+        "type": "dash",
+        "expected": 348,
+        "actual": 348
+      },
+      {
+        "type": "mote_picked",
+        "expected": 196,
+        "actual": 196
+      },
+      {
+        "type": "shade_spawn",
+        "expected": 24,
+        "actual": 24
+      },
+      {
+        "type": "jump",
+        "expected": 86,
+        "actual": 86
+      },
+      {
+        "type": "pulse",
+        "expected": 8,
+        "actual": 8
+      },
+      {
+        "type": "player_hit",
+        "expected": 5,
+        "actual": 5
+      },
+      {
+        "type": "lantern_lit",
+        "expected": 20,
+        "actual": 20
+      },
+      {
+        "type": "lantern_out",
+        "expected": 8,
+        "actual": 8
+      },
+      {
+        "type": "game_over",
+        "expected": 3,
+        "actual": 3
+      },
+      {
+        "type": "drifter_spawn",
+        "expected": 4,
+        "actual": 4
+      },
+      {
+        "type": "charm_picked",
+        "expected": 2,
+        "actual": 2
+      },
+      {
+        "type": "wind_warning",
+        "expected": 10,
+        "actual": 10
+      },
+      {
+        "type": "wind_start",
+        "expected": 10,
+        "actual": 10
+      },
+      {
+        "type": "refuel",
+        "expected": 1,
+        "actual": 1
+      }
+    ],
+    "contextState": "running",
+    "manualListening": "NOT VERIFIED"
+  }
+]

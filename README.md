@@ -1,5 +1,17 @@
 # Day 12 — AI SDLC: Đảo Đèn Lồng
 
+## Phase 3 final verification and release
+
+Fuel/dawn campaign implemented; final local173unit,15cross-check,8harness,22CLI and20browser-boundary checks passed. Default real-keyboard campaign3759. Release-blocking safe-boundary divergence fixed; only two Night3 mote coordinate representation differences remain. RTM23PASS/2PARTIAL; software performance and external verification limitations remain explicit. [Final report](docs/proof/phase-3/PHASE3_FINAL_REPORT.md). Annotated phase-3 records the release SHA and exact successful CI URL; no independent QA/full official compliance claim. Historical handovers below predate this release gate.
+
+## Phase 3 browser integration (current working tree)
+
+Shared Core now drives fuel bars, first-light/refuel/relight prompts, low-fuel blinking, safe-zone rings, Shade drain effects, dynamic 10–20 capacity, dawn results and the persisted “Bảng màu dễ phân biệt” option. Presentation never calculates fuel, capacity, AI, scores or outcomes independently. See [Phase 3 notes](docs/notes/phase-3.md), [RTM](docs/notes/phase-3-rtm.md) and [browser evidence](docs/proof/phase-3/browser/PHASE3_BROWSER_REPORT.md).
+
+Current rules: nights last 240/270/300 seconds; survive until dawn with at least 3/5, 4/6, 5/7 lamps lit. First light costs 10 motes, relight 5; lit lamps consume fuel and accept refills. Capacity grows by two per successful ignition, capped at 20. Deposits score 5/mote, first light 100, relight 40; a draining Shade hit by pulse scores 15 total. Dawn bonuses use remaining lamp fuel and Flames; there is no time bonus. E performs the eligible nearby lamp interaction. Volume, camera sensitivity and distinguishable palette persist.
+
+`npm run test:browser` now runs Phase 3 boundaries and the default-state keyboard campaign. Historical Phase 2 scripts/evidence remain available; their replaced victory/score assertions are not Phase 3 gates. Use current Phase 3 CLI examples from the test plan. No Phase 3 commit/tag/release has been created. Official v1.0 compatibility, real GPU, macOS, current remote CI and manual audio listening remain unverified. Exact results can differ across Node/Chromium math runtimes; same-runtime replay is checked explicitly.
+
 ## Phase 2 status
 
 Phase 2 implements the three-island campaign within the verified scope: shared 60Hz Core, canonical maps, bridge/pads/ramps/tiers/tower, wind, Drifters, Wind Charms, partial lantern charging, enemies/pulse/scoring/fall, menu/results/Bình Minh, correct-night retry, pause, HUD, procedural audio and persistent settings. Codex repaired F01–F07.
@@ -17,7 +29,7 @@ npm run dev
 
 Open the Vite URL. WASD/arrows move; Space jumps; Shift dashes; E deposits; Q pulses; mouse drag rotates the camera; wheel zooms; P/Esc pauses. Settings persist after reload.
 
-## Gameplay and scoring
+## Historical Phase 2 gameplay and scoring
 
 Three nights use 60 fixed ticks/s. Run 6m/s, jump 7m/s, dash 14m/s for 12 ticks with 90-tick cooldown. Bag capacity 10; lanterns cost 10 and retain partial charge. Pulse costs 3. Durations 300/330/360s, with 3 Flames at each night start. Score:+10/deposited mote,+100/lit lantern,+5/Shade hit by pulse; victory adds floor(seconds remaining)*2+50*remaining Flames. Campaign score sums won nights.
 
@@ -26,7 +38,6 @@ Three nights use 60 fixed ticks/s. Run 6m/s, jump 7m/s, dash 14m/s for 12 ticks 
 ```sh
 npm test
 npm run test:independent
-node scripts/run-phase2-qa.mjs
 npm run build
 npm run verify
 npm run bench:headless

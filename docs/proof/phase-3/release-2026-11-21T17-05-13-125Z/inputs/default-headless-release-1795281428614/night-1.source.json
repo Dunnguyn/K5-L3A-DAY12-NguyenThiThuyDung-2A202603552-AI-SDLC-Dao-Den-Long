@@ -1,0 +1,12 @@
+{
+  "source": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/inputs/default-headless-1795281304080/night-1.input.json",
+  "command": [
+    "node",
+    "scripts/headless.mjs",
+    "--night",
+    "1",
+    "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/inputs/default-headless-1795281304080/night-1.input.json"
+  ],
+  "exitCode": 0,
+  "scenario": null
+}

@@ -1,0 +1,151 @@
+{
+  "scope": "Phase 3 actual CLI scenarios; seeded fixtures, not manual browser/default campaign acceptance; official v1.0 base NOT VERIFIED",
+  "timestamp": "2026-11-22T09:59:47.103Z",
+  "node": "v24.13.0",
+  "platform": "win32",
+  "checks": [
+    {
+      "name": "night-1-full-dawn",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-1-full-dawn.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-1-full-dawn.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "night-1-no-early-win",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-1-no-early-win.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-1-no-early-win.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "night-2-full-dawn",
+      "night": 2,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-2-full-dawn.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-2-full-dawn.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "night-2-no-early-win",
+      "night": 2,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-2-no-early-win.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-2-no-early-win.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "night-3-full-dawn",
+      "night": 3,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-3-full-dawn.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-3-full-dawn.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "night-3-no-early-win",
+      "night": 3,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-3-no-early-win.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/night-3-no-early-win.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "first-light",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/first-light.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/first-light.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "partial-relight",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/partial-relight.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/partial-relight.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "refuel-and-full-decay",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/refuel-and-full-decay.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/refuel-and-full-decay.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "multi-shade-drain",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/multi-shade-drain.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/multi-shade-drain.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "pause-drain-resume",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/pause-drain-resume.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/pause-drain-resume.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "out-59-60-61",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/out-59-60-61.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/out-59-60-61.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "drain-pulse",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/drain-pulse.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/drain-pulse.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "capacity-theft",
+      "night": 2,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/capacity-theft.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/capacity-theft.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "fatal-fall",
+      "night": 1,
+      "status": "PASS",
+      "deterministic": true,
+      "input": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/fatal-fall.input.json",
+      "actual": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/ci-preflight-local-2/fatal-fall.actual.json",
+      "layer": "actual CLI scenario fixture; not default browser campaign"
+    },
+    {
+      "name": "invalid CLI night",
+      "status": "PASS",
+      "exitCode": 1,
+      "stdoutEmpty": true
+    }
+  ],
+  "passed": 16,
+  "failed": 0
+}

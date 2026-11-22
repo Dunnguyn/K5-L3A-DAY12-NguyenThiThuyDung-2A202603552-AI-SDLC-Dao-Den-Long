@@ -1,6 +1,7 @@
 # Preserve byte-level provenance of requirements and historical evidence.
 # Upstream CRLF and Markdown hard breaks are immutable, not local lint errors.
 docs/requirements/PRD-0.md -text -whitespace
+docs/requirements/TICKET-03.md -text -whitespace
 # Raw command logs/diffs/captured source retain original whitespace as evidence.
 # Source/tests outside proof still receive the normal whitespace checks.
 docs/proof/** -text -whitespace

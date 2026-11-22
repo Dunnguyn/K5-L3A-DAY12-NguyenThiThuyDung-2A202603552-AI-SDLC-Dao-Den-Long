@@ -1,0 +1,79 @@
+{
+  "node": "v24.13.0",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "resolution": "headless/no DOM",
+  "startedAt": "2026-11-21T11:35:29.299Z",
+  "scope": "Phase 3 Night 3: 18000 active ticks plus 3600 terminal input ticks; separate throughput fixture runs 21600 active updates across two legal Night-3 sessions. No time/tuning override.",
+  "cliReplays": [
+    {
+      "elapsedMs": 6279.8245,
+      "inputTicks": 21600,
+      "activeSimTicks": 18000,
+      "terminalTailTicks": 3600,
+      "exitCode": 0,
+      "stdoutPureJson": true
+    },
+    {
+      "elapsedMs": 6822.1272,
+      "inputTicks": 21600,
+      "activeSimTicks": 18000,
+      "terminalTailTicks": 3600,
+      "exitCode": 0,
+      "stdoutPureJson": true
+    }
+  ],
+  "activeThroughputReplays": [
+    {
+      "elapsedMs": 9169.759900000001,
+      "activeSimTicks": 21600,
+      "sessions": [
+        {
+          "night": 3,
+          "sim_tick": 18000,
+          "state": "lost",
+          "randomMotes": 30,
+          "shades": 10,
+          "drifters": 2
+        },
+        {
+          "night": 3,
+          "sim_tick": 3600,
+          "state": "playing",
+          "randomMotes": 30,
+          "shades": 10,
+          "drifters": 2
+        }
+      ],
+      "fixture": "30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death"
+    },
+    {
+      "elapsedMs": 9177.7064,
+      "activeSimTicks": 21600,
+      "sessions": [
+        {
+          "night": 3,
+          "sim_tick": 18000,
+          "state": "lost",
+          "randomMotes": 30,
+          "shades": 10,
+          "drifters": 2
+        },
+        {
+          "night": 3,
+          "sim_tick": 3600,
+          "state": "playing",
+          "randomMotes": 30,
+          "shades": 10,
+          "drifters": 2
+        }
+      ],
+      "fixture": "30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death"
+    }
+  ],
+  "deterministic": true,
+  "within30s": true
+}

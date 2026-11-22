@@ -1,0 +1,38 @@
+{
+  "kind": "default-state headless input pilot; not browser E2E",
+  "nights": [
+    {
+      "night": 1,
+      "state": "won",
+      "reason": "dawn_survived",
+      "flames": 1,
+      "tick": 14400,
+      "lit": 3,
+      "score": 1029,
+      "capacity": 20,
+      "actions": 4800
+    },
+    {
+      "night": 2,
+      "state": "lost",
+      "reason": "no_flames",
+      "flames": 0,
+      "tick": 15305,
+      "lit": 4,
+      "score": 900,
+      "capacity": 20,
+      "actions": 5102
+    },
+    {
+      "night": 3,
+      "state": "lost",
+      "reason": "no_flames",
+      "flames": 0,
+      "tick": 4107,
+      "lit": 1,
+      "score": 190,
+      "capacity": 12,
+      "actions": 2738
+    }
+  ]
+}

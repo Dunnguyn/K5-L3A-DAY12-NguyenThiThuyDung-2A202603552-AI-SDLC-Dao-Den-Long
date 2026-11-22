@@ -1,0 +1,16 @@
+{
+  "kind": "default-state headless input pilot; not browser E2E",
+  "nights": [
+    {
+      "night": 3,
+      "state": "won",
+      "reason": "dawn_survived",
+      "flames": 3,
+      "tick": 18000,
+      "lit": 5,
+      "score": 1374,
+      "capacity": 20,
+      "actions": 751
+    }
+  ]
+}

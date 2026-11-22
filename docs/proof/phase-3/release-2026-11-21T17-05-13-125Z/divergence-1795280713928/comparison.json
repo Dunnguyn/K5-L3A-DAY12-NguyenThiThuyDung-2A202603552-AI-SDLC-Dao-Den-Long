@@ -1,0 +1,631 @@
+{
+  "node": "v24.13.0",
+  "chromium": "159.0.8154.6",
+  "kind": "Same default initial state/seed/night/actions/ticks; no campaign vs fixture comparison",
+  "nights": [
+    {
+      "night": 1,
+      "inputFile": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/default-headless-1795276401540/night-1.input.json",
+      "seed": 20261202,
+      "scenario": null,
+      "ticks": 14400,
+      "initialEqual": true,
+      "firstExactTick": 6321,
+      "firstGameplayTick": 6322,
+      "finalDifferences": [
+        {
+          "path": ".score",
+          "node": 1072,
+          "chromium": 1062
+        },
+        {
+          "path": ".shades.0.pos.x",
+          "node": 1.0342813906892971,
+          "chromium": -23.8
+        },
+        {
+          "path": ".shades.0.pos.z",
+          "node": 19.089817092096574,
+          "chromium": 7.7
+        },
+        {
+          "path": ".shades.0.state",
+          "node": "chase",
+          "chromium": "wander"
+        },
+        {
+          "path": ".shades.2.pos.x",
+          "node": 1.0342813906892971,
+          "chromium": -23.8
+        },
+        {
+          "path": ".shades.2.pos.z",
+          "node": 19.089817092096574,
+          "chromium": 7.7
+        },
+        {
+          "path": ".shades.2.state",
+          "node": "chase",
+          "chromium": "wander"
+        },
+        {
+          "path": ".events.131.fuel",
+          "node": 0,
+          "chromium": 3.3
+        },
+        {
+          "path": ".events.159.type",
+          "node": "dash",
+          "chromium": "fuel_drain"
+        },
+        {
+          "path": ".events.159.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.159.shade_id",
+          "chromium": "S1"
+        },
+        {
+          "path": ".events.159.fuel",
+          "chromium": 20.8
+        },
+        {
+          "path": ".events.160.type",
+          "node": "dash",
+          "chromium": "fuel_drain"
+        },
+        {
+          "path": ".events.160.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.160.shade_id",
+          "chromium": "S1"
+        },
+        {
+          "path": ".events.160.fuel",
+          "chromium": 14.8
+        },
+        {
+          "path": ".events.162.type",
+          "node": "mote_picked",
+          "chromium": "fuel_drain"
+        },
+        {
+          "path": ".events.162.mote_id",
+          "node": "M7680"
+        },
+        {
+          "path": ".events.162.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.162.shade_id",
+          "chromium": "S1"
+        },
+        {
+          "path": ".events.162.fuel",
+          "chromium": 8.8
+        },
+        {
+          "path": ".events.164.type",
+          "node": "dash",
+          "chromium": "fuel_drain"
+        },
+        {
+          "path": ".events.164.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.164.shade_id",
+          "chromium": "S1"
+        },
+        {
+          "path": ".events.164.fuel",
+          "chromium": 2.8
+        },
+        {
+          "path": ".events.165.type",
+          "node": "dash",
+          "chromium": "lantern_out"
+        },
+        {
+          "path": ".events.165.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.166.type",
+          "node": "fuel_drain",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.166.lantern_id",
+          "node": "L1"
+        },
+        {
+          "path": ".events.166.shade_id",
+          "node": "S1"
+        },
+        {
+          "path": ".events.166.fuel",
+          "node": 5.7
+        },
+        {
+          "path": ".events.167.type",
+          "node": "fuel_drain",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.167.lantern_id",
+          "node": "L1"
+        },
+        {
+          "path": ".events.167.shade_id",
+          "node": "S3"
+        },
+        {
+          "path": ".events.167.fuel",
+          "node": 5.7
+        },
+        {
+          "path": ".events.167.mote_id",
+          "chromium": "M7680"
+        },
+        {
+          "path": ".events.168.type",
+          "node": "lantern_out",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.168.lantern_id",
+          "node": "L1"
+        },
+        {
+          "path": ".events.171.type",
+          "node": "mote_picked",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.171.mote_id",
+          "node": "M8160"
+        },
+        {
+          "path": ".events.172.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.173.type",
+          "node": "jump",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.173.mote_id",
+          "chromium": "M8160"
+        },
+        {
+          "path": ".events.174.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.175.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.178.type",
+          "node": "mote_picked",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.178.mote_id",
+          "node": "M8400"
+        },
+        {
+          "path": ".events.180.type",
+          "node": "dash",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.180.mote_id",
+          "chromium": "M8400"
+        },
+        {
+          "path": ".events.184.type",
+          "node": "lantern_lit",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.184.lantern_id",
+          "node": "L3"
+        },
+        {
+          "path": ".events.184.relight",
+          "node": true
+        },
+        {
+          "path": ".events.186.type",
+          "node": "mote_picked",
+          "chromium": "lantern_lit"
+        },
+        {
+          "path": ".events.186.mote_id",
+          "node": "M10080"
+        },
+        {
+          "path": ".events.186.lantern_id",
+          "chromium": "L3"
+        },
+        {
+          "path": ".events.186.relight",
+          "chromium": true
+        },
+        {
+          "path": ".events.188.mote_id",
+          "node": "M9600",
+          "chromium": "M10080"
+        },
+        {
+          "path": ".events.190.mote_id",
+          "node": "M10800",
+          "chromium": "M9600"
+        },
+        {
+          "path": ".events.192.type",
+          "node": "dash",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.192.mote_id",
+          "chromium": "M10800"
+        },
+        {
+          "path": ".events.194.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.195.type",
+          "node": "pulse",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.196.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.197.type",
+          "node": "mote_picked",
+          "chromium": "pulse"
+        },
+        {
+          "path": ".events.197.mote_id",
+          "node": "M6240"
+        },
+        {
+          "path": ".events.199.mote_id",
+          "node": "M6480",
+          "chromium": "M6240"
+        },
+        {
+          "path": ".events.201.mote_id",
+          "node": "M6720",
+          "chromium": "M6480"
+        },
+        {
+          "path": ".events.203.type",
+          "node": "dash",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.203.mote_id",
+          "chromium": "M6720"
+        },
+        {
+          "path": ".events.204.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.205.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.206.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.207.type",
+          "node": "mote_picked",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.207.mote_id",
+          "node": "M17"
+        },
+        {
+          "path": ".events.209.mote_id",
+          "node": "M10",
+          "chromium": "M17"
+        },
+        {
+          "path": ".events.211.type",
+          "node": "pulse",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.211.mote_id",
+          "chromium": "M10"
+        },
+        {
+          "path": ".events.213.type",
+          "node": "jump",
+          "chromium": "pulse"
+        },
+        {
+          "path": ".events.216.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.217.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.219.type",
+          "node": "mote_picked",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.219.mote_id",
+          "node": "M9840"
+        },
+        {
+          "path": ".events.220.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.221.type",
+          "node": "jump",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.221.mote_id",
+          "chromium": "M9840"
+        },
+        {
+          "path": ".events.222.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.223.type",
+          "node": "mote_picked",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.223.mote_id",
+          "node": "M12240"
+        },
+        {
+          "path": ".events.224.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.225.type",
+          "node": "jump",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.225.mote_id",
+          "chromium": "M12240"
+        },
+        {
+          "path": ".events.226.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.227.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.228.type",
+          "node": "mote_picked",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.228.mote_id",
+          "node": "M4560"
+        },
+        {
+          "path": ".events.230.type",
+          "node": "jump",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.230.mote_id",
+          "chromium": "M4560"
+        },
+        {
+          "path": ".events.231.type",
+          "node": "jump",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.232.type",
+          "node": "lantern_lit",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.232.lantern_id",
+          "node": "L1"
+        },
+        {
+          "path": ".events.232.relight",
+          "node": true
+        },
+        {
+          "path": ".events.233.type",
+          "node": "dash",
+          "chromium": "jump"
+        },
+        {
+          "path": ".events.234.type",
+          "node": "mote_picked",
+          "chromium": "lantern_lit"
+        },
+        {
+          "path": ".events.234.mote_id",
+          "node": "M12480"
+        },
+        {
+          "path": ".events.234.lantern_id",
+          "chromium": "L1"
+        },
+        {
+          "path": ".events.234.relight",
+          "chromium": true
+        },
+        {
+          "path": ".events.236.mote_id",
+          "node": "M12000",
+          "chromium": "M12480"
+        },
+        {
+          "path": ".events.238.mote_id",
+          "node": "M12960",
+          "chromium": "M12000"
+        },
+        {
+          "path": ".events.240.type",
+          "node": "dash",
+          "chromium": "mote_picked"
+        },
+        {
+          "path": ".events.240.mote_id",
+          "chromium": "M12960"
+        },
+        {
+          "path": ".events.242.type",
+          "node": "lantern_lit",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.242.lantern_id",
+          "node": "L2"
+        },
+        {
+          "path": ".events.242.relight",
+          "node": true
+        },
+        {
+          "path": ".events.243.type",
+          "node": "game_over",
+          "chromium": "dash"
+        },
+        {
+          "path": ".events.243.reason",
+          "node": "dawn_survived"
+        },
+        {
+          "path": ".events.244",
+          "chromium": {
+            "type": "lantern_lit",
+            "lantern_id": "L2",
+            "relight": true
+          }
+        },
+        {
+          "path": ".events.245",
+          "chromium": {
+            "type": "game_over",
+            "reason": "dawn_survived"
+          }
+        },
+        {
+          "path": ".campaign_score",
+          "node": 1072,
+          "chromium": 1062
+        }
+      ],
+      "scores": [
+        1072,
+        1062
+      ],
+      "outcomes": [
+        "dawn_survived",
+        "dawn_survived"
+      ]
+    },
+    {
+      "night": 2,
+      "inputFile": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/default-headless-1795276438836/night-2.input.json",
+      "seed": 20261202,
+      "scenario": null,
+      "ticks": 16200,
+      "initialEqual": true,
+      "firstExactTick": 12435,
+      "firstGameplayTick": 12436,
+      "finalDifferences": [
+        {
+          "path": ".shades.0.pos.x",
+          "node": -14.770083328282094,
+          "chromium": -14.87594761218022
+        },
+        {
+          "path": ".shades.0.pos.z",
+          "node": -4.429769157638569,
+          "chromium": -4.38854729559296
+        },
+        {
+          "path": ".shades.2.pos.x",
+          "node": 18.75656805608596,
+          "chromium": 18.766060873793048
+        },
+        {
+          "path": ".shades.2.pos.z",
+          "node": -4.262886730738325,
+          "chromium": -4.265801800595193
+        },
+        {
+          "path": ".shades.5.pos.x",
+          "node": 18.75656805608596,
+          "chromium": 18.766060873793048
+        },
+        {
+          "path": ".shades.5.pos.z",
+          "node": -4.262886730738325,
+          "chromium": -4.265801800595193
+        },
+        {
+          "path": ".shades.6.pos.x",
+          "node": 18.75656805608596,
+          "chromium": 18.766060873793048
+        },
+        {
+          "path": ".shades.6.pos.z",
+          "node": -4.262886730738325,
+          "chromium": -4.265801800595193
+        }
+      ],
+      "scores": [
+        1377,
+        1377
+      ],
+      "outcomes": [
+        "dawn_survived",
+        "dawn_survived"
+      ]
+    }
+  ]
+}

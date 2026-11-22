@@ -1,0 +1,30 @@
+
+ RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long
+
+ ❯ tests/browser-presentation.test.js (8 tests | 1 failed) 77ms
+   × full has no prompt, fractional decay refuel is displayed without deriving rules in UI 27ms
+
+ Test Files  1 failed | 6 passed (7)
+      Tests  1 failed | 169 passed (170)
+   Start at  20:27:39
+   Duration  3.12s (tests 85%, import 9%, transform 4%, worker 2%)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/browser-presentation.test.js > full has no prompt, fractional decay refuel is displayed without deriving rules in UI
+AssertionError: expected 'E — Châm dầu · 100.0/100 · dùng 1 đom…' to contain 'Ch?m d?u'
+
+Expected: "Ch?m d?u"
+Received: "E — Châm dầu · 100.0/100 · dùng 1 đom đóm"
+
+ ❯ tests/browser-presentation.test.js:24:44
+     22|  expect(browserView(s).ui.interaction).toBeNull();step(s);
+     23|  const v=browserView(s);expect(v.ui.interaction).toMatchObject({kind:'…
+     24|  expect(interactionText(v.ui.interaction)).toContain('Ch?m d?u');
+       |                                            ^
+     25| });
+     26| test('partial relight prompt uses5, first-light uses10; rendering cann…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

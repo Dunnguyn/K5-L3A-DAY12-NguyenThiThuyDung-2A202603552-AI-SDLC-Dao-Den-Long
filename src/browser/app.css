@@ -11,3 +11,23 @@
 #fx.warning{background:none}
 #fx.warning::after{content:"\2767        \2767                 \2767        \2767              \2767";position:absolute;inset:15% 0;color:#8FA3B8;font-size:42px;line-height:5;white-space:pre-wrap;text-shadow:0 0 8px #8FA3B8}
 @keyframes gust{from{transform:translateX(-3%)}to{transform:translateX(3%)}}
+
+/* Phase 3: compact dynamic inventory and distinguishable danger feedback. */
+:root{--danger:#FF5A5F;--danger-border:#FF5A5F99;--danger-fade:#FF5A5F66}
+:root.distinguishable{--danger:#FFFFFF;--danger-border:#FFFFFF99;--danger-fade:#FFFFFF66}
+#clock.danger{color:var(--danger);border-color:var(--danger-border)}
+.distinguishable #clock.danger::before{content:"⚠ ";font-size:17px}
+#fx.hurt{background:radial-gradient(transparent 42%,var(--danger-fade))}
+#low-warning{position:absolute;top:74px;left:50%;transform:translateX(-50%);max-width:45vw;padding:5px 12px;border:1px solid var(--danger-border);border-radius:12px;background:#0E1430e8;color:var(--danger);font-size:12px;text-align:center}
+#toast{top:112px;max-width:80vw;white-space:nowrap}
+#mote-bar{gap:4px;padding:10px 12px}
+#mote-bar i{width:14px;height:14px;flex:none}
+.bar-label{font-size:10px;letter-spacing:1px;white-space:nowrap}
+#bag-count{font-size:12px;letter-spacing:0;margin-left:8px;color:#FFF6C2}
+.setting-toggle{display:flex;align-items:center;gap:12px;border:1px solid #F2C14E55;border-radius:12px;padding:12px}
+.setting-toggle input{display:inline;width:20px;height:20px;margin:0;flex:none}
+#score-pop{position:absolute;right:25px;top:126px;color:#F2C14E;font-weight:800;font-size:17px;opacity:0;transition:opacity .15s}
+#score-pop.visible{opacity:1}
+.result-grid{max-width:470px}
+.result-grid b{font-size:17px}
+@media(max-width:650px){#mote-bar{gap:3px}#mote-bar i{width:10px;height:10px}#toast{top:155px;font-size:11px;white-space:normal;width:max-content;text-align:center}#low-warning{top:125px;max-width:85vw;font-size:10px}#score-pop{top:90px;font-size:12px}}

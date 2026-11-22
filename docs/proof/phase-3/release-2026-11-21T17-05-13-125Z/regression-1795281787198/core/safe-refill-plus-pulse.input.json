@@ -1,0 +1,39 @@
+{
+  "scenario": {
+    "player": {
+      "pos": {
+        "x": 1.5,
+        "y": 0,
+        "z": 25
+      },
+      "successful_lights": 5,
+      "light": 20
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "lit": true,
+        "fuel": 20
+      }
+    ],
+    "shades": [
+      {
+        "id": "S1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "z": 25
+        },
+        "state": "drain",
+        "target_lantern_id": "L1"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 1,
+      "interact": true,
+      "pulse": true
+    }
+  ]
+}

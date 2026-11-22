@@ -1,25 +1,156 @@
-﻿import { createGame,step,gameSnapshot } from '../core/game.js';
-const isObj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x), finite=x=>typeof x==='number'&&Number.isFinite(x);
-function rejectNullFields(x,keys){for(const k of keys)if(Object.hasOwn(x,k)&&x[k]===null)throw Error(`null ${k}`);}
-function vec(v){return isObj(v)&&['x','y','z'].every(k=>finite(v[k]));}
-export function validate(input){if(!isObj(input)||Object.keys(input).some(k=>!['version','seed','actions','scenario'].includes(k))||!Array.isArray(input.actions)||input.actions.length>10000)throw Error('Expected scenario object with actions (max 10000)');if(input.version!==undefined&&input.version!=='internal-draft-1')throw Error('Unsupported internal scenario version');if(input.seed!==undefined&&(!Number.isSafeInteger(input.seed)||input.seed<0))throw Error('seed must be non-negative safe integer');let total=0;for(const a of input.actions){if(!isObj(a)||Object.keys(a).some(k=>!['ticks','moveX','moveZ','jump','interact','pulse','glow','dash','pause','restart'].includes(k))||!Number.isSafeInteger(a.ticks)||a.ticks<1||(total+=a.ticks)>21600)throw Error('Invalid action or full-night tick budget');for(const k of ['moveX','moveZ'])if(a[k]!==undefined&&(!finite(a[k])||Math.abs(a[k])>1))throw Error(`Invalid ${k}`);for(const k of ['jump','interact','pulse','glow','dash','pause','restart'])if(a[k]!==undefined&&typeof a[k]!=='boolean')throw Error(`Invalid ${k}`);}if(input.scenario!==undefined&&!isObj(input.scenario))throw Error('scenario must be object');return input;}
-function applyScenario(s,v){if(v===undefined)return;const allowed=['player','shades','drifters','charms','random_drifters','wind_enabled'];if(Object.keys(v).some(k=>!allowed.includes(k)))throw Error('unknown scenario field');if(v.player!==undefined){const p=v.player,keys=['invuln_ticks','dash_cd_ticks','pulse_cd_ticks','charm_ticks','pos','light','flames'];if(!isObj(p)||Object.keys(p).some(k=>!keys.includes(k)))throw Error('invalid scenario.player');for(const k of keys.slice(0,4))if(p[k]!==undefined){if(!Number.isSafeInteger(p[k])||p[k]<0)throw Error(`invalid player.${k}`);s.player[k]=p[k];}if(p.pos!==undefined){if(!vec(p.pos))throw Error('invalid player.pos');Object.assign(s.player,{x:p.pos.x,y:p.pos.y,z:p.pos.z});}if(p.light!==undefined){if(!Number.isSafeInteger(p.light)||p.light<0||p.light>10)throw Error('invalid player.light');s.player.light=p.light;}if(p.flames!==undefined){if(!Number.isSafeInteger(p.flames)||p.flames<0||p.flames>3)throw Error('invalid player.flames');s.player.flames=p.flames;}}
- if(v.shades!==undefined){if(!Array.isArray(v.shades))throw Error('scenario.shades must be array');s.shades=v.shades.map((e,i)=>{if(!isObj(e)||Object.keys(e).some(k=>!['id','pos','x','y','z','state','state_ticks_left'].includes(k)))throw Error('invalid scenario shade');rejectNullFields(e,['id','pos','state','state_ticks_left']);const p=e.pos??e;if(!vec(p))throw Error('invalid shade position');const state=e.state??'wander',left=e.state_ticks_left??0;if(!['spawning','wander','chase','recoil','stunned'].includes(state)||!Number.isSafeInteger(left)||left<0)throw Error('invalid shade state/timer');return{id:e.id??`S${i+1}`,x:p.x,y:p.y,z:p.z,state,state_ticks_left:left,random:()=>.5,wander_deg:0,eviction_ticks:0,push_ticks:Math.min(15,left),push_dir:{x:1,z:0},recoil_dir:{x:1,z:0}};});}
- for(const key of ['drifters','charms'])if(v[key]!==undefined){if(!Array.isArray(v[key]))throw Error(`scenario.${key} must be array`);s[key]=v[key].map((x,i)=>{if(!isObj(x))throw Error(`invalid ${key} entry`);rejectNullFields(x,['id','pos','state','state_ticks_left','stolen','respawn_ticks']);if(key==='drifters'){const p=x.pos??x,state=x.state??'idle',ticks=x.state_ticks_left??0;if(!vec(p)||Object.keys(x).some(k=>!['id','pos','x','y','z','state','state_ticks_left','stolen'].includes(k))||!['idle','chase','flee','removed'].includes(state)||!Number.isSafeInteger(x.stolen??0)||(x.stolen??0)<0||(x.stolen??0)>3||!Number.isSafeInteger(ticks)||ticks<0)throw Error('invalid drifter');return{id:x.id??`D${i+1}`,x:p.x,y:p.y,z:p.z,state,stolen:x.stolen??0,state_ticks_left:ticks,wander_deg:0,flee_dir:{x:1,z:0}};}const p=x.pos??x;if(Object.keys(x).some(k=>!['id','pos','x','y','z','available','respawn_ticks'].includes(k))||!vec(p)||typeof x.id!=='string'||typeof x.available!=='boolean'||(x.respawn_ticks!==undefined&&(!Number.isSafeInteger(x.respawn_ticks)||x.respawn_ticks<0)))throw Error('invalid charm');return{id:x.id,x:p.x,y:p.y,z:p.z,available:x.available,respawn_ticks:x.respawn_ticks??0};});}
- for(const k of ['random_drifters','wind_enabled'])if(v[k]!==undefined&&typeof v[k]!=='boolean')throw Error(`invalid scenario.${k}`);s.random_drifters=v.random_drifters??true;s.wind_enabled=v.wind_enabled??true;}
-export function validateOutput(o){if(!isObj(o)||o.version!=='internal-draft-1'||Object.keys(o).some(k=>!['version','state'].includes(k))||!isObj(o.state))throw Error('invalid output envelope');const s=o.state,required=['tick','sim_tick','night','state','time_s','score','wind','player','lanterns','shades','motes','drifters','charms','events'];if(required.some(k=>!Object.hasOwn(s,k))||!Number.isSafeInteger(s.tick)||s.tick<0||!Number.isSafeInteger(s.sim_tick)||s.sim_tick<0||![1,2,3].includes(s.night)||!['playing','paused','won','lost'].includes(s.state)||!finite(s.time_s)||s.time_s<0||!Number.isSafeInteger(s.score)||s.score<0||!isObj(s.wind)||typeof s.wind.active!=='boolean'||!finite(s.wind.dir_deg)||!isObj(s.player))throw Error('invalid snapshot fields');const p=s.player;for(const k of ['x','y','z','flames','light','dash_cd_s','pulse_cd_s','charm_s'])if(!finite(p[k]))throw Error(`invalid player.${k}`);if(!vec(p.vel)||typeof p.grounded!=='boolean'||typeof p.invuln!=='boolean'||!Number.isSafeInteger(p.flames)||p.flames<0||p.flames>3||!Number.isSafeInteger(p.light)||p.light<0||p.light>10||p.dash_cd_s<0||p.pulse_cd_s<0||p.charm_s<0)throw Error('invalid player values');for(const k of ['lanterns','shades','motes','drifters','charms','events'])if(!Array.isArray(s[k]))throw Error(`${k} must be array`);for(const x of s.lanterns)if(!isObj(x)||typeof x.id!=='string'||!vec(x.pos)||typeof x.lit!=='boolean'||!Number.isSafeInteger(x.progress)||x.progress<0||x.progress>10)throw Error('invalid lantern');for(const x of s.shades)if(!isObj(x)||typeof x.id!=='string'||!vec(x.pos)||!['spawning','wander','chase','recoil','stunned'].includes(x.state)||!Number.isSafeInteger(x.state_ticks_left)||x.state_ticks_left<0)throw Error('invalid shade');for(const x of s.motes)if(!isObj(x)||typeof x.id!=='string'||!vec(x.pos)||!['random','dropped'].includes(x.kind)||!(x.ttl_s===null||finite(x.ttl_s)&&x.ttl_s>=0))throw Error('invalid mote');for(const x of s.drifters)if(!isObj(x)||typeof x.id!=='string'||!vec(x.pos)||!['idle','chase','flee','removed'].includes(x.state)||!Number.isSafeInteger(x.stolen)||x.stolen<0||x.stolen>3)throw Error('invalid drifter');for(const x of s.charms)if(!isObj(x)||typeof x.id!=='string'||typeof x.available!=='boolean'||!finite(x.respawn_s)||x.respawn_s<0)throw Error('invalid charm');for(const x of s.events)validateEvent(x);return o;}
-export function runScenario(input,night=1){validate(input);const s=createGame({night,seed:input.seed??1});applyScenario(s,input.scenario);for(const action of input.actions)for(let i=0;i<action.ticks;i++){const a={...action,pulse:action.pulse??action.glow};if(i>0)for(const k of ['jump','interact','pulse','glow','restart'])a[k]=false;if(i>0&&action.pause)a.pause=false;step(s,a);}return validateOutput({version:'internal-draft-1',state:gameSnapshot(s)});}
+import { createGame, step, gameSnapshot } from '../core/game.js';
+import { fuelUnits, inventoryCapacity } from '../core/fuel.js';
 
-// Published v1.1 delta only; unknown legacy event fields remain unconstrained.
-function validateEvent(e){
- if(!isObj(e)||typeof e.type!=='string')throw Error('invalid event');
+const isObj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
+const finite=x=>typeof x==='number'&&Number.isFinite(x);
+const integer=(x,max=Number.MAX_SAFE_INTEGER)=>Number.isSafeInteger(x)&&x>=0&&x<=max;
+const id=x=>typeof x==='string'&&x.length>0;
+const vec=v=>isObj(v)&&['x','y','z'].every(k=>finite(v[k]));
+const states=['spawning','wander','chase','recoil','stunned','drain'];
+const reasons=['dawn_survived','dawn','no_flames'];
+const decimalFuel=v=>finite(v)&&v>=0&&v<=100&&Math.abs(v*10-Math.round(v*10))<1e-8;
+function rejectNullFields(x,keys){for(const k of keys)if(Object.hasOwn(x,k)&&x[k]===null)throw Error(`null ${k}`);}
+function uniqueIds(items,label){const seen=new Set();for(const x of items){if(!isObj(x)||!id(x.id)||seen.has(x.id))throw Error(`invalid or duplicate ${label}.id`);seen.add(x.id);}}
+
+export function validate(input){
+ if(!isObj(input)||Object.keys(input).some(k=>!['version','seed','actions','scenario'].includes(k))||!Array.isArray(input.actions)||input.actions.length>10000)
+  throw Error('Expected scenario object with actions (max 10000)');
+ if(input.version!==undefined&&input.version!=='internal-draft-1')throw Error('Unsupported internal scenario version');
+ if(input.seed!==undefined&&!integer(input.seed))throw Error('seed must be non-negative safe integer');
+ let total=0;
+ for(const a of input.actions){
+  if(!isObj(a)||Object.keys(a).some(k=>!['ticks','moveX','moveZ','jump','interact','pulse','glow','dash','pause','restart'].includes(k))||!Number.isSafeInteger(a.ticks)||a.ticks<1||(total+=a.ticks)>21600)
+   throw Error('Invalid action or full-night tick budget');
+  for(const k of ['moveX','moveZ'])if(a[k]!==undefined&&(!finite(a[k])||Math.abs(a[k])>1))throw Error(`Invalid ${k}`);
+  for(const k of ['jump','interact','pulse','glow','dash','pause','restart'])if(a[k]!==undefined&&typeof a[k]!=='boolean')throw Error(`Invalid ${k}`);
+ }
+ if(input.scenario!==undefined&&!isObj(input.scenario))throw Error('scenario must be object');
+ return input;
+}
+
+function applyScenario(s,v){
+ if(v===undefined)return;
+ const allowed=['player','lanterns','shades','drifters','charms','random_drifters','wind_enabled'];
+ if(Object.keys(v).some(k=>!allowed.includes(k)))throw Error('unknown scenario field');
+ if(v.lanterns!==undefined){
+  if(!Array.isArray(v.lanterns))throw Error('scenario.lanterns must be array');
+  uniqueIds(v.lanterns,'lantern');
+  for(const x of v.lanterns){
+   if(!isObj(x)||Object.keys(x).some(k=>!['id','lit','fuel','ever_lit'].includes(k)))throw Error('invalid scenario lantern');
+   const l=s.lanterns.find(l=>l.id===x.id);
+   if(!l)throw Error('unknown scenario lantern.id');
+   rejectNullFields(x,['lit','fuel','ever_lit']);
+   const lit=x.lit??l.lit,ever=x.ever_lit??lit;
+   if(typeof lit!=='boolean'||typeof ever!=='boolean')throw Error('invalid lantern lit/ever_lit');
+   const units=fuelUnits(x.fuel??(lit?100:0));
+   if((lit&&(!units||!ever))||(!lit&&units))throw Error('inconsistent lantern lit/fuel/ever_lit');
+   Object.assign(l,{lit,fuel_units:units,ever_lit:ever});
+  }
+ }
+ if(v.player!==undefined){
+  const p=v.player,keys=['invuln_ticks','dash_cd_ticks','pulse_cd_ticks','charm_ticks','pos','light','flames','successful_lights'];
+  if(!isObj(p)||Object.keys(p).some(k=>!keys.includes(k)))throw Error('invalid scenario.player');
+  for(const k of [...keys.slice(0,4),'successful_lights'])if(p[k]!==undefined){
+   if(!integer(p[k]))throw Error(`invalid player.${k}`);
+   s.player[k]=p[k];
+  }
+  if(p.pos!==undefined){if(!vec(p.pos))throw Error('invalid player.pos');Object.assign(s.player,{x:p.pos.x,y:p.pos.y,z:p.pos.z});}
+  if(p.light!==undefined){
+   if(!integer(p.light,inventoryCapacity(s.player)))throw Error('invalid player.light');
+   s.player.light=p.light;
+  }
+  if(p.flames!==undefined){if(!integer(p.flames,3))throw Error('invalid player.flames');s.player.flames=p.flames;}
+ }
+ if(v.shades!==undefined){
+  if(!Array.isArray(v.shades))throw Error('scenario.shades must be array');
+  s.shades=v.shades.map((e,i)=>{
+   if(!isObj(e)||Object.keys(e).some(k=>!['id','pos','x','y','z','state','state_ticks_left','target_lantern_id'].includes(k)))throw Error('invalid scenario shade');
+   rejectNullFields(e,['id','pos','state','state_ticks_left']);
+   const p=e.pos??e,state=e.state??'wander',left=e.state_ticks_left??0,target=e.target_lantern_id??null;
+   if(!vec(p)||!states.includes(state)||!integer(left))throw Error('invalid shade position/state/timer');
+   if((target!==null&&(!id(target)||!s.lanterns.some(l=>l.id===target)))||(state==='drain'&&target===null))
+    throw Error('invalid shade.target_lantern_id');
+   return {id:e.id??`S${i+1}`,x:p.x,y:p.y,z:p.z,state,state_ticks_left:left,
+    target_lantern_id:target,drain_ticks:0,drain_target_lantern_id:null,
+    random:()=>.5,wander_deg:0,eviction_ticks:0,push_ticks:Math.min(15,left),
+    push_dir:{x:1,z:0},recoil_dir:{x:1,z:0}};
+  });
+  uniqueIds(s.shades,'shade');
+ }
+ for(const key of ['drifters','charms'])if(v[key]!==undefined){
+  if(!Array.isArray(v[key]))throw Error(`scenario.${key} must be array`);
+  s[key]=v[key].map((x,i)=>{
+   if(!isObj(x))throw Error(`invalid ${key} entry`);
+   rejectNullFields(x,['id','pos','state','state_ticks_left','stolen','respawn_ticks']);
+   const p=x.pos??x;
+   if(key==='drifters'){
+    const state=x.state??'idle',ticks=x.state_ticks_left??0;
+    if(!vec(p)||Object.keys(x).some(k=>!['id','pos','x','y','z','state','state_ticks_left','stolen'].includes(k))||!['idle','chase','flee','removed'].includes(state)||!integer(x.stolen??0,3)||!integer(ticks))throw Error('invalid drifter');
+    return {id:x.id??`D${i+1}`,x:p.x,y:p.y,z:p.z,state,stolen:x.stolen??0,state_ticks_left:ticks,wander_deg:0,flee_dir:{x:1,z:0}};
+   }
+   if(Object.keys(x).some(k=>!['id','pos','x','y','z','available','respawn_ticks'].includes(k))||!vec(p)||!id(x.id)||typeof x.available!=='boolean'||(x.respawn_ticks!==undefined&&!integer(x.respawn_ticks)))throw Error('invalid charm');
+   return {id:x.id,x:p.x,y:p.y,z:p.z,available:x.available,respawn_ticks:x.respawn_ticks??0};
+  });
+  uniqueIds(s[key],key);
+ }
+ for(const k of ['random_drifters','wind_enabled'])if(v[k]!==undefined&&typeof v[k]!=='boolean')throw Error(`invalid scenario.${k}`);
+ s.random_drifters=v.random_drifters??true;s.wind_enabled=v.wind_enabled??true;
+}
+
+export function validateOutput(o){
+ if(!isObj(o)||o.version!=='internal-draft-1'||Object.keys(o).some(k=>!['version','state'].includes(k))||!isObj(o.state))throw Error('invalid output envelope');
+ const s=o.state,required=['tick','sim_tick','night','state','time_s','score','wind','player','lanterns','shades','motes','drifters','charms','events','end_reason'];
+ if(required.some(k=>!Object.hasOwn(s,k))||!integer(s.tick)||!integer(s.sim_tick)||![1,2,3].includes(s.night)||!['playing','paused','won','lost'].includes(s.state)||!finite(s.time_s)||s.time_s<0||!integer(s.score)||!isObj(s.wind)||typeof s.wind.active!=='boolean'||!finite(s.wind.dir_deg)||!isObj(s.player))throw Error('invalid snapshot fields');
+ if(s.end_reason!==null&&!reasons.includes(s.end_reason))throw Error('invalid end_reason');
+ if((s.state==='won'&&s.end_reason!=='dawn_survived')||(s.state==='lost'&&!['dawn','no_flames'].includes(s.end_reason)))throw Error('invalid outcome reason');
+ const p=s.player;
+ for(const k of ['x','y','z','flames','light','capacity','dash_cd_s','pulse_cd_s','charm_s'])if(!finite(p[k]))throw Error(`invalid player.${k}`);
+ if(!vec(p.vel)||typeof p.grounded!=='boolean'||typeof p.invuln!=='boolean'||!integer(p.flames,3)||![10,12,14,16,18,20].includes(p.capacity)||!integer(p.light,p.capacity)||p.dash_cd_s<0||p.pulse_cd_s<0||p.charm_s<0)throw Error('invalid player values');
+ for(const k of ['lanterns','shades','motes','drifters','charms','events'])if(!Array.isArray(s[k]))throw Error(`${k} must be array`);
+ for(const x of s.lanterns){
+  if(!isObj(x)||!id(x.id)||!vec(x.pos)||typeof x.lit!=='boolean'||!integer(x.progress,10)||!decimalFuel(x.fuel)||typeof x.ever_lit!=='boolean'||!integer(x.relit_count)||(!x.lit&&x.fuel!==0)||(x.lit&&!x.ever_lit)||(!x.lit&&x.ever_lit&&x.progress>5))throw Error('invalid lantern');
+ }
+ for(const x of s.shades)if(!isObj(x)||!id(x.id)||!vec(x.pos)||!states.includes(x.state)||!integer(x.state_ticks_left))throw Error('invalid shade');
+ for(const x of s.motes)if(!isObj(x)||!id(x.id)||!vec(x.pos)||!['random','dropped'].includes(x.kind)||!(x.ttl_s===null||finite(x.ttl_s)&&x.ttl_s>=0))throw Error('invalid mote');
+ for(const x of s.drifters)if(!isObj(x)||!id(x.id)||!vec(x.pos)||!['idle','chase','flee','removed'].includes(x.state)||!integer(x.stolen,3))throw Error('invalid drifter');
+ for(const x of s.charms)if(!isObj(x)||!id(x.id)||typeof x.available!=='boolean'||!finite(x.respawn_s)||x.respawn_s<0)throw Error('invalid charm');
+ for(const x of s.events){
+  validateEvent(x);
+  if(['refuel','lantern_out','fuel_drain','lantern_lit'].includes(x.type)&&!s.lanterns.some(l=>l.id===x.lantern_id))throw Error('unknown event lantern_id');
+  if(x.type==='fuel_drain'&&!s.shades.some(e=>e.id===x.shade_id))throw Error('unknown event shade_id');
+  if(x.type==='drifter_steal'&&x.carried>p.capacity)throw Error('invalid event drifter_steal.carried');
+  if(x.type==='player_hit'&&x.source==='fall'&&x.lost>p.capacity)throw Error('invalid event player_hit.lost');
+ }
+ return o;
+}
+
+export function runScenario(input,night=1){
+ validate(input);
+ if(![1,2,3].includes(night))throw Error('night must be 1, 2, or 3');
+ const s=createGame({night,seed:input.seed??1});applyScenario(s,input.scenario);
+ for(const action of input.actions)for(let i=0;i<action.ticks;i++){
+  const a={...action,pulse:action.pulse??action.glow};
+  if(i>0)for(const k of ['jump','interact','pulse','glow','restart'])a[k]=false;
+  if(i>0&&action.pause)a.pause=false;
+  step(s,a);
+ }
+ return validateOutput({version:'internal-draft-1',state:gameSnapshot(s)});
+}
+
+// Published v1.1/v1.2 deltas only; unspecified legacy payloads stay unconstrained.
+export function validateEvent(e){
+ if(!isObj(e)||!id(e.type))throw Error('invalid event');
  const field=(k,test)=>{if(!test(e[k]))throw Error(`invalid event ${e.type}.${k}`);};
- const id=v=>typeof v==='string'&&v.length>0,integer=(v,max)=>Number.isSafeInteger(v)&&v>=0&&v<=max;
  switch(e.type){
- case 'charm_picked':field('charm_id',id);field('charm_ticks',v=>integer(v,Number.MAX_SAFE_INTEGER));break;
- case 'drifter_steal':field('drifter_id',id);field('amount',v=>integer(v,3));field('carried',v=>integer(v,10));break;
+ case 'charm_picked':field('charm_id',id);field('charm_ticks',v=>integer(v));break;
+ case 'drifter_steal':field('drifter_id',id);field('amount',v=>integer(v,3));field('carried',v=>integer(v,20));break;
  case 'drifter_drop':field('drifter_id',id);field('amount',v=>integer(v,3));break;
  case 'night_start':field('night',v=>[1,2,3].includes(v));break;
- case 'player_hit':if(e.source==='fall')field('lost',v=>integer(v,10));break;
+ case 'player_hit':if(e.source==='fall')field('lost',v=>integer(v,20));break;
+ case 'refuel':field('lantern_id',id);field('amount',v=>integer(v,10)&&v>0);field('fuel',decimalFuel);break;
+ case 'lantern_out':field('lantern_id',id);break;
+ case 'fuel_drain':field('lantern_id',id);field('shade_id',id);field('fuel',decimalFuel);break;
+ case 'lantern_lit':field('lantern_id',id);field('relight',v=>typeof v==='boolean');break;
+ case 'game_over':field('reason',v=>reasons.includes(v));break;
  }
 }

@@ -1,0 +1,112 @@
+
+> dao-den-long@0.0.0 test:browser
+> npm run build && node scripts/phase3-browser-e2e.mjs
+
+
+> dao-den-long@0.0.0 build
+> vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 16 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:   0.30 kB
+dist/assets/index-CsscjsNk.css    8.37 kB │ gzip:   2.63 kB
+dist/assets/index-B3qpox20.js   615.41 kB │ gzip: 158.85 kB
+
+✓ built in 465ms
+PASS Controlled boundary suite
+PASS E2E-01 menu to Night1
+Night 1 tick 0 lamps 0 flames 3
+Night 1 tick 609 lamps 0 flames 3
+Night 1 tick 1200 lamps 0 flames 2
+Night 1 tick 1818 lamps 1 flames 2
+Night 1 tick 2424 lamps 1 flames 2
+Night 1 tick 3007 lamps 1 flames 2
+Night 1 tick 3600 lamps 1 flames 2
+Night 1 tick 4204 lamps 2 flames 2
+Night 1 tick 4803 lamps 2 flames 2
+Night 1 tick 5403 lamps 3 flames 2
+Night 1 tick 6012 lamps 3 flames 2
+Night 1 tick 6601 lamps 3 flames 2
+Night 1 tick 7218 lamps 3 flames 2
+Night 1 tick 7819 lamps 2 flames 2
+Night 1 tick 8415 lamps 2 flames 2
+Night 1 tick 9003 lamps 2 flames 2
+Night 1 tick 9613 lamps 2 flames 2
+Night 1 tick 10203 lamps 0 flames 2
+Night 1 tick 10806 lamps 1 flames 2
+Night 1 tick 11400 lamps 2 flames 2
+Night 1 tick 12001 lamps 2 flames 2
+Night 1 tick 12607 lamps 3 flames 2
+Night 1 tick 13207 lamps 3 flames 2
+Night 1 tick 13807 lamps 3 flames 2
+Night 1 tick 14400 lamps 3 flames 2
+PASS E2E-10 default Night 1 dawn victory
+PASS E2E-02 first light from default collection
+PASS E2E-04/E2E-05 natural out and relight from default input
+PASS E2E-08 capacity20 from actual successful lights
+Night 2 tick 0 lamps 0 flames 3
+Night 2 tick 609 lamps 0 flames 3
+Night 2 tick 1212 lamps 0 flames 3
+Night 2 tick 1809 lamps 1 flames 3
+Night 2 tick 2400 lamps 1 flames 3
+Night 2 tick 3018 lamps 2 flames 3
+Night 2 tick 3609 lamps 2 flames 3
+Night 2 tick 4213 lamps 2 flames 3
+Night 2 tick 4800 lamps 2 flames 3
+Night 2 tick 5415 lamps 3 flames 3
+Night 2 tick 6001 lamps 3 flames 3
+Night 2 tick 6600 lamps 3 flames 3
+Night 2 tick 7213 lamps 2 flames 3
+Night 2 tick 7812 lamps 3 flames 3
+Night 2 tick 8418 lamps 3 flames 3
+Night 2 tick 9000 lamps 2 flames 3
+Night 2 tick 9613 lamps 2 flames 2
+Night 2 tick 10219 lamps 2 flames 2
+Night 2 tick 10825 lamps 2 flames 2
+Night 2 tick 11403 lamps 1 flames 2
+Night 2 tick 12000 lamps 1 flames 1
+Night 2 tick 12600 lamps 2 flames 1
+Night 2 tick 13202 lamps 2 flames 1
+Night 2 tick 13813 lamps 2 flames 1
+Night 2 tick 14400 lamps 3 flames 1
+Night 2 tick 15000 lamps 3 flames 1
+Night 2 tick 15613 lamps 4 flames 1
+Night 2 tick 16200 lamps 4 flames 1
+PASS E2E-10 default Night 2 dawn victory
+Night 3 tick 30 lamps 0 flames 3
+Night 3 tick 603 lamps 0 flames 3
+Night 3 tick 1209 lamps 0 flames 3
+Night 3 tick 1806 lamps 0 flames 3
+Night 3 tick 2403 lamps 0 flames 3
+Night 3 tick 3003 lamps 0 flames 3
+Night 3 tick 3603 lamps 0 flames 3
+Night 3 tick 4215 lamps 1 flames 3
+Night 3 tick 4815 lamps 1 flames 3
+Night 3 tick 5406 lamps 1 flames 3
+Night 3 tick 6003 lamps 1 flames 3
+Night 3 tick 6603 lamps 1 flames 3
+Night 3 tick 7209 lamps 1 flames 3
+Night 3 tick 7803 lamps 1 flames 3
+Night 3 tick 8403 lamps 1 flames 3
+Night 3 tick 9003 lamps 1 flames 3
+Night 3 tick 9624 lamps 1 flames 3
+Night 3 tick 10212 lamps 1 flames 3
+Night 3 tick 10809 lamps 1 flames 3
+Night 3 tick 11424 lamps 1 flames 3
+Night 3 tick 12024 lamps 1 flames 3
+Night 3 tick 12621 lamps 2 flames 3
+Night 3 tick 13200 lamps 3 flames 2
+Night 3 tick 13800 lamps 3 flames 1
+Night 3 tick 14404 lamps 4 flames 1
+Night 3 tick 15003 lamps 4 flames 1
+Night 3 tick 15616 lamps 4 flames 1
+Night 3 tick 16204 lamps 5 flames 1
+Night 3 tick 16803 lamps 5 flames 1
+Night 3 tick 17403 lamps 5 flames 1
+Night 3 tick 18000 lamps 5 flames 1
+PASS E2E-10 default Night 3 dawn victory
+PASS E2E-13 full default campaign to Binh Minh
+{"directory":"docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/browser/e2e-2026-11-21T17-24-42-070Z","passed":true,"campaign":{"status":"PASS","scores":[1055,1430,1274],"total":3759,"fixture":null,"inputOnly":true}}

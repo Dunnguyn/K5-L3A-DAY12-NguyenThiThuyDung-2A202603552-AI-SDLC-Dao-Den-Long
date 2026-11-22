@@ -1,0 +1,107 @@
+{
+  "scope": "Documentation-only Phase 3 analysis. These are preservation/document checks, not gameplay acceptance.",
+  "before": {
+    "timestamp": "2026-11-21T10:33:19.797Z",
+    "count": 1260,
+    "digest": "eb177ef0883bd149939ba0f3ed48cdd7ea2cc5799de72079450b8e38a4eb0b84",
+    "ticket03Sha256": "008d36ff4cec4dfb276671ee64c973ee3fde907c858a21a9dd1830681027b545",
+    "head": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase1": "627ed7f92c59482bc902fba108c2936dc9481976",
+    "phase2": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase2TagObject": "cb8c014da9fe749232be4ae5dfce7bcbc6c31435",
+    "status": "## main...origin/main\n?? docs/requirements/TICKET-03.md"
+  },
+  "after": {
+    "timestamp": "2026-11-21T11:00:53.514Z",
+    "count": 1260,
+    "digest": "eb177ef0883bd149939ba0f3ed48cdd7ea2cc5799de72079450b8e38a4eb0b84",
+    "ticket03Sha256": "008d36ff4cec4dfb276671ee64c973ee3fde907c858a21a9dd1830681027b545",
+    "head": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase1": "627ed7f92c59482bc902fba108c2936dc9481976",
+    "phase2": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase2TagObject": "cb8c014da9fe749232be4ae5dfce7bcbc6c31435"
+  },
+  "preservation": {
+    "baselineBytesUnchanged": true,
+    "requirementsAndHistoricalEvidenceUnchanged": true,
+    "productionTestsScriptsManifestUnchanged": true,
+    "headAndReleasedTagReferencesUnchanged": true
+  },
+  "documents": [
+    {
+      "path": "docs/notes/phase-3.md",
+      "sha256": "84c115a9127ee82f9f253f8dc09bc515fa6bebdb3af2d411d8301e16704eeb55",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    },
+    {
+      "path": "docs/decisions/ADR-phase-3-lantern-fuel.md",
+      "sha256": "dcfa17fa00b31857894d947e347c0df09318c3732045f1d9c212e3ede2d54af4",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    },
+    {
+      "path": "docs/notes/phase-3-test-plan.md",
+      "sha256": "a94f9db9d06874aba04f22fe0dde9d793747fb2bde3fe77856449d5effc97578",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    },
+    {
+      "path": "docs/notes/phase-3-contract-migration.md",
+      "sha256": "5328fe5a2640b9eb575675e6bba6b7f733f1e8b2bb029eae388e7b27f7e8c408",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    },
+    {
+      "path": "docs/notes/phase-3-rtm.md",
+      "sha256": "a4d303e4aae2022b49d1fdc34a340f887377f4b155dd123c39f12a9f2b7d21fd",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    },
+    {
+      "path": "docs/notes/phase-3-changelog.md",
+      "sha256": "6d98ea6b373b440f906793deb2e709db68e8f881be9844b2970e7581939ae1a7",
+      "fencesBalanced": true,
+      "brokenLinks": [],
+      "trailingWhitespaceLines": [],
+      "encodingErrors": false,
+      "questionMarkRuns": 0
+    }
+  ],
+  "rtm": {
+    "requirements": 25,
+    "status": "NOT VERIFIED - planned"
+  },
+  "acceptanceCriteria": {
+    "count": 36,
+    "status": "PLANNED - NOT RUN"
+  },
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "stderr": "warning: in the working copy of '.agents/skills/verify-game/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it"
+  },
+  "gameplayTestsExecuted": false,
+  "commitPushTagPerformed": false,
+  "verdict": "BLOCKED BY UNRESOLVED REQUIREMENTS",
+  "pendingDecisions": "ADR A1-A9",
+  "modifiedTrackedFiles": [
+    ".agents/skills/verify-game/SKILL.md",
+    "AGENTS.md"
+  ],
+  "finalGitStatus": "## main...origin/main\n M .agents/skills/verify-game/SKILL.md\n M AGENTS.md\n?? docs/decisions/ADR-phase-3-lantern-fuel.md\n?? docs/notes/phase-3-analysis-audit.json\n?? docs/notes/phase-3-changelog.md\n?? docs/notes/phase-3-contract-migration.md\n?? docs/notes/phase-3-rtm.md\n?? docs/notes/phase-3-test-plan.md\n?? docs/notes/phase-3.md\n?? docs/requirements/TICKET-03.md"
+}

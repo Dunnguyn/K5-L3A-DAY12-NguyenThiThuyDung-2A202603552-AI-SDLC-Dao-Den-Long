@@ -1,0 +1,33 @@
+
+ RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long
+
+ ❯ tests/phase3.test.js (69 tests | 1 failed) 570ms
+   × A01 weak-lamp priority and ID tie; off fallback; chase keeps player 14ms
+
+ Test Files  1 failed | 5 passed (6)
+      Tests  1 failed | 147 passed (148)
+   Start at  18:27:39
+   Duration  2.57s (tests 92%, import 5%, transform 2%, worker 1%)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/phase3.test.js > A01 weak-lamp priority and ID tie; off fallback; chase keeps player
+AssertionError: expected null to be 'L2' // Object.is equality
+
+- Expected:
+"L2"
+
++ Received:
+null
+
+ ❯ tests/phase3.test.js:71:40
+     69|  step(s);expect(s.shades[0].target_lantern_id).toBe(b.id);
+     70|  b.lit=c.lit=false;b.fuel_units=c.fuel_units=0;step(s);
+     71|  expect(s.shades[0].target_lantern_id).toBe(b.id);
+       |                                        ^
+     72|  s.shades[0].state='chase';Object.assign(s.player,{x:9,z:0});step(s);
+     73|  expect(s.shades[0].state).toBe('recoil'); // player contact, not reta…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

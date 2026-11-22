@@ -1,0 +1,2154 @@
+[
+  {
+    "tick": 6,
+    "p": {
+      "x": -1.3999999999999995,
+      "y": 0,
+      "z": 0,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 0,
+      "successful_lights": 0,
+      "capacity": 10,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 6,
+      "dash_cd_ticks": 85,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -1,
+        "z": 0
+      },
+      "fallHandled": false
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 0
+  },
+  {
+    "tick": 600,
+    "p": {
+      "x": -8.461403324332737,
+      "y": 0,
+      "z": 1.3663095329198078,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 4,
+      "successful_lights": 0,
+      "capacity": 10,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 0
+  },
+  {
+    "tick": 1200,
+    "p": {
+      "x": 15.682204161974319,
+      "y": 0,
+      "z": -0.13565295051509935,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 9,
+      "successful_lights": 0,
+      "capacity": 10,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 31,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 6,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 0
+  },
+  {
+    "tick": 1800,
+    "p": {
+      "x": -1.5669047558312148,
+      "y": 0,
+      "z": 8.538596675667229,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 3,
+      "successful_lights": 1,
+      "capacity": 12,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 92.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 150
+  },
+  {
+    "tick": 2400,
+    "p": {
+      "x": -0.5595598854801139,
+      "y": 0,
+      "z": 21.71311327607334,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 0,
+      "successful_lights": 1,
+      "capacity": 12,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 13,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0,
+        "z": 1
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 0,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 82.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 190
+  },
+  {
+    "tick": 3000,
+    "p": {
+      "x": -1.3614033243327095,
+      "y": 1.1500000000000008,
+      "z": 12.540454557049351,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0,
+        "z": -1
+      },
+      "grounded": false,
+      "flames": 3,
+      "light": 0,
+      "successful_lights": 2,
+      "capacity": 14,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 19,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 0,
+        "z": -6
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 98.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 72.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 300
+  },
+  {
+    "tick": 3600,
+    "p": {
+      "x": 3.390678203684411,
+      "y": 0.9166666666666681,
+      "z": -0.2695815067598396,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 1,
+        "z": 0
+      },
+      "grounded": false,
+      "flames": 3,
+      "light": 3,
+      "successful_lights": 2,
+      "capacity": 14,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 7,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 6,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 88.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 62.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 300
+  },
+  {
+    "tick": 4200,
+    "p": {
+      "x": 43.64753245317682,
+      "y": 0,
+      "z": -0.005234457274863905,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 3,
+      "successful_lights": 2,
+      "capacity": 14,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 520,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 1,
+        "z": 0
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 7.2,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 78.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 52.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 305
+  },
+  {
+    "tick": 4800,
+    "p": {
+      "x": 60.742424219234394,
+      "y": 0,
+      "z": 21.89657431950666,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 9,
+      "successful_lights": 2,
+      "capacity": 14,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 13,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 68.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 42.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 305
+  },
+  {
+    "tick": 5400,
+    "p": {
+      "x": 80.80577558447196,
+      "y": 0,
+      "z": -15.604497081733774,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 3,
+      "successful_lights": 3,
+      "capacity": 16,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 43,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -6,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 58.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 32.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 91.31666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 455
+  },
+  {
+    "tick": 6000,
+    "p": {
+      "x": 18.366583685893065,
+      "y": 0,
+      "z": 0.23469481684489824,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 4,
+      "successful_lights": 3,
+      "capacity": 16,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 61,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -1,
+        "z": 0
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -6,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 48.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 22.416666666666668
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 81.31666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 455
+  },
+  {
+    "tick": 6600,
+    "p": {
+      "x": 20.577867965643577,
+      "y": 0.5833333333333335,
+      "z": -0.24104111444319684,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": false,
+      "flames": 3,
+      "light": 8,
+      "successful_lights": 3,
+      "capacity": 16,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 38.71666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 12.416666666666666
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 71.31666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 455
+  },
+  {
+    "tick": 7200,
+    "p": {
+      "x": -3.4712553946916294,
+      "y": 0,
+      "z": 18.187624099467563,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 10,
+      "successful_lights": 3,
+      "capacity": 16,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 73,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 28.716666666666665
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 61.31666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 475
+  },
+  {
+    "tick": 7800,
+    "p": {
+      "x": 8.365497842123078,
+      "y": 0,
+      "z": -17.920792172123964,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 0,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 49,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 18.716666666666665
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 94.91666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 51.31666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 625
+  },
+  {
+    "tick": 8400,
+    "p": {
+      "x": -8.87345596729105,
+      "y": 0,
+      "z": 17.07058585652448,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 1,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 25,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 8.716666666666667
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 84.91666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 41.31666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 625
+  },
+  {
+    "tick": 9000,
+    "p": {
+      "x": 10.373585865027035,
+      "y": 0,
+      "z": -15.95094369114047,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 3,
+      "light": 1,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 1,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 1,
+        "z": 0
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 74.91666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 31.316666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 625
+  },
+  {
+    "tick": 9600,
+    "p": {
+      "x": -12.408989873223804,
+      "y": 0,
+      "z": 13.949265512964818,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 2,
+      "light": 2,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 73,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 64.91666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 21.316666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 625
+  },
+  {
+    "tick": 10200,
+    "p": {
+      "x": 13.474805195909001,
+      "y": 0,
+      "z": -12.585020177026678,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 2,
+      "light": 4,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 49,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 54.916666666666664
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 11.316666666666666
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 625
+  },
+  {
+    "tick": 10800,
+    "p": {
+      "x": -14.954574285495372,
+      "y": 0,
+      "z": 11.403681100693248,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 2,
+      "light": 3,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 25,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 44.916666666666664
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 1.3166666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 640
+  },
+  {
+    "tick": 11400,
+    "p": {
+      "x": 16.489018758282096,
+      "y": 1.1500000000000008,
+      "z": -9.473750339805878,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": false,
+      "flames": 2,
+      "light": 2,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 1,
+      "pulse_cd_ticks": 163,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 34.916666666666664
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 665
+  },
+  {
+    "tick": 12000,
+    "p": {
+      "x": -19.655793616377334,
+      "y": 0,
+      "z": 8.999518044658988,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 3,
+      "successful_lights": 4,
+      "capacity": 18,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 73,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 24.916666666666668
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 665
+  },
+  {
+    "tick": 12600,
+    "p": {
+      "x": 8.362925693247188,
+      "y": 0,
+      "z": 15.616794376766686,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 1,
+        "z": 0
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 2,
+      "successful_lights": 5,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 6,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 97.91666666666667
+      },
+      {
+        "id": "L2",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 14.916666666666666
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 730
+  },
+  {
+    "tick": 13200,
+    "p": {
+      "x": 12.983636371365831,
+      "y": 0,
+      "z": -13.075831867822941,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 1,
+      "successful_lights": 6,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 1,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": -4.242640687119285,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 87.91666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 98.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 795
+  },
+  {
+    "tick": 13800,
+    "p": {
+      "x": 19.69208152801669,
+      "y": 0,
+      "z": 2.048165226665178,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 3,
+      "successful_lights": 6,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 73,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": -0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 0,
+        "z": 4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 77.91666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 88.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 810
+  },
+  {
+    "tick": 14400,
+    "p": {
+      "x": -15.57271281473814,
+      "y": 1.1333333333333342,
+      "z": -11.647761876823628,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": false,
+      "flames": 1,
+      "light": 1,
+      "successful_lights": 7,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 67,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 67.91666666666667
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 78.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 99.51666666666667
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 875
+  },
+  {
+    "tick": 15000,
+    "p": {
+      "x": 15.666479083840464,
+      "y": 0,
+      "z": 3.490567824619882,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 5,
+      "successful_lights": 7,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 25,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 1,
+        "z": 0
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 4.242640687119285,
+        "z": -4.242640687119285
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 57.916666666666664
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 68.41666666666667
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 89.51666666666667
+      },
+      {
+        "id": "L4",
+        "lit": false,
+        "ever_lit": true,
+        "fuel": 0
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 875
+  },
+  {
+    "tick": 15600,
+    "p": {
+      "x": 68.6152849636127,
+      "y": 0,
+      "z": 20.58333692270836,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 0,
+      "successful_lights": 8,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 173,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 0,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 47.916666666666664
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 58.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 79.51666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 96.71666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 940
+  },
+  {
+    "tick": 16200,
+    "p": {
+      "x": 68.6152849636127,
+      "y": 0,
+      "z": 20.58333692270836,
+      "vel": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "facing": {
+        "x": 0.7071067811865475,
+        "z": -0.7071067811865475
+      },
+      "grounded": true,
+      "flames": 1,
+      "light": 0,
+      "successful_lights": 8,
+      "capacity": 20,
+      "invuln_ticks": 0,
+      "respawn_ticks": 0,
+      "dash_ticks": 0,
+      "dash_cd_ticks": 0,
+      "pulse_cd_ticks": 0,
+      "charm_ticks": 0,
+      "padVelocity": null,
+      "dashDirection": {
+        "x": 0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "fallHandled": false,
+      "motionVelocity": {
+        "x": 0,
+        "z": 0
+      }
+    },
+    "lamps": [
+      {
+        "id": "L1",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 37.916666666666664
+      },
+      {
+        "id": "L2",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 48.416666666666664
+      },
+      {
+        "id": "L3",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 69.51666666666667
+      },
+      {
+        "id": "L4",
+        "lit": true,
+        "ever_lit": true,
+        "fuel": 86.71666666666667
+      },
+      {
+        "id": "L5",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      },
+      {
+        "id": "L6",
+        "lit": false,
+        "ever_lit": false,
+        "fuel": 0
+      }
+    ],
+    "score": 1430
+  }
+]

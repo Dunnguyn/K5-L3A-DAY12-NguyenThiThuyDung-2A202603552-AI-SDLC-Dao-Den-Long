@@ -1,0 +1,16 @@
+{
+  "kind": "default-state headless input pilot; not browser E2E",
+  "nights": [
+    {
+      "night": 3,
+      "state": "lost",
+      "reason": "no_flames",
+      "flames": 0,
+      "tick": 3887,
+      "lit": 0,
+      "score": 70,
+      "capacity": 10,
+      "actions": 2592
+    }
+  ]
+}

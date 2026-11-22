@@ -1,0 +1,41 @@
+{
+  "seed": 1,
+  "scenario": {
+    "player": {
+      "pos": {
+        "x": 0,
+        "y": 0,
+        "z": 25
+      },
+      "light": 2,
+      "invuln_ticks": 21600
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "ever_lit": true
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 1,
+      "interact": true
+    },
+    {
+      "ticks": 80,
+      "moveZ": 1
+    },
+    {
+      "ticks": 1920
+    },
+    {
+      "ticks": 80,
+      "moveZ": -1
+    },
+    {
+      "ticks": 1,
+      "interact": true
+    }
+  ]
+}

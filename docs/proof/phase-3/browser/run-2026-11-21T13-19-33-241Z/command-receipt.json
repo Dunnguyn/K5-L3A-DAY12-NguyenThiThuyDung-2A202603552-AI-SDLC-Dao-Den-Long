@@ -1,0 +1,13 @@
+{
+  "scope": "Exit codes observed from actual terminal tool sessions; logs and runner JSON retained alongside this receipt",
+  "commands": [
+    {"command":"npm test","exitCode":0,"passedTests":170,"sessionId":85573},
+    {"command":"npm run test:independent","exitCode":0,"passedChecks":15,"sessionId":85573},
+    {"command":"node scripts/phase3-edge-scenarios.mjs","exitCode":0,"passedChecks":6,"sessionId":85573},
+    {"command":"npm run verify","exitCode":0,"passedStages":8,"sessionId":73505},
+    {"command":"npm run test:browser","exitCode":0,"sessionId":12301,"runner":"e2e-2026-11-21T16-46-11-480Z/browser-e2e.json","log":"npm-test-browser-final.log"},
+    {"command":"npm run build","exitCode":0,"log":"npm-build-final.log"},
+    {"command":"git diff --check","exitCode":0,"log":"git-diff-check-final.log"}
+  ],
+  "postBrowserSourceChange": "Only two whitespace-only renderer lines trimmed; measured source preserved as renderer-measured-source.txt, normalized-byte equivalence checked by final audit. Final build passed."
+}

@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-11-21T17:23:07.199Z",
+  "node": "v24.13.0",
+  "platform": "win32",
+  "directory": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/regression-1795281787198",
+  "checks": [
+    {
+      "name": "npm-test",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 4439.6409
+    },
+    {
+      "name": "npm-independent",
+      "command": [
+        "npm",
+        "run",
+        "test:independent"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1325.7334
+    },
+    {
+      "name": "npm-verify",
+      "command": [
+        "npm",
+        "run",
+        "verify"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 81658.5865
+    },
+    {
+      "name": "npm-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1828.1469999999972
+    },
+    {
+      "name": "cli-edges",
+      "command": [
+        "node",
+        "scripts/phase3-edge-scenarios.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2412.332699999999
+    },
+    {
+      "name": "npm-browser",
+      "command": [
+        "npm",
+        "run",
+        "test:browser"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 473811.7442
+    }
+  ],
+  "passed": true
+}

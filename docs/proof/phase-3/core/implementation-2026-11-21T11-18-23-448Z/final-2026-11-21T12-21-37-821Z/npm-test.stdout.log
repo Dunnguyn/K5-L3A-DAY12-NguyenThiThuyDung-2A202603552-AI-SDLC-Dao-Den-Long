@@ -1,0 +1,13 @@
+
+> dao-den-long@0.0.0 test
+> vitest run
+
+
+ RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long
+
+
+ Test Files  6 passed (6)
+      Tests  158 passed (158)
+   Start at  19:21:39
+   Duration  2.67s (tests 85%, transform 7%, import 6%, worker 1%)
+

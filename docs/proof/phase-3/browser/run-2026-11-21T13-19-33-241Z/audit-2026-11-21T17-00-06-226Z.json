@@ -1,0 +1,1112 @@
+{
+  "timestamp": "2026-11-21T17:00:06.047Z",
+  "preservation": {
+    "paths": 1582,
+    "before": "7417084ffe051d5a0b548abb9b127dbee5cc85b1f1756d6586ca8a8158f2cc3f",
+    "after": "7417084ffe051d5a0b548abb9b127dbee5cc85b1f1756d6586ca8a8158f2cc3f",
+    "head": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase1": "0c95fb492c94b12a941566fc33c06f59fc03f2dd",
+    "phase2": "cb8c014da9fe749232be4ae5dfce7bcbc6c31435",
+    "passed": true
+  },
+  "boundaries": {
+    "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/boundaries-2026-11-21T16-46-12-175Z/browser-boundaries.json",
+    "count": 20,
+    "checks": [
+      {
+        "id": "E2E-02-first-light",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-03-refuel",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "full-fuel-exclusion",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-04-lantern-out",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-05-partial-relight",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-06-safe-reaction",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-07-drain-interrupt",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "multi-shade-drain",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-08-capacity20-fixture",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-09-all-lit-no-early",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-10-dawn-fixture-night1",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-10-dawn-fixture-night2",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-10-dawn-fixture-night3",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-11-dawn-loss",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-12-no-flames-priority",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "E2E-14-natural-loss-retry",
+        "status": "PASS",
+        "kind": "default-state browser input"
+      },
+      {
+        "id": "E2E-15-palette-persistence",
+        "status": "PASS",
+        "kind": "default-state browser input"
+      },
+      {
+        "id": "E2E-16-danger-pause-camera-audio",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "low-fuel-1Hz-and-pause",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      },
+      {
+        "id": "dash-wind-lifecycle",
+        "status": "PASS",
+        "kind": "controlled browser initial-state fixture"
+      }
+    ]
+  },
+  "campaign": {
+    "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/e2e-2026-11-21T16-46-11-480Z/browser-e2e.json",
+    "campaign": {
+      "status": "PASS",
+      "scores": [
+        1062,
+        1377,
+        1374
+      ],
+      "total": 3813,
+      "fixture": null,
+      "inputOnly": true
+    },
+    "nights": [
+      {
+        "night": 1,
+        "status": "PASS",
+        "tick": 14400,
+        "lit": 3,
+        "score": 1062,
+        "flames": 1
+      },
+      {
+        "night": 2,
+        "status": "PASS",
+        "tick": 16200,
+        "lit": 4,
+        "score": 1377,
+        "flames": 2
+      },
+      {
+        "night": 3,
+        "status": "PASS",
+        "tick": 18000,
+        "lit": 5,
+        "score": 1374,
+        "flames": 3
+      }
+    ],
+    "crossRuntime": [
+      {
+        "night": 1,
+        "nodeScore": 1072,
+        "chromiumCoreScore": 1062,
+        "exactParity": false,
+        "chromiumDeterministic": true
+      },
+      {
+        "night": 2,
+        "nodeScore": 1377,
+        "chromiumCoreScore": 1377,
+        "exactParity": false,
+        "chromiumDeterministic": true
+      },
+      {
+        "night": 3,
+        "nodeScore": 1374,
+        "chromiumCoreScore": 1374,
+        "exactParity": false,
+        "chromiumDeterministic": true
+      }
+    ]
+  },
+  "performance": [
+    {
+      "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/performance-2026-11-21T16-07-13-002Z/performance.json",
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "arch": "x64"
+      },
+      "browser": "159.0.8154.6",
+      "sourceHashes": {
+        "src/browser/app.js": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+        "src/browser/renderer.js": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+        "src/browser/app.css": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb"
+      },
+      "label": "night1-default-entry",
+      "measurement": {
+        "durationMs": 60014.90000000298,
+        "frames": 2267,
+        "averageFps": 37.773952801719034,
+        "averageFrameMs": 26.473268636966466,
+        "p95FrameMs": 33.400000000001455,
+        "done": true
+      },
+      "webgl": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      },
+      "fixture": null,
+      "metrics": {
+        "calls": 28,
+        "triangles": 9147,
+        "geometries": 36,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/performance-2026-11-21T16-07-13-002Z/performance.json",
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "arch": "x64"
+      },
+      "browser": "159.0.8154.6",
+      "sourceHashes": {
+        "src/browser/app.js": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+        "src/browser/renderer.js": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+        "src/browser/app.css": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb"
+      },
+      "label": "night3-fresh-entry",
+      "measurement": {
+        "durationMs": 60018.29999999851,
+        "frames": 2052,
+        "averageFps": 34.1895721804858,
+        "averageFrameMs": 29.24868421052559,
+        "p95FrameMs": 33.400000000001455,
+        "done": true
+      },
+      "webgl": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      },
+      "fixture": {
+        "night": 3
+      },
+      "metrics": {
+        "calls": 24,
+        "triangles": 12523,
+        "geometries": 32,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/performance-2026-11-21T16-07-13-002Z/performance.json",
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "arch": "x64"
+      },
+      "browser": "159.0.8154.6",
+      "sourceHashes": {
+        "src/browser/app.js": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+        "src/browser/renderer.js": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+        "src/browser/app.css": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb"
+      },
+      "label": "night3-lit-stress",
+      "measurement": {
+        "durationMs": 60003.90000000149,
+        "frames": 1936,
+        "averageFps": 32.26456946965034,
+        "averageFrameMs": 30.99375000000077,
+        "p95FrameMs": 50,
+        "done": true
+      },
+      "webgl": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      },
+      "fixture": {
+        "night": 3,
+        "fullMotes": true,
+        "player": {
+          "successful_lights": 5,
+          "light": 20
+        },
+        "lanterns": [
+          {
+            "id": "L1",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L2",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L3",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L4",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L5",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L6",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          },
+          {
+            "id": "L7",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 6000
+          }
+        ],
+        "shades": [
+          {
+            "id": "S1",
+            "x": 43,
+            "y": 0,
+            "z": 0,
+            "state": "chase"
+          },
+          {
+            "id": "S2",
+            "x": 39.72681989798533,
+            "y": 0,
+            "z": 16.455387591698862,
+            "state": "chase"
+          },
+          {
+            "id": "S3",
+            "x": 30.405591591021544,
+            "y": 0,
+            "z": 30.40559159102154,
+            "state": "chase"
+          },
+          {
+            "id": "S4",
+            "x": 16.455387591698862,
+            "y": 0,
+            "z": 39.72681989798533,
+            "state": "chase"
+          },
+          {
+            "id": "S5",
+            "x": 2.6329906181668092e-15,
+            "y": 0,
+            "z": 43,
+            "state": "chase"
+          },
+          {
+            "id": "S6",
+            "x": -16.45538759169886,
+            "y": 0,
+            "z": 39.72681989798533,
+            "state": "chase"
+          },
+          {
+            "id": "S7",
+            "x": -30.40559159102154,
+            "y": 0,
+            "z": 30.405591591021544,
+            "state": "chase"
+          },
+          {
+            "id": "S8",
+            "x": -39.72681989798533,
+            "y": 0,
+            "z": 16.455387591698866,
+            "state": "chase"
+          },
+          {
+            "id": "S9",
+            "x": -43,
+            "y": 0,
+            "z": 5.2659812363336185e-15,
+            "state": "chase"
+          },
+          {
+            "id": "S10",
+            "x": -39.72681989798534,
+            "y": 0,
+            "z": -16.455387591698837,
+            "state": "chase"
+          }
+        ]
+      },
+      "metrics": {
+        "calls": 29,
+        "triangles": 14994,
+        "geometries": 34,
+        "textures": 0
+      },
+      "restartTrend": [
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        },
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        },
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        },
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        },
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        },
+        {
+          "metrics": {
+            "calls": 29,
+            "triangles": 14994,
+            "geometries": 26,
+            "textures": 0
+          },
+          "heap": 35100000
+        }
+      ],
+      "geometryTrendBounded": true,
+      "errors": []
+    },
+    {
+      "path": "docs/proof/phase-3/browser/run-2026-11-21T13-19-33-241Z/performance-2026-11-21T16-13-04-814Z/performance.json",
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "arch": "x64"
+      },
+      "browser": "159.0.8154.6",
+      "sourceHashes": {
+        "src/browser/app.js": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+        "src/browser/renderer.js": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+        "src/browser/app.css": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb"
+      },
+      "label": "night2-fresh-entry",
+      "measurement": {
+        "durationMs": 60013.29999999851,
+        "frames": 2291,
+        "averageFps": 38.174871236876776,
+        "averageFrameMs": 26.195242252290925,
+        "p95FrameMs": 33.400000000001455,
+        "done": true
+      },
+      "webgl": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      },
+      "fixture": {
+        "night": 2
+      },
+      "metrics": {
+        "calls": 25,
+        "triangles": 10170,
+        "geometries": 46,
+        "textures": 0
+      },
+      "errors": []
+    }
+  ],
+  "coreDirectory": "docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z",
+  "verification": {
+    "scope": "Phase 3 fuel + dawn + shared core/world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED",
+    "timestamp": "2026-11-21T16:38:40.536Z",
+    "platform": "win32",
+    "node": "v24.13.0",
+    "commit": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+    "ticket03Sha256": "008d36ff4cec4dfb276671ee64c973ee3fde907c858a21a9dd1830681027b545",
+    "ticket02Sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb",
+    "checks": [
+      {
+        "name": "contract-generation",
+        "command": [
+          "node",
+          "scripts/write-contract.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "core-world-scenarios",
+        "command": [
+          "node",
+          "scripts/phase3-scenarios.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "{\"scope\":\"Phase 3 actual CLI scenarios; seeded fixtures, not manual browser/default campaign acceptance; official v1.0 base NOT VERIFIED\",\"timestamp\":\"2026-11-21T16:39:31.873Z\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"name\":\"night-1-full-dawn\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-1-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-1-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-1-no-early-win\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-1-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-1-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-2-full-dawn\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-2-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-2-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-2-no-early-win\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-2-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-2-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-3-full-dawn\",\"night\":3,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-3-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-3-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-3-no-early-win\",\"night\":3,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-3-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/night-3-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"first-light\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/first-light.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/first-light.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"partial-relight\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/partial-relight.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/partial-relight.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"refuel-and-full-decay\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/refuel-and-full-decay.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/refuel-and-full-decay.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"multi-shade-drain\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/multi-shade-drain.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/multi-shade-drain.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"pause-drain-resume\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/pause-drain-resume.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/pause-drain-resume.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"out-59-60-61\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/out-59-60-61.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/out-59-60-61.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"drain-pulse\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/drain-pulse.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/drain-pulse.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"capacity-theft\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/capacity-theft.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/capacity-theft.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"fatal-fall\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/fatal-fall.input.json\",\"actual\":\"docs/proof/phase-3/core/browser-regression-2026-11-21T16-33-57-394Z/fatal-fall.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"invalid CLI night\",\"status\":\"PASS\",\"exitCode\":1,\"stdoutEmpty\":true}],\"passed\":16,\"failed\":0}\n",
+        "stderr": ""
+      },
+      {
+        "name": "dawn-input-replay",
+        "command": [
+          "node",
+          "scripts/phase3-dawn-replay.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "{\"night\":1,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":606,\"sim_tick\":14400,\"lit\":3,\"actions\":27,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n{\"night\":2,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":775,\"sim_tick\":16200,\"lit\":4,\"actions\":41,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n{\"night\":3,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":973,\"sim_tick\":18000,\"lit\":5,\"actions\":224,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n",
+        "stderr": ""
+      },
+      {
+        "name": "independent-core-cross-check",
+        "command": [
+          "node",
+          "scripts/independent-core.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "{\"kind\":\"Phase 3 separate acceptance cross-check (agent-authored; not external independent QA)\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"id\":\"standard values and map cardinality\",\"status\":\"PASS\"},{\"id\":\"fixed tick and pause separation\",\"status\":\"PASS\"},{\"id\":\"dash rising edge and stable replay\",\"status\":\"PASS\"},{\"id\":\"firefly only scores when deposited\",\"status\":\"PASS\"},{\"id\":\"shade contact and safe zone update order\",\"status\":\"PASS\"},{\"id\":\"required output rejects null records and keeps required arrays\",\"status\":\"PASS\"},{\"id\":\"CLI pure JSON for selected night\",\"status\":\"PASS\"},{\"id\":\"v1.2 tuning exact published additions\",\"status\":\"PASS\"},{\"id\":\"refuel at raw99.9 uses one mote and scores five\",\"status\":\"PASS\"},{\"id\":\"continuous two-Shade drain 60 ticks with independent arithmetic\",\"status\":\"PASS\"},{\"id\":\"fuel exhaustion tick60, no repeated out\",\"status\":\"PASS\"},{\"id\":\"scenario pre-lit excluded; derived inventory20 accepted\",\"status\":\"PASS\"},{\"id\":\"partial relight costs five, scores65, grows capacity\",\"status\":\"PASS\"},{\"id\":\"all-lit cannot win before dawn; pause freezes natural fuel\",\"status\":\"PASS\"},{\"id\":\"draining pulse is total15 using pre-hit state\",\"status\":\"PASS\"}],\"passed\":15,\"failed\":0}\n",
+        "stderr": ""
+      },
+      {
+        "name": "headless-import",
+        "command": [
+          "node",
+          "scripts/smoke-headless.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "PASS: Node ESM imports core without DOM. Infrastructure only; no contract runner.\n",
+        "stderr": ""
+      },
+      {
+        "name": "vitest",
+        "command": [
+          "node",
+          "node_modules/vitest/vitest.mjs",
+          "run"
+        ],
+        "exitCode": 0,
+        "stdout": "\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n\n Test Files  7 passed (7)\n      Tests  170 passed (170)\n   Start at  23:40:17\n   Duration  4.78s (tests 89%, import 6%, transform 3%, worker 1%)\n\n",
+        "stderr": ""
+      },
+      {
+        "name": "headless-benchmark",
+        "command": [
+          "node",
+          "scripts/bench-headless.mjs"
+        ],
+        "exitCode": 0,
+        "stdout": "{\"node\":\"v24.13.0\",\"os\":{\"platform\":\"win32\",\"release\":\"10.0.26300\",\"arch\":\"x64\"},\"resolution\":\"headless/no DOM\",\"startedAt\":\"2026-11-21T16:40:22.915Z\",\"scope\":\"Phase 3 Night 3: 18000 active ticks plus 3600 terminal input ticks; separate throughput fixture runs 21600 active updates across two legal Night-3 sessions. No time/tuning override.\",\"cliReplays\":[{\"elapsedMs\":9513.7417,\"inputTicks\":21600,\"activeSimTicks\":18000,\"terminalTailTicks\":3600,\"exitCode\":0,\"stdoutPureJson\":true},{\"elapsedMs\":9423.9392,\"inputTicks\":21600,\"activeSimTicks\":18000,\"terminalTailTicks\":3600,\"exitCode\":0,\"stdoutPureJson\":true}],\"activeThroughputReplays\":[{\"elapsedMs\":10736.111099999998,\"activeSimTicks\":21600,\"sessions\":[{\"night\":3,\"sim_tick\":18000,\"state\":\"lost\",\"randomMotes\":30,\"shades\":10,\"drifters\":2},{\"night\":3,\"sim_tick\":3600,\"state\":\"playing\",\"randomMotes\":30,\"shades\":10,\"drifters\":2}],\"fixture\":\"30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death\"},{\"elapsedMs\":10545.176499999998,\"activeSimTicks\":21600,\"sessions\":[{\"night\":3,\"sim_tick\":18000,\"state\":\"lost\",\"randomMotes\":30,\"shades\":10,\"drifters\":2},{\"night\":3,\"sim_tick\":3600,\"state\":\"playing\",\"randomMotes\":30,\"shades\":10,\"drifters\":2}],\"fixture\":\"30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death\"}],\"deterministic\":true,\"within30s\":true}\n",
+        "stderr": ""
+      },
+      {
+        "name": "vite-build",
+        "command": [
+          "node",
+          "node_modules/vite/bin/vite.js",
+          "build"
+        ],
+        "exitCode": 0,
+        "stdout": "vite v8.3.8 building client environment for production...\ntransforming...\n✓ 15 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.40 kB │ gzip:   0.30 kB\ndist/assets/index-CsscjsNk.css    8.37 kB │ gzip:   2.63 kB\ndist/assets/index-BW0H0oUl.js   615.46 kB │ gzip: 158.84 kB\n\n✓ built in 957ms\n",
+        "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+      }
+    ],
+    "passed": true
+  },
+  "benchmark": {
+    "node": "v24.13.0",
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26300",
+      "arch": "x64"
+    },
+    "resolution": "headless/no DOM",
+    "startedAt": "2026-11-21T16:40:22.915Z",
+    "scope": "Phase 3 Night 3: 18000 active ticks plus 3600 terminal input ticks; separate throughput fixture runs 21600 active updates across two legal Night-3 sessions. No time/tuning override.",
+    "cliReplays": [
+      {
+        "elapsedMs": 9513.7417,
+        "inputTicks": 21600,
+        "activeSimTicks": 18000,
+        "terminalTailTicks": 3600,
+        "exitCode": 0,
+        "stdoutPureJson": true
+      },
+      {
+        "elapsedMs": 9423.9392,
+        "inputTicks": 21600,
+        "activeSimTicks": 18000,
+        "terminalTailTicks": 3600,
+        "exitCode": 0,
+        "stdoutPureJson": true
+      }
+    ],
+    "activeThroughputReplays": [
+      {
+        "elapsedMs": 10736.111099999998,
+        "activeSimTicks": 21600,
+        "sessions": [
+          {
+            "night": 3,
+            "sim_tick": 18000,
+            "state": "lost",
+            "randomMotes": 30,
+            "shades": 10,
+            "drifters": 2
+          },
+          {
+            "night": 3,
+            "sim_tick": 3600,
+            "state": "playing",
+            "randomMotes": 30,
+            "shades": 10,
+            "drifters": 2
+          }
+        ],
+        "fixture": "30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death"
+      },
+      {
+        "elapsedMs": 10545.176499999998,
+        "activeSimTicks": 21600,
+        "sessions": [
+          {
+            "night": 3,
+            "sim_tick": 18000,
+            "state": "lost",
+            "randomMotes": 30,
+            "shades": 10,
+            "drifters": 2
+          },
+          {
+            "night": 3,
+            "sim_tick": 3600,
+            "state": "playing",
+            "randomMotes": 30,
+            "shades": 10,
+            "drifters": 2
+          }
+        ],
+        "fixture": "30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death"
+      }
+    ],
+    "deterministic": true,
+    "within30s": true
+  },
+  "crossCheck": {
+    "kind": "Phase 3 separate acceptance cross-check (agent-authored; not external independent QA)",
+    "node": "v24.13.0",
+    "platform": "win32",
+    "checks": [
+      {
+        "id": "standard values and map cardinality",
+        "status": "PASS"
+      },
+      {
+        "id": "fixed tick and pause separation",
+        "status": "PASS"
+      },
+      {
+        "id": "dash rising edge and stable replay",
+        "status": "PASS"
+      },
+      {
+        "id": "firefly only scores when deposited",
+        "status": "PASS"
+      },
+      {
+        "id": "shade contact and safe zone update order",
+        "status": "PASS"
+      },
+      {
+        "id": "required output rejects null records and keeps required arrays",
+        "status": "PASS"
+      },
+      {
+        "id": "CLI pure JSON for selected night",
+        "status": "PASS"
+      },
+      {
+        "id": "v1.2 tuning exact published additions",
+        "status": "PASS"
+      },
+      {
+        "id": "refuel at raw99.9 uses one mote and scores five",
+        "status": "PASS"
+      },
+      {
+        "id": "continuous two-Shade drain 60 ticks with independent arithmetic",
+        "status": "PASS"
+      },
+      {
+        "id": "fuel exhaustion tick60, no repeated out",
+        "status": "PASS"
+      },
+      {
+        "id": "scenario pre-lit excluded; derived inventory20 accepted",
+        "status": "PASS"
+      },
+      {
+        "id": "partial relight costs five, scores65, grows capacity",
+        "status": "PASS"
+      },
+      {
+        "id": "all-lit cannot win before dawn; pause freezes natural fuel",
+        "status": "PASS"
+      },
+      {
+        "id": "draining pulse is total15 using pre-hit state",
+        "status": "PASS"
+      }
+    ],
+    "passed": 15,
+    "failed": 0
+  },
+  "git": {
+    "status": "## main...origin/main\n M .agents/skills/verify-game/SKILL.md\n M AGENTS.md\n M README.md\n M docs/notes/AI_USAGE.md\n M game.contract.json\n M package.json\n M scripts/bench-headless.mjs\n M scripts/browser-route.mjs\n M scripts/independent-core.mjs\n M scripts/proof-directory.mjs\n M scripts/verify.mjs\n M scripts/write-contract.mjs\n M src/browser/app.css\n M src/browser/app.js\n M src/browser/audio.js\n M src/browser/renderer.js\n M src/config/game.js\n M src/core/game.js\n M src/headless/adapter.js\n M tests/game.test.js\n M tests/headless.test.js\n?? docs/decisions/\n?? docs/notes/phase-3-analysis-audit.json\n?? docs/notes/phase-3-browser-run.json\n?? docs/notes/phase-3-changelog.md\n?? docs/notes/phase-3-contract-migration.md\n?? docs/notes/phase-3-core-run.json\n?? docs/notes/phase-3-rtm.md\n?? docs/notes/phase-3-test-plan.md\n?? docs/notes/phase-3.md\n?? docs/proof/phase-3/\n?? docs/requirements/TICKET-03.md\n?? scripts/phase3-browser-audit.mjs\n?? scripts/phase3-browser-boundaries.mjs\n?? scripts/phase3-browser-e2e.mjs\n?? scripts/phase3-browser-performance.mjs\n?? scripts/phase3-browser-smoke.mjs\n?? scripts/phase3-browser-support.mjs\n?? scripts/phase3-campaign-route.mjs\n?? scripts/phase3-cross-runtime-diagnostic.mjs\n?? scripts/phase3-dawn-replay.mjs\n?? scripts/phase3-default-pilot.mjs\n?? scripts/phase3-edge-scenarios.mjs\n?? scripts/phase3-final-check.mjs\n?? scripts/phase3-headless-driver.mjs\n?? scripts/phase3-replay-diagnostic.mjs\n?? scripts/phase3-route-search.mjs\n?? scripts/phase3-scenarios.mjs\n?? src/browser/presentation.js\n?? src/core/fuel.js\n?? tests/browser-presentation.test.js\n?? tests/phase3.test.js",
+    "diffCheck": {
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of '.agents/skills/verify-game/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/notes/AI_USAGE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'game.contract.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bench-headless.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/independent-core.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/proof-directory.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/write-contract.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/browser/app.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/browser/app.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/browser/renderer.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/core/game.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/headless/adapter.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/game.test.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/headless.test.js', LF will be replaced by CRLF the next time Git touches it\n"
+    }
+  },
+  "limitations": [
+    "Official v1.0 base/harness NOT VERIFIED",
+    "Real GPU, macOS, current remote CI and manual audio listening NOT VERIFIED",
+    "Cross-runtime bit-exact Node/Chromium replay differs; within-runtime replay checked",
+    "Sampled native SwiftShader performance and six restarts do not certify long-term leak freedom"
+  ],
+  "audio": [
+    {
+      "night": 1,
+      "contextState": "running",
+      "volume": 0.55,
+      "comparisons": [
+        {
+          "type": "night_start",
+          "expected": 1,
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "type": "dash",
+          "expected": 135,
+          "observed": 135,
+          "passed": true
+        },
+        {
+          "type": "mote_picked",
+          "expected": 54,
+          "observed": 54,
+          "passed": true
+        },
+        {
+          "type": "shade_spawn",
+          "expected": 6,
+          "observed": 6,
+          "passed": true
+        },
+        {
+          "type": "jump",
+          "expected": 27,
+          "observed": 27,
+          "passed": true
+        },
+        {
+          "type": "pulse",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "player_hit",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "type": "lantern_lit",
+          "expected": 6,
+          "observed": 6,
+          "passed": true
+        },
+        {
+          "type": "fuel_drain",
+          "expected": 8,
+          "observed": 8,
+          "passed": true
+        },
+        {
+          "type": "lantern_out",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "game_over",
+          "expected": 1,
+          "observed": 1,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "manualListening": "NOT VERIFIED"
+    },
+    {
+      "night": 2,
+      "contextState": "running",
+      "volume": 0.55,
+      "comparisons": [
+        {
+          "type": "night_start",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "type": "dash",
+          "expected": 313,
+          "observed": 313,
+          "passed": true
+        },
+        {
+          "type": "mote_picked",
+          "expected": 124,
+          "observed": 124,
+          "passed": true
+        },
+        {
+          "type": "shade_spawn",
+          "expected": 14,
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "type": "jump",
+          "expected": 54,
+          "observed": 54,
+          "passed": true
+        },
+        {
+          "type": "pulse",
+          "expected": 6,
+          "observed": 6,
+          "passed": true
+        },
+        {
+          "type": "player_hit",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "lantern_lit",
+          "expected": 14,
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "type": "fuel_drain",
+          "expected": 14,
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "type": "lantern_out",
+          "expected": 7,
+          "observed": 7,
+          "passed": true
+        },
+        {
+          "type": "game_over",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "type": "drifter_spawn",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "type": "charm_picked",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "manualListening": "NOT VERIFIED"
+    },
+    {
+      "night": 3,
+      "contextState": "running",
+      "volume": 0.55,
+      "comparisons": [
+        {
+          "type": "night_start",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "dash",
+          "expected": 344,
+          "observed": 344,
+          "passed": true
+        },
+        {
+          "type": "mote_picked",
+          "expected": 187,
+          "observed": 187,
+          "passed": true
+        },
+        {
+          "type": "shade_spawn",
+          "expected": 24,
+          "observed": 24,
+          "passed": true
+        },
+        {
+          "type": "jump",
+          "expected": 61,
+          "observed": 61,
+          "passed": true
+        },
+        {
+          "type": "pulse",
+          "expected": 7,
+          "observed": 7,
+          "passed": true
+        },
+        {
+          "type": "player_hit",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "lantern_lit",
+          "expected": 20,
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "type": "fuel_drain",
+          "expected": 14,
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "type": "lantern_out",
+          "expected": 8,
+          "observed": 8,
+          "passed": true
+        },
+        {
+          "type": "game_over",
+          "expected": 3,
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "type": "drifter_spawn",
+          "expected": 4,
+          "observed": 4,
+          "passed": true
+        },
+        {
+          "type": "charm_picked",
+          "expected": 2,
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "type": "wind_warning",
+          "expected": 10,
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "type": "wind_start",
+          "expected": 10,
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "type": "refuel",
+          "expected": 1,
+          "observed": 1,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "manualListening": "NOT VERIFIED"
+    }
+  ],
+  "sourceVerification": [
+    {
+      "path": "src/browser/app.js",
+      "sha256": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/renderer.js",
+      "measuredSha256": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+      "currentSha256": "4de218545166877b8a33d47199ea476326cd1f687d13dbe93af27099ffed2f1c",
+      "change": "trailing whitespace only",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.css",
+      "sha256": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.js",
+      "sha256": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/renderer.js",
+      "measuredSha256": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+      "currentSha256": "4de218545166877b8a33d47199ea476326cd1f687d13dbe93af27099ffed2f1c",
+      "change": "trailing whitespace only",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.css",
+      "sha256": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.js",
+      "sha256": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/renderer.js",
+      "measuredSha256": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+      "currentSha256": "4de218545166877b8a33d47199ea476326cd1f687d13dbe93af27099ffed2f1c",
+      "change": "trailing whitespace only",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.css",
+      "sha256": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.js",
+      "sha256": "c6dabb3bb75f606689698efeb117ec09e28531fb4d0d40d544ee6dd4850a85cb",
+      "change": "none",
+      "verified": true
+    },
+    {
+      "path": "src/browser/renderer.js",
+      "measuredSha256": "8c8da099c8f3841a1c209c63d469e1a5a4f8a82fbfceb824125d3cd7be16c0b8",
+      "currentSha256": "4de218545166877b8a33d47199ea476326cd1f687d13dbe93af27099ffed2f1c",
+      "change": "trailing whitespace only",
+      "verified": true
+    },
+    {
+      "path": "src/browser/app.css",
+      "sha256": "163fb85234b884657a0b7416e241b4d1a76d263953b70c28fcdde61a980675bb",
+      "change": "none",
+      "verified": true
+    }
+  ]
+}

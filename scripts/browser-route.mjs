@@ -2,7 +2,7 @@
 // This module never changes game state, tuning, inventory or timers.
 const dist=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z), angle=p=>Math.atan2(p.z,p.x);
 function arc(points,from,to,r,y){let a=angle(from),b=angle(to),d=Math.atan2(Math.sin(b-a),Math.cos(b-a));const count=Math.ceil(Math.abs(d)/.17);for(let i=1;i<=count;i++){const q=a+d*i/count;points.push({x:r*Math.cos(q),z:r*Math.sin(q),y});}}
-function route(n,p,t){const out=[];
+export function route(n,p,t){const out=[];
  if(n===2){const a=p.x<35,b=t.x<35;if(a!==b)out.push(...(a?[{x:24,z:0,y:0},{x:46,z:0,y:0}]:[{x:46,z:0,y:0},{x:24,z:0,y:0}]));}
  if(n===3){let layer=p.y>5?6:p.y>2.8?3:0,goal=t.y;
   if(layer===6&&goal<6){const a=angle(p),start={x:5*Math.cos(a),z:5*Math.sin(a),y:6};out.push(start);arc(out,start,{x:0,z:-5},5,6);out.push({x:0,z:-10,y:0},{x:0,z:-34,y:0});layer=0;p={x:0,z:-34,y:0};}

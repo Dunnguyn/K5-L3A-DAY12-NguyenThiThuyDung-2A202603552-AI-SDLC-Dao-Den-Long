@@ -1,0 +1,111 @@
+{
+  "node": "v24.13.0",
+  "chromium": "159.0.8154.6",
+  "kind": "Same default initial state/seed/night/actions/ticks; no campaign vs fixture comparison",
+  "nights": [
+    {
+      "night": 1,
+      "inputFile": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/inputs/default-headless-release-1795281428614/night-1.input.json",
+      "seed": 20261202,
+      "scenario": null,
+      "ticks": 14400,
+      "initialEqual": true,
+      "initialDifferences": [],
+      "firstExactTick": 0,
+      "firstGameplayTick": 0,
+      "finalDifferences": [],
+      "scores": [
+        1055,
+        1055
+      ],
+      "outcomes": [
+        "dawn_survived",
+        "dawn_survived"
+      ]
+    },
+    {
+      "night": 2,
+      "inputFile": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/inputs/default-headless-release-1795281428614/night-2.input.json",
+      "seed": 20261202,
+      "scenario": null,
+      "ticks": 16200,
+      "initialEqual": true,
+      "initialDifferences": [],
+      "firstExactTick": 0,
+      "firstGameplayTick": 0,
+      "finalDifferences": [],
+      "scores": [
+        1430,
+        1430
+      ],
+      "outcomes": [
+        "dawn_survived",
+        "dawn_survived"
+      ]
+    },
+    {
+      "night": 3,
+      "inputFile": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/inputs/default-headless-release-1795281428614/night-3.input.json",
+      "seed": 20261202,
+      "scenario": null,
+      "ticks": 18000,
+      "initialEqual": false,
+      "initialDifferences": [
+        {
+          "path": ".snapshot.motes.12.pos.x",
+          "node": -26.045511066045258,
+          "chromium": -26.045511066045254
+        },
+        {
+          "path": ".snapshot.motes.15.pos.z",
+          "node": -29.44486372867091,
+          "chromium": -29.444863728670903
+        }
+      ],
+      "firstExactTick": 1,
+      "firstGameplayTick": 0,
+      "finalDifferences": [
+        {
+          "path": ".motes.10.pos.x",
+          "node": -26.045511066045258,
+          "chromium": -26.045511066045254
+        },
+        {
+          "path": ".motes.18.pos.z",
+          "node": -29.44486372867091,
+          "chromium": -29.444863728670903
+        }
+      ],
+      "scores": [
+        1274,
+        1274
+      ],
+      "outcomes": [
+        "dawn_survived",
+        "dawn_survived"
+      ],
+      "identicalInitialState": {
+        "kind": "diagnostic-only captured initial mote coordinate fixture, not campaign evidence",
+        "initialEqual": true,
+        "firstGameplayTick": 0,
+        "finalDifferences": [
+          {
+            "path": ".motes.10.pos.x",
+            "node": -26.045511066045258,
+            "chromium": -26.045511066045254
+          },
+          {
+            "path": ".motes.18.pos.z",
+            "node": -29.44486372867091,
+            "chromium": -29.444863728670903
+          }
+        ],
+        "scores": [
+          1274,
+          1274
+        ]
+      }
+    }
+  ],
+  "gameplayParity": true
+}

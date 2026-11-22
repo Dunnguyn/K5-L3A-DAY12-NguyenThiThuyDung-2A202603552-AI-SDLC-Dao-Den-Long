@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-21T12:31:17.347Z",
+  "preservation": {
+    "timestamp": "2026-11-21T12:31:17.068Z",
+    "count": 1196,
+    "digest": "84d8d63c1a8b2b857a2ad026b518b69c1b63aee0843d102a987906b8abced7e4",
+    "head": "f18e4837b3abbc4ed094073238c96822040e2f6a",
+    "phase1": "0c95fb492c94b12a941566fc33c06f59fc03f2dd",
+    "phase2": "cb8c014da9fe749232be4ae5dfce7bcbc6c31435"
+  },
+  "beforeDigest": "84d8d63c1a8b2b857a2ad026b518b69c1b63aee0843d102a987906b8abced7e4",
+  "requirementsHistoricalProofMapsLockfilePreserved": true,
+  "headAndTagsUnchanged": true,
+  "browserSourceModified": false,
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "stderr": "warning: in the working copy of '.agents/skills/verify-game/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/notes/AI_USAGE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'game.contract.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bench-headless.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/independent-core.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/proof-directory.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/write-contract.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/core/game.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/headless/adapter.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/game.test.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/headless.test.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/remediation.test.js', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  "headlessReport": "docs/proof/phase-3/core/PHASE3_CORE_REPORT.md",
+  "finalRun": "docs/proof/phase-3/core/implementation-2026-11-21T11-18-23-448Z/final-2026-11-21T12-21-37-821Z",
+  "extraCLI": "docs/proof/phase-3/core/edge-scenarios-2026-11-21T12-28-41-396Z",
+  "trackedModified": [
+    ".agents/skills/verify-game/SKILL.md",
+    "AGENTS.md",
+    "docs/notes/AI_USAGE.md",
+    "game.contract.json",
+    "scripts/bench-headless.mjs",
+    "scripts/browser-route.mjs",
+    "scripts/independent-core.mjs",
+    "scripts/proof-directory.mjs",
+    "scripts/verify.mjs",
+    "scripts/write-contract.mjs",
+    "src/config/game.js",
+    "src/core/game.js",
+    "src/headless/adapter.js",
+    "tests/game.test.js",
+    "tests/headless.test.js",
+    "tests/remediation.test.js"
+  ],
+  "gitStatus": "## main...origin/main\n M .agents/skills/verify-game/SKILL.md\n M AGENTS.md\n M docs/notes/AI_USAGE.md\n M game.contract.json\n M scripts/bench-headless.mjs\n M scripts/browser-route.mjs\n M scripts/independent-core.mjs\n M scripts/proof-directory.mjs\n M scripts/verify.mjs\n M scripts/write-contract.mjs\n M src/config/game.js\n M src/core/game.js\n M src/headless/adapter.js\n M tests/game.test.js\n M tests/headless.test.js\n M tests/remediation.test.js\n?? docs/decisions/\n?? docs/notes/phase-3-analysis-audit.json\n?? docs/notes/phase-3-changelog.md\n?? docs/notes/phase-3-contract-migration.md\n?? docs/notes/phase-3-core-run.json\n?? docs/notes/phase-3-rtm.md\n?? docs/notes/phase-3-test-plan.md\n?? docs/notes/phase-3.md\n?? docs/proof/phase-3/\n?? docs/requirements/TICKET-03.md\n?? scripts/phase3-dawn-replay.mjs\n?? scripts/phase3-edge-scenarios.mjs\n?? scripts/phase3-final-check.mjs\n?? scripts/phase3-headless-driver.mjs\n?? scripts/phase3-scenarios.mjs\n?? src/core/fuel.js\n?? tests/phase3.test.js",
+  "untrackedCount": 311,
+  "commitPushTagPerformed": false
+}

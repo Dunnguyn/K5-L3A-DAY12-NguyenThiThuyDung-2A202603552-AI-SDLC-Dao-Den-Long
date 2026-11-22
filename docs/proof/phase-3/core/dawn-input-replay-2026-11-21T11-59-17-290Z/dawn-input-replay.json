@@ -1,0 +1,45 @@
+{
+  "scope": "Actual input CLI dawn replay using documented scenario fixtures, not default campaign or browser E2E",
+  "checks": [
+    {
+      "night": 1,
+      "state": "won",
+      "reason": "dawn_survived",
+      "score": 906,
+      "sim_tick": 14400,
+      "lit": 3,
+      "actions": 350,
+      "refuels": 16,
+      "CLIReplayMatches": true,
+      "defaultCampaign": false,
+      "fixture": "pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation"
+    },
+    {
+      "night": 2,
+      "state": "won",
+      "reason": "dawn_survived",
+      "score": 1152,
+      "sim_tick": 16200,
+      "lit": 4,
+      "actions": 425,
+      "refuels": 14,
+      "CLIReplayMatches": true,
+      "defaultCampaign": false,
+      "fixture": "pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation"
+    },
+    {
+      "night": 3,
+      "state": "lost",
+      "reason": "dawn",
+      "score": 725,
+      "sim_tick": 18000,
+      "lit": 4,
+      "actions": 1643,
+      "refuels": 12,
+      "CLIReplayMatches": true,
+      "defaultCampaign": false,
+      "fixture": "pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation"
+    }
+  ],
+  "allWon": false
+}
