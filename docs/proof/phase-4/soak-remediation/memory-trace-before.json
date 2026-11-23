@@ -1,0 +1,558 @@
+{
+  "kind": "diagnostic only; acceptance RSS points unchanged",
+  "pid": 40444,
+  "samples": [
+    {
+      "stage": "initialized",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 36.2969,
+        "heapTotal": 6.0586,
+        "heapUsed": 5.0708,
+        "external": 1.7599,
+        "arrayBuffers": 0.0435
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 4545,
+      "memory": {
+        "rss": 42.9336,
+        "heapTotal": 7.8086,
+        "heapUsed": 5.9766,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 27,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 123,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 1,
+      "night": 2,
+      "seed": 8,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 42.9805,
+        "heapTotal": 7.8086,
+        "heapUsed": 6.0267,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 1,
+      "night": 2,
+      "seed": 8,
+      "sim_tick": 2289,
+      "memory": {
+        "rss": 45.4609,
+        "heapTotal": 10.8086,
+        "heapUsed": 7.3594,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 25,
+        "drifters": 1,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 2,
+      "eventLog": 66,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 45.8086,
+        "heapTotal": 10.8086,
+        "heapUsed": 5.7553,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "sim_tick": 3482,
+      "memory": {
+        "rss": 46.4531,
+        "heapTotal": 11.0586,
+        "heapUsed": 7.8769,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 10,
+        "motes": 30,
+        "drifters": 2,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 2,
+      "eventLog": 106,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 3,
+      "night": 1,
+      "seed": 10,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 46.7656,
+        "heapTotal": 11.0586,
+        "heapUsed": 6.2976,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 3,
+      "night": 1,
+      "seed": 10,
+      "sim_tick": 2568,
+      "memory": {
+        "rss": 48.0234,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.0982,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 29,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 78,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 4,
+      "night": 2,
+      "seed": 11,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 48.0352,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.133,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 4,
+      "night": 2,
+      "seed": 11,
+      "sim_tick": 2608,
+      "memory": {
+        "rss": 47.668,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.763,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 7,
+        "motes": 26,
+        "drifters": 2,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 2,
+      "eventLog": 77,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 5,
+      "night": 3,
+      "seed": 12,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 47.8711,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.8022,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 5,
+      "night": 3,
+      "seed": 12,
+      "sim_tick": 3001,
+      "memory": {
+        "rss": 47.0859,
+        "heapTotal": 11.8086,
+        "heapUsed": 8.5235,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 9,
+        "motes": 31,
+        "drifters": 2,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 2,
+      "eventLog": 87,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 6,
+      "night": 1,
+      "seed": 13,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 47.0859,
+        "heapTotal": 11.8086,
+        "heapUsed": 6.8303,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 6,
+      "night": 1,
+      "seed": 13,
+      "sim_tick": 1585,
+      "memory": {
+        "rss": 46.8945,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.7644,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 4,
+        "motes": 27,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 49,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 7,
+      "night": 2,
+      "seed": 14,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 46.8945,
+        "heapTotal": 11.8086,
+        "heapUsed": 7.7981,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 7,
+      "night": 2,
+      "seed": 14,
+      "sim_tick": 3689,
+      "memory": {
+        "rss": 46.9453,
+        "heapTotal": 12.0586,
+        "heapUsed": 7.3595,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 8,
+        "motes": 27,
+        "drifters": 2,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 2,
+      "eventLog": 108,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 8,
+      "night": 3,
+      "seed": 15,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 46.9531,
+        "heapTotal": 12.0586,
+        "heapUsed": 7.3997,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 8,
+      "night": 3,
+      "seed": 15,
+      "sim_tick": 753,
+      "memory": {
+        "rss": 46.9492,
+        "heapTotal": 12.5586,
+        "heapUsed": 8.6557,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 3,
+        "motes": 23,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 2,
+      "eventLog": 26,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 9,
+      "night": 1,
+      "seed": 16,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 47.0234,
+        "heapTotal": 12.5586,
+        "heapUsed": 8.6984,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 9,
+      "night": 1,
+      "seed": 16,
+      "sim_tick": 1799,
+      "memory": {
+        "rss": 48.7188,
+        "heapTotal": 12.5586,
+        "heapUsed": 7.5356,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 5,
+        "motes": 27,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 56,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "reset",
+      "index": 9,
+      "night": 1,
+      "seed": 16,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 48.2344,
+        "heapTotal": 12.5586,
+        "heapUsed": 7.5658,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 0,
+      "eventLog": 0,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    }
+  ],
+  "soak": {
+    "nights": 10,
+    "crashes": 0,
+    "results": [
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost",
+      "lost"
+    ],
+    "mem_start_mb": 36.296875,
+    "mem_end_mb": 48.19140625,
+    "duration_s": 0.7795022
+  },
+  "postRunMemory": {
+    "rss": 47.96484375,
+    "heapTotal": 12.55859375,
+    "heapUsed": 7.5715179443359375,
+    "external": 1.734299659729004,
+    "arrayBuffers": 0.01784038543701172
+  },
+  "postDiagnosticGcMemory": null
+}

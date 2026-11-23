@@ -1,0 +1,10 @@
+{
+  "unit": {"status":"PASS","passed":195,"failed":0},
+  "internal_cross_check": {"status":"PASS","passed":15,"failed":0},
+  "verify": {"status":"PASS","checks":8},
+  "build": {"status":"PASS"},
+  "headless_scenarios_replay_and_21600_updates": {"status":"PASS","command":"npm run verify"},
+  "browser_benchmark": {"status":"PASS","before_avg_fps":760.7666666666667,"after_avg_fps":958.2333333333333,"after_p1_low_fps":279.47598253274174,"after_frame_ms_p95":1.8999999999978172,"duration_s":30,"scene":"200 wander Shades; 100 motes; 1280x720 canvas","evidence":"bench-after.json"},
+  "soak": {"status":"FAIL","official_start_mb":35.2734375,"official_end_mb":47.94140625,"limit_mb":42.328125,"repeats_passed":0,"repeats_total":3},
+  "official_contract_v1_0_base":"NOT VERIFIED"
+}

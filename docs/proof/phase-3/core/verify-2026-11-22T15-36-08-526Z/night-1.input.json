@@ -1,0 +1,187 @@
+{
+  "version": "internal-draft-1",
+  "seed": 41,
+  "scenario": {
+    "player": {
+      "invuln_ticks": 21600,
+      "successful_lights": 5,
+      "light": 20
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "lit": true
+      },
+      {
+        "id": "L2",
+        "lit": true
+      },
+      {
+        "id": "L3",
+        "lit": true
+      },
+      {
+        "id": "L4",
+        "lit": true
+      },
+      {
+        "id": "L5",
+        "lit": true
+      }
+    ],
+    "random_drifters": false,
+    "wind_enabled": true
+  },
+  "actions": [
+    {
+      "ticks": 10200
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 85
+    },
+    {
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 5
+    },
+    {
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 0,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 17
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 72
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 40
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 3
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 3
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 44
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 96
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 35
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 35
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "ticks": 3484
+    }
+  ]
+}

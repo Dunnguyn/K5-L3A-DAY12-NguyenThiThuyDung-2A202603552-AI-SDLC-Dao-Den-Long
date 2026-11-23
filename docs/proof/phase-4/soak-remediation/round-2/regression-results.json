@@ -1,0 +1,12 @@
+{
+  "os": "Windows_NT 10.0.26300 x64",
+  "node": "v24.13.0",
+  "unit": {"command":"npm test -- --reporter=dot","passed":196,"failed":0},
+  "independent_cross_check": {"command":"npm run test:independent","passed":15,"failed":0},
+  "verify": {"command":"npm run verify","status":"PASS","checks":["contract-generation","core-world-scenarios","dawn-input-replay","independent-core-cross-check","headless-import","vitest","headless-benchmark","vite-build"]},
+  "build": {"command":"npm run build","status":"PASS"},
+  "headless_benchmark": {"command":"npm run bench:headless","active_ticks":21600,"deterministic":true,"within_30_seconds":true,"active_replay_ms":[1205.2244,1345.8838]},
+  "browser_benchmark": {"command":"node scripts/bench-render.mjs --seed 42 --duration 30 --out docs/proof/phase-4/soak-remediation/round-2/bench-regression.json","status":"PASS","avg_fps":975.9333333333333,"p1_low_fps":290.73228815240196,"frame_ms_p95":1.8999999999996362,"renderer":"AMD ANGLE D3D11","vsync_off":false,"peak_mem_mb":null},
+  "git_diff_check": "PASS",
+  "soak_rss": "FAIL"
+}

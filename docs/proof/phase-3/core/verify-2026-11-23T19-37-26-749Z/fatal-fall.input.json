@@ -1,0 +1,18 @@
+{
+  "scenario": {
+    "player": {
+      "flames": 1,
+      "light": 10,
+      "pos": {
+        "x": 50,
+        "y": -11,
+        "z": 0
+      }
+    }
+  },
+  "actions": [
+    {
+      "ticks": 1
+    }
+  ]
+}

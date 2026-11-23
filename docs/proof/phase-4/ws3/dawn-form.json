@@ -1,0 +1,12 @@
+{
+  "kind": "default-state full campaign with real Playwright keyboard input, no gameplay-state mutation",
+  "source_report": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/browser/e2e-2026-11-23T11-31-22-716Z/browser-e2e.json",
+  "source_screenshot": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/browser/e2e-2026-11-23T11-31-22-716Z/dawn-leaderboard-form.png",
+  "command": "npm run test:browser",
+  "campaign_passed": true,
+  "night_scores": [1055,1430,1274],
+  "campaign_total": 3759,
+  "dawn_form_present": true,
+  "name_pattern": "[A-Za-z0-9_]{3,12}",
+  "note": "This run verified Dawn form presence, not submission through the Vite-only test server. Browser/server submission and same-file CLI export were verified after a real-input loss in browser-e2e.json."
+}

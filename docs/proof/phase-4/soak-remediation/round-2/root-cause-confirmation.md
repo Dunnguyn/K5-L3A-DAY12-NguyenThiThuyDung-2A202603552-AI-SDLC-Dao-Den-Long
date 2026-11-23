@@ -1,0 +1,7 @@
+# RSS finding
+
+The evidence does **not** establish a retained Game Core object leak. Across 1, 3, 10 and 20 Nights, final RSS tends toward 47–48 MiB rather than growing linearly. External and array buffer memory remain near 1.73 and 0.018 MiB. The final 20-Night diagnostic retained 24–34 motes, 3–10 Shades and fewer than 110 Night events at individual endpoints; old Night event arrays are cleared. Listener count remained 5. Diagnostic GC released about 2.94 MiB of JS heap without reducing RSS. These observations support V8 heap expansion / allocator high-water behavior caused by gameplay allocation churn, but do not identify an exact single allocation site or prove the absence of all retained references.
+
+The required threshold compares a cold RSS point immediately after Night 1 initialization (~35 MiB) with a warmed runtime after ten full Nights (~46–48 MiB). The benchmark is still a valid mandatory requirement. No baseline adjustment, forced GC, V8 flag, reduced Night count or altered gameplay was used to pass it. **P4-SOAK-03 remains FAIL / BLOCKER.**
+
+During profiling, a diagnostic command without `SOAK_DIAGNOSTIC_OUT` unintentionally replaced the untracked Round 1 `memory-trace-before.json` file. The exact earlier file could not be recovered. The Round 1 official `soak.json`, root-cause report, after trace and repeat results remain intact. The replacement diagnostic uses unchanged acceptance semantics, but must not be represented as the original before trace.

@@ -1,0 +1,13 @@
+{
+  "command": "node scripts/soak.mjs --seed 7 --nights 10 --out <per-run-file>",
+  "threshold_ratio": 1.2,
+  "runs": [
+    {"run":1,"pid":39428,"mem_start_mb":35.30078125,"mem_end_mb":47.2890625,"ratio":1.3396038508354542,"results":10,"crashes":0,"status":"FAIL"},
+    {"run":2,"pid":20684,"mem_start_mb":35.42578125,"mem_end_mb":46.43359375,"ratio":1.3107288565442716,"results":10,"crashes":0,"status":"FAIL"},
+    {"run":3,"pid":40900,"mem_start_mb":35.28125,"mem_end_mb":47.9921875,"ratio":1.3602745792736934,"results":10,"crashes":0,"status":"FAIL"},
+    {"run":4,"pid":41448,"mem_start_mb":35.31640625,"mem_end_mb":46.54296875,"ratio":1.317885189691406,"results":10,"crashes":0,"status":"FAIL"}
+  ],
+  "night_order": [1,2,3,1,2,3,1,2,3,1],
+  "seeds": [7,8,9,10,11,12,13,14,15,16],
+  "verdict": "FAIL"
+}

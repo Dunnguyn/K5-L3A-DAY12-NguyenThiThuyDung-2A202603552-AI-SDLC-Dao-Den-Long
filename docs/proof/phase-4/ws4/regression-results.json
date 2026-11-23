@@ -1,0 +1,13 @@
+{
+  "platform": "Windows_NT x64",
+  "node": "v24.13.0",
+  "unit": {"command": "npm test -- --reporter=dot", "passed": 205, "failed": 0},
+  "cross_check": {"command": "npm run test:independent", "passed": 15, "failed": 0},
+  "verify": {"command": "npm run verify", "passed": 8, "failed": 0},
+  "build": {"command": "npm run build", "status": "PASS"},
+  "browser": {"command": "npm run test:browser", "status": "PASS", "full_default_campaign": true, "night_scores": [1055, 1430, 1274], "campaign_total": 3759, "proof": "docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/browser/e2e-2026-11-23T12-44-50-130Z"},
+  "headless_scenarios_and_replay": {"status": "PASS via npm run verify"},
+  "render_benchmark": {"command": "node scripts/bench-render.mjs --seed 42 --duration 30 --out docs/proof/phase-4/ws4/bench-regression.json", "status": "PASS local", "avg_fps": 585.4333333333333, "p1_low_fps": 133.24248618366343, "frame_ms_p95": 3.399999999997817, "load_ms": 6578.39829999851, "proof": "docs/proof/phase-4/ws4/bench-regression.json"},
+  "soak": {"status": "FAIL/BLOCKER historical; not rerun because runner and gameplay were not changed", "proof": "docs/proof/phase-4/soak-remediation/round-2/soak-retest.json"},
+  "git_diff_check": "PASS after removing one extra README EOF blank line"
+}

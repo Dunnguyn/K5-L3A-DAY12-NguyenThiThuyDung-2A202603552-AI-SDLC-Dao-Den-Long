@@ -1,0 +1,99 @@
+{
+  "kind": "diagnostic only; acceptance RSS points unchanged",
+  "pid": 9792,
+  "samples": [
+    {
+      "stage": "initialized",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 35.9492,
+        "heapTotal": 6.3086,
+        "heapUsed": 5.0706,
+        "external": 1.7599,
+        "arrayBuffers": 0.0435
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 4545,
+      "memory": {
+        "rss": 43.6914,
+        "heapTotal": 8.3086,
+        "heapUsed": 5.4288,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 27,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 123,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "reset",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 42.9688,
+        "heapTotal": 8.3086,
+        "heapUsed": 5.4779,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 0,
+      "eventLog": 0,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    }
+  ],
+  "soak": {
+    "nights": 1,
+    "crashes": 0,
+    "results": [
+      "lost"
+    ],
+    "mem_start_mb": 35.94921875,
+    "mem_end_mb": 42.96875,
+    "duration_s": 0.1376434
+  },
+  "postRunMemory": {
+    "rss": 42.96875,
+    "heapTotal": 8.30859375,
+    "heapUsed": 5.484107971191406,
+    "external": 1.734299659729004,
+    "arrayBuffers": 0.01784038543701172
+  },
+  "postDiagnosticGcMemory": null
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "Phase 3 fuel + dawn + shared core/world + internal headless adapter; official Test Contract v1.0 base NOT VERIFIED",
+  "timestamp": "2026-11-23T11:28:57.384Z",
+  "platform": "win32",
+  "node": "v24.13.0",
+  "commit": "483c527b7101c7177b10d9b816c681fe52d00f46",
+  "prdSha256": "11ffc0b564e8131536d022bce56e2f1aedb0f5a7344aaa0a306b97d1678e020b",
+  "ticket03Sha256": "008d36ff4cec4dfb276671ee64c973ee3fde907c858a21a9dd1830681027b545",
+  "ticket02Sha256": "60e43cd37e87cd07fe9a101b967a7115bdef37a2f602897f1a7187620df886bb",
+  "checks": [
+    {
+      "name": "contract-generation",
+      "command": [
+        "node",
+        "scripts/write-contract.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "core-world-scenarios",
+      "command": [
+        "node",
+        "scripts/phase3-scenarios.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"scope\":\"Phase 3 actual CLI scenarios; seeded fixtures, not manual browser/default campaign acceptance; official v1.0 base NOT VERIFIED\",\"timestamp\":\"2026-11-23T11:29:06.481Z\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"name\":\"night-1-full-dawn\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-1-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-1-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-1-no-early-win\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-1-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-1-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-2-full-dawn\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-2-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-2-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-2-no-early-win\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-2-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-2-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-3-full-dawn\",\"night\":3,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-3-full-dawn.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-3-full-dawn.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"night-3-no-early-win\",\"night\":3,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-3-no-early-win.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/night-3-no-early-win.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"first-light\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/first-light.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/first-light.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"partial-relight\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/partial-relight.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/partial-relight.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"refuel-and-full-decay\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/refuel-and-full-decay.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/refuel-and-full-decay.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"multi-shade-drain\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/multi-shade-drain.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/multi-shade-drain.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"pause-drain-resume\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/pause-drain-resume.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/pause-drain-resume.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"out-59-60-61\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/out-59-60-61.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/out-59-60-61.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"drain-pulse\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/drain-pulse.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/drain-pulse.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"capacity-theft\",\"night\":2,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/capacity-theft.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/capacity-theft.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"fatal-fall\",\"night\":1,\"status\":\"PASS\",\"deterministic\":true,\"input\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/fatal-fall.input.json\",\"actual\":\"docs/proof/phase-3/core/verify-2026-11-23T11-28-57-382Z/fatal-fall.actual.json\",\"layer\":\"actual CLI scenario fixture; not default browser campaign\"},{\"name\":\"invalid CLI night\",\"status\":\"PASS\",\"exitCode\":1,\"stdoutEmpty\":true}],\"passed\":16,\"failed\":0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "dawn-input-replay",
+      "command": [
+        "node",
+        "scripts/phase3-dawn-replay.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"night\":1,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":606,\"sim_tick\":14400,\"lit\":3,\"actions\":27,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n{\"night\":2,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":775,\"sim_tick\":16200,\"lit\":4,\"actions\":41,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n{\"night\":3,\"state\":\"won\",\"reason\":\"dawn_survived\",\"score\":973,\"sim_tick\":18000,\"lit\":5,\"actions\":224,\"refuels\":0,\"CLIReplayMatches\":true,\"defaultCampaign\":false,\"fixture\":\"pre-lit lamps, explicit successful_lights=5/bag20 and invulnerability; random Drifters disabled; no mid-run state mutation\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "independent-core-cross-check",
+      "command": [
+        "node",
+        "scripts/independent-core.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"kind\":\"Phase 3 separate acceptance cross-check (agent-authored; not external independent QA)\",\"node\":\"v24.13.0\",\"platform\":\"win32\",\"checks\":[{\"id\":\"standard values and map cardinality\",\"status\":\"PASS\"},{\"id\":\"fixed tick and pause separation\",\"status\":\"PASS\"},{\"id\":\"dash rising edge and stable replay\",\"status\":\"PASS\"},{\"id\":\"firefly only scores when deposited\",\"status\":\"PASS\"},{\"id\":\"shade contact and safe zone update order\",\"status\":\"PASS\"},{\"id\":\"required output rejects null records and keeps required arrays\",\"status\":\"PASS\"},{\"id\":\"CLI pure JSON for selected night\",\"status\":\"PASS\"},{\"id\":\"v1.2 tuning exact published additions\",\"status\":\"PASS\"},{\"id\":\"refuel at raw99.9 uses one mote and scores five\",\"status\":\"PASS\"},{\"id\":\"continuous two-Shade drain 60 ticks with independent arithmetic\",\"status\":\"PASS\"},{\"id\":\"fuel exhaustion tick60, no repeated out\",\"status\":\"PASS\"},{\"id\":\"scenario pre-lit excluded; derived inventory20 accepted\",\"status\":\"PASS\"},{\"id\":\"partial relight costs five, scores65, grows capacity\",\"status\":\"PASS\"},{\"id\":\"all-lit cannot win before dawn; pause freezes natural fuel\",\"status\":\"PASS\"},{\"id\":\"draining pulse is total15 using pre-hit state\",\"status\":\"PASS\"}],\"passed\":15,\"failed\":0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "headless-import",
+      "command": [
+        "node",
+        "scripts/smoke-headless.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: Node ESM imports core without DOM. Infrastructure only; no contract runner.\n",
+      "stderr": ""
+    },
+    {
+      "name": "vitest",
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run"
+      ],
+      "exitCode": 0,
+      "stdout": "\n RUN  v5.1.1 E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\n\n\n Test Files  10 passed (10)\n      Tests  205 passed (205)\n   Start at  18:29:14\n   Duration  2.97s (tests 79%, import 12%, transform 5%, worker 3%)\n\n",
+      "stderr": ""
+    },
+    {
+      "name": "headless-benchmark",
+      "command": [
+        "node",
+        "scripts/bench-headless.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"node\":\"v24.13.0\",\"os\":{\"platform\":\"win32\",\"release\":\"10.0.26300\",\"arch\":\"x64\"},\"resolution\":\"headless/no DOM\",\"startedAt\":\"2026-11-23T11:29:17.806Z\",\"scope\":\"Phase 3 Night 3: 18000 active ticks plus 3600 terminal input ticks; separate throughput fixture runs 21600 active updates across two legal Night-3 sessions. No time/tuning override.\",\"cliReplays\":[{\"elapsedMs\":1140.8917,\"inputTicks\":21600,\"activeSimTicks\":18000,\"terminalTailTicks\":3600,\"exitCode\":0,\"stdoutPureJson\":true},{\"elapsedMs\":1208.0783000000001,\"inputTicks\":21600,\"activeSimTicks\":18000,\"terminalTailTicks\":3600,\"exitCode\":0,\"stdoutPureJson\":true}],\"activeThroughputReplays\":[{\"elapsedMs\":1172.5566999999996,\"activeSimTicks\":21600,\"sessions\":[{\"night\":3,\"sim_tick\":18000,\"state\":\"lost\",\"randomMotes\":30,\"shades\":10,\"drifters\":2},{\"night\":3,\"sim_tick\":3600,\"state\":\"playing\",\"randomMotes\":30,\"shades\":10,\"drifters\":2}],\"fixture\":\"30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death\"},{\"elapsedMs\":1156.0663,\"activeSimTicks\":21600,\"sessions\":[{\"night\":3,\"sim_tick\":18000,\"state\":\"lost\",\"randomMotes\":30,\"shades\":10,\"drifters\":2},{\"night\":3,\"sim_tick\":3600,\"state\":\"playing\",\"randomMotes\":30,\"shades\":10,\"drifters\":2}],\"fixture\":\"30 random motes, 10 Shades, 2 Drifters initially; wind/random systems enabled; invulnerability prevents early death\"}],\"deterministic\":true,\"within30s\":true}\n",
+      "stderr": ""
+    },
+    {
+      "name": "vite-build",
+      "command": [
+        "node",
+        "node_modules/vite/bin/vite.js",
+        "build"
+      ],
+      "exitCode": 0,
+      "stdout": "vite v8.3.8 building client environment for production...\ntransforming...\n✓ 18 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.40 kB │ gzip:   0.30 kB\ndist/assets/index-CwZL5Tvs.css   10.85 kB │ gzip:   3.24 kB\ndist/assets/index-x2HETNWh.js   626.39 kB │ gzip: 162.49 kB\n\n✓ built in 513ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    }
+  ],
+  "passed": true
+}

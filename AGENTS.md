@@ -1,6 +1,8 @@
 ﻿# Đảo Đèn Lồng
 
-- Current authorization (Phase 3 Final Verification & Release Gate) supersedes the historical no-release scope below: repair mandatory blockers, run actual regression/browser/runtime comparison, audit immutable files/secrets, then commit/push normally and tag `phase-3` only after exact-SHA CI SUCCESS. Stop if mandatory gates fail or phase-3 already exists; never overwrite remote history or released tags. No Phase4. Preserve historical proof; new release evidence uses docs/proof/phase-3/release-*/. Record non-blocking limits and independent QA status honestly.
+- **Current authorization (Phase 4 safe checkpoint):** Preserve the completed Phase 4 implementation and evidence on `phase4/release-candidate` with a local checkpoint commit. P4-SOAK-03 remains FAIL/BLOCKER after repeated clean runs and the final gate; do not change its runner, threshold, RSS points or evidence without a demonstrated cause and reproducing test. No push, `phase-4` tag or GitHub Release `v1.0.0`. Preserve gameplay tuning/pipeline and historical tags/evidence. See `docs/proof/phase-4/PHASE4_CHECKPOINT_HANDOFF.md`.
+
+- Historical authorization (Phase 3 Final Verification & Release Gate, completed at annotated tag `phase-3`): repair mandatory blockers, run regression/browser/runtime comparison, audit files, commit/push and tag only after exact-SHA CI SUCCESS. This completed authorization does not grant Phase 4 release actions. Preserve its proof and all earlier phase evidence.
 
 - Historical Browser Integration authorization on completed Core (superseded by the Final Verification & Release Gate above): use snapshots/events/read-only selectors; do not duplicate fuel, AI, scoring, capacity or outcomes. Keep 60 Hz simulation independent of rendering. The browser boundary/default-keyboard suites and native FPS evidence are retained under Phase 3 proof.
 
@@ -11,7 +13,7 @@
 - Dùng đúng tuning, tọa độ ba đêm và pipeline 12 bước. Các quyết định người dùng đã duyệt trong phase-2.md là assumptions implementation, không viết lại thành yêu cầu Ticket.
 - `TEST_CONTRACT_SPEC.md` là draft. Triển khai known v1.1/v1.2 delta qua adapter riêng; không tuyên bố official compatibility khi v1.0 base/schema chưa xác minh.
 - Core là ESM thuần, dùng chung cho browser/headless; không dùng DOM/Three.js/clock trong luật. Gameplay constants ở `src/config/game.js`, map/terrain data ở `src/data/worlds.js`.
-- Current Phase 3 Core gates: npm test, build, verify, test:independent, CLI/replay/benchmark và git diff --check. Browser suite/visuals/accessibility được hoãn theo scope người dùng; không gọi Phase 2 browser driver là Phase 3 acceptance. Phase 3 Core evidence ghi `docs/proof/phase-3/core/`; đường dẫn Phase 2 là lịch sử, không ghi đè; không ghi đè `docs/proof/phase-1/`.
+- Historical Phase 3 Core gates: npm test, build, verify, test:independent, CLI/replay/benchmark và git diff --check. Phase 3 evidence is preserved under `docs/proof/phase-3/core/` and `browser/`; paths in earlier phases remain historical.
 - Browser render lấy cùng map/terrain descriptors; chỉ đọc trạng thái Core. Fixed simulation 60Hz dùng accumulator độc lập với render FPS; event âm thanh tiêu thụ đúng một lần mỗi sim tick. E2E điều khiển bằng input thực, quan sát snapshot read-only, không mutate game state hoặc giả lập kết quả.
 - Kiểm tra timer tại ngưỡng, same-tick priority, seeded replay, malformed input/output và cả ba đêm. Chỉ ghi PASS sau command thực tế; giữ nguyên test failures/evidence.
 - Không tạo output mẫu giả, không tắt test, không lén thêm gameplay. Ghi mọi assumption chưa có trong Ticket vào notes kèm test. Không đoán schema v1.0.

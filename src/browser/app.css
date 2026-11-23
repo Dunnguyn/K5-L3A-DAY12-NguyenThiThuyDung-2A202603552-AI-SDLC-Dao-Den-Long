@@ -31,3 +31,37 @@
 .result-grid{max-width:470px}
 .result-grid b{font-size:17px}
 @media(max-width:650px){#mote-bar{gap:3px}#mote-bar i{width:10px;height:10px}#toast{top:155px;font-size:11px;white-space:normal;width:max-content;text-align:center}#low-warning{top:125px;max-width:85vw;font-size:10px}#score-pop{top:90px;font-size:12px}}
+
+/* Ticket-04: readable text, persisted large text, and non-flashing alternatives. */
+:root{--ui-scale:1}.large-text{--ui-scale:1.25}
+#app :is(button,input,label,p,span,small,b,kbd,li,output,blockquote,div){font-size:calc(18px * var(--ui-scale))}
+#app #panel h1{font-size:calc(44px * var(--ui-scale))}
+#app #panel h2{font-size:calc(22px * var(--ui-scale))}
+#app #panel .eyebrow{font-size:calc(18px * var(--ui-scale))}
+#app #clock{font-size:calc(25px * var(--ui-scale))}
+#app #pause-button{right:280px}
+#app #panel{width:min(790px,calc(100vw - 28px));padding:clamp(22px,3vw,42px)}
+#app #panel .button-stack{max-width:390px}
+#app #hint{bottom:8px;max-width:calc(100vw - 24px);text-align:center;white-space:normal}
+#app #mote-bar{bottom:58px}
+#app #ability-bar{bottom:58px}
+#app #fps{bottom:30px}
+#app #arrow small{padding:5px 9px}
+#subtitle{position:fixed;z-index:4;left:50%;bottom:125px;transform:translateX(-50%);max-width:75vw;padding:9px 16px;border:2px solid var(--danger-border);border-radius:12px;background:#0E1430ed;color:#FFFFFF;text-align:center;pointer-events:none}
+#shade-arrow{position:fixed;z-index:4;color:#FFFFFF;background:#0E1430dd;border:2px solid var(--danger-border);border-radius:12px;padding:7px;pointer-events:none;transform-origin:center}
+#shade-arrow span{display:inline-block;white-space:nowrap}
+#shade-arrow i{display:inline-block;font-style:normal}
+#control-settings{margin-top:20px;border-top:1px solid #F2C14E55;padding-top:12px}
+#control-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#control-grid button{padding:8px;min-width:0;overflow-wrap:anywhere}
+#control-grid kbd{display:block;color:#F2C14E}
+#control-error{min-height:1.5em;color:#FFFFFF}
+#leaderboard-form{margin-top:20px;border-top:1px solid #F2C14E55;padding-top:15px}
+#leaderboard-form>div{display:flex;justify-content:center;gap:10px;margin-top:12px}
+#leaderboard-form input{width:min(270px,50vw);padding:10px;border:2px solid #F2C14E;border-radius:10px;background:#0E1430;color:#FFFFFF}
+#leaderboard-list{text-align:left;max-width:540px;margin:20px auto;padding-left:38px;line-height:1.9}
+.reduced-motion #fx{display:none!important}
+.reduced-motion #clock.blink{animation:none}
+.reduced-motion #app *, .reduced-motion #app *::before, .reduced-motion #app *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:650px){#control-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#app #mote-bar{bottom:84px}#app #ability-bar{bottom:150px}#app #hint{display:none}#subtitle{bottom:185px;max-width:92vw}#app #clock{top:110px}}
+@media(max-width:650px){#app #pause-button{right:12px;top:180px}}

@@ -1,0 +1,21 @@
+PASS E2E-02-first-light
+PASS E2E-03-refuel
+PASS full-fuel-exclusion
+PASS E2E-04-lantern-out
+PASS E2E-05-partial-relight
+PASS E2E-06-safe-reaction
+PASS E2E-07-drain-interrupt
+PASS multi-shade-drain
+PASS E2E-08-capacity20-fixture
+PASS E2E-09-all-lit-no-early
+PASS E2E-10-dawn-fixture-night1
+PASS E2E-10-dawn-fixture-night2
+PASS E2E-10-dawn-fixture-night3
+PASS E2E-11-dawn-loss
+PASS E2E-12-no-flames-priority
+PASS E2E-14-natural-loss-retry
+PASS E2E-15-palette-persistence
+PASS E2E-16-danger-pause-camera-audio
+PASS low-fuel-1Hz-and-pause
+PASS dash-wind-lifecycle
+{"directory":"docs/proof/phase-3/release-2026-11-21T17-05-13-125Z/browser/boundaries-2026-11-23T13-31-27-269Z","passed":true,"checks":[{"id":"E2E-02-first-light","status":"PASS"},{"id":"E2E-03-refuel","status":"PASS"},{"id":"full-fuel-exclusion","status":"PASS"},{"id":"E2E-04-lantern-out","status":"PASS"},{"id":"E2E-05-partial-relight","status":"PASS"},{"id":"E2E-06-safe-reaction","status":"PASS"},{"id":"E2E-07-drain-interrupt","status":"PASS"},{"id":"multi-shade-drain","status":"PASS"},{"id":"E2E-08-capacity20-fixture","status":"PASS"},{"id":"E2E-09-all-lit-no-early","status":"PASS"},{"id":"E2E-10-dawn-fixture-night1","status":"PASS"},{"id":"E2E-10-dawn-fixture-night2","status":"PASS"},{"id":"E2E-10-dawn-fixture-night3","status":"PASS"},{"id":"E2E-11-dawn-loss","status":"PASS"},{"id":"E2E-12-no-flames-priority","status":"PASS"},{"id":"E2E-14-natural-loss-retry","status":"PASS"},{"id":"E2E-15-palette-persistence","status":"PASS"},{"id":"E2E-16-danger-pause-camera-audio","status":"PASS"},{"id":"low-fuel-1Hz-and-pause","status":"PASS"},{"id":"dash-wind-lifecycle","status":"PASS"}]}

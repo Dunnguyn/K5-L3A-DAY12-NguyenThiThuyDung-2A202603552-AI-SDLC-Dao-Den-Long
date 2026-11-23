@@ -1,0 +1,12 @@
+import {writeFileSync,mkdirSync} from 'node:fs';
+import {runSoak} from '../src/benchmark/soak.js';
+const samples=[];
+const sample=(stage,index,game)=>{const m=process.memoryUsage();samples.push({stage,index,night:game.night,seed:game.seed,sim_tick:game.sim_tick,memory:Object.fromEntries(Object.entries(m).map(([k,v])=>[k,+(v/1048576).toFixed(4)])),entities:{shades:game.shades.length,motes:game.motes.length,drifters:game.drifters.length,charms:game.charms.length,lanterns:game.lanterns.length},events:game.events.length,eventLog:game.eventLog.length,lastSnapshotBytes:game.lastSnapshot?JSON.stringify(game.lastSnapshot).length:0,listeners:process.eventNames().reduce((n,name)=>n+process.listenerCount(name),0)});};
+const result=await runSoak({seed:7,nights:Number(process.argv[2]??10),onStage:sample});
+const preGc=process.memoryUsage();
+if(process.env.SOAK_DIAG_GC==='1')globalThis.gc?.();
+const postGc=process.memoryUsage();
+const output={kind:'diagnostic only; acceptance RSS points unchanged',pid:process.pid,samples,soak:result.output,postRunMemory:Object.fromEntries(Object.entries(preGc).map(([k,v])=>[k,v/1048576])),postDiagnosticGcMemory:process.env.SOAK_DIAG_GC==='1'?Object.fromEntries(Object.entries(postGc).map(([k,v])=>[k,v/1048576])):null};
+mkdirSync('docs/proof/phase-4/soak-remediation',{recursive:true});
+writeFileSync(process.env.SOAK_DIAGNOSTIC_OUT??'docs/proof/phase-4/soak-remediation/memory-trace-before.json',JSON.stringify(output,null,2)+'\n');
+console.log(JSON.stringify({rss:samples.map(x=>[x.stage,x.index,x.memory.rss,x.memory.heapUsed,x.memory.heapTotal]),output:result.output}));

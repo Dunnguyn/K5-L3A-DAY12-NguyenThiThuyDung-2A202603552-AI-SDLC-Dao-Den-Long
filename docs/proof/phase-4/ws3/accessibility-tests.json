@@ -1,0 +1,7 @@
+{
+  "scope": "Ticket-04 WS3 browser accessibility, real Chromium plus separately labeled controlled initial-state fixtures",
+  "browser_default_input": "docs/proof/phase-4/ws3/browser-e2e.json",
+  "controlled_fixture_cues": "docs/proof/phase-4/ws3/accessibility-cues.json",
+  "verified": ["all nine KeyboardEvent.code remaps", "conflict error and unchanged old mapping", "reset defaults", "settings persistence after reload", "held movement clears on blur", "large text computed 1.25 multiplier", "settings and gameplay HUD minimum visible font >=18px", "1280x720 pause button and right HUD no overlap", "Shade spawn subtitle and offscreen arrow after camera rotation", "wind warning subtitle", "last ten seconds subtitle", "low-fuel symbol/text with reduced motion", "screen flash and clock animation disabled in reduced motion"],
+  "manual_limitations": ["assistive technology announcement quality not listened to", "all responsive sizes not visually audited", "camera shake is absent in current renderer, so there was no active shake to disable"]
+}

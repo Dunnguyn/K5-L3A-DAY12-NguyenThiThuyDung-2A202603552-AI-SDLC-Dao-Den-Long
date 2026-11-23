@@ -1,0 +1,273 @@
+{
+  "version": "internal-draft-1",
+  "seed": 41,
+  "scenario": {
+    "player": {
+      "invuln_ticks": 21600,
+      "successful_lights": 5,
+      "light": 20
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "lit": true
+      },
+      {
+        "id": "L2",
+        "lit": true
+      },
+      {
+        "id": "L3",
+        "lit": true
+      },
+      {
+        "id": "L4",
+        "lit": true
+      },
+      {
+        "id": "L5",
+        "lit": true
+      },
+      {
+        "id": "L6",
+        "lit": true
+      }
+    ],
+    "random_drifters": false,
+    "wind_enabled": true
+  },
+  "actions": [
+    {
+      "ticks": 12000
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 18
+    },
+    {
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 54
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 17
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": -1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 69
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 20
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 83
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 7
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 0,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 101
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 90
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": true,
+      "ticks": 1
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 39
+    },
+    {
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 2
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 4
+    },
+    {
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 242
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 4
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": true,
+      "ticks": 214
+    },
+    {
+      "moveX": 1,
+      "moveZ": 1,
+      "dash": false,
+      "ticks": 8
+    },
+    {
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 3
+    },
+    {
+      "moveX": 1,
+      "moveZ": -1,
+      "dash": false,
+      "ticks": 2
+    },
+    {
+      "moveX": 1,
+      "moveZ": 0,
+      "dash": false,
+      "ticks": 17
+    },
+    {
+      "interact": true,
+      "ticks": 1
+    },
+    {
+      "ticks": 2741
+    }
+  ]
+}

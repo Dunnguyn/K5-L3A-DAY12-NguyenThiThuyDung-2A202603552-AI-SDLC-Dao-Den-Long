@@ -1,0 +1,11 @@
+{
+  "file": "docs/demo/demo.mp4",
+  "format": "MP4, Chromium MediaRecorder video/mp4;codecs=avc1.42E01E",
+  "bytes": 180992,
+  "browser_metadata": {"duration_s": 44.0626, "width": 1280, "height": 720},
+  "visual_review": "Chromium playback frames at 9, 15 and 36 seconds inspected; gameplay HUD and text readable after foreground capture correction",
+  "content": "Live browser menu/settings/Night 1 with real keyboard input; explicitly labeled archived WS3 leaderboard/low-fuel screenshots; benchmark and soak values read from actual JSON evidence",
+  "soak_result_shown": "FAIL/BLOCKER",
+  "not_shown": ["live Night 2/3 gameplay", "live terminal capture"],
+  "status": "PARTIAL coverage; valid playable MP4 under 300 seconds"
+}

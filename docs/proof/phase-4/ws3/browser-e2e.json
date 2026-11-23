@@ -1,0 +1,81 @@
+{
+  "kind": "real Chromium browser, default game state, real keyboard input; no gameplay-state mutation",
+  "checks": [
+    {
+      "id": "menu leaderboard empty",
+      "status": "PASS"
+    },
+    {
+      "id": "nine browser key remaps",
+      "status": "PASS"
+    },
+    {
+      "id": "key conflict feedback",
+      "status": "PASS",
+      "message": "Digit2 đã dùng cho Đi lui"
+    },
+    {
+      "id": "reset defaults",
+      "status": "PASS"
+    },
+    {
+      "id": "large text, reduced motion and palette toggles",
+      "status": "PASS",
+      "font_before_px": 18,
+      "font_after_px": 22.5
+    },
+    {
+      "id": "settings persistence after reload",
+      "status": "PASS"
+    },
+    {
+      "id": "minimum visible settings font",
+      "status": "PASS",
+      "minimum_px": 22.5
+    },
+    {
+      "id": "gameplay HUD font and layout",
+      "status": "PASS",
+      "minimum": 22.5,
+      "overlap": false
+    },
+    {
+      "id": "blur clears held movement",
+      "status": "PASS"
+    },
+    {
+      "id": "default-input loss and leaderboard form",
+      "status": "PASS",
+      "sim_tick": 1543,
+      "reason": "no_flames"
+    },
+    {
+      "id": "browser result submission",
+      "status": "PASS"
+    },
+    {
+      "id": "shared browser/CLI dataset",
+      "status": "PASS",
+      "entry": {
+        "name": "Tester_1",
+        "score": 0,
+        "nights_won": 0,
+        "achieved_at": "2026-11-23T11:58:35.755Z",
+        "seed": 20261202
+      }
+    },
+    {
+      "id": "menu leaderboard after game result",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "started_at": "2026-11-23T11:58:24.205Z",
+  "browser": "159.0.8154.6",
+  "passed": true,
+  "finished_at": "2026-11-23T11:58:36.686Z"
+}

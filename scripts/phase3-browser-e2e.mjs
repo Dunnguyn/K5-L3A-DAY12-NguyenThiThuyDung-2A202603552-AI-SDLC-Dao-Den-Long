@@ -84,6 +84,10 @@ try{
   if(n<3){await p.locator('#next-night').click();await p.screenshot({path:dir+'/night-'+(n+1)+'-intro.png'});await p.locator('#enter-night').click();}
  }
  assert.equal(await p.evaluate(()=>window.__DAO_LANTERN_SCREEN__()),'dawn');
+ assert.equal(await p.locator('#leaderboard-form').count(),1,'Dawn must offer leaderboard submission');
+ assert.equal(await p.locator('#leaderboard-name').getAttribute('pattern'),'[A-Za-z0-9_]{3,12}');
+ await p.locator('#panel').evaluate(el=>el.scrollTop=el.scrollHeight);
+ await p.screenshot({path:dir+'/dawn-leaderboard-form.png'});check('WS3 leaderboard form after default-input Dawn');
  report.campaign={status:'PASS',scores:report.nights.map(n=>n.final.score),total,fixture:null,inputOnly:true};
  await p.screenshot({path:dir+'/full-campaign-binh-minh.png'});check('E2E-13 full default campaign to Binh Minh',{total});
  report.errors=x.errors;assert.deepEqual(x.errors,[]);report.passed=true;

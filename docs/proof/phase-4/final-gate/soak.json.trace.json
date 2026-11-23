@@ -1,0 +1,106 @@
+{
+  "pid": 40484,
+  "elapsed_from_launcher_s": 0.876225,
+  "nights": [
+    {
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "ticks": 4545,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 42.23046875
+    },
+    {
+      "index": 1,
+      "night": 2,
+      "seed": 8,
+      "ticks": 2289,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 42.8671875
+    },
+    {
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "ticks": 3482,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 45.328125
+    },
+    {
+      "index": 3,
+      "night": 1,
+      "seed": 10,
+      "ticks": 2568,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.46875
+    },
+    {
+      "index": 4,
+      "night": 2,
+      "seed": 11,
+      "ticks": 2608,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.765625
+    },
+    {
+      "index": 5,
+      "night": 3,
+      "seed": 12,
+      "ticks": 3001,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.2890625
+    },
+    {
+      "index": 6,
+      "night": 1,
+      "seed": 13,
+      "ticks": 1585,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.15234375
+    },
+    {
+      "index": 7,
+      "night": 2,
+      "seed": 14,
+      "ticks": 3689,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.4921875
+    },
+    {
+      "index": 8,
+      "night": 3,
+      "seed": 15,
+      "ticks": 753,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.78125
+    },
+    {
+      "index": 9,
+      "night": 1,
+      "seed": 16,
+      "ticks": 1799,
+      "result": "lost",
+      "error": null,
+      "pid": 40484,
+      "rss_after_night_mb": 46.796875
+    }
+  ]
+}

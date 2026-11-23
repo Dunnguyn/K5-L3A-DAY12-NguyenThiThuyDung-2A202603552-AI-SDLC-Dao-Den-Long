@@ -1,0 +1,24 @@
+{
+  "scenario": {
+    "player": {
+      "pos": {
+        "x": 0,
+        "y": 0,
+        "z": 25
+      },
+      "light": 5
+    },
+    "lanterns": [
+      {
+        "id": "L1",
+        "ever_lit": true
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 1,
+      "interact": true
+    }
+  ]
+}

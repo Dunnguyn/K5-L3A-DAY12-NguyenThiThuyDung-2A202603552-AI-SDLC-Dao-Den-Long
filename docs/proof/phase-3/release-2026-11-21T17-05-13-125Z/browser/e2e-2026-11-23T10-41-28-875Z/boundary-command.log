@@ -1,0 +1,13 @@
+file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/scripts/phase3-browser-support.mjs:33
+  if(!t.includes('createGame, step, gameSnapshot, startNight, restartNight'))throw Error('fixture import seam not found');
+                                                                                   ^
+
+Error: fixture import seam not found
+    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/scripts/phase3-browser-support.mjs:33:84
+    at async Promise.all (index 1)
+    at async RouteHandler._handleInternal (E:\VinUni\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\node_modules\playwright-core\lib\coreBundle.js:62172:27)
+    at async RouteHandler._handleImpl (E:\VinUni\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\node_modules\playwright-core\lib\coreBundle.js:62141:18)
+    at async RouteHandler.handle (E:\VinUni\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\node_modules\playwright-core\lib\coreBundle.js:62135:16)
+    at async _Page._onRoute (E:\VinUni\K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long\node_modules\playwright-core\lib\coreBundle.js:63498:27)
+
+Node.js v24.13.0

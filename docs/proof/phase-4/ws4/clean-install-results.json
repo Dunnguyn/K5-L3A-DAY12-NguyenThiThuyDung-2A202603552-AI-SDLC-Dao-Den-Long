@@ -1,0 +1,15 @@
+{
+  "kind": "independent extracted source copy, not a post-commit Git clone",
+  "platform": "Windows_NT x64",
+  "node": "v24.13.0",
+  "commands": [
+    {"command": "npm ci", "exit_code": 0, "installed_packages": 39, "audit_vulnerabilities": 0},
+    {"command": "npm run build", "exit_code": 0, "vite": "8.3.8", "modules_transformed": 18},
+    {"command": "node scripts/start.mjs", "http_status": 200},
+    {"command": "Chromium extracted build gameplay smoke", "screen": "play", "snapshot_sim_tick": 18}
+  ],
+  "network": "npm ci may need registry access; the prebuilt game/server started without npm install",
+  "clean_git_clone": "NOT VERIFIED until Phase 4 changes are committed",
+  "linux": "NOT VERIFIED",
+  "macos": "NOT VERIFIED"
+}

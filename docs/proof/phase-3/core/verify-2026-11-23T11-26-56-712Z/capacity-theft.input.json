@@ -1,0 +1,24 @@
+{
+  "scenario": {
+    "player": {
+      "successful_lights": 5,
+      "light": 20
+    },
+    "drifters": [
+      {
+        "id": "D1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "state": "chase"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "platform": "Windows_NT x64",
+  "artifact": "docs/proof/phase-4/ws4/dao-den-long-phase4-prep.zip",
+  "zip_entries": 93,
+  "includes": ["dist", "scripts/start.mjs", "scripts/headless.mjs", "game.contract.json", "package-lock.json", "LICENSE", "three-MIT.txt"],
+  "excluded": ["node_modules", ".git", ".env", "leaderboard.json"],
+  "extracted_runtime": {"http_status": 200, "browser_screen": "play", "sim_tick": 18},
+  "leaderboard_restart": {"post_status": 200, "entries_after_server_restart": 1, "cli_export_entries": 1, "browser_cli_same_data": true, "profile": "isolated temporary test profile"},
+  "clean_source_copy": {"npm_ci": "PASS", "npm_run_build": "PASS", "start": "PASS"},
+  "clean_git_clone_after_phase4_commit": "NOT VERIFIED — Phase 4 not committed because Soak gate failed",
+  "linux": "NOT VERIFIED",
+  "macos": "NOT VERIFIED"
+}

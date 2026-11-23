@@ -18,7 +18,7 @@ export function createRenderer(canvasHost,onEvent=()=>{}){
  const moon=new T.Mesh(new T.SphereGeometry(4,14,10),mat(M.core,0x6d5b2e));moon.position.set(-48,63,-78);scene.add(moon);
  const player=new T.Group();scene.add(player);const body=new T.Mesh(new T.CapsuleGeometry(.38,.46,4,8),mat(M.coat));body.position.y=.8;player.add(body);const head=new T.Mesh(new T.SphereGeometry(.36,12,9),mat('#EACAA5'));head.position.y=1.48;player.add(head);const hat=new T.Mesh(new T.ConeGeometry(.72,.36,12),mat(M.sand));hat.position.y=1.83;player.add(hat);const hatLamp=new T.Mesh(new T.OctahedronGeometry(.17),mat(M.lamp,0xFFB347));hatLamp.position.set(0,2.12,.05);player.add(hatLamp);const scarf=new T.Mesh(new T.BoxGeometry(.62,.14,.1),mat(M.scarf));scarf.position.set(0,1.1,.31);player.add(scarf);const eyes=[];for(const x of [-.13,.13]){const e=new T.Mesh(new T.SphereGeometry(.045,8,6),mat('#2E2630'));e.position.set(x,1.51,.31);player.add(e);eyes.push(e);}const legs=[];for(const x of [-.18,.18]){const l=new T.Mesh(new T.CapsuleGeometry(.12,.25,3,6),mat('#3B4660'));l.position.set(x,.27,0);player.add(l);legs.push(l);}
 
- let worldRoot=new T.Group(),lampMeshes=new Map(),moteMeshes=new Map(),shadeMeshes=new Map(),drifterMeshes=new Map(),charmMeshes=new Map(),currentNight=0,lastX=0,lastZ=0,currentWorld=null;const pools={mote:[],shade:[],drifter:[],charm:[]};const moteGeometry=new T.SphereGeometry(.13,6,4),moteDummy=new T.Object3D();let moteInstances=null,shadeInstances=null,visuals=null,lampInstances=null,distinguishable=false,observed={},lastVisualTime=0;const cameraTarget=new T.Vector3(),focus=new T.Vector3(),barRight=new T.Vector3(),cameraForward=new T.Vector3();
+ let worldRoot=new T.Group(),lampMeshes=new Map(),moteMeshes=new Map(),shadeMeshes=new Map(),drifterMeshes=new Map(),charmMeshes=new Map(),currentNight=0,lastX=0,lastZ=0,currentWorld=null,benchmarkCamera=false,benchmarkCameraEpoch=null;const pools={mote:[],shade:[],drifter:[],charm:[]};const moteGeometry=new T.SphereGeometry(.13,6,4),moteDummy=new T.Object3D();let moteInstances=null,shadeInstances=null,visuals=null,lampInstances=null,distinguishable=false,reducedMotion=false,observed={},lastVisualTime=0;const cameraTarget=new T.Vector3(),focus=new T.Vector3(),barRight=new T.Vector3(),cameraForward=new T.Vector3();
  const glowMat=mat(M.mote,0xFFE58A),woodMat=mat(M.wood),leafMat=mat(M.grass),cloudMat=mat(M.sea,0,{transparent:true,opacity:.6});
  function clearWorld(){
  scene.remove(worldRoot);const geometries=new Set(),materials=new Set();
@@ -106,11 +106,11 @@ export function createRenderer(canvasHost,onEvent=()=>{}){
   for(const m of [bg,fill,safe,torn,streams,sparks]){m.frustumCulled=false;worldRoot.add(m);if(m.isInstancedMesh)m.instanceMatrix.setUsage(T.DynamicDrawUsage);}
   visuals={bg,fill,safe,torn,streams,sparks,linePos,particlePos};
  }
- function setAccessibility(value){distinguishable=!!value;}
+ function setAccessibility(value,reduced=false){distinguishable=!!value;reducedMotion=!!reduced;}
  function syncFuelVisuals(s,time,dt){
   if(!visuals)return;
   let bars=0,zones=0,tornCount=0,drains=0;const lampData=[],cageCounts=[0,0,0],bulbCounts=[0,0];let progressCount=0;
-  const pulse=(Math.sin(time*Math.PI*2)+1)/2,blink=s.sim_tick%60<30;
+  const pulse=reducedMotion?1:(Math.sin(time*Math.PI*2)+1)/2,blink=reducedMotion||s.sim_tick%60<30;
   for(const l of s.lanterns){
    const o=lampMeshes.get(l.id);if(!o)continue;
    if(o.wasLit!==l.lit){o.shownFuel=l.fuel;o.wasLit=l.lit;}else o.shownFuel+=(l.fuel-o.shownFuel)*(1-Math.exp(-dt*14));
@@ -159,12 +159,12 @@ function update(s,time,yaw,zoom){
  legs.forEach((l,i)=>l.rotation.x=Math.hypot(p.vel.x,p.vel.z)>.2?Math.sin(simTime*.015+i*Math.PI)*.5:0);
  const lit=s.lanterns.filter(x=>x.lit).length;hemisphere.intensity=getAmbientProgress(lit,s.lanterns.length);
  scene.background.set(M.sky);scene.fog.color.set(M.fog);
- cameraTarget.set(p.x+Math.sin(yaw)*zoom,p.y+zoom*.62,p.z+Math.cos(yaw)*zoom);camera.position.copy(cameraTarget);camera.lookAt(p.x,p.y+1.15,p.z);camera.updateMatrixWorld();cameraForward.setFromMatrixColumn(camera.matrixWorld,2);
+ if(benchmarkCamera){if(benchmarkCameraEpoch===null)benchmarkCameraEpoch=time;const a=2*Math.PI*((time-benchmarkCameraEpoch)%15000)/15000;camera.position.set(30*Math.cos(a),15,-30*Math.sin(a));camera.lookAt(0,0,0);}else{cameraTarget.set(p.x+Math.sin(yaw)*zoom,p.y+zoom*.62,p.z+Math.cos(yaw)*zoom);camera.position.copy(cameraTarget);camera.lookAt(p.x,p.y+1.15,p.z);}camera.updateMatrixWorld();cameraForward.setFromMatrixColumn(camera.matrixWorld,2);
  syncMotes(s.motes,simTime);syncShadeInstances(s.shades,simTime);syncMap(drifterMeshes,s.drifters,'drifter',undefined,simTime);syncMap(charmMeshes,s.charms,'charm',undefined,simTime);
  syncFuelVisuals(s,s.sim_tick/60,dt);
  focus.set(p.x,p.y+1,p.z);onEvent({camera,focus,player,world:currentWorld,time});renderer.render(scene,camera);
 }
  function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);}
- addEventListener('resize',resize);return{scene,camera,renderer,build,update,setAccessibility,observe:()=>structuredClone(observed),dispose(){removeEventListener('resize',resize);renderer.dispose();canvasHost.removeChild(renderer.domElement);}};
+ addEventListener('resize',resize);return{scene,camera,renderer,build,update,setAccessibility,benchmarkMode(v){benchmarkCamera=!!v;benchmarkCameraEpoch=null;},observe:()=>structuredClone(observed),dispose(){removeEventListener('resize',resize);renderer.dispose();canvasHost.removeChild(renderer.domElement);}};
 }
 export { M as palette };

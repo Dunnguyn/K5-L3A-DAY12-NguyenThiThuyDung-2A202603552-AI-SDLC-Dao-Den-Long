@@ -1,0 +1,12 @@
+{
+  "scope": "Ticket-04 WS3 leaderboard tests; isolated temporary profile, no production sample data",
+  "unit_integration_command": "npm test -- --reporter=dot",
+  "unit_total_passed": 205,
+  "unit_total_failed": 0,
+  "ws3_test_file": "tests/phase4-ws3.test.js",
+  "covered": ["name and numeric validation", "zoned timestamp validation", "won-Night score derivation", "score/time/stable tie ranking", "top ten", "duplicate result ID", "disk restart persistence", "CLI export same file", "atomic export and source-file protection", "missing/corrupt file", "loopback Origin and malformed JSON"],
+  "browser_evidence": "docs/proof/phase-4/ws3/browser-e2e.json",
+  "default_campaign_dawn_form_evidence": "docs/proof/phase-4/ws3/dawn-form.json",
+  "browser_submission": {"name":"Tester_1","score":0,"nights_won":0,"seed":20261202,"source":"default Night 1 loss reached by real keyboard movement"},
+  "limitation": "The server derives the total from the browser-supplied won_scores map; there is no cryptographic verification against modified local browser data."
+}

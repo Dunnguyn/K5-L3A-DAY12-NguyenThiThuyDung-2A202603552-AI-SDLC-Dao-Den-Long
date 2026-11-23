@@ -1,0 +1,201 @@
+{
+  "kind": "diagnostic only; acceptance RSS points unchanged",
+  "pid": 40752,
+  "samples": [
+    {
+      "stage": "initialized",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 35.8359,
+        "heapTotal": 6.3086,
+        "heapUsed": 5.0706,
+        "external": 1.7599,
+        "arrayBuffers": 0.0435
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 0,
+      "night": 1,
+      "seed": 7,
+      "sim_tick": 4545,
+      "memory": {
+        "rss": 43.1992,
+        "heapTotal": 8.3086,
+        "heapUsed": 5.7764,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 27,
+        "drifters": 0,
+        "charms": 0,
+        "lanterns": 5
+      },
+      "events": 2,
+      "eventLog": 123,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 1,
+      "night": 2,
+      "seed": 8,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 42.7305,
+        "heapTotal": 8.3086,
+        "heapUsed": 5.8438,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 1,
+      "night": 2,
+      "seed": 8,
+      "sim_tick": 2289,
+      "memory": {
+        "rss": 45.3281,
+        "heapTotal": 10.3086,
+        "heapUsed": 7.0836,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 6,
+        "motes": 25,
+        "drifters": 1,
+        "charms": 1,
+        "lanterns": 6
+      },
+      "events": 2,
+      "eventLog": 66,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "initialized",
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 45.6992,
+        "heapTotal": 10.3086,
+        "heapUsed": 7.1252,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 1,
+      "eventLog": 1,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "finished",
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "sim_tick": 3482,
+      "memory": {
+        "rss": 46.4531,
+        "heapTotal": 11.3086,
+        "heapUsed": 7.1251,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 10,
+        "motes": 30,
+        "drifters": 2,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 2,
+      "eventLog": 106,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    },
+    {
+      "stage": "reset",
+      "index": 2,
+      "night": 3,
+      "seed": 9,
+      "sim_tick": 0,
+      "memory": {
+        "rss": 46.7539,
+        "heapTotal": 11.3086,
+        "heapUsed": 7.1609,
+        "external": 1.7343,
+        "arrayBuffers": 0.0178
+      },
+      "entities": {
+        "shades": 0,
+        "motes": 20,
+        "drifters": 0,
+        "charms": 2,
+        "lanterns": 7
+      },
+      "events": 0,
+      "eventLog": 0,
+      "lastSnapshotBytes": 0,
+      "listeners": 5
+    }
+  ],
+  "soak": {
+    "nights": 3,
+    "crashes": 0,
+    "results": [
+      "lost",
+      "lost",
+      "lost"
+    ],
+    "mem_start_mb": 35.8359375,
+    "mem_end_mb": 46.78125,
+    "duration_s": 0.3454845
+  },
+  "postRunMemory": {
+    "rss": 46.8125,
+    "heapTotal": 11.30859375,
+    "heapUsed": 7.1668548583984375,
+    "external": 1.734299659729004,
+    "arrayBuffers": 0.01784038543701172
+  },
+  "postDiagnosticGcMemory": null
+}

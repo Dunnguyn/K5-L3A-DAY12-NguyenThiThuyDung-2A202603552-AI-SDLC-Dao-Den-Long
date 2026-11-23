@@ -1,0 +1,14 @@
+{
+  "path": "docs/demo/demo.mp4",
+  "bytes": 484246,
+  "browser_decoded": true,
+  "duration_s": 123.846333,
+  "width": 1280,
+  "height": 720,
+  "actual_live_content": ["Night 1 browser gameplay with keyboard input", "unit test subprocess", "headless CLI subprocess", "30-second benchmark subprocess", "ten-Night Soak subprocess"],
+  "archived_content_labeled": ["WS3 leaderboard screenshot", "WS3 low-fuel screenshot"],
+  "gate_values_source": ["docs/proof/phase-4/final-gate/bench.json", "docs/proof/phase-4/final-gate/soak.json"],
+  "reviewed_frames_seconds": [15, 37, 122],
+  "note": "The concurrent-video benchmark is labeled separately from the standalone gate run. A single concurrent-video Soak pass does not override repeated independent RSS failures. Browser canvas captured actual subprocess output, not a native terminal window.",
+  "ticket04_demo_scope": "PASS"
+}

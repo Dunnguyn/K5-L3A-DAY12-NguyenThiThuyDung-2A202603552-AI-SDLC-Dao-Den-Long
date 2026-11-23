@@ -24,8 +24,8 @@ export function browserView(s){
   charms:s.charms.map(c=>({id:c.id,x:c.x,y:c.y,z:c.z,available:c.available})),
   ui:{interaction,requiredLit:Math.ceil(tuning.win_ratio*s.lanterns.length),dawnBonus:s.dawn_bonus??0}};
 }
-export function interactionText(x){
+export function interactionText(x,key='E'){
  if(!x)return '';
- if(x.kind==='refuel')return 'E — Châm dầu · '+x.fuel.toFixed(1)+'/100 · dùng '+x.used+' đom đóm';
- return 'E — '+(x.kind==='relight'?'Thắp lại':'Thắp lần đầu')+' ('+x.progress+'/'+x.cost+') · dùng '+x.used+' đom đóm';
+ if(x.kind==='refuel')return key+' — Châm dầu · '+x.fuel.toFixed(1)+'/100 · dùng '+x.used+' đom đóm';
+ return key+' — '+(x.kind==='relight'?'Thắp lại':'Thắp lần đầu')+' ('+x.progress+'/'+x.cost+') · dùng '+x.used+' đom đóm';
 }

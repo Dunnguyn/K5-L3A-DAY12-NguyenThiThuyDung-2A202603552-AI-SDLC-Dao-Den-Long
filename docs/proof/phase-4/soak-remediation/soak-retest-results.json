@@ -1,0 +1,32 @@
+[
+    {
+        "run":  1,
+        "exit_code":  1,
+        "mem_start_mb":  35.3515625,
+        "mem_end_mb":  47.01953125,
+        "limit_mb":  42.42187500,
+        "crashes":  0,
+        "results":  10,
+        "pass":  false
+    },
+    {
+        "run":  2,
+        "exit_code":  1,
+        "mem_start_mb":  35.30078125,
+        "mem_end_mb":  47.7109375,
+        "limit_mb":  42.360937500,
+        "crashes":  0,
+        "results":  10,
+        "pass":  false
+    },
+    {
+        "run":  3,
+        "exit_code":  1,
+        "mem_start_mb":  35.2734375,
+        "mem_end_mb":  47.640625,
+        "limit_mb":  42.32812500,
+        "crashes":  0,
+        "results":  10,
+        "pass":  false
+    }
+]

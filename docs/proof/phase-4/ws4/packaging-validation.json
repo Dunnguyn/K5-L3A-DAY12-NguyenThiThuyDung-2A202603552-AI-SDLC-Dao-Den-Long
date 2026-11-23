@@ -1,0 +1,13 @@
+{
+  "platform": "Windows_NT x64",
+  "artifact": "docs/proof/phase-4/ws4/dao-den-long-phase4-prep.zip",
+  "bytes": 340040,
+  "zip_entries": 93,
+  "forbidden_entries": 0,
+  "contents": ["dist", "scripts", "src", "package.json", "package-lock.json", "game.contract.json", "README.md", "CHANGELOG.md", "CREDITS.md", "LICENSE", "three-MIT.txt", "RUN.txt"],
+  "extracted_start": {"command": "node scripts/start.mjs", "http_status": 200, "html_references_bundle": true, "leaderboard_api_entries": 0},
+  "extracted_browser": {"browser": "Playwright Chromium", "screen": "play", "snapshot_sim_tick": 18, "input": "clicked Start campaign and Enter Night from menu"},
+  "extracted_cli": {"command": "node scripts/headless.mjs --export-leaderboard exported.json", "entries": 0},
+  "status": "PASS on Windows; Linux/macOS NOT VERIFIED",
+  "note": "The ZIP is a release preparation preview; it contains no development node_modules or user leaderboard. The distribution artifact is not a v1.0.0 Release."
+}

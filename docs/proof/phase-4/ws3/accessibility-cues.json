@@ -1,0 +1,49 @@
+{
+  "kind": "controlled initial-state browser fixtures, not default campaign E2E",
+  "checks": [
+    {
+      "id": "shade-spawn",
+      "fixture": {
+        "sim_tick": 299
+      },
+      "status": "PASS",
+      "subtitle": "⚠ Bóng Mực xuất hiện",
+      "arrowVisible": true
+    },
+    {
+      "id": "wind-warning",
+      "fixture": {
+        "night": 3,
+        "sim_tick": 1679
+      },
+      "status": "PASS",
+      "subtitle": "⚠ Gió mạnh sắp thổi"
+    },
+    {
+      "id": "last-ten-seconds",
+      "fixture": {
+        "time_ticks": 661
+      },
+      "status": "PASS",
+      "subtitle": "⚠ Còn 10 giây đến bình minh"
+    },
+    {
+      "id": "low-fuel-reduced-motion",
+      "fixture": {
+        "lanterns": [
+          {
+            "id": "L1",
+            "lit": true,
+            "ever_lit": true,
+            "fuel_units": 1799
+          }
+        ]
+      },
+      "status": "PASS",
+      "warning": "⚠ 1 đèn sắp cạn dầu"
+    }
+  ],
+  "started_at": "2026-11-23T11:23:49.284Z",
+  "finished_at": "2026-11-23T11:24:00.272Z",
+  "passed": true
+}
