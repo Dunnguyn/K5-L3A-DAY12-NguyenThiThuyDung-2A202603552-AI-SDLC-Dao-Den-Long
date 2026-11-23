@@ -76,3 +76,7 @@ WS4 Windows regression: unit 205/205, cross-check 15/15, verify 8/8, build and d
 ## Final release gate
 
 P4-DEMO-01 is **PASS for Ticket-04 scope** after recording a 123.85-second MP4 with live Night 1 gameplay and actual test, headless, benchmark and Soak subprocess execution. P4-BEN-01..05 remain PASS on the standalone Windows run (640.63 average FPS, P1 166.08 FPS, load 5874 ms); the video-capture benchmark is separately labeled and not used as gate evidence. P4-SOAK-03 remains **FAIL/BLOCKER** after another independent 10-Night run: 35.296875→46.50390625 MiB, ceiling 42.35625 MiB. P4-PKG-01 remains PARTIAL pending a post-commit clean Git clone and Linux check; P4-C13-01/02 remain PARTIAL without the official v1.0 base. P4-REL-01 remains NOT VERIFIED because the blocker prevented commit, CI, tag and Release.
+
+## Owner-approved publication exception
+
+The project owner subsequently approved publishing v1.0.0 as a **Pre-release** with explicit disclosure of the unresolved RSS limit. This does not alter acceptance: **P4-SOAK-03 remains FAIL/BLOCKER**, and full Ticket-04 DoD is not met. The prior final-gate and Round 2 failed traces remain historical evidence. Current release-publication Soak samples started at higher RSS and individually met 1.20x; this variability does not close the repeated failure. The clean Windows Git clone was subsequently validated; Linux/macOS, official contract v1.0, grader GPU, direct audio listening and independent Phase 4 QA remain unverified. See `docs/proof/phase-4/PHASE4_FINAL_REPORT.md` and `RELEASE_NOTES_v1.0.0.md`.
