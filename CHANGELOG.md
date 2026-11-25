@@ -1,11 +1,11 @@
 # Changelog
 
-## Phase 4 — preparation, unreleased
+## Phase 4 — `phase-4`, `v1.0.0` Pre-release with documented exceptions
 
 - Added the rendered Night 1 benchmark and the deterministic, same process ten Night soak runner. The local benchmark meets its thresholds; the soak RSS limit remains **FAIL/BLOCKER**.
 - Added a loopback server, persistent file backed top ten leaderboard, CLI export, nine remappable controls, accessibility cues, reduced motion and large text.
 - Updated the internal Test Contract manifest to v1.3 with `bench_cmd` and `soak_cmd`. Official v1.0 base schema compatibility remains unverified.
-- Prepared a distribution ZIP, documentation and retrospective. No Phase 4 tag or v1.0.0 Release exists.
+- Published a distribution ZIP, demo, documentation and retrospective at `v1.0.0` with the owner's documented Soak exception. P4-SOAK-03 remains FAIL; full Ticket-04 DoD is not met.
 
 ## Phase 3 — `phase-3`
 
