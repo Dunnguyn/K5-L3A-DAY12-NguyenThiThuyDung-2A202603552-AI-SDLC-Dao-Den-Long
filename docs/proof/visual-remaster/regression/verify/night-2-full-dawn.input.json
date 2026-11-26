@@ -1,0 +1,13 @@
+{
+  "seed": 7341,
+  "scenario": {
+    "player": {
+      "invuln_ticks": 21600
+    }
+  },
+  "actions": [
+    {
+      "ticks": 16200
+    }
+  ]
+}

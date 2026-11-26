@@ -1,6 +1,6 @@
 # Đảo Đèn Lồng
 
-Mây collects fireflies, lights lanterns and keeps enough of them burning until dawn across three islands. The game runs through a loopback Node server. Phase 4 preparation is in progress; **v1.0.0 has not been released**.
+Mây collects fireflies, lights lanterns and keeps enough of them burning until dawn across three islands. The game runs through a loopback Node server. v1.0.0 is published as a Pre-release with a documented Soak RSS exception; the visual remaster in this working branch is not part of that release.
 
 ![Actual Night gameplay](docs/proof/phase-4/ws3/screenshots/gameplay-hud.png)
 
@@ -47,6 +47,6 @@ Headless example: `node scripts/headless.mjs --night 1 path/to/scenario.json`. T
 
 ## Release status and limitations
 
-The local render benchmark passed its thresholds, but the ten Night soak **fails** its RSS growth limit: 35.27 → 47.94 MiB, versus a 42.33 MiB ceiling. Four further clean process runs also failed. This blocks the Phase 4 tag and v1.0.0 Release. See [release readiness](docs/proof/phase-4/RELEASE_READINESS.md) and [Soak evidence](docs/proof/phase-4/soak-remediation/round-2/soak-retest.json).
+The local render benchmark passed its thresholds, but the ten Night soak **fails** its RSS growth limit: 35.27 → 47.94 MiB, versus a 42.33 MiB ceiling. Four further clean process runs also failed. The project owner accepted this exception for the [v1.0.0 Pre-release](RELEASE_NOTES_v1.0.0.md); the full Ticket-04 Definition of Done is not met. See [release readiness](docs/proof/phase-4/RELEASE_READINESS.md) and [Soak evidence](docs/proof/phase-4/soak-remediation/round-2/soak-retest.json).
 
 Official contract v1.0 compliance, real GPU grading performance, macOS, manual audio listening and independent Phase 4 QA are not verified. Phase 1–3 tags and evidence remain historical. Original code is licensed under [MIT](LICENSE); the lab premise and characters are outside that code grant. See [credits](CREDITS.md), [changelog](CHANGELOG.md) and [retrospective](docs/notes/PHASE4_RETROSPECTIVE.md).

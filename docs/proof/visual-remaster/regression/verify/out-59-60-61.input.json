@@ -1,0 +1,16 @@
+{
+  "scenario": {
+    "lanterns": [
+      {
+        "id": "L1",
+        "lit": true,
+        "fuel": 1
+      }
+    ]
+  },
+  "actions": [
+    {
+      "ticks": 61
+    }
+  ]
+}
