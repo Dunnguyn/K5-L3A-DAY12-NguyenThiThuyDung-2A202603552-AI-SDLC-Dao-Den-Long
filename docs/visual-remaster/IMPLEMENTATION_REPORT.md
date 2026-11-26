@@ -28,6 +28,8 @@ Changed source: `src/browser/renderer.js`, `src/browser/decor.js`, `src/browser/
 
 ## Open work and limits
 
+PR #1 integration check (2026-11-26): merging the updated `main` exposed a browser E2E failure because the redesigned Night intro no longer said “bình minh”. The intro now states the dawn objective again. The first failed local run and its boundary captures are retained under `../proof/visual-remaster/regression/pr-1-diagnostics/`; the rerun with real keyboard input passed all three Nights and Bình Minh (3759 points) under `../proof/visual-remaster/regression/pr-1-browser/`. That rerun skipped the already-passing boundary suite; the earlier local boundary captures remain in the diagnostics directory. Unit tests passed 205/205 and the build passed. The CI result for the new commit must be checked separately.
+
 - The 30 FPS SwiftShader gameplay gate fails on all four final samples. Draw calls, scene complexity and software rendering still need measured optimization; do not treat the fast standard benchmark as a substitute for the gameplay samples.
 - The premium art direction is only partially realized. Terrain variation, richer culturally specific materials, cinematic but readable lighting, fuller character/creature animation states, more natural Mây proportions, and stronger UI identity remain. No licensed external model or texture was integrated; the procedural fallback is documented.
 - Baseline memory trend was not recorded; current Night 3 restart geometry counts were bounded, but prolonged GPU resource profiling remains unverified. Manual audio quality and screen-reader review were not performed.

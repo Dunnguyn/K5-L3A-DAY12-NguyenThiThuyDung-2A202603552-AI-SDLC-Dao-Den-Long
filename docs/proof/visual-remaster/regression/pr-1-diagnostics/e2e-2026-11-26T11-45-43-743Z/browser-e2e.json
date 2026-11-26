@@ -1,0 +1,19 @@
+{
+  "scope": "Full default campaign via real Playwright keyboard input replay; no game-state injection, no browser fixture route for campaign. Playwright clock accelerates rendering time; FPS is measured separately with native clocks.",
+  "startedAt": "2026-11-26T11:45:43.744Z",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "arch": "x64"
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": [],
+  "nights": [],
+  "errors": [],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: PASS E2E-02-first-light\nPASS E2E-03-refuel\nPASS full-fuel-exclusion\n\n\nnull !== 0\n\n    at file:///E:/VinUni/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/scripts/phase3-browser-e2e.mjs:14:71\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "finishedAt": "2026-11-26T12:02:11.649Z"
+}
