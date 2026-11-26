@@ -1,6 +1,6 @@
 # Đảo Đèn Lồng
 
-Mây collects fireflies, lights lanterns and keeps enough of them burning until dawn across three islands. The game runs through a loopback Node server. **[v1.0.0 is published as a Pre-release with documented exceptions](https://github.com/Dunnguyn/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0).** The Soak RSS requirement remains FAIL; the full Ticket-04 Definition of Done is not met.
+Mây collects fireflies, lights lanterns and keeps enough of them burning until dawn across three islands. The game runs through a loopback Node server. **[v1.0.0 is published as a Pre-release with documented exceptions](https://github.com/Dunnguyn/K5-L3A-DAY12-NguyenThiThuyDung-2A202603552-AI-SDLC-Dao-Den-Long/releases/tag/v1.0.0).** The Soak RSS requirement remains FAIL; the full Ticket-04 Definition of Done is not met. The visual remaster in this branch is not part of that release.
 
 ![Actual Night gameplay](docs/proof/phase-4/ws3/screenshots/gameplay-hud.png)
 
